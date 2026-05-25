@@ -1,11 +1,17 @@
 @echo off
 cd /d "c:\Users\jenni\OneDrive\yoga website"
-"C:\Program Files\Git\bin\git.exe" init
-"C:\Program Files\Git\bin\git.exe" add .
+echo Configuring git...
 "C:\Program Files\Git\bin\git.exe" config user.email "user@example.com"
 "C:\Program Files\Git\bin\git.exe" config user.name "User"
-"C:\Program Files\Git\bin\git.exe" commit -m "Initial commit"
-"C:\Program Files\Git\bin\git.exe" branch -M main
+echo Adding files...
+"C:\Program Files\Git\bin\git.exe" add -A
+echo Committing...
+"C:\Program Files\Git\bin\git.exe" commit -m "Initial commit - yoga website project"
+echo Setting up remote...
+"C:\Program Files\Git\bin\git.exe" remote remove origin 2>nul
 "C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/bmjwalker/Anxiety-Therapy-For-Women.git
+echo Switching to main branch...
+"C:\Program Files\Git\bin\git.exe" branch -M main
+echo Pushing to GitHub...
 "C:\Program Files\Git\bin\git.exe" push -u origin main
 pause
