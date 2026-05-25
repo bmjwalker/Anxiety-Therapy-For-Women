@@ -1,0 +1,155 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-cormorant);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* ── Brand palette ── */
+  --color-brand: #57686B;
+  --color-brand-light: #7A9295;
+  --color-brand-dark: #3D4C4E;
+  --color-brand-muted: #EEF1F2;
+  --color-sage: #9FA9A1;
+  --color-sage-light: #C8D0CB;
+  --color-sage-muted: #EBF0EC;
+  --color-dusty: #CAAF99;
+  --color-dusty-dark: #B09580;
+  --color-dusty-light: #E8D9CE;
+  --color-moss: #8D9778;
+  --color-moss-light: #B5BEA9;
+  --color-cream: #F2F1EB;
+  --color-cream-dark: #E5E3D8;
+  --color-cream-deeper: #D8D6CA;
+  --color-mist: #B8C6C7;
+  --color-mist-light: #D8E2E3;
+  --color-mist-dark: #8FA3A5;
+  --color-dark: #2C3839;
+}
+
+:root {
+  --background: #F2F1EB;
+  --foreground: #2C3839;
+  --card: #FFFFFF;
+  --card-foreground: #2C3839;
+  --popover: #FFFFFF;
+  --popover-foreground: #2C3839;
+  --primary: #57686B;
+  --primary-foreground: #F2F1EB;
+  --secondary: #9FA9A1;
+  --secondary-foreground: #2C3839;
+  --muted: #EBF0EC;
+  --muted-foreground: #6B7E80;
+  --accent: #CAAF99;
+  --accent-foreground: #2C3839;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #D4DAD6;
+  --input: #D4DAD6;
+  --ring: #57686B;
+  --chart-1: #57686B;
+  --chart-2: #9FA9A1;
+  --chart-3: #CAAF99;
+  --chart-4: #8D9778;
+  --chart-5: #B8C6C7;
+  --radius: 0.5rem;
+  --sidebar: #F2F1EB;
+  --sidebar-foreground: #2C3839;
+  --sidebar-primary: #57686B;
+  --sidebar-primary-foreground: #F2F1EB;
+  --sidebar-accent: #CAAF99;
+  --sidebar-accent-foreground: #2C3839;
+  --sidebar-border: #D4DAD6;
+  --sidebar-ring: #57686B;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-cream text-dark font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-cormorant), Georgia, serif;
+    @apply leading-tight tracking-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .pull-quote {
+    font-family: var(--font-cormorant), Georgia, serif;
+    @apply text-2xl md:text-3xl italic text-dusty border-l-4 border-dusty pl-6 my-8;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .credential-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-mist-light text-brand border border-mist;
+  }
+
+  .approach-pill {
+    @apply inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-sage-muted text-brand border border-sage-light;
+  }
+}
