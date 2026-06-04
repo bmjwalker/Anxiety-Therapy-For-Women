@@ -1,5 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { archivedPosts } from "@/lib/archived-posts";
 import { ArrowRight, Calendar } from "lucide-react";
 
 const posts = [
@@ -41,7 +45,33 @@ const posts = [
   },
 ];
 
+const legacyPosts = archivedPosts.map((post) => ({
+  ...post,
+  href: `/blog/archive/${post.slug}`,
+  category: "Legacy Archive",
+}));
+
+const sortedLegacyPosts = [...legacyPosts].sort((a, b) =>
+  a.title.localeCompare(b.title, undefined, { sensitivity: "base" })
+);
+
+function getLegacyCategory(title: string) {
+  if (/burnout|stress|recovery/i.test(title)) return "Burnout & Recovery";
+  if (/anxiety|overthink|rumination|sensitive|mental strength/i.test(title)) return "Anxiety & Mindset";
+  if (/perfectionism|self-worth|identity|confidence|mindset|perspective/i.test(title)) return "Perfectionism & Confidence";
+  if (/ADHD|productivity/i.test(title)) return "ADHD & Productivity";
+  if (/career|workplace|teachers|health insurance/i.test(title)) return "Career & Work";
+  if (/life transitions|unstuck|uncertainty|change your life/i.test(title)) return "Life Transitions";
+  if (/walk|wellness|growth|deserve/i.test(title)) return "Wellness & Growth";
+  return "Archived Insights";
+}
+
 export default function BlogPage() {
+  const [showAllLegacyPosts, setShowAllLegacyPosts] = useState(false);
+  const visibleLegacyPosts = showAllLegacyPosts
+    ? sortedLegacyPosts
+    : sortedLegacyPosts.slice(0, 4);
+
   return (
     <>
       <Header />
@@ -104,6 +134,80 @@ export default function BlogPage() {
                   </div>
                 </article>
               ))}
+            </div>
+
+            <div className="mt-16">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-px w-12 bg-dusty" />
+                <span className="text-xs tracking-widest uppercase text-dusty font-medium">
+                  Legacy Archive
+                </span>
+              </div>
+              <h2
+                className="text-3xl md:text-4xl font-light text-dark mb-4"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                Earlier Articles
+              </h2>
+              <p className="text-dark/60 mb-8 max-w-2xl">
+                A curated collection of earlier articles for continued reading.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {visibleLegacyPosts.map((post) => {
+                  const articleCategory =
+                    post.category === "Legacy Archive" ? getLegacyCategory(post.title) : post.category;
+
+                  return (
+                  <article
+                    key={post.href}
+                    className="flex flex-col bg-cream rounded-2xl overflow-hidden border border-cream-dark card-hover"
+                  >
+                    <div className="h-1 bg-gradient-to-r from-dusty to-sage" />
+                    <div className="flex flex-col flex-1 p-7">
+                      <div className="mb-4 flex flex-wrap items-center gap-2 text-xs text-dark/40">
+                        <span className="inline-flex items-center rounded-full border border-mist bg-mist-light px-3 py-1 font-medium text-brand whitespace-nowrap">
+                          {articleCategory}
+                        </span>
+                        <span className="inline-flex items-center gap-1 whitespace-nowrap">
+                          <Calendar size={11} />
+                          {post.date}
+                        </span>
+                        <span className="inline-flex items-center whitespace-nowrap text-dark/50 ml-auto sm:ml-0">
+                          {post.readTime}
+                        </span>
+                      </div>
+                      <h3
+                        className="text-xl font-medium text-dark mb-3 leading-snug"
+                        style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                      >
+                        {post.title}
+                      </h3>
+                      <p className="text-sm text-dark/60 leading-relaxed flex-1 mb-6">{post.excerpt}</p>
+                      <a
+                        href={post.href}
+                        className="inline-flex items-center gap-1.5 text-sm font-medium text-brand hover:text-brand-dark transition-colors"
+                      >
+                        Open archived post
+                        <ArrowRight size={13} />
+                      </a>
+                    </div>
+                  </article>
+                  );
+                })}
+              </div>
+
+              {sortedLegacyPosts.length > 4 && (
+                <div className="mt-6 flex justify-center">
+                  <button
+                    type="button"
+                    onClick={() => setShowAllLegacyPosts((prev) => !prev)}
+                    className="inline-flex items-center gap-2 rounded-full border border-brand px-5 py-3 text-sm font-medium text-brand hover:bg-brand-muted transition-colors"
+                  >
+                    {showAllLegacyPosts ? "Show less archived blogs" : "Show more archived blogs"}
+                    <ArrowRight size={14} />
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         </section>

@@ -62,7 +62,7 @@ const programs = [
 
 export default function Programs() {
   return (
-    <section id="programs" className="bg-sage-muted section-padding">
+    <section id="programs" className="bg-cream section-padding">
       <div className="section-container">
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">
@@ -72,13 +72,15 @@ export default function Programs() {
           </span>
         </div>
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
-          <h2
-            className="text-4xl md:text-5xl font-light text-dark max-w-xl"
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-          >
-            Beyond individual therapy —{" "}
-            <span className="italic text-brand">programs built for you</span>
-          </h2>
+          <div>
+            <h2
+              className="text-4xl md:text-5xl font-light text-dark max-w-xl pb-4 border-b-2 border-b-dusty"
+              style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+            >
+              Beyond individual therapy —{" "}
+              <span className="italic text-brand">programs built for you</span>
+            </h2>
+          </div>
           <p className="text-dark/60 text-sm max-w-sm">
             Group experiences and self-guided programs designed to complement therapy and
             accelerate your transformation.
@@ -92,7 +94,7 @@ export default function Programs() {
             return (
               <div
                 key={program.title}
-                className={`flex flex-col p-8 rounded-2xl ${program.bg} border border-cream-dark card-hover`}
+                className={`flex flex-col p-8 rounded-2xl border-l-4 border-l-dusty ${program.bg} border border-cream-dark card-hover shadow-sm hover:shadow-md transition-shadow`}
               >
                 {/* Icon + Badge */}
                 <div className="flex items-center justify-between mb-6">

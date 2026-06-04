@@ -86,7 +86,7 @@ const faqs: { id: string; question: string; answer: ReactNode }[] = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="section-padding">
+    <section id="faq" className="bg-white section-padding">
       <div className="section-container">
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">
@@ -128,7 +128,7 @@ export default function FAQ() {
                 <AccordionItem
                   key={faq.id}
                   value={faq.id}
-                  className="rounded-xl border border-cream-dark bg-white px-6 not-last:border-b"
+                  className="rounded-xl border-l-4 border-l-dusty border border-cream-dark bg-white px-6 not-last:border-b"
                 >
                   <AccordionTrigger className="text-base font-medium text-dark text-left py-5">
                     {faq.question}

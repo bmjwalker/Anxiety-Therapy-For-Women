@@ -4,6 +4,7 @@ import Hero from "@/components/sections/Hero";
 import WhoIHelp from "@/components/sections/WhoIHelp";
 import Testimonials from "@/components/sections/Testimonials";
 import BurnoutQuizSection from "@/components/sections/BurnoutQuizSection";
+import Credibility from "@/components/sections/Credibility";
 import TherapyServices from "@/components/sections/TherapyServices";
 import Programs from "@/components/sections/Programs";
 import About from "@/components/sections/About";
@@ -27,6 +28,7 @@ export default function Home() {
         <WhoIHelp />
         <Testimonials />
         <BurnoutQuizSection />
+        <Credibility />
         <TherapyServices />
         <Programs />
         <About />

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const testimonials = [
   {
     quote: "I finally stopped feeling like I was drowning.",
@@ -15,7 +17,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-white section-padding">
+    <section className="bg-mist-light section-padding">
       <div className="section-container">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-px w-12 bg-dusty" />
@@ -25,18 +27,25 @@ export default function Testimonials() {
         </div>
 
         <h2
-          className="text-4xl md:text-5xl font-light text-dark mb-14"
+          className="text-4xl md:text-5xl font-light text-dark mb-8"
           style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
         >
           What Women{" "}
           <span className="italic text-brand">Often Tell Me</span>
         </h2>
 
+        {/* Subtle decorative accent */}
+        <div className="mb-12 flex items-center justify-center gap-3">
+          <div className="h-px w-20 bg-dusty" />
+          <div className="w-2 h-2 rounded-full bg-dusty/90" />
+          <div className="h-px w-20 bg-dusty" />
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map(({ quote, credit }) => (
             <div
               key={quote}
-              className="relative p-8 rounded-2xl bg-cream border border-cream-dark flex flex-col"
+              className="relative p-8 rounded-2xl bg-cream border-l-4 border-l-dusty border border-cream-dark flex flex-col"
             >
               <span
                 className="absolute top-5 left-7 text-5xl text-dusty/40 leading-none select-none"

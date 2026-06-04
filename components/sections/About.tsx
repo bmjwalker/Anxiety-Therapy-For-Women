@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="bg-white section-padding">
+    <section id="about" className="bg-mist-light section-padding">
       <div className="section-container">
         {/* Section label */}
         <div className="flex items-center gap-3 mb-4">
@@ -27,15 +27,14 @@ export default function About() {
               <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-brand/20 to-transparent" />
             </div>
 
-            {/* Floating quote card */}
-            <div className="absolute -bottom-6 -right-4 lg:-right-10 bg-white rounded-xl shadow-lg p-5 max-w-xs hidden sm:block">
-              <p
-                className="text-sm font-medium text-brand mb-1"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-              >
-                &ldquo;Compassionate curiosity<br />is the path to change.&rdquo;
+            {/* Supporting detail card */}
+            <div className="absolute -bottom-6 -right-4 lg:-right-10 bg-white rounded-xl shadow-lg p-5 max-w-xs hidden sm:block border border-cream-dark">
+              <p className="text-[11px] uppercase tracking-[0.25em] text-dusty font-semibold mb-2">
+                Experience
               </p>
-              <p className="text-xs text-sage">— Jennifer Walker, LCSW</p>
+              <p className="text-sm text-dark/80 leading-relaxed">
+                20+ years supporting women through burnout, identity shifts, and life transitions with a direct, compassionate approach.
+              </p>
             </div>
           </div>
 

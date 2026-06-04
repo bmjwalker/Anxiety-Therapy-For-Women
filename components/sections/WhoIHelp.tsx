@@ -1,4 +1,5 @@
 import { CheckCircle2, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const signs = [
   "You look successful on the outside but feel exhausted inside",
@@ -9,9 +10,12 @@ const signs = [
   "You've lost yourself while taking care of everything else",
 ];
 
+// Featured signs for the premium left column
+const featuredSigns = signs.slice(0, 4);
+
 export default function WhoIHelp() {
   return (
-    <section className="bg-cream section-padding">
+    <section className="bg-white section-padding">
       <div className="section-container">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-px w-12 bg-dusty" />
@@ -20,8 +24,9 @@ export default function WhoIHelp() {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div>
+        <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-8 lg:gap-16 items-start">
+          {/* Left — Content (55%) */}
+          <div className="flex flex-col">
             <h2
               className="text-4xl md:text-5xl font-light text-dark mb-5 leading-tight"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
@@ -34,9 +39,9 @@ export default function WhoIHelp() {
               together. But behind that competence is a level of exhaustion that others rarely see.
             </p>
 
-            <div className="p-6 rounded-2xl bg-white border-l-4 border-brand mb-8">
+            <div className="p-6 rounded-2xl bg-dusty-light border-l-4 border-dusty mb-8">
               <p
-                className="text-xl font-light text-dark leading-snug"
+                className="text-lg font-light text-dark leading-snug"
                 style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
                 You don&rsquo;t have to keep living in survival mode.{" "}
@@ -44,27 +49,43 @@ export default function WhoIHelp() {
               </p>
             </div>
 
+            {/* Featured Signs */}
+            <div className="space-y-3 mb-8">
+              {featuredSigns.map((sign) => (
+                <div
+                  key={sign}
+                  className="flex items-start gap-3 p-3 rounded-lg bg-cream/50 border border-cream-dark"
+                >
+                  <CheckCircle2 size={18} className="text-dusty shrink-0 mt-0.5" />
+                  <p className="text-sm text-dark/80 leading-snug">{sign}</p>
+                </div>
+              ))}
+            </div>
+
             <a
               href="https://jennifer-walker7285.clientsecure.me/sign-in"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors duration-200 self-start"
             >
               Yes, I&rsquo;m Ready for Change
               <ArrowRight size={15} />
             </a>
           </div>
 
-          <div className="grid grid-cols-1 gap-3">
-            {signs.map((sign) => (
-              <div
-                key={sign}
-                className="flex items-start gap-4 p-4 rounded-xl bg-white border border-cream-dark"
-              >
-                <CheckCircle2 size={20} className="text-dusty shrink-0 mt-0.5" />
-                <p className="text-base text-dark/80 leading-snug">{sign}</p>
-              </div>
-            ))}
+          {/* Right — Premium Image (40%) */}
+          <div className="relative h-96 lg:h-full min-h-96">
+            <div className="relative rounded-3xl overflow-hidden h-full shadow-xl">
+              <Image
+                src="/images/1.jpg"
+                alt="Diverse group of women together in a supportive setting"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 45vw"
+              />
+              {/* Soft overlay gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-brand/5 via-transparent to-dusty/10" />
+            </div>
           </div>
         </div>
       </div>

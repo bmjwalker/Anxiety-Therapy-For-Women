@@ -6,12 +6,12 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Programs", href: "#programs" },
-  { label: "About", href: "#about" },
-  { label: "Resources", href: "#resources" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Blog", href: "#blog" },
+  { label: "Services", href: "/#services" },
+  { label: "Programs", href: "/#programs" },
+  { label: "About", href: "/about" },
+  { label: "Resources", href: "/resources" },
+  { label: "FAQ", href: "/faqs" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export default function Header() {
@@ -54,13 +54,13 @@ export default function Header() {
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-sm text-dark/70 hover:text-brand transition-colors duration-200 font-medium"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <a
               href="https://jennifer-walker7285.clientsecure.me/sign-in"
@@ -88,14 +88,14 @@ export default function Header() {
         <div className="md:hidden bg-cream border-t border-cream-dark">
           <div className="section-container py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
                 className="py-3 px-2 text-base text-dark/80 hover:text-brand transition-colors border-b border-cream-dark last:border-0"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <a
               href="https://jennifer-walker7285.clientsecure.me/sign-in"

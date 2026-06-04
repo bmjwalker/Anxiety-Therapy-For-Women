@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Clock, MapPin } from "lucide-react";
+import { Mail, Clock, MapPin, ExternalLink } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -43,18 +43,20 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-2.5 text-sm">
               {[
-                { label: "About Jennifer", href: "#about" },
-                { label: "Therapy Services", href: "#services" },
-                { label: "Programs", href: "#programs" },
-                { label: "Resources", href: "#resources" },
-                { label: "FAQ", href: "#faq" },
-                { label: "Blog", href: "#blog" },
+                { label: "About Jennifer", href: "/about" },
+                { label: "Therapy Services", href: "/#services" },
+                { label: "Programs", href: "/#programs" },
+                { label: "Resources", href: "/resources" },
+                { label: "FAQ", href: "/faqs" },
+                { label: "Blog", href: "/blog" },
                 { label: "Client Portal", href: "https://jennifer-walker7285.clientsecure.me/sign-in" },
               ].map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
                     className="text-cream/70 hover:text-dusty transition-colors"
+                    target={link.href.startsWith("http") ? "_blank" : undefined}
+                    rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   >
                     {link.label}
                   </a>
@@ -84,9 +86,51 @@ export default function Footer() {
         </div>
 
         {/* Bottom row */}
-        <div className="mt-12 pt-6 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-cream/50">
-          <p>© {new Date().getFullYear()} Jennifer Walker, LCSW. All rights reserved.</p>
-          <div className="flex items-center gap-4">
+        <div className="mt-12 pt-6 border-t border-cream/10">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-cream/50 mb-4">
+            <p>© {new Date().getFullYear()} Jennifer Walker, LCSW. All rights reserved.</p>
+            <div className="flex items-center gap-5 text-sm">
+              <a
+                href="https://www.facebook.com/profile.php?id=100073222913867"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-cream/70 hover:text-dusty transition-colors"
+              >
+                Facebook
+                <ExternalLink size={14} />
+              </a>
+              <a
+                href="https://www.instagram.com/clarityforhpwomen/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-cream/70 hover:text-dusty transition-colors"
+              >
+                Instagram
+                <ExternalLink size={14} />
+              </a>
+              <a
+                href="https://www.youtube.com/@HighPerformingWomen"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-cream/70 hover:text-dusty transition-colors"
+              >
+                YouTube
+                <ExternalLink size={14} />
+              </a>
+              <a
+                href="https://www.pinterest.com/jenniferwalkerlcsw/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-cream/70 hover:text-dusty transition-colors"
+              >
+                Pinterest
+                <ExternalLink size={14} />
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-cream/50">
+            <div />
+            <div className="flex items-center gap-4">
             <a
               href="https://docs.google.com/document/d/1AQAlkk_GdG8_KuELe0mYxQ-ZNC6DSLGtw2P6U2dzMc8/copy"
               target="_blank"
@@ -112,6 +156,7 @@ export default function Footer() {
               Client Portal
             </a>
           </div>
+        </div>
         </div>
       </div>
     </footer>

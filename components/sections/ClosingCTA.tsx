@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function ClosingCTA() {
   return (
-    <section className="bg-cream section-padding">
+    <section className="bg-sage-muted section-padding">
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-6">

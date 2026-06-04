@@ -25,17 +25,11 @@ export default function Hero() {
       {/* Content */}
       <div className="section-container w-full relative z-10 pt-24 pb-16">
         <div className="max-w-xl lg:max-w-2xl">
-          {/* Eyebrow */}
-          <div className="flex items-center gap-2 mb-4">
-            <Sparkles size={16} className="text-dusty" />
-            <span className="text-sm tracking-widest uppercase text-dusty font-medium">
-              Burnout Recovery &amp; Anxiety Therapy
-            </span>
-          </div>
+          {/* Eyebrow removed per request */}
 
           {/* Positioning */}
           <p className="text-sm font-medium text-sage mb-5 tracking-wide">
-            Jennifer Walker, LCSW &nbsp;&bull;&nbsp; Burnout Recovery Specialist for High-Performing Women
+            Anxiety and Burnout Recovery Specialist for High-Performing Women in Atlanta, GA
           </p>
 
           {/* Main Headline */}

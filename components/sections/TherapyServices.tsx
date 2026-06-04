@@ -1,9 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
 import {
   Brain,
   Briefcase,
@@ -11,13 +8,34 @@ import {
   Globe,
   CheckCircle2,
   ArrowRight,
-  Send,
+  Leaf,
 } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 
 /* ── Data ── */
+
+const specialtyMap: { [key: string]: string[] } = {
+  Anxiety: [
+    "Lying awake overanalyzing every conversation",
+    "Stuck in comparison traps and self-doubt",
+  ],
+  Burnout: [
+    "Exhausted from being strong for everyone else",
+    "Difficulty setting healthy boundaries without guilt",
+    "Overwhelmed by major life transitions and uncertainty",
+  ],
+  Perfectionism: [
+    "Feeling like an imposter despite your external success",
+    "Stuck in comparison traps and self-doubt",
+  ],
+  "Imposter Syndrome": [
+    "Feeling like an imposter despite your external success",
+    "Lying awake overanalyzing every conversation",
+  ],
+  "Major Life Transitions": [
+    "Overwhelmed by major life transitions and uncertainty",
+    "Exhausted from being strong for everyone else",
+  ],
+};
 
 const struggles = [
   "Lying awake overanalyzing every conversation",
@@ -34,11 +52,10 @@ const services = [
     title: "Burnout Recovery & Anxiety Therapy",
     tagline: "You've been strong for too long. Let's help you feel like yourself again.",
     description:
-      "If you wake up exhausted before the day even begins — if your mind races at 2am replaying every email, every conversation, every mistake — you're not broken. You're burned out. For high-performing women, burnout rarely looks like collapse. It looks like pushing harder, doing more, and feeling less with every passing month.",
+      "For high-performing women, burnout rarely looks like collapse. It looks like pushing harder, doing more, and feeling less every month.",
     bullets: [
-      "Understand what's driving your burnout — and break the cycle",
-      "Quiet the anxiety spiral and feel present again",
-      "Rebuild your energy without sacrificing your ambition",
+      "Break the burnout cycle",
+      "Quiet the anxiety spiral",
       "Create boundaries that actually hold",
     ],
     href: "/burnout-anxiety-therapy",
@@ -48,12 +65,11 @@ const services = [
     title: "Life Transitions Therapy",
     tagline: "Change doesn't have to mean crisis.",
     description:
-      "Divorce. A new baby. A career pivot. Moving across the country. Losing someone you love. Major life transitions shake the ground beneath us — even the ones we chose. Life Transitions Therapy helps you move through change without losing yourself in the process. You don't have to figure it out alone.",
+      "Major life transitions shake the ground beneath us. You'll move through change without losing yourself in the process.",
     bullets: [
-      "Process grief, uncertainty, and identity shifts with support",
+      "Process grief and identity shifts",
       "Find your footing when everything feels unstable",
-      "Rebuild clarity and confidence on the other side of change",
-      "Discover who you're becoming — not just who you were",
+      "Discover who you're becoming",
     ],
     href: "/life-transitions-therapy",
   },
@@ -62,12 +78,11 @@ const services = [
     title: "Career Clarity Therapy",
     tagline: "You've built a successful career. So why does it feel so wrong?",
     description:
-      "Maybe you've achieved everything you set out to — the title, the salary, the respect — but something still feels off. Career Clarity Therapy is for the woman who has tied her worth to her performance for so long that she's lost sight of who she is outside of work. Together, we'll untangle your identity from your job title and find a path forward that actually fits.",
+      "Untangle your identity from your job title and find a path forward that actually fits your values.",
     bullets: [
-      "Separate your self-worth from your productivity",
-      "Identify what you actually want — not what looks good on paper",
-      "Navigate career pivots, workplace stress, and burnout",
-      "Step into work that aligns with your values, not just your résumé",
+      "Separate your self-worth from productivity",
+      "Identify what you truly want",
+      "Step into aligned, meaningful work",
     ],
     href: "/career-clarity-therapy",
   },
@@ -76,12 +91,11 @@ const services = [
     title: "High-Performing Women Therapy",
     tagline: "You take care of everything. Who is taking care of you?",
     description:
-      "You are the one everyone relies on — at work, at home, in your family, in your community. You meet every expectation, carry every responsibility, and still find ways to show up for others. But underneath all of that, there's a quiet exhaustion that no amount of productivity can fix.",
+      "You meet every expectation and carry every responsibility. There's a quiet exhaustion underneath that no amount of productivity can fix.",
     bullets: [
-      "Break free from perfectionism and the pressure to have it all together",
-      "Untangle people-pleasing from your sense of self and relationships",
-      "Explore identity, family expectations, and cultural pressures",
-      "Finally let someone take care of you for a change",
+      "Break free from perfectionism",
+      "Untangle people-pleasing from your identity",
+      "Let someone finally take care of you",
     ],
     href: "/high-performing-women-therapy",
   },
@@ -117,54 +131,17 @@ const steps = [
   },
 ];
 
-/* ── Contact form schema ── */
-
-const contactSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Please enter a valid email address"),
-  phone: z.string().optional(),
-  message: z.string().min(10, "Please tell us a bit more (at least 10 characters)"),
-});
-
-type ContactFormData = z.infer<typeof contactSchema>;
-
-type FormState = "idle" | "submitting" | "success" | "error";
-
 /* ── Component ── */
 
 export default function TherapyServices() {
-  const [formState, setFormState] = useState<FormState>("idle");
+  const [selectedSpecialty, setSelectedSpecialty] = useState<string | null>(null);
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm<ContactFormData>({
-    resolver: zodResolver(contactSchema),
-  });
-
-  const onSubmit = async (data: ContactFormData) => {
-    setFormState("submitting");
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-      if (res.ok) {
-        setFormState("success");
-        reset();
-      } else {
-        setFormState("error");
-      }
-    } catch {
-      setFormState("error");
-    }
-  };
+  const displayedStruggles = selectedSpecialty
+    ? specialtyMap[selectedSpecialty] || struggles
+    : struggles;
 
   return (
-    <section id="services" className="section-padding">
+    <section id="services" className="bg-white section-padding">
       <div className="section-container">
         {/* Section label */}
         <div className="flex items-center gap-3 mb-4">
@@ -183,43 +160,100 @@ export default function TherapyServices() {
 
         {/* ── Sub-section 1: Who We Help ── */}
         <div className="mb-20">
-          <h3
-            className="text-3xl md:text-4xl font-light text-dark mb-3"
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-          >
-            Who We Help
-          </h3>
+          <div className="flex items-center gap-3 mb-6">
+            <h3
+              className="text-3xl md:text-4xl font-light text-dark"
+              style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+            >
+              Who We Help
+            </h3>
+          </div>
+          <div className="h-px w-12 bg-sage mb-6" />
           <p className="text-dark/60 mb-8 max-w-2xl">
-            You might be a high-achieving professional who has it all together on the outside —
-            but inside, you&apos;re running on empty. Sound familiar?
+            You may look successful on the outside, but inside you&apos;re exhausted from carrying
+            responsibilities, expectations, and pressure that never seem to end. This section is
+            designed to help you quickly recognize whether this kind of support fits what you&apos;re
+            experiencing right now.
           </p>
 
-          {/* Specialties */}
+          {/* Specialties - Now Clickable */}
           <div className="flex flex-wrap gap-3 mb-8">
+            <button
+              onClick={() => setSelectedSpecialty(null)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                selectedSpecialty === null
+                  ? "bg-brand text-cream"
+                  : "border-2 border-brand text-brand hover:bg-brand-muted"
+              }`}
+            >
+              All
+            </button>
             {["Anxiety", "Burnout", "Perfectionism", "Imposter Syndrome", "Major Life Transitions"].map((s) => (
-              <span key={s} className="approach-pill">
+              <button
+                key={s}
+                onClick={() => setSelectedSpecialty(s)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                  selectedSpecialty === s
+                    ? "bg-brand text-cream"
+                    : "border-2 border-brand text-brand hover:bg-brand-muted"
+                }`}
+              >
                 {s}
-              </span>
+              </button>
             ))}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
-            {struggles.map((struggle) => (
-              <div
-                key={struggle}
-                className="flex items-start gap-3 p-5 rounded-xl bg-white border border-cream-dark card-hover"
+          <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-6 mb-10 items-start">
+            <article className="rounded-3xl border border-sage-light bg-sage-muted p-7 shadow-sm">
+              <p className="text-xs uppercase tracking-[0.25em] text-dusty font-semibold mb-3">
+                Why this matters
+              </p>
+              <h4
+                className="text-2xl md:text-3xl font-light text-dark mb-4"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
-                <CheckCircle2 size={18} className="text-dusty shrink-0 mt-0.5" />
-                <p className="text-sm text-dark/80 leading-snug">{struggle}</p>
-              </div>
-            ))}
+                You do not need to be in crisis to deserve support.
+              </h4>
+              <p className="text-sm text-dark/70 leading-relaxed mb-5">
+                If you&apos;re carrying too much, second-guessing yourself, or feeling emotionally
+                depleted despite doing everything right, this work is designed for you.
+              </p>
+              <ul className="space-y-3 text-sm text-dark/75">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-2 w-2 rounded-full bg-dusty shrink-0" />
+                  High-achieving women who feel exhausted but still keep showing up
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-2 w-2 rounded-full bg-dusty shrink-0" />
+                  Women navigating pressure, perfectionism, and constant overthinking
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-2 w-2 rounded-full bg-dusty shrink-0" />
+                  People ready for practical support, not just more self-criticism
+                </li>
+              </ul>
+            </article>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {displayedStruggles.map((struggle) => (
+                <article
+                  key={struggle}
+                  className="flex items-start gap-3 rounded-2xl border border-cream-dark bg-white p-5 shadow-sm card-hover"
+                >
+                  <CheckCircle2 size={18} className="text-dusty shrink-0 mt-0.5" />
+                  <p className="text-sm text-dark/80 leading-snug">{struggle}</p>
+                </article>
+              ))}
+            </div>
           </div>
 
           <a
             href="https://jennifer-walker7285.clientsecure.me/sign-in"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors"
           >
-            See If We&apos;re a Good Fit
+            Book a Free Consultation
             <ArrowRight size={15} />
           </a>
         </div>
@@ -241,7 +275,7 @@ export default function TherapyServices() {
             {services.map(({ icon: Icon, title, tagline, description, bullets, href }) => (
               <div
                 key={title}
-                className="flex flex-col gap-5 p-7 rounded-2xl bg-white card-hover"
+                className="flex flex-col gap-5 p-7 rounded-2xl bg-white border-l-4 border-l-dusty card-hover"
               >
                 <div className="w-10 h-10 rounded-full bg-mist-light flex items-center justify-center">
                   <Icon size={20} className="text-brand" />
@@ -347,122 +381,15 @@ export default function TherapyServices() {
             ))}
           </div>
 
-          {/* Contact Form */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div>
-              <h4
-                className="text-2xl md:text-3xl font-light text-dark mb-4"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-              >
-                Send Us a Message
-              </h4>
-              <p className="text-dark/60 mb-2 text-sm leading-relaxed">
-                Ready to take the first step? Fill out the form and Jennifer will be in touch
-                within one business day.
-              </p>
-              <p className="text-dark/50 text-xs">
-                All inquiries are confidential. Telehealth available for Georgia &amp; Florida residents.
-              </p>
-            </div>
-
-            <div>
-              {formState === "success" ? (
-                <div className="p-8 rounded-2xl bg-sage-muted border border-sage-light text-center">
-                  <CheckCircle2 size={40} className="text-brand mx-auto mb-4" />
-                  <h4
-                    className="text-2xl font-light text-dark mb-2"
-                    style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-                  >
-                    Message Received!
-                  </h4>
-                  <p className="text-sm text-dark/70">
-                    Thank you for reaching out. Jennifer will respond within one business day.
-                  </p>
-                </div>
-              ) : (
-                <form
-                  onSubmit={handleSubmit(onSubmit)}
-                  className="flex flex-col gap-4"
-                  noValidate
-                >
-                  <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-1.5">
-                      Full Name *
-                    </label>
-                    <Input
-                      {...register("name")}
-                      placeholder="Your name"
-                      className="bg-white border-cream-dark"
-                    />
-                    {errors.name && (
-                      <p className="text-xs text-red-500 mt-1">{errors.name.message}</p>
-                    )}
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-1.5">
-                      Email Address *
-                    </label>
-                    <Input
-                      {...register("email")}
-                      type="email"
-                      placeholder="you@email.com"
-                      className="bg-white border-cream-dark"
-                    />
-                    {errors.email && (
-                      <p className="text-xs text-red-500 mt-1">{errors.email.message}</p>
-                    )}
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-1.5">
-                      Phone Number (optional)
-                    </label>
-                    <Input
-                      {...register("phone")}
-                      type="tel"
-                      placeholder="(000) 000-0000"
-                      className="bg-white border-cream-dark"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-dark/70 mb-1.5">
-                      What brings you here? *
-                    </label>
-                    <Textarea
-                      {...register("message")}
-                      placeholder="Share a little about what you're experiencing and what kind of support you're looking for…"
-                      rows={5}
-                      className="bg-white border-cream-dark resize-none"
-                    />
-                    {errors.message && (
-                      <p className="text-xs text-red-500 mt-1">{errors.message.message}</p>
-                    )}
-                  </div>
-
-                  {formState === "error" && (
-                    <p className="text-xs text-red-500">
-                      Something went wrong. Please try again or email directly at{" "}
-                      <a href="https://jennifer-walker7285.clientsecure.me/sign-in" className="underline">
-                        jennifer@anxietytherapyforwomen.com
-                      </a>
-                      .
-                    </p>
-                  )}
-
-                  <Button
-                    type="submit"
-                    disabled={formState === "submitting"}
-                    className="self-start px-7 py-3 rounded-full bg-brand hover:bg-brand-dark text-cream font-medium gap-2"
-                  >
-                    <Send size={15} />
-                    {formState === "submitting" ? "Sending…" : "Send Message"}
-                  </Button>
-                </form>
-              )}
-            </div>
-          </div>
+          <a
+            href="https://jennifer-walker7285.clientsecure.me/sign-in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors"
+          >
+            Book a Free Consultation
+            <ArrowRight size={14} />
+          </a>
         </div>
       </div>
     </section>

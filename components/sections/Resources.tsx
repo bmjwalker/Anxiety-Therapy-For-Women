@@ -119,7 +119,7 @@ export default function Resources() {
           </div>
 
           {/* Mental Health Organizations */}
-          <div className="p-8 rounded-2xl bg-cream border border-cream-dark">
+          <div className="p-8 rounded-2xl bg-cream border-t-4 border-t-dusty border border-cream-dark">
             <div className="flex items-center gap-3 mb-6">
               <Heart size={20} className="text-brand" />
               <h3
@@ -153,7 +153,7 @@ export default function Resources() {
           </div>
 
           {/* Recommended Apps */}
-          <div className="p-8 rounded-2xl bg-mist-light border border-mist">
+          <div className="p-8 rounded-2xl bg-mist-light border-t-4 border-t-dusty border border-mist">
             <div className="flex items-center gap-3 mb-6">
               <Smartphone size={20} className="text-brand" />
               <h3
@@ -195,7 +195,7 @@ export default function Resources() {
           </div>
 
           {/* Free Download */}
-          <div className="p-8 rounded-2xl bg-brand text-cream flex flex-col gap-4">
+          <div className="p-8 rounded-2xl bg-brand text-cream flex flex-col gap-4 border-t-4 border-t-dusty border border-cream-dark">
             <div className="w-12 h-12 rounded-full bg-cream/20 flex items-center justify-center">
               <Download size={22} className="text-cream" />
             </div>
