@@ -140,7 +140,7 @@ export default function Programs() {
                   href={program.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors self-start"
+                  className="btn-primary px-6 py-3 text-sm self-start"
                 >
                   {program.cta}
                   <ArrowRight size={14} />

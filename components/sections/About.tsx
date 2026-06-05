@@ -120,7 +120,7 @@ export default function About() {
               href="https://jennifer-walker7285.clientsecure.me/sign-in"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors duration-200"
+              className="btn-primary px-7 py-3.5 text-sm"
             >
               Schedule a Free Consultation
             </a>

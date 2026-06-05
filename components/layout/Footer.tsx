@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Clock, MapPin, ExternalLink } from "lucide-react";
+import { Mail, Clock, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -85,78 +85,48 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom row */}
-        <div className="mt-12 pt-6 border-t border-cream/10">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-cream/50 mb-4">
-            <p>© {new Date().getFullYear()} Jennifer Walker, LCSW. All rights reserved.</p>
-            <div className="flex items-center gap-5 text-sm">
+        {/* Bottom rows */}
+        <div className="mt-12 pt-6 border-t border-cream/10 flex flex-col gap-4">
+
+          {/* Social links */}
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-2.5">
+            {[
+              { label: "Facebook",  href: "https://www.facebook.com/profile.php?id=100073222913867" },
+              { label: "Instagram", href: "https://www.instagram.com/clarityforhpwomen/" },
+              { label: "YouTube",   href: "https://www.youtube.com/@HighPerformingWomen" },
+              { label: "Pinterest", href: "https://www.pinterest.com/jenniferwalkerlcsw/" },
+            ].map(({ label, href }) => (
               <a
-                href="https://www.facebook.com/profile.php?id=100073222913867"
+                key={label}
+                href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-cream/70 hover:text-dusty transition-colors"
+                className="rounded-full border border-cream/20 px-4 py-1.5 text-xs font-medium text-cream/80 hover:border-dusty hover:text-dusty transition-colors"
               >
-                Facebook
-                <ExternalLink size={14} />
+                {label}
               </a>
-              <a
-                href="https://www.instagram.com/clarityforhpwomen/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-cream/70 hover:text-dusty transition-colors"
-              >
-                Instagram
-                <ExternalLink size={14} />
+            ))}
+          </div>
+
+          {/* Legal links + copyright */}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream/50">
+            <div className="flex flex-col gap-0.5 text-center sm:text-left">
+              <p>© {new Date().getFullYear()} JK Walker, LLC. All rights reserved.</p>
+              <p>Practicing as Jennifer Walker, LCSW.</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <a href="https://docs.google.com/document/d/1AQAlkk_GdG8_KuELe0mYxQ-ZNC6DSLGtw2P6U2dzMc8/copy" target="_blank" rel="noopener noreferrer" className="hover:text-cream/80 transition-colors">
+                Good Faith Estimate
               </a>
-              <a
-                href="https://www.youtube.com/@HighPerformingWomen"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-cream/70 hover:text-dusty transition-colors"
-              >
-                YouTube
-                <ExternalLink size={14} />
+              <a href="https://docs.google.com/document/d/1mgeMWbyORkTue8EirFxavZMbFfQW68gbWOJxBCL60Q0/copy" target="_blank" rel="noopener noreferrer" className="hover:text-cream/80 transition-colors">
+                Website Disclaimer
               </a>
-              <a
-                href="https://www.pinterest.com/jenniferwalkerlcsw/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-cream/70 hover:text-dusty transition-colors"
-              >
-                Pinterest
-                <ExternalLink size={14} />
+              <a href="https://jennifer-walker7285.clientsecure.me/sign-in" target="_blank" rel="noopener noreferrer" className="hover:text-cream/80 transition-colors">
+                Client Portal
               </a>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-cream/50">
-            <div />
-            <div className="flex items-center gap-4">
-            <a
-              href="https://docs.google.com/document/d/1AQAlkk_GdG8_KuELe0mYxQ-ZNC6DSLGtw2P6U2dzMc8/copy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-cream/80 transition-colors"
-            >
-              Good Faith Estimate
-            </a>
-            <a
-              href="https://docs.google.com/document/d/1mgeMWbyORkTue8EirFxavZMbFfQW68gbWOJxBCL60Q0/copy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-cream/80 transition-colors"
-            >
-              Website Disclaimer
-            </a>
-            <a
-              href="https://jennifer-walker7285.clientsecure.me/sign-in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-cream/80 transition-colors"
-            >
-              Client Portal
-            </a>
-          </div>
-        </div>
+
         </div>
       </div>
     </footer>

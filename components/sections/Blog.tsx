@@ -1,4 +1,5 @@
 import { ArrowRight, Calendar } from "lucide-react";
+import NewsletterSignup from "./NewsletterSignup";
 
 const posts = [
   {
@@ -129,15 +130,7 @@ export default function Blog() {
             Join Jennifer&apos;s community for weekly insights on anxiety, burnout recovery,
             and authentic living — delivered to your inbox.
           </p>
-          <a
-            href="https://fabulous-teacher-7023.kit.com/c2bd48329f"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-cream text-brand text-sm font-medium hover:bg-cream-dark transition-colors"
-          >
-            Subscribe to the Newsletter
-            <ArrowRight size={14} />
-          </a>
+          <NewsletterSignup />
         </div>
       </div>
     </section>

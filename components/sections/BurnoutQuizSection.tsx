@@ -2,7 +2,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function BurnoutQuizSection() {
   return (
-    <section className="section-padding" style={{ backgroundColor: "#57686B" }}>
+    <section className="section-padding bg-brand">
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-5">

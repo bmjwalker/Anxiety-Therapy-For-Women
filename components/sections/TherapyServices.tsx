@@ -251,7 +251,7 @@ export default function TherapyServices() {
             href="https://jennifer-walker7285.clientsecure.me/sign-in"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors"
+            className="btn-primary px-7 py-3.5 text-sm"
           >
             Book a Free Consultation
             <ArrowRight size={15} />
@@ -310,7 +310,7 @@ export default function TherapyServices() {
 
           <a
             href="https://jennifer-walker7285.clientsecure.me/sign-in"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors"
+            className="btn-primary px-7 py-3.5 text-sm"
           >
             Schedule a Consultation
             <ArrowRight size={15} />
@@ -339,7 +339,7 @@ export default function TherapyServices() {
 
           <a
             href="https://jennifer-walker7285.clientsecure.me/sign-in"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-medium hover:bg-brand-muted transition-colors"
+            className="btn-primary px-7 py-3.5 text-sm"
           >
             Book Your Free Consult
             <ArrowRight size={15} />
@@ -385,7 +385,7 @@ export default function TherapyServices() {
             href="https://jennifer-walker7285.clientsecure.me/sign-in"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors"
+            className="btn-primary px-7 py-3.5 text-sm"
           >
             Book a Free Consultation
             <ArrowRight size={14} />

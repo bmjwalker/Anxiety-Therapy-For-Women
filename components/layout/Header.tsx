@@ -66,20 +66,30 @@ export default function Header() {
               href="https://jennifer-walker7285.clientsecure.me/sign-in"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 px-5 py-2 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors duration-200"
+              className="btn-primary ml-2 px-5 py-2 rounded-md text-sm"
             >
               Book Free Consult
             </a>
           </nav>
 
-          {/* Mobile Toggle */}
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden p-2 text-brand"
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? <X size={22} /> : <Menu size={22} />}
-          </button>
+          {/* Mobile: always-visible Book button + hamburger */}
+          <div className="md:hidden flex items-center gap-2">
+            <a
+              href="https://jennifer-walker7285.clientsecure.me/sign-in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary px-4 py-1.5 rounded-md text-xs"
+            >
+              Book Free Consult
+            </a>
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="p-2 text-brand"
+              aria-label="Toggle menu"
+            >
+              {menuOpen ? <X size={22} /> : <Menu size={22} />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -102,7 +112,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
-              className="mt-3 px-5 py-3 rounded-full bg-brand text-cream text-center text-sm font-medium"
+              className="btn-primary mt-3 px-5 py-3 rounded-md text-sm w-full justify-center"
             >
               Book Free Consult
             </a>

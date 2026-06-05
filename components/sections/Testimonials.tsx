@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const testimonials = [
   {
     quote: "I finally stopped feeling like I was drowning.",
@@ -17,9 +15,9 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-mist-light section-padding">
+    <section className="bg-mist-light py-12 md:py-16">
       <div className="section-container">
-        <div className="flex items-center gap-3 mb-4">
+        <div className="flex items-center gap-3 mb-3">
           <div className="h-px w-12 bg-dusty" />
           <span className="text-xs tracking-widest uppercase text-dusty font-medium">
             Client Experiences
@@ -31,36 +29,30 @@ export default function Testimonials() {
           style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
         >
           What Women{" "}
-          <span className="italic text-brand">Often Tell Me</span>
+          <span className="italic" style={{ color: "#4A7C7E" }}>Often Tell Me</span>
         </h2>
-
-        {/* Subtle decorative accent */}
-        <div className="mb-12 flex items-center justify-center gap-3">
-          <div className="h-px w-20 bg-dusty" />
-          <div className="w-2 h-2 rounded-full bg-dusty/90" />
-          <div className="h-px w-20 bg-dusty" />
-        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map(({ quote, credit }) => (
             <div
               key={quote}
-              className="relative p-8 rounded-2xl bg-cream border-l-4 border-l-dusty border border-cream-dark flex flex-col"
+              className="relative p-8 rounded-2xl bg-white border-l-4 shadow-sm flex flex-col"
+              style={{ borderLeftColor: "#B18C72", borderColor: "#D9CFC3" }}
             >
               <span
-                className="absolute top-5 left-7 text-5xl text-dusty/40 leading-none select-none"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                className="absolute top-5 left-7 text-5xl leading-none select-none"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "rgba(177,140,114,0.35)" }}
                 aria-hidden="true"
               >
                 &ldquo;
               </span>
               <p
-                className="text-lg font-light text-dark/80 leading-relaxed pt-6 mb-6 flex-1"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                className="text-lg font-light leading-relaxed pt-6 mb-6 flex-1"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "rgba(44,56,57,0.82)" }}
               >
                 {quote}
               </p>
-              <p className="text-xs text-sage tracking-wide">— {credit}</p>
+              <p className="text-xs tracking-wide" style={{ color: "#9FA9A1" }}>— {credit}</p>
             </div>
           ))}
         </div>
