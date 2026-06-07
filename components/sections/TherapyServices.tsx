@@ -151,7 +151,7 @@ export default function TherapyServices() {
           </span>
         </div>
         <h2
-          className="text-4xl md:text-5xl font-normal text-dark mb-16"
+          className="text-4xl md:text-5xl font-semibold text-dark mb-16"
           style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
         >
           Therapy designed for{" "}
@@ -204,7 +204,7 @@ export default function TherapyServices() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-6 mb-10 items-start">
-            <article className="rounded-3xl border border-sage-light bg-sage-muted p-7 shadow-sm">
+            <article className="border-l-4 border-l-dusty pl-7 py-4">
               <p className="text-xs uppercase tracking-[0.25em] text-dusty font-semibold mb-3">
                 Why this matters
               </p>
@@ -259,7 +259,7 @@ export default function TherapyServices() {
         </div>
 
         {/* ── Sub-section 2: Areas We Can Help ── */}
-        <div className="mb-20 py-16 px-6 md:px-10 rounded-3xl bg-sage-muted">
+        <div className="mb-20 py-16 px-6 md:px-10 bg-[#F7F3EE]">
           <h3
             className="text-3xl md:text-4xl font-normal text-dark mb-3"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
