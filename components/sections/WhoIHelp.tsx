@@ -28,13 +28,13 @@ export default function WhoIHelp() {
           {/* Left — Content (55%) */}
           <div className="flex flex-col">
             <h2
-              className="text-4xl md:text-5xl font-light text-dark mb-5 leading-tight"
+              className="text-4xl md:text-5xl font-normal text-dark mb-5 leading-tight"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               Are You Tired of Being{" "}
               <span className="italic text-brand">the Strong One?</span>
             </h2>
-            <p className="text-base md:text-lg text-dark/70 mb-8 leading-relaxed">
+            <p className="text-base md:text-lg text-dark/80 mb-8 leading-relaxed">
               As a high-performing woman, you&rsquo;ve mastered the art of holding everything
               together. But behind that competence is a level of exhaustion that others rarely see.
             </p>
@@ -50,14 +50,14 @@ export default function WhoIHelp() {
             </div>
 
             {/* Featured Signs */}
-            <div className="space-y-3 mb-8">
+            <div className="space-y-4 mb-8">
               {featuredSigns.map((sign) => (
                 <div
                   key={sign}
-                  className="flex items-start gap-3 p-3 rounded-lg bg-cream/50 border border-cream-dark"
+                  className="flex items-start gap-3"
                 >
                   <CheckCircle2 size={18} className="text-dusty shrink-0 mt-0.5" />
-                  <p className="text-sm text-dark/80 leading-snug">{sign}</p>
+                  <p className="text-sm text-dark/85 leading-snug">{sign}</p>
                 </div>
               ))}
             </div>

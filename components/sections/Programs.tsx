@@ -74,27 +74,27 @@ export default function Programs() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <div>
             <h2
-              className="text-4xl md:text-5xl font-light text-dark max-w-xl pb-4 border-b-2 border-b-dusty"
+              className="text-4xl md:text-5xl font-normal text-dark max-w-xl pb-4 border-b-2 border-b-dusty"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               Beyond individual therapy —{" "}
               <span className="italic text-brand">programs built for you</span>
             </h2>
           </div>
-          <p className="text-dark/60 text-sm max-w-sm">
+          <p className="text-dark/75 text-sm max-w-sm">
             Group experiences and self-guided programs designed to complement therapy and
             accelerate your transformation.
           </p>
         </div>
 
         {/* Program cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
           {programs.map((program) => {
             const Icon = program.icon;
             return (
               <div
                 key={program.title}
-                className={`flex flex-col p-8 rounded-2xl border-l-4 border-l-dusty ${program.bg} border border-cream-dark card-hover shadow-sm hover:shadow-md transition-shadow`}
+                className={`flex flex-col p-8 border-l-4 border-l-dusty ${program.bg}`}
               >
                 {/* Icon + Badge */}
                 <div className="flex items-center justify-between mb-6">
@@ -118,7 +118,7 @@ export default function Programs() {
                 <p className="text-xs text-dusty font-medium mb-4 tracking-wide">
                   {program.subtitle}
                 </p>
-                <p className="text-sm text-dark/70 leading-relaxed mb-6 flex-1">
+                <p className="text-sm text-dark/80 leading-relaxed mb-6 flex-1">
                   {program.description}
                 </p>
 

@@ -42,7 +42,7 @@ const posts = [
 
 export default function Blog() {
   return (
-    <section id="blog" className="bg-cream section-padding">
+    <section id="blog" className="bg-white section-padding">
       <div className="section-container">
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">
@@ -54,7 +54,7 @@ export default function Blog() {
 
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <h2
-            className="text-4xl md:text-5xl font-light text-dark max-w-xl"
+            className="text-4xl md:text-5xl font-normal text-dark max-w-xl"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             Insights &amp; tools for the{" "}
@@ -101,7 +101,7 @@ export default function Blog() {
                 </h3>
 
                 {/* Excerpt */}
-                <p className="text-sm text-dark/60 leading-relaxed flex-1 mb-6">
+                <p className="text-sm text-dark/75 leading-relaxed flex-1 mb-6">
                   {post.excerpt}
                 </p>
 

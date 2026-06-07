@@ -151,7 +151,7 @@ export default function TherapyServices() {
           </span>
         </div>
         <h2
-          className="text-4xl md:text-5xl font-light text-dark mb-16"
+          className="text-4xl md:text-5xl font-normal text-dark mb-16"
           style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
         >
           Therapy designed for{" "}
@@ -169,7 +169,7 @@ export default function TherapyServices() {
             </h3>
           </div>
           <div className="h-px w-12 bg-sage mb-6" />
-          <p className="text-dark/60 mb-8 max-w-2xl">
+          <p className="text-dark/75 mb-8 max-w-2xl">
             You may look successful on the outside, but inside you&apos;re exhausted from carrying
             responsibilities, expectations, and pressure that never seem to end. This section is
             designed to help you quickly recognize whether this kind of support fits what you&apos;re
@@ -209,16 +209,16 @@ export default function TherapyServices() {
                 Why this matters
               </p>
               <h4
-                className="text-2xl md:text-3xl font-light text-dark mb-4"
+                className="text-2xl md:text-3xl font-normal text-dark mb-4"
                 style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
                 You do not need to be in crisis to deserve support.
               </h4>
-              <p className="text-sm text-dark/70 leading-relaxed mb-5">
+              <p className="text-sm text-dark/80 leading-relaxed mb-5">
                 If you&apos;re carrying too much, second-guessing yourself, or feeling emotionally
                 depleted despite doing everything right, this work is designed for you.
               </p>
-              <ul className="space-y-3 text-sm text-dark/75">
+              <ul className="space-y-3 text-sm text-dark/80">
                 <li className="flex items-start gap-2">
                   <span className="mt-1 h-2 w-2 rounded-full bg-dusty shrink-0" />
                   High-achieving women who feel exhausted but still keep showing up
@@ -234,15 +234,15 @@ export default function TherapyServices() {
               </ul>
             </article>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="flex flex-col gap-3">
               {displayedStruggles.map((struggle) => (
-                <article
+                <div
                   key={struggle}
-                  className="flex items-start gap-3 rounded-2xl border border-cream-dark bg-white p-5 shadow-sm card-hover"
+                  className="flex items-start gap-3 py-2 border-b border-cream-dark/50 last:border-b-0"
                 >
-                  <CheckCircle2 size={18} className="text-dusty shrink-0 mt-0.5" />
-                  <p className="text-sm text-dark/80 leading-snug">{struggle}</p>
-                </article>
+                  <CheckCircle2 size={16} className="text-dusty shrink-0 mt-0.5" />
+                  <p className="text-sm text-dark/85 leading-snug">{struggle}</p>
+                </div>
               ))}
             </div>
           </div>
@@ -261,23 +261,23 @@ export default function TherapyServices() {
         {/* ── Sub-section 2: Areas We Can Help ── */}
         <div className="mb-20 py-16 px-6 md:px-10 rounded-3xl bg-sage-muted">
           <h3
-            className="text-3xl md:text-4xl font-light text-dark mb-3"
+            className="text-3xl md:text-4xl font-normal text-dark mb-3"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             Areas We Can Help You Overcome
           </h3>
-          <p className="text-dark/60 mb-10 max-w-2xl">
+          <p className="text-dark/75 mb-10 max-w-2xl">
             Every service is tailored to the unique experience of high-performing women
             navigating complex lives.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
             {services.map(({ icon: Icon, title, tagline, description, bullets, href }) => (
               <div
                 key={title}
-                className="flex flex-col gap-5 p-7 rounded-2xl bg-white border-l-4 border-l-dusty card-hover"
+                className="flex flex-col gap-4 pl-7 py-6 border-l-4 border-l-dusty"
               >
-                <div className="w-10 h-10 rounded-full bg-mist-light flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-white/60 flex items-center justify-center">
                   <Icon size={20} className="text-brand" />
                 </div>
                 <div className="flex flex-col flex-1 gap-0">
@@ -288,12 +288,12 @@ export default function TherapyServices() {
                     {title}
                   </h4>
                   <p className="text-sm italic text-brand/80 mb-3 leading-snug">{tagline}</p>
-                  <p className="text-sm text-dark/70 leading-relaxed mb-4">{description}</p>
+                  <p className="text-sm text-dark/80 leading-relaxed mb-4">{description}</p>
                   <ul className="flex flex-col gap-2 mb-5">
                     {bullets.map((b) => (
                       <li key={b} className="flex items-start gap-2">
                         <CheckCircle2 size={15} className="text-dusty shrink-0 mt-0.5" />
-                        <span className="text-sm text-dark/70">{b}</span>
+                        <span className="text-sm text-dark/80">{b}</span>
                       </li>
                     ))}
                   </ul>
@@ -320,12 +320,12 @@ export default function TherapyServices() {
         {/* ── Sub-section 3: Approaches ── */}
         <div className="mb-20">
           <h3
-            className="text-3xl md:text-4xl font-light text-dark mb-3"
+            className="text-3xl md:text-4xl font-normal text-dark mb-3"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             Approaches We Use In Therapy
           </h3>
-          <p className="text-dark/60 mb-8 max-w-2xl">
+          <p className="text-dark/75 mb-8 max-w-2xl">
             Evidence-based methods combined with culturally responsive, compassionate practice.
           </p>
 
@@ -349,23 +349,23 @@ export default function TherapyServices() {
         {/* ── Sub-section 4: How To Get Started ── */}
         <div id="contact" className="scroll-mt-24">
           <h3
-            className="text-3xl md:text-4xl font-light text-dark mb-3"
+            className="text-3xl md:text-4xl font-normal text-dark mb-3"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             How To Get Started
           </h3>
-          <p className="text-dark/60 mb-12 max-w-2xl">
+          <p className="text-dark/75 mb-12 max-w-2xl">
             Taking the first step is the hardest part. Here&apos;s how simple it is to begin.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {steps.map((step) => (
               <div
                 key={step.number}
-                className="p-8 rounded-2xl bg-white border border-cream-dark"
+                className="pt-2 pl-8 border-l-4 border-l-brand"
               >
                 <span
-                  className="block text-5xl font-light text-brand/20 leading-none select-none mb-4"
+                  className="block text-5xl font-light text-brand/25 leading-none select-none mb-4"
                   style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                 >
                   {step.number}
@@ -376,7 +376,7 @@ export default function TherapyServices() {
                 >
                   {step.title}
                 </h4>
-                <p className="text-sm text-dark/70 leading-relaxed">{step.description}</p>
+                <p className="text-sm text-dark/80 leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>

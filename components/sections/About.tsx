@@ -41,7 +41,7 @@ export default function About() {
           {/* Right — Bio content */}
           <div className="lg:pt-4">
             <h2
-              className="text-4xl md:text-5xl font-light text-dark mb-2"
+              className="text-4xl md:text-5xl font-normal text-dark mb-2"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               Jennifer Walker,{" "}
@@ -59,7 +59,7 @@ export default function About() {
               My <span className="italic text-brand">Journey</span>
             </h3>
 
-            <div className="space-y-5 text-dark/70 text-base leading-relaxed">
+            <div className="space-y-5 text-dark/80 text-base leading-relaxed">
               <p>
                 Finding the right therapist is important yet can feel intimidating. I remember my
                 first time picking a therapist — I was like: <em>"Where do I even start? Will they
