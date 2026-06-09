@@ -20,12 +20,12 @@ export default function BlogPost2() {
               Anxiety &amp; Burnout
             </span>
             <h1
-              className="text-4xl md:text-5xl font-light text-dark mb-5 leading-tight"
+              className="text-4xl md:text-5xl font-normal text-dark mb-5 leading-tight"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               High-Functioning Burnout in Women: Why You&rsquo;re Exhausted Even If You&rsquo;re Still Showing Up
             </h1>
-            <div className="flex items-center gap-4 text-sm text-dark/50">
+            <div className="flex items-center gap-4 text-sm text-dark/65">
               <div className="flex items-center gap-1.5">
                 <Calendar size={14} />
                 April 25, 2026
@@ -51,7 +51,7 @@ export default function BlogPost2() {
                 And it can be confusing, because nothing looks &ldquo;wrong&rdquo; from the outside. This is a form of burnout that often goes unnoticed. From the outside, everything may look fine. Internally, it feels very different.
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 What High-Functioning Burnout Actually Looks Like
               </h2>
               <p>
@@ -83,11 +83,11 @@ export default function BlogPost2() {
                   </li>
                 ))}
               </ul>
-              <p className="italic text-dark/60">
+              <p className="italic text-dark/75">
                 Burnout doesn&rsquo;t always look like collapse. Sometimes it looks like continuing — at a cost.
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 Why Burnout Happens (Even When You&rsquo;re &ldquo;Doing Well&rdquo;)
               </h2>
               <p>Burnout is not just about working too much. It&rsquo;s often connected to patterns like:</p>
@@ -111,7 +111,7 @@ export default function BlogPost2() {
                 And for many women, these patterns are so familiar they don&rsquo;t immediately stand out — they just feel like &ldquo;how things are.&rdquo;
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 Signs You May Be Experiencing Burnout
               </h2>
               <p>You might notice things like:</p>
@@ -133,7 +133,7 @@ export default function BlogPost2() {
                 Burnout often shows up as emotional exhaustion and reduced capacity, even when you&rsquo;re still functioning. And often, there&rsquo;s a quiet awareness underneath it all: something about this isn&rsquo;t sustainable.
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 Why Pushing Through Stops Working
               </h2>
               <p>
@@ -144,7 +144,7 @@ export default function BlogPost2() {
                 What&rsquo;s needed instead is not more effort — but space to step back and understand what&rsquo;s actually happening.
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 What Actually Helps
               </h2>
               <p>You don&rsquo;t need to change everything. What tends to help is:</p>
@@ -165,7 +165,7 @@ export default function BlogPost2() {
                 Even small changes, when applied consistently, can begin to shift your experience. It doesn&rsquo;t have to be dramatic to be meaningful.
               </p>
 
-              <p className="italic text-dark/60 border-l-2 border-brand/30 pl-4">
+              <p className="italic text-dark/75 border-l-2 border-brand/30 pl-4">
                 Burnout doesn&rsquo;t always look like everything falling apart. Sometimes it looks like continuing — while feeling increasingly depleted. If something in this resonated, it may be worth paying attention to.
               </p>
             </div>
@@ -173,7 +173,7 @@ export default function BlogPost2() {
             {/* Author bio */}
             <div className="mt-14 pt-8 border-t border-cream-dark">
               <p className="font-medium text-dark mb-1">Jennifer Walker, LCSW</p>
-              <p className="text-sm text-dark/60 leading-relaxed">
+              <p className="text-sm text-dark/75 leading-relaxed">
                 Licensed clinical social worker in Georgia &amp; Florida, specializing in anxiety, burnout, and career transitions for high-performing women. Founder of Anxiety Therapy for Women.
               </p>
             </div>
@@ -181,12 +181,12 @@ export default function BlogPost2() {
             {/* CTA */}
             <div className="mt-10 p-8 rounded-2xl bg-sage-muted border border-sage-light text-center">
               <h3
-                className="text-2xl md:text-3xl font-light text-dark mb-3"
+                className="text-2xl md:text-3xl font-normal text-dark mb-3"
                 style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
                 Ready to step back and understand what&rsquo;s happening?
               </h3>
-              <p className="text-sm text-dark/60 mb-6 max-w-md mx-auto">
+              <p className="text-sm text-dark/75 mb-6 max-w-md mx-auto">
                 Book a free 15-minute consultation and let&rsquo;s figure out what support looks like for you.
               </p>
               <a

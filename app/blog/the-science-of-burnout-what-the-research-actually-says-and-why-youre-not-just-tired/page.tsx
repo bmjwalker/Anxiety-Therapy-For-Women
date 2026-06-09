@@ -20,12 +20,12 @@ export default function BlogPost1() {
               Anxiety &amp; Burnout
             </span>
             <h1
-              className="text-4xl md:text-5xl font-light text-dark mb-5 leading-tight"
+              className="text-4xl md:text-5xl font-normal text-dark mb-5 leading-tight"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               The Science of Burnout: What the Research Actually Says (And Why You&rsquo;re Not Just &ldquo;Tired&rdquo;)
             </h1>
-            <div className="flex items-center gap-4 text-sm text-dark/50">
+            <div className="flex items-center gap-4 text-sm text-dark/65">
               <div className="flex items-center gap-1.5">
                 <Calendar size={14} />
                 May 15, 2026
@@ -51,7 +51,7 @@ export default function BlogPost1() {
                 Because what you might actually be experiencing has a name, a clinical definition, and decades of research behind it. And understanding the difference between being tired and being burned out could change everything about how you approach your next step.
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 Burnout Is Not a Personal Failing — It&rsquo;s a Clinical Phenomenon
               </h2>
               <p>
@@ -64,7 +64,7 @@ export default function BlogPost1() {
                 This matters because most of the women I work with have spent months — sometimes years — telling themselves they just need a vacation, a better morning routine, or a new job. The research tells a different story.
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 The Numbers Are Staggering
               </h2>
               <p>Burnout isn&rsquo;t a niche problem. It&rsquo;s a workforce crisis.</p>
@@ -78,7 +78,7 @@ export default function BlogPost1() {
                 But here&rsquo;s what strikes me most as a therapist: only 42% of burned-out workers have told their manager about their burnout. And of those who did speak up, 42% said their manager took no action to help. Women — especially high-performing women — are often the least likely to name what they&rsquo;re experiencing, and the most likely to keep pushing through.
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 What Burnout Actually Looks Like — Especially in High-Performing Women
               </h2>
               <p>
@@ -108,7 +108,7 @@ export default function BlogPost1() {
                 Jennifer Moss, author of <em>The Burnout Epidemic</em> and one of the leading workplace burnout voices today, describes it clearly: &ldquo;burnout is a workplace phenomenon deeply rooted inside our organizations — and asking someone to do more yoga or download another meditation app isn&rsquo;t going to solve a systemic problem.&rdquo;
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 The Six Drivers of Burnout
               </h2>
               <p>Dr. Maslach&rsquo;s research identified six key areas of work life that, when mismatched with a person&rsquo;s needs and values, drive burnout:</p>
@@ -137,7 +137,7 @@ export default function BlogPost1() {
                 As a therapist, what I find most useful about this framework is how it shifts the conversation away from &ldquo;what&rsquo;s wrong with me&rdquo; toward &ldquo;what is this situation asking of me that I can no longer sustainably give?&rdquo; That is a fundamentally different question — and it opens the door to fundamentally different answers.
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 Burnout vs. Misalignment — A Critical Distinction
               </h2>
               <p>
@@ -153,7 +153,7 @@ export default function BlogPost1() {
                 Understanding which situation you&rsquo;re in is one of the most important pieces of clarity you can gain — and it&rsquo;s exactly what the work I do with women focuses on.
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 What To Do With This Information
               </h2>
               <p>If you&rsquo;ve read this far, something in this resonated. Here are your next steps:</p>
@@ -167,7 +167,7 @@ export default function BlogPost1() {
             <div className="mt-14 pt-8 border-t border-cream-dark flex items-start gap-5">
               <div>
                 <p className="font-medium text-dark mb-1">Jennifer Walker, LCSW</p>
-                <p className="text-sm text-dark/60 leading-relaxed">
+                <p className="text-sm text-dark/75 leading-relaxed">
                   Licensed clinical social worker in Georgia &amp; Florida, specializing in anxiety, burnout, and career transitions for high-performing women. Founder of Anxiety Therapy for Women.
                 </p>
               </div>
@@ -176,12 +176,12 @@ export default function BlogPost1() {
             {/* CTA */}
             <div className="mt-10 p-8 rounded-2xl bg-sage-muted border border-sage-light text-center">
               <h3
-                className="text-2xl md:text-3xl font-light text-dark mb-3"
+                className="text-2xl md:text-3xl font-normal text-dark mb-3"
                 style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
                 Ready to stop pushing through?
               </h3>
-              <p className="text-sm text-dark/60 mb-6 max-w-md mx-auto">
+              <p className="text-sm text-dark/75 mb-6 max-w-md mx-auto">
                 Book a free 15-minute consultation and let&rsquo;s talk about what recovery actually looks like for you.
               </p>
               <a

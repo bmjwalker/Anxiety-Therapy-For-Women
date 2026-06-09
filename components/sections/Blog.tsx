@@ -85,11 +85,11 @@ export default function Blog() {
                   <span className="px-3 py-1 rounded-full text-xs font-medium bg-mist-light text-brand border border-mist">
                     {post.category}
                   </span>
-                  <div className="flex items-center gap-1 text-xs text-dark/40">
+                  <div className="flex items-center gap-1 text-xs text-dark/70">
                     <Calendar size={11} />
                     {post.date}
                   </div>
-                  <span className="text-xs text-dark/40 ml-auto">{post.readTime}</span>
+                  <span className="text-xs text-dark/70 ml-auto">{post.readTime}</span>
                 </div>
 
                 {/* Title */}

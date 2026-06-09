@@ -127,7 +127,7 @@ export default function Programs() {
                   {program.features.map((feature) => (
                     <li
                       key={feature}
-                      className="flex items-center gap-2 text-xs text-dark/60"
+                      className="flex items-center gap-2 text-xs text-dark/75"
                     >
                       <div className="w-1.5 h-1.5 rounded-full bg-dusty shrink-0" />
                       {feature}
@@ -151,7 +151,7 @@ export default function Programs() {
         </div>
 
         {/* Bottom note */}
-        <p className="mt-10 text-center text-sm text-dark/50">
+        <p className="mt-10 text-center text-sm text-dark/70">
           Not sure which program is right for you?{" "}
           <a
             href="https://jennifer-walker7285.clientsecure.me/sign-in"

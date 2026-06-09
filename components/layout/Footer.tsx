@@ -14,10 +14,10 @@ export default function Footer() {
             >
               Jennifer Walker, LCSW
             </h3>
-            <p className="text-sm text-cream/70 mb-6 leading-relaxed">
+            <p className="text-sm text-cream/88 mb-6 leading-relaxed">
               Anxiety therapy and burnout recovery for high-performing professional women.
             </p>
-            <div className="flex flex-col gap-3 text-sm text-cream/80">
+            <div className="flex flex-col gap-3 text-sm text-cream/92">
               <a
                 href="mailto:jennifer@anxietytherapyforwomen.com"
                 className="flex items-center gap-2 hover:text-dusty transition-colors"
@@ -38,7 +38,7 @@ export default function Footer() {
 
           {/* Column 2 — Quick Links */}
           <div>
-            <h4 className="text-sm font-semibold tracking-widest uppercase text-cream/50 mb-5">
+            <h4 className="text-sm font-semibold tracking-widest uppercase text-cream/85 mb-5">
               Quick Links
             </h4>
             <ul className="flex flex-col gap-2.5 text-sm">
@@ -54,7 +54,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-cream/70 hover:text-dusty transition-colors"
+                    className="text-cream/85 hover:text-dusty transition-colors"
                     target={link.href.startsWith("http") ? "_blank" : undefined}
                     rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   >
@@ -67,10 +67,10 @@ export default function Footer() {
 
           {/* Column 3 — Services */}
           <div>
-            <h4 className="text-sm font-semibold tracking-widest uppercase text-cream/50 mb-5">
+            <h4 className="text-sm font-semibold tracking-widest uppercase text-cream/85 mb-5">
               Specialties
             </h4>
-            <ul className="flex flex-col gap-2.5 text-sm text-cream/70">
+            <ul className="flex flex-col gap-2.5 text-sm text-cream/85">
               {[
                 "Anxiety & Burnout Therapy",
                 "Career Clarity Therapy",
@@ -101,7 +101,7 @@ export default function Footer() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full border border-cream/20 px-4 py-1.5 text-xs font-medium text-cream/80 hover:border-dusty hover:text-dusty transition-colors"
+                className="rounded-full border border-cream/30 px-4 py-1.5 text-xs font-medium text-cream/90 hover:border-dusty hover:text-dusty transition-colors"
               >
                 {label}
               </a>
@@ -109,7 +109,7 @@ export default function Footer() {
           </div>
 
           {/* Legal links + copyright */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream/50">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream/70">
             <div className="flex flex-col gap-0.5 text-center sm:text-left">
               <p>© {new Date().getFullYear()} JK Walker, LLC. All rights reserved.</p>
               <p>Practicing as Jennifer Walker, LCSW.</p>

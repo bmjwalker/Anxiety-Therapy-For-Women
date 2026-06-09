@@ -25,7 +25,7 @@ export default function Testimonials() {
         </div>
 
         <h2
-          className="text-4xl md:text-5xl font-light text-dark mb-8"
+          className="text-4xl md:text-5xl font-normal text-dark mb-8"
           style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
         >
           What Women{" "}
@@ -48,11 +48,11 @@ export default function Testimonials() {
               </span>
               <p
                 className="text-lg font-light leading-relaxed pt-6 mb-6 flex-1"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "rgba(44,56,57,0.82)" }}
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "rgba(44,56,57,0.92)" }}
               >
                 {quote}
               </p>
-              <p className="text-xs tracking-wide" style={{ color: "#9FA9A1" }}>— {credit}</p>
+              <p className="text-xs tracking-wide" style={{ color: "#6B7E80" }}>— {credit}</p>
             </div>
           ))}
         </div>

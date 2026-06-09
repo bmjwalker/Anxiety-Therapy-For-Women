@@ -97,7 +97,7 @@ export default async function ArchivedBlogPage({
             >
               {post.title}
             </h1>
-            <div className="flex flex-wrap items-center gap-3 text-sm text-dark/60 mb-10">
+            <div className="flex flex-wrap items-center gap-3 text-sm text-dark/75 mb-10">
               <span className="rounded-full border border-mist bg-white px-3 py-1 text-brand font-medium">
                 {post.category}
               </span>
@@ -127,7 +127,7 @@ export default async function ArchivedBlogPage({
               >
                 Ready to take the next step?
               </h2>
-              <p className="text-sm text-dark/65 leading-relaxed mb-8 max-w-lg mx-auto">
+              <p className="text-sm text-dark/75 leading-relaxed mb-8 max-w-lg mx-auto">
                 If you&rsquo;re a high-achieving woman navigating anxiety, burnout, or a difficult life transition, therapy can help. I work with professional women in Georgia and Florida who are ready to move from survival mode into something that actually feels like living.
               </p>
               <a
@@ -136,7 +136,7 @@ export default async function ArchivedBlogPage({
               >
                 Book a Free Consultation
               </a>
-              <p className="mt-6 text-xs text-dark/50 italic">
+              <p className="mt-6 text-xs text-dark/75 italic">
                 Jennifer Walker, LCSW
               </p>
             </div>

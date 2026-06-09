@@ -13,18 +13,18 @@ export default function BurnoutQuizSection() {
           </div>
 
           <h2
-            className="text-4xl md:text-5xl font-light text-cream mb-4 leading-tight"
+            className="text-4xl md:text-5xl font-normal text-cream mb-4 leading-tight"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             Not Sure If You&rsquo;re{" "}
             <span className="italic" style={{ color: "#CAAF99" }}>Burned Out?</span>
           </h2>
 
-          <p className="text-base md:text-lg mb-3 leading-relaxed" style={{ color: "rgba(242,241,235,0.80)" }}>
+          <p className="text-base md:text-lg mb-3 leading-relaxed" style={{ color: "rgba(242,241,235,0.93)" }}>
             Take the 2-minute Burnout Recovery Assessment to identify your current burnout stage
             and discover your next steps toward healing.
           </p>
-          <p className="text-sm mb-10" style={{ color: "rgba(242,241,235,0.55)" }}>
+          <p className="text-sm mb-10" style={{ color: "rgba(242,241,235,0.78)" }}>
             Free &bull; Confidential &bull; Results in under 2 minutes
           </p>
 

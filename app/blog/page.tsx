@@ -83,13 +83,13 @@ export default function BlogPage() {
               <span className="text-xs tracking-widest uppercase text-dusty font-medium">Blog</span>
             </div>
             <h1
-              className="text-5xl md:text-6xl font-light text-dark mb-4"
+              className="text-5xl md:text-6xl font-normal text-dark mb-4"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               Insights &amp; tools for the{" "}
               <span className="italic text-brand">women who lead</span>
             </h1>
-            <p className="text-base md:text-lg text-dark/60 max-w-2xl">
+            <p className="text-base md:text-lg text-dark/75 max-w-2xl">
               Evidence-based guidance on anxiety, burnout recovery, and authentic living — written for high-performing women who are ready to stop surviving and start thriving.
             </p>
           </div>
@@ -109,11 +109,11 @@ export default function BlogPage() {
                       <span className="px-3 py-1 rounded-full text-xs font-medium bg-mist-light text-brand border border-mist">
                         {post.category}
                       </span>
-                      <div className="flex items-center gap-1 text-xs text-dark/40">
+                      <div className="flex items-center gap-1 text-xs text-dark/75">
                         <Calendar size={11} />
                         {post.date}
                       </div>
-                      <span className="text-xs text-dark/40 ml-auto">{post.readTime}</span>
+                      <span className="text-xs text-dark/75 ml-auto">{post.readTime}</span>
                     </div>
                     <h2
                       className="text-xl font-medium text-dark mb-3 leading-snug"
@@ -121,7 +121,7 @@ export default function BlogPage() {
                     >
                       {post.title}
                     </h2>
-                    <p className="text-sm text-dark/60 leading-relaxed flex-1 mb-6">
+                    <p className="text-sm text-dark/75 leading-relaxed flex-1 mb-6">
                       {post.excerpt}
                     </p>
                     <a
@@ -144,12 +144,12 @@ export default function BlogPage() {
                 </span>
               </div>
               <h2
-                className="text-3xl md:text-4xl font-light text-dark mb-4"
+                className="text-3xl md:text-4xl font-normal text-dark mb-4"
                 style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
                 Earlier Articles
               </h2>
-              <p className="text-dark/60 mb-8 max-w-2xl">
+              <p className="text-dark/75 mb-8 max-w-2xl">
                 A curated collection of earlier articles for continued reading.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -164,7 +164,7 @@ export default function BlogPage() {
                   >
                     <div className="h-1 bg-gradient-to-r from-dusty to-sage" />
                     <div className="flex flex-col flex-1 p-7">
-                      <div className="mb-4 flex flex-wrap items-center gap-2 text-xs text-dark/40">
+                      <div className="mb-4 flex flex-wrap items-center gap-2 text-xs text-dark/75">
                         <span className="inline-flex items-center rounded-full border border-mist bg-mist-light px-3 py-1 font-medium text-brand whitespace-nowrap">
                           {articleCategory}
                         </span>
@@ -172,7 +172,7 @@ export default function BlogPage() {
                           <Calendar size={11} />
                           {post.date}
                         </span>
-                        <span className="inline-flex items-center whitespace-nowrap text-dark/50 ml-auto sm:ml-0">
+                        <span className="inline-flex items-center whitespace-nowrap text-dark/65 ml-auto sm:ml-0">
                           {post.readTime}
                         </span>
                       </div>
@@ -182,7 +182,7 @@ export default function BlogPage() {
                       >
                         {post.title}
                       </h3>
-                      <p className="text-sm text-dark/60 leading-relaxed flex-1 mb-6">{post.excerpt}</p>
+                      <p className="text-sm text-dark/75 leading-relaxed flex-1 mb-6">{post.excerpt}</p>
                       <a
                         href={post.href}
                         className="inline-flex items-center gap-1.5 text-sm font-medium text-brand hover:text-brand-dark transition-colors"

@@ -89,7 +89,7 @@ export default function BurnoutResetIntensivePage() {
                   >
                     {title}
                   </h3>
-                  <p className="text-sm text-dark/60 leading-relaxed">{description}</p>
+                  <p className="text-sm text-dark/75 leading-relaxed">{description}</p>
                 </div>
               ))}
             </div>

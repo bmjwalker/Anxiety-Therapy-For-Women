@@ -11,13 +11,13 @@ export default function Credibility() {
 
         <div className="bg-white rounded-[2rem] border border-cream-dark shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
           <h2
-            className="text-4xl md:text-5xl font-light text-dark mb-6 leading-tight"
+            className="text-4xl md:text-5xl font-normal text-dark mb-6 leading-tight"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             For more than 20 years, I&apos;ve helped high-performing women navigate anxiety,
             burnout, perfectionism, life transitions, and career uncertainty.
           </h2>
-          <p className="text-base md:text-lg text-dark/70 leading-relaxed mb-4">
+          <p className="text-base md:text-lg text-dark/85 leading-relaxed mb-4">
             Together, we&apos;ll create practical, evidence-based strategies that help you move from
             survival mode into a life that feels more balanced, meaningful, and sustainable.
           </p>

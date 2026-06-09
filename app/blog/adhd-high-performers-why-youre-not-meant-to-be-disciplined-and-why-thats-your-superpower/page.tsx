@@ -20,12 +20,12 @@ export default function BlogPost3() {
               Resilience &amp; Mental Health
             </span>
             <h1
-              className="text-4xl md:text-5xl font-light text-dark mb-5 leading-tight"
+              className="text-4xl md:text-5xl font-normal text-dark mb-5 leading-tight"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               ADHD High Performers — Why You&rsquo;re Not Meant to Be &ldquo;Disciplined&rdquo; (And Why That&rsquo;s Your Superpower)
             </h1>
-            <div className="flex items-center gap-4 text-sm text-dark/50">
+            <div className="flex items-center gap-4 text-sm text-dark/65">
               <div className="flex items-center gap-1.5">
                 <Calendar size={14} />
                 November 9, 2025
@@ -60,7 +60,7 @@ export default function BlogPost3() {
                 Most ADHD high performers try to fix this by forcing consistency — building systems, routines, and dopamine hacks. But that&rsquo;s fighting your nature instead of leveraging it.
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 Your Brain Runs on Dopamine, Not Discipline
               </h2>
               <p>
@@ -73,7 +73,7 @@ export default function BlogPost3() {
                 The closer you get to something that truly matters, the more your brain panics. You overthink, procrastinate, and shame yourself — not because you&rsquo;re lazy, but because your nervous system is protecting you from the pain of being &ldquo;too much.&rdquo;
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 The Secret Isn&rsquo;t Consistency — It&rsquo;s Safety
               </h2>
               <p>
@@ -93,11 +93,11 @@ export default function BlogPost3() {
                   </li>
                 ))}
               </ul>
-              <p className="italic text-dark/60">
+              <p className="italic text-dark/75">
                 ADHD high performers don&rsquo;t need to be disciplined. They need to be directed.
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-light text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
+              <h2 className="text-2xl md:text-3xl font-normal text-dark mt-6 mb-1" style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}>
                 Your Inconsistency Is a Power Pattern
               </h2>
               <p>
@@ -118,7 +118,7 @@ export default function BlogPost3() {
             {/* Author bio */}
             <div className="mt-14 pt-8 border-t border-cream-dark">
               <p className="font-medium text-dark mb-1">Jennifer Walker, LCSW</p>
-              <p className="text-sm text-dark/60 leading-relaxed">
+              <p className="text-sm text-dark/75 leading-relaxed">
                 Licensed clinical social worker in Georgia &amp; Florida, specializing in anxiety, burnout, and career transitions for high-performing women. Founder of Anxiety Therapy for Women.
               </p>
             </div>
@@ -126,12 +126,12 @@ export default function BlogPost3() {
             {/* CTA */}
             <div className="mt-10 p-8 rounded-2xl bg-sage-muted border border-sage-light text-center">
               <h3
-                className="text-2xl md:text-3xl font-light text-dark mb-3"
+                className="text-2xl md:text-3xl font-normal text-dark mb-3"
                 style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
                 Ready to stop fighting your nature?
               </h3>
-              <p className="text-sm text-dark/60 mb-6 max-w-md mx-auto">
+              <p className="text-sm text-dark/75 mb-6 max-w-md mx-auto">
                 Schedule a consultation and let&rsquo;s create a personalized plan for building confidence, clarity, and calm.
               </p>
               <a

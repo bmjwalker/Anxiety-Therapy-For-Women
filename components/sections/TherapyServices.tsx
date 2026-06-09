@@ -160,7 +160,7 @@ export default function TherapyServices() {
 
         {/* ── Sub-section 1: Who We Help ── */}
         <div className="mb-20">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-3 mb-1">
             <h3
               className="text-3xl md:text-4xl font-light text-dark"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
@@ -168,8 +168,8 @@ export default function TherapyServices() {
               Who We Help
             </h3>
           </div>
-          <div className="h-px w-12 bg-sage mb-6" />
-          <p className="text-dark/75 mb-8 max-w-2xl">
+          <div className="h-px w-12 bg-sage mb-3" />
+          <p className="text-dark/75 mb-6 max-w-2xl">
             You may look successful on the outside, but inside you&apos;re exhausted from carrying
             responsibilities, expectations, and pressure that never seem to end. This section is
             designed to help you quickly recognize whether this kind of support fits what you&apos;re
@@ -177,7 +177,7 @@ export default function TherapyServices() {
           </p>
 
           {/* Specialties - Now Clickable */}
-          <div className="flex flex-wrap gap-3 mb-8">
+          <div className="flex flex-wrap gap-3 mb-4">
             <button
               onClick={() => setSelectedSpecialty(null)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
@@ -204,8 +204,8 @@ export default function TherapyServices() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-6 mb-10 items-start">
-            <article className="border-l-4 border-l-dusty pl-7 py-4">
-              <p className="text-xs uppercase tracking-[0.25em] text-dusty font-semibold mb-3">
+            <article className="border-l-4 border-l-dusty pl-7 pb-4">
+              <p className="text-xs uppercase tracking-[0.25em] text-dusty font-medium mb-2">
                 Why this matters
               </p>
               <h4
@@ -234,11 +234,11 @@ export default function TherapyServices() {
               </ul>
             </article>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-5">
               {displayedStruggles.map((struggle) => (
                 <div
                   key={struggle}
-                  className="flex items-start gap-3 py-2 border-b border-cream-dark/50 last:border-b-0"
+                  className="flex items-start gap-3"
                 >
                   <CheckCircle2 size={16} className="text-dusty shrink-0 mt-0.5" />
                   <p className="text-sm text-dark/85 leading-snug">{struggle}</p>

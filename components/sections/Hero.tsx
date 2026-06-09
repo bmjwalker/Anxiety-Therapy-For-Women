@@ -44,14 +44,14 @@ export default function Hero() {
 
           {/* Supporting line */}
           <p
-            className="text-xl md:text-2xl font-light text-dark/60 mb-5 italic"
+            className="text-xl md:text-2xl font-light text-dark/75 mb-5 italic"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             You deserve to thrive, not just survive.
           </p>
 
           {/* Subheadline */}
-          <p className="text-base md:text-lg text-dark/70 mb-10 max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg text-dark/85 mb-10 max-w-2xl leading-relaxed">
             Helping ambitious women in Georgia and Florida overcome burnout, anxiety,
             perfectionism, chronic stress, and overthinking so they can reclaim clarity,
             confidence, and balance.
@@ -77,7 +77,7 @@ export default function Hero() {
           </div>
 
           {/* Trust signal */}
-          <div className="mt-12 flex flex-wrap items-center gap-6 text-sm text-dark/50">
+          <div className="mt-12 flex flex-wrap items-center gap-6 text-sm text-dark/65">
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-dusty" />
               Licensed in Georgia &amp; Florida

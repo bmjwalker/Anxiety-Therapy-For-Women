@@ -100,13 +100,13 @@ export default function FAQ() {
           {/* Left column */}
           <div className="lg:col-span-1">
             <h2
-              className="text-4xl md:text-5xl font-light text-dark mb-6"
+              className="text-4xl md:text-5xl font-normal text-dark mb-6"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               Your questions,{" "}
               <span className="italic text-brand">answered</span>
             </h2>
-            <p className="text-dark/60 text-sm leading-relaxed mb-8">
+            <p className="text-dark/75 text-sm leading-relaxed mb-8">
               Have more questions? Jennifer is happy to answer them during your free
               15-minute consultation.
             </p>
@@ -134,7 +134,7 @@ export default function FAQ() {
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="text-sm text-dark/70 leading-relaxed pb-2">
+                    <div className="text-sm text-dark/85 leading-relaxed pb-2">
                       {faq.answer}
                     </div>
                   </AccordionContent>

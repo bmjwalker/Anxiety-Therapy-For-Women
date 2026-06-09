@@ -73,7 +73,7 @@ export default function Resources() {
         </div>
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <h2
-            className="text-4xl md:text-5xl font-light text-dark max-w-xl"
+            className="text-4xl md:text-5xl font-normal text-dark max-w-xl"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             Free tools &amp; resources to{" "}
@@ -104,7 +104,7 @@ export default function Resources() {
                 >
                   Crisis Support — Available 24/7
                 </h3>
-                <p className="text-sm text-dark/70 mb-3">
+                <p className="text-sm text-dark/85 mb-3">
                   If you or someone you know is in crisis, please reach out immediately.
                 </p>
                 <a
@@ -145,7 +145,7 @@ export default function Resources() {
                       </span>
                       <ExternalLink size={12} className="text-sage" />
                     </div>
-                    <p className="text-xs text-dark/60">{org.description}</p>
+                    <p className="text-xs text-dark/75">{org.description}</p>
                   </div>
                 </a>
               ))}
@@ -167,7 +167,7 @@ export default function Resources() {
               {apps.map((app) => (
                 <div key={app.name} className="border-b border-mist last:border-0 pb-3 last:pb-0">
                   <p className="text-sm font-semibold text-brand mb-0.5">{app.name}</p>
-                  <p className="text-xs text-dark/60">{app.description}</p>
+                  <p className="text-xs text-dark/75">{app.description}</p>
                 </div>
               ))}
             </div>
@@ -186,7 +186,7 @@ export default function Resources() {
             </div>
             <ul className="flex flex-col gap-3">
               {selfCareItems.map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm text-dark/70">
+                <li key={item} className="flex items-start gap-2 text-sm text-dark/85">
                   <div className="w-1.5 h-1.5 rounded-full bg-dusty mt-1.5 shrink-0" />
                   {item}
                 </li>
@@ -209,7 +209,7 @@ export default function Resources() {
               <p className="text-base font-medium text-dusty-light mb-1">
                 Burnout Reflection Guide
               </p>
-              <p className="text-sm text-cream/70 mb-6">
+              <p className="text-sm text-cream/88 mb-6">
                 A guided workbook to help you identify burnout patterns, understand your triggers,
                 and take your first steps toward recovery — at no cost.
               </p>

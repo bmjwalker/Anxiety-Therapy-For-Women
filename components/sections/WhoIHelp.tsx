@@ -17,40 +17,32 @@ export default function WhoIHelp() {
   return (
     <section className="bg-white section-padding">
       <div className="section-container">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="h-px w-12 bg-dusty" />
-          <span className="text-xs tracking-widest uppercase text-dusty font-medium">
-            You Are Not Alone
-          </span>
-        </div>
-
         <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-8 lg:gap-16 items-start">
           {/* Left — Content (55%) */}
           <div className="flex flex-col">
             <h2
-              className="text-4xl md:text-5xl font-normal text-dark mb-5 leading-tight"
+              className="text-4xl md:text-5xl font-normal text-dark mb-4 leading-tight max-w-md"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               Are You Tired of Being{" "}
               <span className="italic text-brand">the Strong One?</span>
             </h2>
+
+            <p
+              className="text-lg font-light text-dark/80 italic mb-6 leading-snug"
+              style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+            >
+              You don&rsquo;t have to keep living in survival mode.{" "}
+              <span className="text-brand">There is another way.</span>
+            </p>
+
             <p className="text-base md:text-lg text-dark/80 mb-8 leading-relaxed">
               As a high-performing woman, you&rsquo;ve mastered the art of holding everything
               together. But behind that competence is a level of exhaustion that others rarely see.
             </p>
 
-            <div className="p-6 rounded-2xl bg-dusty-light border-l-4 border-dusty mb-8">
-              <p
-                className="text-lg font-light text-dark leading-snug"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-              >
-                You don&rsquo;t have to keep living in survival mode.{" "}
-                <span className="italic text-brand">There is another way.</span>
-              </p>
-            </div>
-
             {/* Featured Signs */}
-            <div className="space-y-4 mb-8">
+            <div className="space-y-5 mb-10">
               {featuredSigns.map((sign) => (
                 <div
                   key={sign}
