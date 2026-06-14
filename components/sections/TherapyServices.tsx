@@ -333,8 +333,7 @@ export default function TherapyServices() {
               >
                 <span
                   className="block text-5xl font-light leading-none select-none mb-4"
-                  style={{ color: "#C4897B" }}
-                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                  style={{ color: "#C4897B", fontFamily: "var(--font-cormorant), Georgia, serif" }}
                 >
                   {step.number}
                 </span>
