@@ -86,7 +86,7 @@ const faqs: { id: string; question: string; answer: ReactNode }[] = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="bg-white section-padding">
+    <section id="faq" className="section-padding" style={{ backgroundColor: "#FAF7F4" }}>
       <div className="section-container">
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">

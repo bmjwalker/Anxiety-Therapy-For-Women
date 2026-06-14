@@ -62,7 +62,7 @@ const programs = [
 
 export default function Programs() {
   return (
-    <section id="programs" className="bg-cream section-padding">
+    <section id="programs" className="section-padding" style={{ backgroundColor: "#FAF7F4" }}>
       <div className="section-container">
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">
@@ -74,7 +74,7 @@ export default function Programs() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <div>
             <h2
-              className="text-4xl md:text-5xl font-normal text-dark max-w-xl pb-4 border-b-2 border-b-dusty"
+              className="text-4xl md:text-5xl font-semibold text-dark max-w-xl"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               Beyond individual therapy —{" "}
@@ -88,17 +88,17 @@ export default function Programs() {
         </div>
 
         {/* Program cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:[grid-auto-rows:1fr]">
           {programs.map((program) => {
             const Icon = program.icon;
             return (
               <div
                 key={program.title}
-                className={`flex flex-col p-8 border-l-4 border-l-dusty ${program.bg}`}
+                className="flex flex-col p-4 md:p-6 bg-white border-l-4 border-l-brand rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
               >
                 {/* Icon + Badge */}
                 <div className="flex items-center justify-between mb-6">
-                  <div className="w-12 h-12 rounded-full bg-cream flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-brand/10 flex items-center justify-center">
                     <Icon size={22} className="text-brand" />
                   </div>
                   <span
@@ -110,12 +110,15 @@ export default function Programs() {
 
                 {/* Content */}
                 <h3
-                  className="text-2xl font-medium text-dark mb-1"
+                  className="text-2xl font-semibold text-dark mb-1"
                   style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                 >
                   {program.title}
                 </h3>
-                <p className="text-xs text-dusty font-medium mb-4 tracking-wide">
+                <p
+                  className="text-base italic mb-4 leading-snug"
+                  style={{ color: "#C4897B" }}
+                >
                   {program.subtitle}
                 </p>
                 <p className="text-sm text-dark/80 leading-relaxed mb-6 flex-1">
@@ -123,13 +126,13 @@ export default function Programs() {
                 </p>
 
                 {/* Features */}
-                <ul className="flex flex-col gap-1.5 mb-8">
+                <ul className="flex flex-col gap-2 mb-8">
                   {program.features.map((feature) => (
                     <li
                       key={feature}
                       className="flex items-center gap-2 text-xs text-dark/75"
                     >
-                      <div className="w-1.5 h-1.5 rounded-full bg-dusty shrink-0" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-brand shrink-0" />
                       {feature}
                     </li>
                   ))}

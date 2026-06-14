@@ -1,6 +1,6 @@
 export default function Credibility() {
   return (
-    <section className="bg-mist-light section-padding">
+    <section className="section-padding" style={{ backgroundColor: "#FAF7F4" }}>
       <div className="section-container">
         <div className="flex items-center gap-3 mb-4 justify-center">
           <div className="h-px w-12 bg-dusty" />

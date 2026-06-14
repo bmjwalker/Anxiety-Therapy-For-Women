@@ -15,7 +15,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-mist-light py-12 md:py-16">
+    <section className="section-padding" style={{ backgroundColor: "#F4F1EE" }}>
       <div className="section-container">
         <div className="flex items-center gap-3 mb-3">
           <div className="h-px w-12 bg-dusty" />
@@ -32,11 +32,11 @@ export default function Testimonials() {
           <span className="italic" style={{ color: "#4A7C7E" }}>Often Tell Me</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
           {testimonials.map(({ quote, credit }) => (
             <div
               key={quote}
-              className="relative p-8 rounded-2xl bg-white border-l-4 shadow-sm flex flex-col"
+              className="relative p-4 md:p-6 rounded-2xl bg-white border-l-4 shadow-sm flex flex-col"
               style={{ borderLeftColor: "#B18C72", borderColor: "#D9CFC3" }}
             >
               <span

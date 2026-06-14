@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="bg-mist-light section-padding">
+    <section id="about" className="section-padding" style={{ backgroundColor: "#F4F1EE" }}>
       <div className="section-container">
         {/* Section label */}
         <div className="flex items-center gap-3 mb-4">
@@ -47,9 +47,6 @@ export default function About() {
               Jennifer Walker,{" "}
               <span className="italic text-brand">LCSW</span>
             </h2>
-            <p className="text-base text-dusty font-medium mb-6 tracking-wide">
-              The Sassy Mixed Therapist — Transition Strategist &amp; Educator
-            </p>
 
             {/* My Journey */}
             <h3

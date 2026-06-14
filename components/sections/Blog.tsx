@@ -52,7 +52,7 @@ export default function Blog() {
           </span>
         </div>
 
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+        <div className="mb-14">
           <h2
             className="text-4xl md:text-5xl font-normal text-dark max-w-xl"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
@@ -60,13 +60,6 @@ export default function Blog() {
             Insights &amp; tools for the{" "}
             <span className="italic text-brand">women who lead</span>
           </h2>
-          <a
-            href="/blog"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-medium hover:bg-brand-muted transition-colors shrink-0"
-          >
-            View All Posts
-            <ArrowRight size={14} />
-          </a>
         </div>
 
         {/* Blog grid */}
@@ -116,6 +109,17 @@ export default function Blog() {
               </div>
             </article>
           ))}
+        </div>
+
+        {/* View All Posts */}
+        <div className="mt-10 flex justify-center">
+          <a
+            href="/blog"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-medium hover:bg-brand-muted transition-colors"
+          >
+            View All Posts
+            <ArrowRight size={14} />
+          </a>
         </div>
 
         {/* Newsletter CTA */}

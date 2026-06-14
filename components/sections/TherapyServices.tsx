@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import {
   Brain,
   Briefcase,
@@ -8,42 +5,35 @@ import {
   Globe,
   CheckCircle2,
   ArrowRight,
-  Leaf,
 } from "lucide-react";
 
 /* ── Data ── */
 
-const specialtyMap: { [key: string]: string[] } = {
-  Anxiety: [
-    "Lying awake overanalyzing every conversation",
-    "Stuck in comparison traps and self-doubt",
-  ],
-  Burnout: [
-    "Exhausted from being strong for everyone else",
-    "Difficulty setting healthy boundaries without guilt",
-    "Overwhelmed by major life transitions and uncertainty",
-  ],
-  Perfectionism: [
-    "Feeling like an imposter despite your external success",
-    "Stuck in comparison traps and self-doubt",
-  ],
-  "Imposter Syndrome": [
-    "Feeling like an imposter despite your external success",
-    "Lying awake overanalyzing every conversation",
-  ],
-  "Major Life Transitions": [
-    "Overwhelmed by major life transitions and uncertainty",
-    "Exhausted from being strong for everyone else",
-  ],
-};
-
 const struggles = [
-  "Lying awake overanalyzing every conversation",
-  "Feeling like an imposter despite your external success",
-  "Exhausted from being strong for everyone else",
-  "Stuck in comparison traps and self-doubt",
-  "Difficulty setting healthy boundaries without guilt",
-  "Overwhelmed by major life transitions and uncertainty",
+  {
+    name: "Lying awake overanalyzing every conversation",
+    description: "Racing thoughts keep you up at night, replaying moments and worrying about what comes next.",
+  },
+  {
+    name: "Feeling like an imposter despite your external success",
+    description: "No matter what you achieve, a quiet voice says it's only a matter of time before people find out.",
+  },
+  {
+    name: "Exhausted from being strong for everyone else",
+    description: "You're the one everyone leans on — and there's no one left to hold you up.",
+  },
+  {
+    name: "Stuck in comparison traps and self-doubt",
+    description: "You measure your worth against everyone around you and always seem to come up short.",
+  },
+  {
+    name: "Difficulty setting healthy boundaries without guilt",
+    description: "Saying no feels selfish. Saying yes leaves you depleted. There doesn't seem to be a third option.",
+  },
+  {
+    name: "Overwhelmed by major life transitions and uncertainty",
+    description: "Change is supposed to be exciting — so why does it feel like the ground is constantly shifting?",
+  },
 ];
 
 const services = [
@@ -102,12 +92,30 @@ const services = [
 ];
 
 const approaches = [
-  "Dialectical Behavior Therapy (DBT)",
-  "Cognitive Behavioral Therapy (CBT)",
-  "Solution-Focused Brief Therapy",
-  "Trauma-Informed Care",
-  "Mindfulness-Based Approaches",
-  "Motivational Interviewing",
+  {
+    name: "Dialectical Behavior Therapy (DBT)",
+    description: "Skills for managing intense emotions, improving relationships, and staying grounded in the present moment.",
+  },
+  {
+    name: "Cognitive Behavioral Therapy (CBT)",
+    description: "Identifying and reshaping thought patterns that fuel anxiety, perfectionism, and self-doubt.",
+  },
+  {
+    name: "Solution-Focused Brief Therapy",
+    description: "Building on your existing strengths to create forward momentum toward clear, achievable goals.",
+  },
+  {
+    name: "Trauma-Informed Care",
+    description: "Recognizing how past experiences shape present patterns — approached with compassion, not pathology.",
+  },
+  {
+    name: "Mindfulness-Based Approaches",
+    description: "Developing present-moment awareness to interrupt anxiety spirals, overthinking, and emotional reactivity.",
+  },
+  {
+    name: "Motivational Interviewing",
+    description: "Exploring ambivalence and building your own internal motivation for meaningful, lasting change.",
+  },
 ];
 
 const steps = [
@@ -134,12 +142,6 @@ const steps = [
 /* ── Component ── */
 
 export default function TherapyServices() {
-  const [selectedSpecialty, setSelectedSpecialty] = useState<string | null>(null);
-
-  const displayedStruggles = selectedSpecialty
-    ? specialtyMap[selectedSpecialty] || struggles
-    : struggles;
-
   return (
     <section id="services" className="bg-white section-padding">
       <div className="section-container">
@@ -169,82 +171,35 @@ export default function TherapyServices() {
             </h3>
           </div>
           <div className="h-px w-12 bg-sage mb-3" />
-          <p className="text-dark/75 mb-6 max-w-2xl">
+          <p className="text-dark/75 mb-8 max-w-2xl">
             You may look successful on the outside, but inside you&apos;re exhausted from carrying
-            responsibilities, expectations, and pressure that never seem to end. This section is
-            designed to help you quickly recognize whether this kind of support fits what you&apos;re
-            experiencing right now.
+            responsibilities, expectations, and pressure that never seem to end.
           </p>
 
-          {/* Specialties - Now Clickable */}
-          <div className="flex flex-wrap gap-3 mb-4">
-            <button
-              onClick={() => setSelectedSpecialty(null)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                selectedSpecialty === null
-                  ? "bg-brand text-cream"
-                  : "border-2 border-brand text-brand hover:bg-brand-muted"
-              }`}
-            >
-              All
-            </button>
-            {["Anxiety", "Burnout", "Perfectionism", "Imposter Syndrome", "Major Life Transitions"].map((s) => (
-              <button
-                key={s}
-                onClick={() => setSelectedSpecialty(s)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                  selectedSpecialty === s
-                    ? "bg-brand text-cream"
-                    : "border-2 border-brand text-brand hover:bg-brand-muted"
-                }`}
-              >
-                {s}
-              </button>
-            ))}
-          </div>
+          {/* Callout line */}
+          <p
+            className="text-2xl md:text-3xl font-light italic mb-10 max-w-2xl"
+            style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#4A7C7E" }}
+          >
+            You do not need to be in crisis to deserve support.
+          </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-6 mb-10 items-start">
-            <article className="border-l-4 border-l-dusty pl-7 pb-4">
-              <p className="text-xs uppercase tracking-[0.25em] text-dusty font-medium mb-2">
-                Why this matters
-              </p>
-              <h4
-                className="text-2xl md:text-3xl font-normal text-dark mb-4"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+          {/* Symptom card grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 md:[grid-auto-rows:1fr]">
+            {struggles.map((struggle) => (
+              <div
+                key={struggle.name}
+                className="flex flex-col gap-2 p-4 md:p-6 bg-white border-l-4 border-l-brand rounded-xl shadow-md"
               >
-                You do not need to be in crisis to deserve support.
-              </h4>
-              <p className="text-sm text-dark/80 leading-relaxed mb-5">
-                If you&apos;re carrying too much, second-guessing yourself, or feeling emotionally
-                depleted despite doing everything right, this work is designed for you.
-              </p>
-              <ul className="space-y-3 text-sm text-dark/80">
-                <li className="flex items-start gap-2">
-                  <span className="mt-1 h-2 w-2 rounded-full bg-dusty shrink-0" />
-                  High-achieving women who feel exhausted but still keep showing up
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-1 h-2 w-2 rounded-full bg-dusty shrink-0" />
-                  Women navigating pressure, perfectionism, and constant overthinking
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-1 h-2 w-2 rounded-full bg-dusty shrink-0" />
-                  People ready for practical support, not just more self-criticism
-                </li>
-              </ul>
-            </article>
-
-            <div className="flex flex-col gap-5">
-              {displayedStruggles.map((struggle) => (
-                <div
-                  key={struggle}
-                  className="flex items-start gap-3"
+                <p
+                  className="text-xl font-semibold text-dark leading-snug"
+                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                 >
-                  <CheckCircle2 size={16} className="text-dusty shrink-0 mt-0.5" />
-                  <p className="text-sm text-dark/85 leading-snug">{struggle}</p>
-                </div>
-              ))}
-            </div>
+                  {struggle.name}
+                </p>
+                <p className="text-sm text-dark/75 leading-relaxed">{struggle.description}</p>
+              </div>
+            ))}
           </div>
 
           <a
@@ -261,38 +216,44 @@ export default function TherapyServices() {
         {/* ── Sub-section 2: Areas We Can Help ── */}
         <div className="mb-20 py-16 px-6 md:px-10 bg-[#F7F3EE]">
           <h3
-            className="text-3xl md:text-4xl font-normal text-dark mb-3"
+            className="text-4xl md:text-5xl font-semibold text-dark mb-3"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
-            Areas We Can Help You Overcome
+            Areas We Can{" "}
+            <span className="italic text-brand">Help You Overcome</span>
           </h3>
           <p className="text-dark/75 mb-10 max-w-2xl">
             Every service is tailored to the unique experience of high-performing women
             navigating complex lives.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 md:[grid-auto-rows:1fr]">
             {services.map(({ icon: Icon, title, tagline, description, bullets, href }) => (
               <div
                 key={title}
-                className="flex flex-col gap-4 pl-7 py-6 border-l-4 border-l-dusty"
+                className="flex flex-col gap-5 p-4 md:p-6 bg-white border-l-4 border-l-brand rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="w-10 h-10 rounded-full bg-white/60 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center shrink-0">
                   <Icon size={20} className="text-brand" />
                 </div>
                 <div className="flex flex-col flex-1 gap-0">
                   <h4
-                    className="text-xl font-medium text-dark mb-1"
+                    className="text-2xl font-semibold text-dark mb-1"
                     style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                   >
                     {title}
                   </h4>
-                  <p className="text-sm italic text-brand/80 mb-3 leading-snug">{tagline}</p>
+                  <p
+                    className="text-base italic mb-3 leading-snug"
+                    style={{ color: "#C4897B" }}
+                  >
+                    {tagline}
+                  </p>
                   <p className="text-sm text-dark/80 leading-relaxed mb-4">{description}</p>
                   <ul className="flex flex-col gap-2 mb-5">
                     {bullets.map((b) => (
                       <li key={b} className="flex items-start gap-2">
-                        <CheckCircle2 size={15} className="text-dusty shrink-0 mt-0.5" />
+                        <CheckCircle2 size={15} className="text-brand shrink-0 mt-0.5" />
                         <span className="text-sm text-dark/80">{b}</span>
                       </li>
                     ))}
@@ -329,11 +290,17 @@ export default function TherapyServices() {
             Evidence-based methods combined with culturally responsive, compassionate practice.
           </p>
 
-          <div className="flex flex-wrap gap-3 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 mb-10">
             {approaches.map((approach) => (
-              <span key={approach} className="approach-pill">
-                {approach}
-              </span>
+              <div key={approach.name} className="flex flex-col gap-1 pl-5 border-l-2 border-l-brand">
+                <p
+                  className="text-lg font-semibold text-dark"
+                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                >
+                  {approach.name}
+                </p>
+                <p className="text-sm text-dark/75 leading-relaxed">{approach.description}</p>
+              </div>
             ))}
           </div>
 
@@ -365,7 +332,8 @@ export default function TherapyServices() {
                 className="pt-2 pl-8 border-l-4 border-l-brand"
               >
                 <span
-                  className="block text-5xl font-light text-brand/25 leading-none select-none mb-4"
+                  className="block text-5xl font-light leading-none select-none mb-4"
+                  style={{ color: "#C4897B" }}
                   style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                 >
                   {step.number}

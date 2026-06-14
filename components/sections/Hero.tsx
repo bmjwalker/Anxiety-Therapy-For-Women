@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -77,19 +77,17 @@ export default function Hero() {
           </div>
 
           {/* Trust signal */}
-          <div className="mt-12 flex flex-wrap items-center gap-6 text-sm text-dark/65">
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-dusty" />
-              Licensed in Georgia &amp; Florida
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-dusty" />
-              Telehealth Available
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-dusty" />
-              Free 15-Minute Consultation
-            </div>
+          <div className="mt-12 flex flex-row flex-wrap items-center gap-3">
+            {[
+              "Licensed in Georgia & Florida",
+              "Telehealth Available",
+              "Free 15-Minute Consultation",
+            ].map((item) => (
+              <span key={item} className="inline-flex items-center gap-2 text-sm text-dark">
+                <Check size={13} style={{ color: "#4A7C7E" }} strokeWidth={2.5} />
+                {item}
+              </span>
+            ))}
           </div>
         </div>
       </div>
