@@ -30,7 +30,7 @@ export default function Resources() {
         </p>
 
         {/* Two-card grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
 
           {/* Card 1 — Free Download */}
           <div
@@ -59,7 +59,7 @@ export default function Resources() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-colors hover:bg-white/90"
-                style={{ backgroundColor: "#FFFFFF", color: "#4A7C7E" }}
+                style={{ backgroundColor: "#FFFFFF", color: "#2D5F61" }}
               >
                 <Download size={14} />
                 Get Your Free Guide
@@ -92,8 +92,8 @@ export default function Resources() {
               >
                 Call or Text 988
               </a>
-              <p className="text-xs text-dark/60 mt-2 tracking-wide uppercase">
-                Suicide &amp; Crisis Lifeline
+              <p className="text-xs text-dark/60 mt-2 leading-relaxed">
+                Suicide &amp; Crisis Lifeline — free, confidential, available 24/7
               </p>
             </div>
           </div>
