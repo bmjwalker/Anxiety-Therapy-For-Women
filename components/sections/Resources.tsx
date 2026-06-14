@@ -1,215 +1,56 @@
-import { ExternalLink, Phone, Download, Smartphone, Heart } from "lucide-react";
-import { ArrowRight } from "lucide-react";
-
-const mentalHealthOrgs = [
-  {
-    name: "Anxiety & Depression Association of America",
-    abbr: "ADAA",
-    description: "Evidence-based resources, therapist directory, and online communities.",
-    url: "https://adaa.org",
-  },
-  {
-    name: "National Institute of Mental Health",
-    abbr: "NIMH",
-    description: "Research-backed information on anxiety disorders, treatment, and statistics.",
-    url: "https://www.nimh.nih.gov",
-  },
-  {
-    name: "National Alliance on Mental Illness",
-    abbr: "NAMI",
-    description: "Education, advocacy, and support groups for individuals and families.",
-    url: "https://www.nami.org",
-  },
-  {
-    name: "Centers for Disease Control and Prevention",
-    abbr: "CDC",
-    description: "Public health resources on mental health, stress, and well-being.",
-    url: "https://www.cdc.gov/mentalhealth",
-  },
-];
-
-const apps = [
-  {
-    name: "Calm",
-    description: "Guided meditation, sleep stories, and breathing exercises.",
-  },
-  {
-    name: "Sanvello",
-    description: "CBT-based tools for managing stress and anxiety.",
-  },
-  {
-    name: "MindShift CBT",
-    description: "Evidence-based anxiety management strategies.",
-  },
-  {
-    name: "Self-Help Anxiety Management",
-    description: "Identify triggers and develop personalized coping strategies.",
-  },
-  {
-    name: "Panic Relief",
-    description: "Evidence-based techniques for panic attack management.",
-  },
-];
-
-const selfCareItems = [
-  "Regular physical movement and exercise",
-  "Deep breathing and breath-work practices",
-  "Mindfulness and daily meditation",
-  "Prioritizing restful sleep (7–9 hours)",
-  "Consistent, nourishing nutrition",
-  "Setting and honoring personal boundaries",
-];
+import { Download, Phone } from "lucide-react";
 
 export default function Resources() {
   return (
-    <section id="resources" className="bg-white section-padding">
+    <section id="resources" className="section-padding" style={{ backgroundColor: "#FAF7F4" }}>
       <div className="section-container">
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">
           <div className="h-px w-12 bg-dusty" />
-          <span className="text-xs tracking-widest uppercase text-dusty font-medium">
+          <span className="text-xs tracking-widest uppercase font-medium" style={{ color: "#C4897B" }}>
             Resources
           </span>
         </div>
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
-          <h2
-            className="text-4xl md:text-5xl font-normal text-dark max-w-xl"
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-          >
-            Free tools &amp; resources to{" "}
-            <span className="italic text-brand">support your journey</span>
-          </h2>
-          <a
-            href="https://w48bpx2y2ic.typeform.com/to/G8yK8j8J"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border-2 border-brand text-brand text-sm font-medium hover:bg-brand-muted transition-colors shrink-0"
-          >
-            Take the 2-Min Burnout Quiz
-            <ArrowRight size={14} />
+
+        <h2
+          className="text-4xl md:text-5xl font-normal text-dark mb-4"
+          style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+        >
+          Free tools &amp; resources to{" "}
+          <span className="italic text-brand">support your journey</span>
+        </h2>
+
+        <p className="text-base text-dark/75 mb-10 max-w-xl">
+          For a full library of mental health resources, recommended apps, and self-care tools,
+          visit the{" "}
+          <a href="/resources" className="text-brand underline underline-offset-2 hover:text-brand-dark transition-colors">
+            Resources page
           </a>
-        </div>
+          .
+        </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {/* Crisis Support */}
-          <div className="p-8 rounded-2xl bg-dusty-light border border-dusty col-span-1 lg:col-span-2">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-dusty/20 flex items-center justify-center shrink-0">
-                <Phone size={22} className="text-dusty-dark" />
-              </div>
-              <div>
-                <h3
-                  className="text-2xl font-medium text-dark mb-2"
-                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-                >
-                  Crisis Support — Available 24/7
-                </h3>
-                <p className="text-sm text-dark/85 mb-3">
-                  If you or someone you know is in crisis, please reach out immediately.
-                </p>
-                <a
-                  href="tel:988"
-                  className="inline-flex items-center gap-2 text-lg font-medium text-dusty-dark hover:text-brand transition-colors"
-                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-                >
-                  988 Suicide &amp; Crisis Lifeline — Call or Text <strong>988</strong>
-                </a>
-              </div>
-            </div>
-          </div>
+        {/* Two-card grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          {/* Mental Health Organizations */}
-          <div className="p-8 rounded-2xl bg-cream border-t-4 border-t-dusty border border-cream-dark">
-            <div className="flex items-center gap-3 mb-6">
-              <Heart size={20} className="text-brand" />
-              <h3
-                className="text-2xl font-medium text-dark"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-              >
-                Mental Health Organizations
-              </h3>
-            </div>
-            <div className="flex flex-col gap-4">
-              {mentalHealthOrgs.map((org) => (
-                <a
-                  key={org.abbr}
-                  href={org.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-start gap-3 group"
-                >
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-0.5">
-                      <span className="text-sm font-semibold text-brand group-hover:text-brand-dark transition-colors">
-                        {org.abbr}
-                      </span>
-                      <ExternalLink size={12} className="text-sage" />
-                    </div>
-                    <p className="text-xs text-dark/75">{org.description}</p>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* Recommended Apps */}
-          <div className="p-8 rounded-2xl bg-mist-light border-t-4 border-t-dusty border border-mist">
-            <div className="flex items-center gap-3 mb-6">
-              <Smartphone size={20} className="text-brand" />
-              <h3
-                className="text-2xl font-medium text-dark"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-              >
-                Recommended Apps
-              </h3>
-            </div>
-            <div className="flex flex-col gap-4">
-              {apps.map((app) => (
-                <div key={app.name} className="border-b border-mist last:border-0 pb-3 last:pb-0">
-                  <p className="text-sm font-semibold text-brand mb-0.5">{app.name}</p>
-                  <p className="text-xs text-dark/75">{app.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Self-Care Practices */}
-          <div className="p-8 rounded-2xl bg-sage-muted border border-sage-light">
-            <div className="flex items-center gap-3 mb-6">
-              <Heart size={20} className="text-brand" />
-              <h3
-                className="text-2xl font-medium text-dark"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-              >
-                Self-Care Foundations
-              </h3>
-            </div>
-            <ul className="flex flex-col gap-3">
-              {selfCareItems.map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm text-dark/85">
-                  <div className="w-1.5 h-1.5 rounded-full bg-dusty mt-1.5 shrink-0" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Free Download */}
-          <div className="p-8 rounded-2xl bg-brand text-cream flex flex-col gap-4 border-t-4 border-t-dusty border border-cream-dark">
-            <div className="w-12 h-12 rounded-full bg-cream/20 flex items-center justify-center">
-              <Download size={22} className="text-cream" />
+          {/* Card 1 — Free Download */}
+          <div
+            className="p-8 rounded-2xl flex flex-col gap-4"
+            style={{ backgroundColor: "#4A7C7E" }}
+          >
+            <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: "rgba(255,255,255,0.15)" }}>
+              <Download size={22} className="text-white" />
             </div>
             <div>
               <h3
-                className="text-2xl font-medium text-cream mb-2"
+                className="text-2xl font-medium text-white mb-1"
                 style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
                 Free Download
               </h3>
-              <p className="text-base font-medium text-dusty-light mb-1">
+              <p className="text-base font-medium mb-3" style={{ color: "#C4897B" }}>
                 Burnout Reflection Guide
               </p>
-              <p className="text-sm text-cream/88 mb-6">
+              <p className="text-sm text-white/85 mb-6 leading-relaxed">
                 A guided workbook to help you identify burnout patterns, understand your triggers,
                 and take your first steps toward recovery — at no cost.
               </p>
@@ -217,13 +58,46 @@ export default function Resources() {
                 href="https://fabulous-teacher-7023.kit.com/db3a6274d6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-cream text-brand text-sm font-medium hover:bg-cream-dark transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-colors hover:bg-white/90"
+                style={{ backgroundColor: "#FFFFFF", color: "#4A7C7E" }}
               >
                 <Download size={14} />
                 Get Your Free Guide
               </a>
             </div>
           </div>
+
+          {/* Card 2 — Crisis Support */}
+          <div
+            className="p-8 rounded-2xl flex flex-col gap-4"
+            style={{ backgroundColor: "#FAF7F4", border: "1px solid #E8E2DB" }}
+          >
+            <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: "rgba(74,124,126,0.10)" }}>
+              <Phone size={22} style={{ color: "#4A7C7E" }} />
+            </div>
+            <div>
+              <h3
+                className="text-2xl font-medium text-dark mb-2"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                Need Immediate Support?
+              </h3>
+              <p className="text-sm text-dark/75 mb-5 leading-relaxed">
+                If you or someone you know is in crisis, help is available 24/7.
+              </p>
+              <a
+                href="tel:988"
+                className="text-3xl font-medium transition-colors hover:text-brand-dark"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#4A7C7E" }}
+              >
+                Call or Text 988
+              </a>
+              <p className="text-xs text-dark/60 mt-2 tracking-wide uppercase">
+                Suicide &amp; Crisis Lifeline
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
