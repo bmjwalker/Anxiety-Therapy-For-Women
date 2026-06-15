@@ -51,20 +51,10 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm text-dark/85 hover:text-brand transition-colors duration-200 font-medium"
-              >
-                {link.label}
-              </Link>
-            ))}
-
+          {/* Desktop: social icons + divider + nav links + button */}
+          <div className="hidden md:flex items-center">
             {/* Social icons */}
-            <div className="hidden md:flex items-center gap-3">
+            <div className="flex items-center gap-3">
               <a href="https://www.facebook.com/profile.php?id=100073222913867" target="_blank" rel="noopener noreferrer" className="transition-colors duration-200" style={{ color: "#4A7C7E" }} onMouseEnter={e => (e.currentTarget.style.color = "#C4897B")} onMouseLeave={e => (e.currentTarget.style.color = "#4A7C7E")}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
@@ -90,15 +80,31 @@ export default function Header() {
               </a>
             </div>
 
+            {/* Divider */}
+            <div className="h-5 border-l border-slate-200 mx-4" />
+
+            {/* Nav links */}
+            <nav className="flex items-center gap-6">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm text-dark/85 hover:text-brand transition-colors duration-200 font-medium"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+
             <a
               href="https://jennifer-walker7285.clientsecure.me/sign-in"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary ml-2 px-5 py-2 rounded-md text-sm"
+              className="btn-primary ml-6 px-5 py-2 rounded-md text-sm"
             >
               Book Free Consult
             </a>
-          </nav>
+          </div>
 
           {/* Mobile: always-visible Book button + hamburger */}
           <div className="md:hidden flex items-center gap-2">
