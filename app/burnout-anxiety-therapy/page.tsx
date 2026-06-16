@@ -1,6 +1,20 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Burnout Recovery & Anxiety Therapy for High-Performing Women",
+  description:
+    "Feeling exhausted, overwhelmed, and stuck in survival mode? Burnout Recovery & Anxiety Therapy with Jennifer Walker, LCSW helps professional women in Georgia & Florida reclaim calm and clarity.",
+  alternates: { canonical: "https://anxietytherapyforwomen.com/burnout-anxiety-therapy" },
+  openGraph: {
+    title: "Burnout Recovery & Anxiety Therapy | Jennifer Walker, LCSW",
+    description:
+      "Stop white-knuckling through your days. Therapy for high-performing women in Georgia & Florida who are exhausted from being the strong one.",
+    url: "https://anxietytherapyforwomen.com/burnout-anxiety-therapy",
+  },
+};
 
 const survivalSigns = [
   "Waking up already exhausted before the day even begins",

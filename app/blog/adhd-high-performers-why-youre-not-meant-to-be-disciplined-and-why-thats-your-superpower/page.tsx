@@ -1,6 +1,22 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "ADHD High Performers — Why You're Not Meant to Be 'Disciplined' (And Why That's Your Superpower)",
+  description:
+    "Traditional productivity advice was not designed for the ADHD brain. Discover why your dopamine-driven motivation is a feature, not a bug — and how to harness it for authentic high performance.",
+  alternates: { canonical: "https://anxietytherapyforwomen.com/blog/adhd-high-performers-why-youre-not-meant-to-be-disciplined-and-why-thats-your-superpower" },
+  openGraph: {
+    title: "ADHD High Performers — Why You're Not Meant to Be 'Disciplined'",
+    description:
+      "Traditional productivity advice wasn't designed for the ADHD brain. Your dopamine-driven motivation is a feature, not a bug.",
+    url: "https://anxietytherapyforwomen.com/blog/adhd-high-performers-why-youre-not-meant-to-be-disciplined-and-why-thats-your-superpower",
+    type: "article",
+    images: [{ url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW" }],
+  },
+};
 
 export default function BlogPost3() {
   return (

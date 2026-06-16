@@ -1,6 +1,22 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "The Science of Burnout: What the Research Actually Says (And Why You're Not Just 'Tired')",
+  description:
+    "Burnout is a clinical phenomenon affecting over 50% of U.S. workers — yet it's still dismissed as weakness. Here's what the research actually says, and why understanding it changes everything about recovery.",
+  alternates: { canonical: "https://anxietytherapyforwomen.com/blog/the-science-of-burnout-what-the-research-actually-says-and-why-youre-not-just-tired" },
+  openGraph: {
+    title: "The Science of Burnout: What the Research Actually Says",
+    description:
+      "Burnout is a clinical phenomenon affecting over 50% of U.S. workers. Here's what the research says and why it matters for your recovery.",
+    url: "https://anxietytherapyforwomen.com/blog/the-science-of-burnout-what-the-research-actually-says-and-why-youre-not-just-tired",
+    type: "article",
+    images: [{ url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW" }],
+  },
+};
 
 export default function BlogPost1() {
   return (

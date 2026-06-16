@@ -1,6 +1,20 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, Zap, Target, Map, Star } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Burnout Reset Intensive | Deep-Dive Therapy Program for Women",
+  description:
+    "An intensive burnout recovery program for high-performing women who need more than weekly sessions — deep, focused work with Jennifer Walker, LCSW to reset your nervous system and reclaim your life.",
+  alternates: { canonical: "https://anxietytherapyforwomen.com/burnout-reset-intensive" },
+  openGraph: {
+    title: "Burnout Reset Intensive | Jennifer Walker, LCSW",
+    description:
+      "Focused, intensive burnout recovery for women who are ready to do the deep work and reset.",
+    url: "https://anxietytherapyforwomen.com/burnout-reset-intensive",
+  },
+};
 
 const included = [
   "Two full days of intensive, focused transformation work",

@@ -13,9 +13,84 @@ import FAQ from "@/components/sections/FAQ";
 import Blog from "@/components/sections/Blog";
 import ClosingCTA from "@/components/sections/ClosingCTA";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "MedicalBusiness"],
+      "@id": "https://anxietytherapyforwomen.com/#business",
+      "name": "Jennifer Walker, LCSW",
+      "url": "https://anxietytherapyforwomen.com",
+      "email": "jennifer@anxietytherapyforwomen.com",
+      "description":
+        "Anxiety therapy and burnout recovery for high-performing professional women in Georgia and Florida via telehealth.",
+      "image": "https://anxietytherapyforwomen.com/headshot.jpg",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Atlanta",
+        "addressRegion": "GA",
+        "addressCountry": "US",
+      },
+      "areaServed": [
+        { "@type": "State", "name": "Georgia" },
+        { "@type": "State", "name": "Florida" },
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00",
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100073222913867",
+        "https://www.instagram.com/clarityforhpwomen/",
+        "https://www.youtube.com/@HighPerformingWomen",
+        "https://www.pinterest.com/jenniferwalkerlcsw/",
+      ],
+    },
+    {
+      "@type": "Person",
+      "@id": "https://anxietytherapyforwomen.com/#jennifer-walker",
+      "name": "Jennifer Walker",
+      "givenName": "Jennifer",
+      "familyName": "Walker",
+      "jobTitle": "Licensed Clinical Social Worker",
+      "description":
+        "Licensed Clinical Social Worker (LCSW) with 20+ years of experience supporting high-performing women through burnout, anxiety, life transitions, and career clarity.",
+      "url": "https://anxietytherapyforwomen.com/about",
+      "image": "https://anxietytherapyforwomen.com/headshot.jpg",
+      "worksFor": { "@id": "https://anxietytherapyforwomen.com/#business" },
+      "knowsAbout": [
+        "Anxiety Therapy",
+        "Burnout Recovery",
+        "Life Transitions",
+        "Career Clarity",
+        "Cognitive Behavioral Therapy",
+        "Dialectical Behavior Therapy",
+        "Trauma-Informed Care",
+        "High-Performing Women",
+      ],
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Licensed Clinical Social Worker (LCSW)",
+        "credentialCategory": "license",
+        "recognizedBy": [
+          { "@type": "Organization", "name": "Georgia Composite Board of Professional Counselors, Social Workers and Marriage & Family Therapists" },
+          { "@type": "Organization", "name": "Florida Department of Health" },
+        ],
+      },
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-brand focus:text-cream focus:rounded-md"

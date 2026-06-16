@@ -1,6 +1,20 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Therapy for High-Performing Women | Jennifer Walker, LCSW",
+  description:
+    "You take care of everything. Who is taking care of you? Therapy for high-performing women in Georgia & Florida navigating perfectionism, people-pleasing, burnout, and identity.",
+  alternates: { canonical: "https://anxietytherapyforwomen.com/high-performing-women-therapy" },
+  openGraph: {
+    title: "Therapy for High-Performing Women | Jennifer Walker, LCSW",
+    description:
+      "A space built for the woman who has spent too long carrying it all — and is finally ready to put some of it down.",
+    url: "https://anxietytherapyforwomen.com/high-performing-women-therapy",
+  },
+};
 
 const recognizeThis = [
   "You hold everything together — and no one sees how heavy it is",

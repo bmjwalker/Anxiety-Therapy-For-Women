@@ -44,12 +44,21 @@ export const metadata: Metadata = {
     siteName: "Jennifer Walker, LCSW",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/headshot.jpg",
+        width: 800,
+        height: 1000,
+        alt: "Jennifer Walker, LCSW — Anxiety Therapist for Women in Georgia & Florida",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Jennifer Walker, LCSW | Anxiety Therapy for Women",
     description:
       "Online anxiety therapy and burnout recovery for high-performing professional women in Georgia and Florida.",
+    images: ["/headshot.jpg"],
   },
   robots: {
     index: true,

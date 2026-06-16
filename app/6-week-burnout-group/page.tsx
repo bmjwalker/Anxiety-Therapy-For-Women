@@ -1,6 +1,20 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, Calendar, Users, Heart, TrendingUp } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "6-Week Burnout Recovery Group | Jennifer Walker, LCSW",
+  description:
+    "A structured 6-week group program for high-performing women ready to move from survival mode to aligned living — small cohort, weekly live sessions, led by Jennifer Walker, LCSW.",
+  alternates: { canonical: "https://anxietytherapyforwomen.com/6-week-burnout-group" },
+  openGraph: {
+    title: "6-Week Burnout Recovery Group | Jennifer Walker, LCSW",
+    description:
+      "Six structured weeks to move from exhaustion to clarity — in an intimate cohort of high-performing women.",
+    url: "https://anxietytherapyforwomen.com/6-week-burnout-group",
+  },
+};
 
 const included = [
   "6 structured weekly live group sessions via secure telehealth",
