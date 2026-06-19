@@ -1,6 +1,23 @@
+import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
+
+export const metadata: Metadata = {
+  title: {
+    absolute:
+      "Jennifer Walker, LCSW | Anxiety & Burnout Therapy for Women in Atlanta, GA",
+  },
+  description:
+    "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW. Book a free consultation.",
+  alternates: { canonical: "https://anxietytherapyforwomen.com" },
+  openGraph: {
+    title: "Jennifer Walker, LCSW | Anxiety & Burnout Therapy for Women in Atlanta, GA",
+    description:
+      "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW. Book a free consultation.",
+    url: "https://anxietytherapyforwomen.com",
+  },
+};
 import WhoIHelp from "@/components/sections/WhoIHelp";
 import Testimonials from "@/components/sections/Testimonials";
 import BurnoutQuizSection from "@/components/sections/BurnoutQuizSection";

@@ -4,14 +4,17 @@ import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Career Clarity Therapy for Women | Find Your Direction",
+  title: {
+    absolute:
+      "Career Clarity Therapy for Women in Georgia & Florida | Jennifer Walker, LCSW",
+  },
   description:
-    "You've built a successful career — so why does it feel so wrong? Career Clarity Therapy with Jennifer Walker, LCSW helps high-achieving women in Georgia & Florida separate identity from job title.",
+    "You've built a successful career — so why does it feel wrong? Career Clarity Therapy helps high-achieving women in Georgia and Florida untangle identity from job title and find direction.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/career-clarity-therapy" },
   openGraph: {
-    title: "Career Clarity Therapy | Jennifer Walker, LCSW",
+    title: "Career Clarity Therapy for Women in Georgia & Florida | Jennifer Walker, LCSW",
     description:
-      "Therapy that goes beyond career counseling — untangle your self-worth from your job title and find a path that actually fits.",
+      "Untangle your self-worth from your job title and find a career path that actually fits — virtual therapy for women in Georgia & Florida.",
     url: "https://anxietytherapyforwomen.com/career-clarity-therapy",
   },
 };

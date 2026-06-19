@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog | Anxiety & Burnout Insights for High-Performing Women",
+  title: {
+    absolute:
+      "Anxiety & Burnout Therapy Blog | Jennifer Walker, LCSW | Atlanta, GA",
+  },
   description:
-    "Evidence-based guidance on anxiety, burnout recovery, and authentic living — written for high-performing women who are ready to stop surviving and start thriving.",
+    "Evidence-based articles on anxiety, burnout recovery, and authentic living for high-performing professional women — written by Jennifer Walker, LCSW, Atlanta therapist.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/blog" },
   openGraph: {
-    title: "Blog | Jennifer Walker, LCSW",
+    title: "Anxiety & Burnout Therapy Blog | Jennifer Walker, LCSW | Atlanta, GA",
     description:
-      "Evidence-based insights on anxiety, burnout, and authentic living for high-performing women.",
+      "Evidence-based articles on anxiety, burnout, and authentic living for high-performing professional women — by Jennifer Walker, LCSW.",
     url: "https://anxietytherapyforwomen.com/blog",
   },
 };

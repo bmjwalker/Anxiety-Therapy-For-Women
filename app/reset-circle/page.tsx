@@ -4,14 +4,17 @@ import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, Users, Heart, Shield, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Reset Circle | Ongoing Group Support for Women | Jennifer Walker, LCSW",
+  title: {
+    absolute:
+      "Reset Circle | Monthly Burnout Support for Women | Jennifer Walker, LCSW",
+  },
   description:
-    "An ongoing monthly community for high-performing women in recovery from burnout — continued support, connection, and accountability after intensive work with Jennifer Walker, LCSW.",
+    "Ongoing monthly community for high-performing women maintaining their recovery from burnout. Connection, accountability, and continued support with Jennifer Walker, LCSW.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/reset-circle" },
   openGraph: {
-    title: "Reset Circle | Jennifer Walker, LCSW",
+    title: "Reset Circle | Monthly Burnout Support for Women | Jennifer Walker, LCSW",
     description:
-      "Ongoing community and support for high-performing women maintaining their recovery from burnout.",
+      "Ongoing monthly community for high-performing women maintaining their burnout recovery — connection, accountability, and continued support.",
     url: "https://anxietytherapyforwomen.com/reset-circle",
   },
 };

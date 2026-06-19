@@ -4,14 +4,17 @@ import Footer from "@/components/layout/Footer";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "High-Functioning Burnout in Women: Why You're Exhausted Even If You're Still Showing Up",
+  title: {
+    absolute:
+      "High-Functioning Burnout: Exhausted Even While Showing Up | Jennifer Walker, LCSW",
+  },
   description:
-    "You're meeting deadlines, showing up for everyone, keeping it all together — and you're utterly depleted. High-functioning burnout is real, and it's affecting more women than ever.",
+    "You're meeting every deadline and holding it together — and completely depleted inside. Learn the signs of high-functioning burnout and what to do about it.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/blog/high-functioning-burnout-in-women-why-youre-exhausted-even-if-youre-still-showing-up" },
   openGraph: {
-    title: "High-Functioning Burnout in Women: Why You're Exhausted Even If You're Still Showing Up",
+    title: "High-Functioning Burnout: Exhausted Even While Showing Up | Jennifer Walker, LCSW",
     description:
-      "You're meeting deadlines and keeping it all together — and you're utterly depleted. High-functioning burnout is real.",
+      "You're meeting every deadline and holding it together — and completely depleted inside. Learn the signs of high-functioning burnout and what to do about it.",
     url: "https://anxietytherapyforwomen.com/blog/high-functioning-burnout-in-women-why-youre-exhausted-even-if-youre-still-showing-up",
     type: "article",
     images: [{ url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW" }],

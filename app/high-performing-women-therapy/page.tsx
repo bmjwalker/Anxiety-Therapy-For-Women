@@ -4,14 +4,17 @@ import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Therapy for High-Performing Women | Jennifer Walker, LCSW",
+  title: {
+    absolute:
+      "Therapy for High-Performing Women in Atlanta, GA | Jennifer Walker, LCSW",
+  },
   description:
-    "You take care of everything. Who is taking care of you? Therapy for high-performing women in Georgia & Florida navigating perfectionism, people-pleasing, burnout, and identity.",
+    "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout. Virtual sessions in Georgia and Florida. Free 15-minute consultation available.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/high-performing-women-therapy" },
   openGraph: {
-    title: "Therapy for High-Performing Women | Jennifer Walker, LCSW",
+    title: "Therapy for High-Performing Women in Atlanta, GA | Jennifer Walker, LCSW",
     description:
-      "A space built for the woman who has spent too long carrying it all — and is finally ready to put some of it down.",
+      "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout — virtual sessions in Georgia and Florida.",
     url: "https://anxietytherapyforwomen.com/high-performing-women-therapy",
   },
 };

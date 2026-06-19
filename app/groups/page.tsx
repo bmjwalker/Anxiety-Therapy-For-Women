@@ -4,14 +4,17 @@ import Footer from "@/components/layout/Footer";
 import Programs from "@/components/sections/Programs";
 
 export const metadata: Metadata = {
-  title: "Group Therapy Programs | Burnout Recovery for Women",
+  title: {
+    absolute:
+      "Group Therapy Programs for Women | Jennifer Walker, LCSW | Atlanta, GA",
+  },
   description:
-    "Small-group programs for high-performing women ready to move from survival mode to aligned living — structured, intimate, and led by Jennifer Walker, LCSW.",
+    "Structured burnout recovery group programs for high-performing women. Small cohorts, weekly telehealth sessions, led by Jennifer Walker, LCSW in Georgia & Florida.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/groups" },
   openGraph: {
-    title: "Group Therapy Programs | Jennifer Walker, LCSW",
+    title: "Group Therapy Programs for Women | Jennifer Walker, LCSW | Atlanta, GA",
     description:
-      "Structured group programs for high-performing women ready to recover from burnout and reclaim their lives.",
+      "Structured burnout recovery programs for high-performing women — small cohorts, weekly telehealth sessions in Georgia & Florida.",
     url: "https://anxietytherapyforwomen.com/groups",
   },
 };

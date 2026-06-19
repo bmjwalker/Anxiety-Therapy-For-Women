@@ -4,14 +4,17 @@ import Footer from "@/components/layout/Footer";
 import FAQ from "@/components/sections/FAQ";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions | Therapy with Jennifer Walker, LCSW",
+  title: {
+    absolute:
+      "Therapy FAQs | Jennifer Walker, LCSW | Telehealth in Georgia & Florida",
+  },
   description:
-    "Answers to common questions about working with Jennifer Walker, LCSW — therapy format, fees, insurance, telehealth, and what to expect from your first session.",
+    "Common questions about working with Jennifer Walker, LCSW — telehealth format, session fees, insurance, and what to expect from anxiety and burnout therapy in Georgia and Florida.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/faqs" },
   openGraph: {
-    title: "Therapy FAQs | Jennifer Walker, LCSW",
+    title: "Therapy FAQs | Jennifer Walker, LCSW | Telehealth in Georgia & Florida",
     description:
-      "Everything you need to know before starting therapy — fees, insurance, telehealth, and what to expect.",
+      "Common questions about telehealth format, session fees, insurance, and what to expect from therapy with Jennifer Walker, LCSW.",
     url: "https://anxietytherapyforwomen.com/faqs",
   },
 };

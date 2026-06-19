@@ -4,14 +4,17 @@ import Footer from "@/components/layout/Footer";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Why High-Performing Women Overthink (and How to Break the Cycle)",
+  title: {
+    absolute:
+      "Why High-Performing Women Overthink — and How to Stop | Jennifer Walker, LCSW",
+  },
   description:
-    "Rumination feels productive — like you're solving problems — but it often keeps high achievers stuck in anxiety loops. These evidence-based techniques will help you interrupt the cycle for good.",
+    "Rumination feels like problem-solving but keeps you stuck in anxiety loops. Learn evidence-based techniques to interrupt overthinking for good.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/blog/why-high-performing-women-overthink" },
   openGraph: {
-    title: "Why High-Performing Women Overthink (and How to Break the Cycle)",
+    title: "Why High-Performing Women Overthink — and How to Stop | Jennifer Walker, LCSW",
     description:
-      "Rumination feels productive but keeps high achievers stuck in anxiety loops. Here's how to interrupt the cycle for good.",
+      "Rumination feels like problem-solving but keeps you stuck in anxiety loops. Learn evidence-based techniques to interrupt overthinking for good.",
     url: "https://anxietytherapyforwomen.com/blog/why-high-performing-women-overthink",
     type: "article",
     images: [{ url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW" }],

@@ -4,14 +4,17 @@ import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Burnout Recovery & Anxiety Therapy for High-Performing Women",
+  title: {
+    absolute:
+      "Burnout & Anxiety Therapy for Women in Atlanta, GA | Jennifer Walker, LCSW",
+  },
   description:
-    "Feeling exhausted, overwhelmed, and stuck in survival mode? Burnout Recovery & Anxiety Therapy with Jennifer Walker, LCSW helps professional women in Georgia & Florida reclaim calm and clarity.",
+    "Feeling exhausted and stuck in survival mode? Virtual burnout recovery and anxiety therapy for high-performing women in Georgia and Florida. Book a free 15-minute consultation.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/burnout-anxiety-therapy" },
   openGraph: {
-    title: "Burnout Recovery & Anxiety Therapy | Jennifer Walker, LCSW",
+    title: "Burnout & Anxiety Therapy for Women in Atlanta, GA | Jennifer Walker, LCSW",
     description:
-      "Stop white-knuckling through your days. Therapy for high-performing women in Georgia & Florida who are exhausted from being the strong one.",
+      "Feeling exhausted and stuck in survival mode? Virtual burnout recovery and anxiety therapy for high-performing women in Georgia and Florida.",
     url: "https://anxietytherapyforwomen.com/burnout-anxiety-therapy",
   },
 };

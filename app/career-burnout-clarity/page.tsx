@@ -4,14 +4,17 @@ import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, BookOpen, Clock, Download, RefreshCw } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Career Burnout Clarity Program | Jennifer Walker, LCSW",
+  title: {
+    absolute:
+      "Career Burnout Clarity Program | Jennifer Walker, LCSW | Atlanta, GA",
+  },
   description:
-    "A focused program for high-performing women at the intersection of career burnout and identity confusion — clarify what you want, understand what's holding you back, and find a path forward.",
+    "For ambitious women at the crossroads of career burnout and identity confusion. Clarify your direction, understand your patterns, and build a path forward with Jennifer Walker, LCSW.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/career-burnout-clarity" },
   openGraph: {
-    title: "Career Burnout Clarity Program | Jennifer Walker, LCSW",
+    title: "Career Burnout Clarity Program | Jennifer Walker, LCSW | Atlanta, GA",
     description:
-      "Clarify what you want from your career, understand what's holding you back, and build a path forward.",
+      "For ambitious women at the crossroads of career burnout and identity confusion — clarify your direction and build a path forward.",
     url: "https://anxietytherapyforwomen.com/career-burnout-clarity",
   },
 };
