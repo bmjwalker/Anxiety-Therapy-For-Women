@@ -8,6 +8,15 @@ import { ArrowRight, Calendar } from "lucide-react";
 
 const posts = [
   {
+    slug: "the-real-reason-youre-exhausted-its-not-the-chores",
+    category: "Anxiety & Burnout",
+    title: "The Real Reason You're Exhausted: It's Not the Chores",
+    date: "June 19, 2026",
+    readTime: "5 min read",
+    excerpt:
+      "You can split the chores evenly and still be bone-tired. The real culprit is the mental load — the invisible labor of noticing, tracking, and anticipating that never turns off.",
+  },
+  {
     slug: "the-science-of-burnout-what-the-research-actually-says-and-why-youre-not-just-tired",
     category: "Anxiety & Burnout",
     title: "The Science of Burnout: What the Research Actually Says (And Why You're Not Just 'Tired')",
