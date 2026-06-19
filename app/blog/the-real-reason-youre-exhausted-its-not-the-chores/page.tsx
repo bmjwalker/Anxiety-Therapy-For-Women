@@ -198,13 +198,6 @@ export default function BlogPost5() {
               <p className="mt-2 text-dark/60 italic">
                 If you recognize this pattern in your own life, I&rsquo;d be glad to talk. You can{" "}
                 <a
-                  href="/about"
-                  className="text-brand underline underline-offset-2 hover:text-brand-dark transition-colors not-italic"
-                >
-                  reach out through the contact page
-                </a>{" "}
-                or{" "}
-                <a
                   href="https://jennifer-walker7285.clientsecure.me/sign-in"
                   target="_blank"
                   rel="noopener noreferrer"
