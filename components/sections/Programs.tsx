@@ -1,62 +1,29 @@
-import { ArrowRight, Users, BookOpen, Zap, Calendar } from "lucide-react";
+import { Calendar, ArrowRight } from "lucide-react";
 
-// bgPos crops each quadrant from the 2×2 composite programs.png
-const programs = [
+const otherOffers = [
   {
-    icon: Users,
-    badge: "Membership",
-    badgeColor: "bg-mist-light text-brand border-mist",
-    title: "The Reset Circle",
-    subtitle: "Ongoing Community Program",
+    question: "Want community?",
     description:
-      "An ongoing group community for high-performing women ready to break free from burnout cycles. Connect with like-minded women, gain weekly accountability, and access powerful tools — all in a supportive, confidential environment.",
-    features: ["Weekly group sessions", "Community support", "Ongoing enrollment"],
-    cta: "Join the Circle",
-    href: "https://fabulous-teacher-7023.kit.com/resetcircle",
-    bg: "bg-white",
-    bgPos: "0% 0%",
+      "The Reset Circle is an ongoing membership for women who want consistent support and connection between bigger commitments.",
+    linkText: "Learn more",
+    href: "/reset-circle",
+    external: false,
   },
   {
-    icon: BookOpen,
-    badge: "Course",
-    badgeColor: "bg-dusty-light text-dusty-dark border-dusty",
-    title: "Self-Paced Course for Career Burnout & Clarity",
-    subtitle: "Beyond the Strong One Course",
+    question: "Want it fast?",
     description:
-      "A self-paced digital course built for the woman who is done being the strong one for everyone else. Learn evidence-based burnout recovery strategies, rebuild your identity beyond your career, and find clarity about what truly matters — on your schedule.",
-    features: ["Self-paced modules", "Lifetime access", "Downloadable resources"],
-    cta: "Explore the Course",
+      "The 2-Day Intensive is a concentrated, focused experience for women who need clarity now and don't want to wait on a multi-week format.",
+    linkText: "Learn more",
+    href: "/burnout-reset-intensive",
+    external: false,
+  },
+  {
+    question: "Want to go at your own pace?",
+    description:
+      "Beyond the Strong One is a self-paced course you can move through on your own timeline, whenever you have the space for it.",
+    linkText: "Learn more",
     href: "https://fabulous-teacher-7023.kit.com/a2676e1c5d",
-    bg: "bg-cream",
-    bgPos: "100% 0%",
-  },
-  {
-    icon: Zap,
-    badge: "Intensive",
-    badgeColor: "bg-brand-muted text-brand border-sage",
-    title: "2-Day Burnout Reset Intensive",
-    subtitle: "Condensed Deep-Dive Workshop",
-    description:
-      "For the woman who needs transformation fast. This two-day intensive condenses months of work into a powerful, focused experience. You'll walk away with a personalized reset plan, renewed clarity, and a concrete roadmap for sustainable well-being.",
-    features: ["2-day format", "1:1 intensive", "Personalized reset plan"],
-    cta: "Reserve Your Spot",
-    href: "https://fabulous-teacher-7023.kit.com/f8df46e455",
-    bg: "bg-white",
-    bgPos: "0% 100%",
-  },
-  {
-    icon: Calendar,
-    badge: "Group",
-    badgeColor: "bg-moss-light text-brand-dark border-moss-light",
-    title: "6-Week Burnout Reset Group",
-    subtitle: "Structured Cohort Program",
-    description:
-      "A structured six-week journey designed to take you from overwhelmed to aligned. Each week builds on the last — moving through burnout assessment, values clarification, boundary-setting, identity work, and sustainable lifestyle design.",
-    features: ["6 structured weeks", "Small cohort (6-8 women)", "Weekly live sessions"],
-    cta: "Join the Next Cohort",
-    href: "https://fabulous-teacher-7023.kit.com/bd7889084a",
-    bg: "bg-cream",
-    bgPos: "100% 100%",
+    external: true,
   },
 ];
 
@@ -87,74 +54,88 @@ export default function Programs() {
           </p>
         </div>
 
-        {/* Program cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:[grid-auto-rows:1fr]">
-          {programs.map((program) => {
-            const Icon = program.icon;
-            return (
-              <div
-                key={program.title}
-                className="flex flex-col p-4 md:p-6 bg-white border-l-4 border-l-brand rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
-              >
-                {/* Icon + Badge */}
-                <div className="flex items-center justify-between mb-6">
-                  <div className="w-12 h-12 rounded-full bg-brand/10 flex items-center justify-center">
-                    <Icon size={22} className="text-brand" />
-                  </div>
-                  <span
-                    className={`px-3 py-1 rounded-full text-xs font-medium border ${program.badgeColor}`}
-                  >
-                    {program.badge}
-                  </span>
-                </div>
+        {/* Featured: 6-Week Burnout Reset Group */}
+        <div className="flex flex-col p-6 md:p-10 bg-white border-l-4 border-l-brand rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+          {/* Icon + Badge */}
+          <div className="flex items-center justify-between mb-6">
+            <div className="w-12 h-12 rounded-full bg-brand/10 flex items-center justify-center">
+              <Calendar size={22} className="text-brand" />
+            </div>
+            <span className="px-3 py-1 rounded-full text-xs font-medium border bg-moss-light text-brand-dark border-moss-light">
+              Group
+            </span>
+          </div>
 
-                {/* Content */}
-                <h3
-                  className="text-2xl font-semibold text-dark mb-1"
-                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-                >
-                  {program.title}
-                </h3>
-                <p
-                  className="text-base italic mb-4 leading-snug"
-                  style={{ color: "#C4897B" }}
-                >
-                  {program.subtitle}
+          {/* Content */}
+          <h3
+            className="text-3xl md:text-4xl font-semibold text-dark mb-1"
+            style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+          >
+            6-Week Burnout Reset Group
+          </h3>
+          <p className="text-base italic mb-4 leading-snug" style={{ color: "#C4897B" }}>
+            Structured Cohort Program
+          </p>
+          <p className="text-sm text-dark/80 leading-relaxed mb-6 max-w-2xl">
+            A structured six-week journey designed to take you from overwhelmed to aligned.
+            Each week builds on the last — moving through burnout assessment, values
+            clarification, boundary-setting, identity work, and sustainable lifestyle design.
+          </p>
+
+          {/* Features */}
+          <ul className="flex flex-col gap-2 mb-8">
+            {["6 structured weeks", "Small cohort (6–8 women)", "Weekly live sessions"].map(
+              (feature) => (
+                <li key={feature} className="flex items-center gap-2 text-xs text-dark/75">
+                  <div className="w-1.5 h-1.5 rounded-full bg-brand shrink-0" />
+                  {feature}
+                </li>
+              )
+            )}
+          </ul>
+
+          {/* CTA */}
+          <a
+            href="https://fabulous-teacher-7023.kit.com/bd7889084a"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary px-6 py-3 text-sm self-start"
+          >
+            Join the Next Cohort
+            <ArrowRight size={14} />
+          </a>
+        </div>
+
+        {/* Other Ways to Work With Me */}
+        <div className="mt-14">
+          <h3
+            className="text-lg font-medium text-dark/60 mb-8 tracking-wide uppercase text-xs"
+            style={{ letterSpacing: "0.1em" }}
+          >
+            Other Ways to Work With Me
+          </h3>
+          <div className="flex flex-col gap-7">
+            {otherOffers.map((offer) => (
+              <div key={offer.question} className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
+                <p className="text-sm text-dark/80 leading-relaxed">
+                  <span className="font-semibold text-dark">{offer.question}</span>{" "}
+                  {offer.description}
                 </p>
-                <p className="text-sm text-dark/80 leading-relaxed mb-6 flex-1">
-                  {program.description}
-                </p>
-
-                {/* Features */}
-                <ul className="flex flex-col gap-2 mb-8">
-                  {program.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className="flex items-center gap-2 text-xs text-dark/75"
-                    >
-                      <div className="w-1.5 h-1.5 rounded-full bg-brand shrink-0" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-
-                {/* CTA */}
                 <a
-                  href={program.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary px-6 py-3 text-sm self-start"
+                  href={offer.href}
+                  target={offer.external ? "_blank" : undefined}
+                  rel={offer.external ? "noopener noreferrer" : undefined}
+                  className="inline-flex items-center gap-1 text-sm text-brand hover:text-brand-dark transition-colors whitespace-nowrap shrink-0 font-medium"
                 >
-                  {program.cta}
-                  <ArrowRight size={14} />
+                  {offer.linkText} <ArrowRight size={12} />
                 </a>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
 
         {/* Bottom note */}
-        <p className="mt-10 text-center text-sm text-dark/70">
+        <p className="mt-12 text-center text-sm text-dark/70">
           Not sure which program is right for you?{" "}
           <a
             href="https://jennifer-walker7285.clientsecure.me/sign-in"
