@@ -5,7 +5,7 @@ const otherOffers = [
     question: "Want community?",
     description:
       "The Reset Circle is an ongoing membership for women who want consistent support and connection between bigger commitments.",
-    linkText: "Learn more",
+    linkText: "Join the Circle →",
     href: "/reset-circle",
     external: false,
   },
@@ -13,7 +13,7 @@ const otherOffers = [
     question: "Want it fast?",
     description:
       "The 2-Day Intensive is a concentrated, focused experience for women who need clarity now and don't want to wait on a multi-week format.",
-    linkText: "Learn more",
+    linkText: "Reserve your spot →",
     href: "/burnout-reset-intensive",
     external: false,
   },
@@ -21,7 +21,7 @@ const otherOffers = [
     question: "Want to go at your own pace?",
     description:
       "Beyond the Strong One is a self-paced course you can move through on your own timeline, whenever you have the space for it.",
-    linkText: "Learn more",
+    linkText: "Start the course →",
     href: "https://fabulous-teacher-7023.kit.com/a2676e1c5d",
     external: true,
   },
@@ -117,20 +117,18 @@ export default function Programs() {
           </h3>
           <div className="flex flex-col gap-7">
             {otherOffers.map((offer) => (
-              <div key={offer.question} className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
-                <p className="text-sm text-dark/80 leading-relaxed">
-                  <span className="font-semibold text-dark">{offer.question}</span>{" "}
-                  {offer.description}
-                </p>
+              <p key={offer.question} className="text-sm text-dark/80 leading-relaxed">
+                <span className="font-semibold text-dark">{offer.question}</span>{" "}
+                {offer.description}{" "}
                 <a
                   href={offer.href}
                   target={offer.external ? "_blank" : undefined}
                   rel={offer.external ? "noopener noreferrer" : undefined}
-                  className="inline-flex items-center gap-1 text-sm text-brand hover:text-brand-dark transition-colors whitespace-nowrap shrink-0 font-medium"
+                  className="text-brand hover:text-brand-dark transition-colors font-medium"
                 >
-                  {offer.linkText} <ArrowRight size={12} />
+                  {offer.linkText}
                 </a>
-              </div>
+              </p>
             ))}
           </div>
         </div>
