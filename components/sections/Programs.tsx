@@ -117,18 +117,20 @@ export default function Programs() {
           </h3>
           <div className="flex flex-col gap-7">
             {otherOffers.map((offer) => (
-              <p key={offer.question} className="text-sm text-dark/80 leading-relaxed">
-                <span className="font-semibold text-dark">{offer.question}</span>{" "}
-                {offer.description}{" "}
+              <div key={offer.question} className="flex flex-col gap-2.5">
+                <p className="text-sm text-dark/80 leading-relaxed">
+                  <span className="font-semibold text-dark">{offer.question}</span>{" "}
+                  {offer.description}
+                </p>
                 <a
                   href={offer.href}
                   target={offer.external ? "_blank" : undefined}
                   rel={offer.external ? "noopener noreferrer" : undefined}
-                  className="text-brand hover:text-brand-dark transition-colors font-medium"
+                  className="self-start inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-medium text-brand border border-brand/30 bg-brand/5 hover:bg-brand/10 transition-colors"
                 >
                   {offer.linkText}
                 </a>
-              </p>
+              </div>
             ))}
           </div>
         </div>
