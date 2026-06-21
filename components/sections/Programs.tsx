@@ -77,9 +77,10 @@ export default function Programs() {
             Structured Cohort Program
           </p>
           <p className="text-sm text-dark/80 leading-relaxed mb-6 max-w-2xl">
-            A structured six-week journey designed to take you from overwhelmed to aligned.
-            Each week builds on the last — moving through burnout assessment, values
-            clarification, boundary-setting, identity work, and sustainable lifestyle design.
+            Six weeks, one small group, a clear path forward. You&apos;ll move week by week
+            from understanding your burnout to actually changing how you live — assessing where
+            you are, getting clear on your values, learning to set real boundaries, and building
+            a version of your life that doesn&apos;t require running on empty.
           </p>
 
           {/* Features */}
