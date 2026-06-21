@@ -216,7 +216,7 @@ export default function TherapyServices() {
         {/* ── Sub-section 2: Areas We Can Help ── */}
         <div className="mb-20 py-16 px-6 md:px-10 bg-[#F7F3EE]">
           <h3
-            className="text-4xl md:text-5xl font-semibold text-dark mb-3"
+            className="text-5xl md:text-6xl font-semibold text-dark mb-3"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             Areas We Can{" "}
