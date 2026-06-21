@@ -91,32 +91,6 @@ const services = [
   },
 ];
 
-const approaches = [
-  {
-    name: "Dialectical Behavior Therapy (DBT)",
-    description: "Skills for managing intense emotions, improving relationships, and staying grounded in the present moment.",
-  },
-  {
-    name: "Cognitive Behavioral Therapy (CBT)",
-    description: "Identifying and reshaping thought patterns that fuel anxiety, perfectionism, and self-doubt.",
-  },
-  {
-    name: "Solution-Focused Brief Therapy",
-    description: "Building on your existing strengths to create forward momentum toward clear, achievable goals.",
-  },
-  {
-    name: "Trauma-Informed Care",
-    description: "Recognizing how past experiences shape present patterns — approached with compassion, not pathology.",
-  },
-  {
-    name: "Mindfulness-Based Approaches",
-    description: "Developing present-moment awareness to interrupt anxiety spirals, overthinking, and emotional reactivity.",
-  },
-  {
-    name: "Motivational Interviewing",
-    description: "Exploring ambivalence and building your own internal motivation for meaningful, lasting change.",
-  },
-];
 
 const steps = [
   {
@@ -278,31 +252,20 @@ export default function TherapyServices() {
           </a>
         </div>
 
-        {/* ── Sub-section 3: Approaches ── */}
+        {/* ── Sub-section 3: How We Work Together ── */}
         <div className="mb-20">
           <h3
-            className="text-3xl md:text-4xl font-normal text-dark mb-3"
+            className="text-3xl md:text-4xl font-normal text-dark mb-4"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
-            Approaches We Use In Therapy
+            How We Work Together
           </h3>
-          <p className="text-dark/75 mb-8 max-w-2xl">
-            Evidence-based methods combined with culturally responsive, compassionate practice.
+          <p className="text-dark/75 mb-10 max-w-2xl leading-relaxed">
+            Our work draws on approaches like DBT, CBT, trauma-informed care, and solution-focused
+            therapy — grounded in what actually helps: managing the intensity of anxiety, untangling
+            the thought patterns that fuel perfectionism, and building a life that doesn&apos;t
+            require running on empty.
           </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 mb-10">
-            {approaches.map((approach) => (
-              <div key={approach.name} className="flex flex-col gap-1 pl-5 border-l-2 border-l-brand">
-                <p
-                  className="text-lg font-semibold text-dark"
-                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-                >
-                  {approach.name}
-                </p>
-                <p className="text-sm text-dark/75 leading-relaxed">{approach.description}</p>
-              </div>
-            ))}
-          </div>
 
           <a
             href="https://jennifer-walker7285.clientsecure.me/sign-in"
