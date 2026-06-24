@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -23,6 +24,40 @@ export async function generateMetadata({
   };
 }
 
+// Parses markdown-style [text](url) links into clickable <a> tags, leaving everything else unchanged
+function renderInlineText(text: string): ReactNode[] {
+  const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+
+  while ((match = linkPattern.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const [, linkText, url] = match;
+    parts.push(
+      <a
+        key={key++}
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-brand font-medium underline hover:text-brand-dark"
+      >
+        {linkText}
+      </a>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts;
+}
+
 function renderContentBlock(text: string, index: number) {
   // Explicit section heading (scraped h2/h3)
   if (text.startsWith("## ")) {
@@ -32,7 +67,7 @@ function renderContentBlock(text: string, index: number) {
         className="text-2xl md:text-3xl font-light text-dark mt-8 mb-2"
         style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
       >
-        {text.slice(3)}
+        {renderInlineText(text.slice(3))}
       </h2>
     );
   }
@@ -43,14 +78,14 @@ function renderContentBlock(text: string, index: number) {
   if (words.length < 6 && !isBullet) {
     return (
       <p key={index} className="font-semibold text-dark text-base mt-4 mb-0.5">
-        {text}
+        {renderInlineText(text)}
       </p>
     );
   }
 
   return (
     <p key={index} className="text-base text-dark/75 leading-relaxed">
-      {text}
+      {renderInlineText(text)}
     </p>
   );
 }
