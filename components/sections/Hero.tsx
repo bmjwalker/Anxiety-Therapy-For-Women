@@ -5,22 +5,8 @@ export default function Hero() {
     <section
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden"
-      style={{
-        backgroundImage: "url('/hero-bg.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "right top",
-        backgroundRepeat: "no-repeat",
-      }}
+      style={{ backgroundColor: "#F5EFE6" }}
     >
-      {/* Teal multiply overlay */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background: "rgba(74,124,126,0.25)",
-          mixBlendMode: "multiply",
-        }}
-        aria-hidden="true"
-      />
 
       {/* Content */}
       <div className="section-container w-full relative z-10 pt-24 pb-16">
@@ -34,8 +20,8 @@ export default function Hero() {
 
           {/* Main Headline */}
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl font-light text-dark mb-4 leading-[1.08]"
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+            className="text-4xl sm:text-5xl md:text-6xl font-light mb-4 leading-[1.08]"
+            style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#1F3D3A" }}
           >
             Helping High-Performing<br />
             Women Stop Living in{" "}
@@ -44,8 +30,8 @@ export default function Hero() {
 
           {/* Supporting line */}
           <p
-            className="text-xl md:text-2xl font-light text-dark/75 mb-5 italic"
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+            className="text-xl md:text-2xl font-light mb-5 italic"
+            style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#5A5A5A" }}
           >
             You deserve to thrive, not just survive.
           </p>
@@ -70,7 +56,7 @@ export default function Hero() {
               href="https://w48bpx2y2ic.typeform.com/to/G8yK8j8J"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-base font-medium transition-colors duration-200"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-[#C4897B] text-base font-medium transition-colors duration-200"
               style={{ backgroundColor: "#FFFFFF", color: "#57686B" }}
             >
               Take the 2-Min Burnout Quiz
