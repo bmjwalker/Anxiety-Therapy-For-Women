@@ -27,7 +27,7 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "linear-gradient(to top right, rgba(74,124,126,0.18) 0%, rgba(74,124,126,0) 55%)",
+            "linear-gradient(to top right, rgba(74,124,126,0.35) 0%, rgba(74,124,126,0.08) 45%, rgba(74,124,126,0) 65%)",
         }}
         aria-hidden="true"
       />
