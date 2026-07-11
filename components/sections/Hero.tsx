@@ -10,7 +10,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="section-container w-full relative z-10 pt-24 pb-16">
-        <div className="max-w-xl lg:max-w-2xl">
+        <div className="max-w-3xl mx-auto text-center">
           {/* Eyebrow removed per request */}
 
           {/* Positioning */}
@@ -23,8 +23,7 @@ export default function Hero() {
             className="text-4xl sm:text-5xl md:text-6xl font-light mb-4 leading-[1.08]"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#1F3D3A" }}
           >
-            Helping High-Performing<br />
-            Women Stop Living in{" "}
+            Helping High-Performing Women Stop Living in{" "}
             <span className="italic text-brand">Survival Mode</span>
           </h1>
 
@@ -37,14 +36,14 @@ export default function Hero() {
           </p>
 
           {/* Subheadline */}
-          <p className="text-base md:text-lg text-dark/85 mb-10 max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg text-dark/85 mb-10 leading-relaxed">
             Helping ambitious women in Georgia and Florida overcome burnout, anxiety,
             perfectionism, chronic stress, and overthinking so they can reclaim clarity,
             confidence, and balance.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://jennifer-walker7285.clientsecure.me/sign-in"
               className="btn-primary px-8 py-4 text-base shadow-md"
@@ -64,7 +63,7 @@ export default function Hero() {
           </div>
 
           {/* Trust signal */}
-          <div className="mt-12 flex flex-row flex-wrap items-center gap-3">
+          <div className="mt-12 flex flex-row flex-wrap items-center justify-center gap-3">
             {[
               "Licensed in Georgia & Florida",
               "Telehealth Available",
