@@ -22,6 +22,16 @@ export default function Hero() {
         aria-hidden="true"
       />
 
+      {/* Teal tint — bottom-left corner at 18% opacity, fades to transparent before the face */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(to top right, rgba(74,124,126,0.18) 0%, rgba(74,124,126,0) 55%)",
+        }}
+        aria-hidden="true"
+      />
+
       {/* Content */}
       <div className="section-container w-full relative z-10 pt-24 pb-16">
         <div className="max-w-xl lg:max-w-2xl">
