@@ -12,22 +12,12 @@ export default function Hero() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Gradient overlay — heavier on the left where text lives, fades right so image breathes */}
+      {/* Teal multiply overlay */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background:
-            "linear-gradient(to right, rgba(242,241,235,1) 0%, rgba(242,241,235,1) 52%, rgba(242,241,235,0.65) 68%, rgba(242,241,235,0.10) 100%)",
-        }}
-        aria-hidden="true"
-      />
-
-      {/* Teal tint — bottom-left corner at 18% opacity, fades to transparent before the face */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(to top right, rgba(74,124,126,0.35) 0%, rgba(74,124,126,0.08) 45%, rgba(74,124,126,0) 65%)",
+          background: "rgba(74,124,126,0.45)",
+          mixBlendMode: "multiply",
         }}
         aria-hidden="true"
       />
