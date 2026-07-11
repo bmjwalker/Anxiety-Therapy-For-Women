@@ -16,7 +16,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: "rgba(74,124,126,0.45)",
+          background: "rgba(74,124,126,0.25)",
           mixBlendMode: "multiply",
         }}
         aria-hidden="true"
