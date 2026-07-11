@@ -70,7 +70,8 @@ export default function Hero() {
               href="https://w48bpx2y2ic.typeform.com/to/G8yK8j8J"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-brand text-brand text-base font-medium hover:bg-brand-muted transition-colors duration-200"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-base font-medium transition-colors duration-200"
+              style={{ backgroundColor: "#FFFFFF", color: "#57686B" }}
             >
               Take the 2-Min Burnout Quiz
             </a>
