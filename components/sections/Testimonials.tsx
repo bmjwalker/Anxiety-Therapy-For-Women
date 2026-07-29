@@ -1,3 +1,5 @@
+import { Quote } from "lucide-react";
+
 const testimonials = [
   {
     quote: "I finally stopped feeling like I was drowning.",
@@ -15,8 +17,15 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="section-padding" style={{ backgroundColor: "#F4F1EE" }}>
-      <div className="section-container">
+    <section className="relative overflow-hidden py-20 md:py-32 bg-mist">
+      <Quote
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-6 right-4 md:right-10 text-white/25"
+        size={220}
+        strokeWidth={1}
+        fill="currentColor"
+      />
+      <div className="section-container relative">
         <div className="flex items-center gap-3 mb-3">
           <div className="h-px w-12 bg-dusty" />
           <span className="text-xs tracking-widest uppercase text-dusty font-medium">
@@ -25,12 +34,13 @@ export default function Testimonials() {
         </div>
 
         <h2
-          className="text-4xl md:text-5xl font-normal text-dark mb-8"
+          className="text-4xl md:text-5xl font-normal text-dark mb-3"
           style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
         >
           What Women{" "}
           <span className="italic" style={{ color: "#4A7C7E" }}>Often Tell Me</span>
         </h2>
+        <div className="h-1 w-12 rounded-full mb-8" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
           {testimonials.map(({ quote, credit }) => (
