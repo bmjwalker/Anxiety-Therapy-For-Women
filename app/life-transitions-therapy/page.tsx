@@ -6,15 +6,15 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Life Transitions Therapy for Women in Atlanta, GA | Jennifer Walker, LCSW",
+      "Life Transitions Therapy | Anxiety Therapy for Women",
   },
   description:
-    "Navigate divorce, job change, loss, and major life shifts without losing yourself. Telehealth life transitions therapy for women in Georgia and Florida.",
+    "Career change, divorce, becoming a parent, a big move — therapy to help you navigate major life transitions without losing yourself in the process.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/life-transitions-therapy" },
   openGraph: {
-    title: "Life Transitions Therapy for Women in Atlanta, GA | Jennifer Walker, LCSW",
+    title: "Life Transitions Therapy | Anxiety Therapy for Women",
     description:
-      "Navigate divorce, career change, loss, and major life shifts without losing yourself. Telehealth therapy for women in Georgia and Florida.",
+      "Career change, divorce, becoming a parent, a big move — therapy to help you navigate major life transitions without losing yourself in the process.",
     url: "https://anxietytherapyforwomen.com/life-transitions-therapy",
   },
 };

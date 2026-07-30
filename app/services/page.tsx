@@ -7,15 +7,15 @@ import Programs from "@/components/sections/Programs";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Therapy Services for Women in Atlanta, GA | Jennifer Walker, LCSW",
+      "Therapy Services for Anxiety & Burnout | Anxiety Therapy",
   },
   description:
-    "Telehealth therapy services for high-performing women in Georgia and Florida — burnout recovery, anxiety therapy, career clarity, life transitions, and more.",
+    "Individual therapy for high-achieving women dealing with anxiety, burnout, and major life transitions. Find the right fit for where you are.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/services" },
   openGraph: {
-    title: "Therapy Services for Women in Atlanta, GA | Jennifer Walker, LCSW",
+    title: "Therapy Services for Anxiety & Burnout | Anxiety Therapy",
     description:
-      "Telehealth therapy for high-performing women in Georgia and Florida — burnout recovery, anxiety, career clarity, and life transitions.",
+      "Individual therapy for high-achieving women dealing with anxiety, burnout, and major life transitions. Find the right fit for where you are.",
     url: "https://anxietytherapyforwomen.com/services",
   },
 };

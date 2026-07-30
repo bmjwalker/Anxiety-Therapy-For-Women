@@ -1,13 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="JW monogram">
-  <!-- Simplified for small sizes: thicker strokes, larger bar, tighter margins -->
-  <g fill="none" stroke="#57686B" stroke-width="16" stroke-linecap="square">
-    <line x1="16" y1="16" x2="184" y2="16" />
-    <line x1="16" y1="16" x2="16" y2="184" />
-    <line x1="184" y1="16" x2="184" y2="184" />
-  </g>
+  <!-- Simplified for small sizes: thicker strokes, larger radius -->
+  <!-- Ring: 270° teal arc (top, left, right) -->
+  <path
+    d="M 40.6 159.4 A 84 84 0 1 1 159.4 159.4"
+    fill="none"
+    stroke="#57686B"
+    stroke-width="16"
+    stroke-linecap="butt"
+  />
 
-  <!-- Bottom accent bar, centered on the square's bottom edge -->
-  <rect x="16" y="173" width="168" height="22" fill="#CAAF99" />
+  <!-- Ring: 90° rose accent arc, centered at the bottom -->
+  <path
+    d="M 159.4 159.4 A 84 84 0 0 1 40.6 159.4"
+    fill="none"
+    stroke="#CAAF99"
+    stroke-width="16"
+    stroke-linecap="butt"
+  />
 
   <!-- JW monogram -->
   <text
