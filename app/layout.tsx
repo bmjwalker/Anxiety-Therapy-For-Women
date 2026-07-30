@@ -36,6 +36,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://anxietytherapyforwomen.com",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+  },
   openGraph: {
     title: "Jennifer Walker, LCSW | Anxiety Therapy for Women",
     description:

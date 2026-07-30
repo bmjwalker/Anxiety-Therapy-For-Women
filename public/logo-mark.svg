@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="JW monogram">
+  <!-- Square outline: top, left, right sides (bottom edge is the accent bar below) -->
+  <g fill="none" stroke="#57686B" stroke-width="8" stroke-linecap="square">
+    <line x1="24" y1="24" x2="176" y2="24" />
+    <line x1="24" y1="24" x2="24" y2="176" />
+    <line x1="176" y1="24" x2="176" y2="176" />
+  </g>
+
+  <!-- Bottom accent bar, centered on the square's bottom edge -->
+  <rect x="24" y="168" width="152" height="16" fill="#CAAF99" />
+
+  <!-- JW monogram -->
+  <text
+    x="100"
+    y="103"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Arial, Helvetica, sans-serif"
+    font-weight="700"
+    font-size="84"
+    letter-spacing="-2"
+    fill="#57686B"
+  >JW</text>
+</svg>

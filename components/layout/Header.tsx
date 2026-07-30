@@ -37,11 +37,11 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <Image
-              src="/transparent-logo.png"
+              src="/logo-mark.svg"
               alt="Jennifer Walker LCSW logo"
               width={52}
               height={52}
-              className="object-contain mix-blend-multiply"
+              className="object-contain"
             />
             <span
               className="text-xl md:text-2xl font-medium text-brand whitespace-nowrap"
