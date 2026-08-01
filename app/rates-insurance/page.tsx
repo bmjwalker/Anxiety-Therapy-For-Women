@@ -179,6 +179,11 @@ export default function RatesInsurancePage() {
                 Get an instant price estimate
                 <ArrowRight size={15} />
               </a>
+              <p className="text-sm text-dark/70 mt-3 max-w-md">
+                Once you&rsquo;re on Headway&rsquo;s page, look for the green box in the bottom
+                right corner — that&rsquo;s where you&rsquo;ll enter your insurance to see your
+                estimated cost.
+              </p>
             </div>
           </div>
         </section>
