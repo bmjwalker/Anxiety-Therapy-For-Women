@@ -68,13 +68,11 @@ const services = [
     title: "Career Clarity Therapy",
     tagline: "You've built a successful career. So why does it feel so wrong?",
     description:
-      "Untangle your identity from your job title and find a path forward that actually fits your values.",
+      "Untangle your identity from your job title and find a path forward that actually fits your values — whether that's inside your current role or somewhere new.",
     bullets: [
       "Separate your self-worth from productivity",
       "Identify what you truly want",
-      "Step into aligned, meaningful work",
-      "Navigate a performance review, HR process, or restructuring without losing yourself",
-      "Return to work — or leave it — on your own terms",
+      "Navigate a career transition — a review, a restructuring, returning to work, or stepping away — without losing yourself",
     ],
     href: "/career-clarity-therapy",
   },
