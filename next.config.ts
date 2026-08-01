@@ -40,11 +40,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/rates-insurance",
-        destination: "/faqs",
-        permanent: true,
-      },
-      {
         source: "/womens-issues",
         destination: "/high-performing-women-therapy",
         permanent: true,
