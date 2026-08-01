@@ -36,39 +36,6 @@ const struggles = [
   },
 ];
 
-const moments = [
-  {
-    title: "A performance review or improvement plan",
-    description: "when feedback lands as a verdict on your worth, not just your work.",
-    accent: "border-l-brand",
-  },
-  {
-    title: "A disciplinary or formal HR process",
-    description: "when hypervigilance, replaying conversations, and shame take over.",
-    accent: "border-l-[#C4897B]",
-  },
-  {
-    title: "A restructuring or reduction in force",
-    description: "whether you're leaving, staying, or waiting to find out.",
-    accent: "border-l-sage",
-  },
-  {
-    title: "A leave of absence",
-    description: "the exhaustion that made it necessary, and the guilt of taking it.",
-    accent: "border-l-moss",
-  },
-  {
-    title: "Workplace conflict or mediation",
-    description: "being asked to stay composed while you're anything but.",
-    accent: "border-l-dusty",
-  },
-  {
-    title: "Returning to work after time away",
-    description: "rebuilding confidence and pacing yourself so you don't crash again.",
-    accent: "border-l-mist-dark",
-  },
-];
-
 const services = [
   {
     icon: Brain,
@@ -106,6 +73,8 @@ const services = [
       "Separate your self-worth from productivity",
       "Identify what you truly want",
       "Step into aligned, meaningful work",
+      "Navigate a performance review, HR process, or restructuring without losing yourself",
+      "Return to work — or leave it — on your own terms",
     ],
     href: "/career-clarity-therapy",
   },
@@ -223,68 +192,6 @@ export default function TherapyServices() {
             Book a Free Consultation
             <ArrowRight size={15} />
           </a>
-        </div>
-
-        {/* ── Sub-section: Moments I Often Help Women Through ── */}
-        <div className="mb-20 py-16 px-6 md:px-10" style={{ backgroundColor: "rgba(74,124,126,0.06)" }}>
-          <div className="flex items-center gap-3 mb-4">
-            <div className="h-px w-12 bg-dusty" />
-            <span className="text-xs tracking-widest uppercase text-dusty font-medium">
-              Support at Work
-            </span>
-          </div>
-          <h3
-            className="text-4xl md:text-5xl font-semibold text-dark mb-4"
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-          >
-            Moments I <span className="italic text-brand">Often Help Women Through</span>
-          </h3>
-          <div className="h-1 w-14 rounded-full mb-12" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
-
-          <p className="text-base md:text-lg text-dark/70 leading-relaxed mb-10 max-w-4xl mx-auto text-center">
-            High-performing women rarely reach out because something is dramatically wrong. More
-            often, they reach out during a specific transition at work that quietly overwhelms the
-            systems they usually rely on. What you share here stays here — a confidential, private
-            space where you can process what&apos;s happening and focus on yourself. These are some
-            of the moments I help women navigate:
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 md:[grid-auto-rows:1fr]">
-            {moments.map((moment) => (
-              <div
-                key={moment.title}
-                className={`flex flex-col gap-2 p-4 md:p-6 bg-white border-l-4 ${moment.accent} border border-cream-dark rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300`}
-              >
-                <p
-                  className="text-xl font-semibold text-dark leading-snug"
-                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-                >
-                  {moment.title}
-                </p>
-                <p className="text-sm text-dark/75 leading-relaxed">{moment.description}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <p
-              className="text-xl md:text-2xl font-light italic text-dark/80 mb-8 max-w-2xl mx-auto"
-              style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-            >
-              If you recognize yourself in any of these, you&apos;re in good company. These are
-              common, human responses to real pressure, and they&apos;re workable with the right
-              support.
-            </p>
-            <a
-              href="https://jennifer-walker7285.clientsecure.me/sign-in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary px-7 py-3.5 text-sm"
-            >
-              Book a Free Consultation
-              <ArrowRight size={15} />
-            </a>
-          </div>
         </div>
 
         {/* ── Sub-section 2: Areas We Can Help ── */}
