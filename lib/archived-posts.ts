@@ -478,7 +478,7 @@ If you're ready to show up with more clarity, more boundaries, and more compassi
     `Ready to Lead Well?`,
     `The longer burnout goes unaddressed, the more it costs your people—and your business.`,
     `I work with high-achieving women in Georgia and Florida who are running on empty and ready for something different. If this article hit close to home, here's where to start:`,
-    `👉 [How Burned Out Are You? Take the 2-minute quiz](https://w48bpx2y2ic.typeform.com/to/G8yK8j8J)`,
+    `👉 [How Burned Out Are You? Take the 2-minute quiz](https://w48bpx2y2ic.typeform.com/to/zBGT9y6e)`,
     `👉 [Schedule a free 15-minute consultation](https://jennifer-walker7285.clientsecure.me/sign-in)`,
     `👉 [Download the free Burnout Reflection Guide](https://fabulous-teacher-7023.kit.com/db3a6274d6)`,
     `Jennifer Walker, LCSW — Anxiety and Burnout Recovery Specialist for High-Performing Women`,

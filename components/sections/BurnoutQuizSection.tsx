@@ -30,7 +30,7 @@ export default function BurnoutQuizSection() {
           </p>
 
           <a
-            href="https://w48bpx2y2ic.typeform.com/to/G8yK8j8J"
+            href="https://w48bpx2y2ic.typeform.com/to/zBGT9y6e"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-base font-medium transition-colors duration-200"

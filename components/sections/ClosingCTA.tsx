@@ -58,7 +58,7 @@ export default function ClosingCTA() {
               <ArrowRight size={16} />
             </a>
             <a
-              href="https://w48bpx2y2ic.typeform.com/to/G8yK8j8J"
+              href="https://w48bpx2y2ic.typeform.com/to/zBGT9y6e"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-white/50 text-white text-base font-medium hover:bg-white/10 transition-colors duration-200"
