@@ -91,7 +91,7 @@ export default function Hero() {
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-[#C4897B] text-base font-medium transition-colors duration-200"
                 style={{ backgroundColor: "#FFFFFF", color: "#57686B" }}
               >
-                Take the 2-Min Burnout Quiz
+                Take the 2-Min Survival Role Quiz
               </a>
             </div>
 
