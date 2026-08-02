@@ -76,7 +76,7 @@ export default function Footer() {
                 "Anxiety & Burnout Therapy",
                 "Career Clarity Therapy",
                 "Life Transitions Therapy",
-                "High-Performing Women Therapy",
+                "High-Performing Professional Women Therapy",
                 "DBT & CBT Approaches",
                 "Telehealth (GA & FL)",
               ].map((item) => (

@@ -8,12 +8,12 @@ export const metadata: Metadata = {
     absolute: "About Jennifer Walker, LCSW | Atlanta Anxiety & Burnout Therapist",
   },
   description:
-    "Jennifer Walker is a Licensed Clinical Social Worker with 20+ years helping high-performing women in Georgia and Florida recover from burnout and anxiety via telehealth.",
+    "Jennifer Walker is a Licensed Clinical Social Worker with 20+ years helping high-performing professional women in Georgia and Florida recover from burnout and anxiety via telehealth.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/about" },
   openGraph: {
     title: "About Jennifer Walker, LCSW | Atlanta Anxiety & Burnout Therapist",
     description:
-      "Jennifer Walker is a Licensed Clinical Social Worker with 20+ years helping high-performing women in Georgia and Florida recover from burnout and anxiety via telehealth.",
+      "Jennifer Walker is a Licensed Clinical Social Worker with 20+ years helping high-performing professional women in Georgia and Florida recover from burnout and anxiety via telehealth.",
     url: "https://anxietytherapyforwomen.com/about",
     images: [
       {
@@ -61,12 +61,20 @@ export default function AboutPage() {
         <About />
         <section className="section-padding bg-white">
           <div className="section-container">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="h-px w-12 bg-dusty" />
+              <span className="text-xs tracking-widest uppercase text-dusty font-medium">
+                Our Approach
+              </span>
+            </div>
             <h2
               className="text-3xl md:text-4xl font-normal text-dark mb-3"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
-              Approaches We Use In Therapy
+              Approaches We Use{" "}
+              <span className="italic text-brand">In Therapy</span>
             </h2>
+            <div className="h-1 w-12 rounded-full mb-6" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
             <p className="text-dark/75 mb-8 max-w-2xl">
               Evidence-based methods combined with culturally responsive, compassionate practice.
             </p>

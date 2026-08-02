@@ -6,13 +6,13 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Therapy for High-Performing Women in Atlanta, GA | Jennifer Walker, LCSW",
+      "Therapy for High-Performing Professional Women in Atlanta, GA | Jennifer Walker, LCSW",
   },
   description:
     "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout. Virtual sessions in Georgia and Florida. Free 15-minute consultation available.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/high-performing-women-therapy" },
   openGraph: {
-    title: "Therapy for High-Performing Women in Atlanta, GA | Jennifer Walker, LCSW",
+    title: "Therapy for High-Performing Professional Women in Atlanta, GA | Jennifer Walker, LCSW",
     description:
       "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout — virtual sessions in Georgia and Florida.",
     url: "https://anxietytherapyforwomen.com/high-performing-women-therapy",
@@ -56,7 +56,7 @@ const areas = [
   },
   {
     title: "Burnout",
-    body: "Burnout is what happens when high-performing women go too long without being honest about their limits. If you're here, you're probably there. Let's talk about what recovery actually looks like.",
+    body: "Burnout is what happens when high-performing professional women go too long without being honest about their limits. If you're here, you're probably there. Let's talk about what recovery actually looks like.",
   },
 ];
 
@@ -110,7 +110,7 @@ export default function HighPerformingWomenTherapyPage() {
                 <span className="italic text-brand">recognize this?</span>
               </h2>
               <p className="text-base text-dark/70 mb-10 leading-relaxed">
-                High-performing women are often the last to ask for help — because they&rsquo;ve
+                High-performing professional women are often the last to ask for help — because they&rsquo;ve
                 built their identity around not needing it. But there&rsquo;s a difference
                 between being capable and carrying too much. If any of this sounds familiar,
                 you&rsquo;re in the right place.

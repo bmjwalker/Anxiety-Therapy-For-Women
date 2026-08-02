@@ -9,12 +9,12 @@ export const metadata: Metadata = {
       "Jennifer Walker, LCSW | Anxiety & Burnout Therapy for Women in Atlanta, GA",
   },
   description:
-    "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW. Book a free consultation.",
+    "Virtual anxiety and burnout therapy for high-performing professional women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW. Book a free consultation.",
   alternates: { canonical: "https://anxietytherapyforwomen.com" },
   openGraph: {
     title: "Jennifer Walker, LCSW | Anxiety & Burnout Therapy for Women in Atlanta, GA",
     description:
-      "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW. Book a free consultation.",
+      "Virtual anxiety and burnout therapy for high-performing professional women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW. Book a free consultation.",
     url: "https://anxietytherapyforwomen.com",
   },
 };
@@ -74,7 +74,7 @@ const jsonLd = {
       "familyName": "Walker",
       "jobTitle": "Licensed Clinical Social Worker",
       "description":
-        "Licensed Clinical Social Worker (LCSW) with 20+ years of experience supporting high-performing women through burnout, anxiety, life transitions, and career clarity.",
+        "Licensed Clinical Social Worker (LCSW) with 20+ years of experience supporting high-performing professional women through burnout, anxiety, life transitions, and career clarity.",
       "url": "https://anxietytherapyforwomen.com/about",
       "image": "https://anxietytherapyforwomen.com/headshot.jpg",
       "worksFor": { "@id": "https://anxietytherapyforwomen.com/#business" },
@@ -86,7 +86,7 @@ const jsonLd = {
         "Cognitive Behavioral Therapy",
         "Dialectical Behavior Therapy",
         "Trauma-Informed Care",
-        "High-Performing Women",
+        "High-Performing Professional Women",
       ],
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",

@@ -48,7 +48,7 @@ export default function Hero() {
 
             {/* Positioning */}
             <p className="text-sm font-medium text-sage mb-5 tracking-wide">
-              Anxiety and Burnout Recovery Specialist for High-Performing Women in Atlanta, GA
+              Anxiety and Burnout Recovery Specialist for High-Performing Professional Women in Atlanta, GA
             </p>
 
             {/* Main Headline */}
@@ -56,7 +56,7 @@ export default function Hero() {
               className="text-4xl sm:text-5xl md:text-6xl font-light mb-4 leading-[1.08]"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#1F3D3A" }}
             >
-              Helping High-Performing Women Stop Living in{" "}
+              Helping High-Performing Professional Women Stop Living in{" "}
               <span className="italic text-brand">Survival Mode</span>
             </h1>
 
