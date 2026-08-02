@@ -1,32 +1,5 @@
 import { Calendar, ArrowRight } from "lucide-react";
 
-const otherOffers = [
-  {
-    question: "Want community?",
-    description:
-      "The Reset Circle is an ongoing membership for women who want consistent support and connection between bigger commitments.",
-    linkText: "Join the Circle →",
-    href: "/reset-circle",
-    external: false,
-  },
-  {
-    question: "Want it fast?",
-    description:
-      "The 2-Day Intensive is a concentrated, focused experience for women who need clarity now and don't want to wait on a multi-week format.",
-    linkText: "Reserve your spot →",
-    href: "/burnout-reset-intensive",
-    external: false,
-  },
-  {
-    question: "Want to go at your own pace?",
-    description:
-      "Beyond the Strong One is a self-paced course you can move through on your own timeline, whenever you have the space for it.",
-    linkText: "Start the course →",
-    href: "https://fabulous-teacher-7023.kit.com/a2676e1c5d",
-    external: true,
-  },
-];
-
 export default function Programs() {
   return (
     <section id="programs" className="section-padding bg-white">
@@ -104,34 +77,6 @@ export default function Programs() {
             Join the Next Cohort
             <ArrowRight size={14} />
           </a>
-        </div>
-
-        {/* Other Ways to Work With Me */}
-        <div className="mt-14">
-          <h3
-            className="text-lg font-medium text-dark/60 mb-8 tracking-wide uppercase text-xs"
-            style={{ letterSpacing: "0.1em" }}
-          >
-            Other Ways to Work With Me
-          </h3>
-          <div className="flex flex-col gap-7">
-            {otherOffers.map((offer) => (
-              <div key={offer.question} className="flex flex-col gap-2.5">
-                <p className="text-sm text-dark/80 leading-relaxed">
-                  <span className="font-semibold text-dark">{offer.question}</span>{" "}
-                  {offer.description}
-                </p>
-                <a
-                  href={offer.href}
-                  target={offer.external ? "_blank" : undefined}
-                  rel={offer.external ? "noopener noreferrer" : undefined}
-                  className="self-start inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-medium text-brand border border-brand/30 bg-brand/5 hover:bg-brand/10 transition-colors"
-                >
-                  {offer.linkText}
-                </a>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Bottom note */}
