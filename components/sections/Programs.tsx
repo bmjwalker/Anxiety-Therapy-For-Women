@@ -29,7 +29,7 @@ const otherOffers = [
 
 export default function Programs() {
   return (
-    <section id="programs" className="section-padding" style={{ backgroundColor: "#FAF7F4" }}>
+    <section id="programs" className="section-padding bg-white">
       <div className="section-container">
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">
@@ -47,6 +47,7 @@ export default function Programs() {
               Beyond individual therapy —{" "}
               <span className="italic text-brand">programs built for you</span>
             </h2>
+            <div className="h-1 w-12 rounded-full mt-4" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
           </div>
           <p className="text-dark/75 text-sm max-w-sm">
             Group experiences and self-guided programs designed to complement therapy and
@@ -55,7 +56,7 @@ export default function Programs() {
         </div>
 
         {/* Featured: 6-Week Burnout Reset Group */}
-        <div className="flex flex-col p-6 md:p-10 bg-white border-l-4 border-l-brand rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div className="flex flex-col p-6 md:p-10 bg-white border-l-4 border-l-brand border border-cream-dark rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
           {/* Icon + Badge */}
           <div className="flex items-center justify-between mb-6">
             <div className="w-12 h-12 rounded-full bg-brand/10 flex items-center justify-center">
@@ -97,9 +98,7 @@ export default function Programs() {
 
           {/* CTA */}
           <a
-            href="https://fabulous-teacher-7023.kit.com/bd7889084a"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/6-week-burnout-group"
             className="btn-primary px-6 py-3 text-sm self-start"
           >
             Join the Next Cohort
