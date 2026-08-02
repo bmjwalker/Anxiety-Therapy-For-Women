@@ -71,7 +71,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/burnout-reset-group",
-        destination: "https://fabulous-teacher-7023.kit.com/bd7889084a",
+        destination: "/6-week-burnout-group",
         permanent: true,
       },
       {
