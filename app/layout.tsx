@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Cormorant_Garamond, Inter, Jost } from "next/font/google";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -16,6 +16,13 @@ const inter = Inter({
   display: "swap",
 });
 
+const jost = Jost({
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  variable: "--font-jost",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://anxietytherapyforwomen.com"),
   title: {
@@ -23,14 +30,14 @@ export const metadata: Metadata = {
     template: "%s | Jennifer Walker, LCSW",
   },
   description:
-    "Compassionate anxiety therapy and burnout recovery for high-performing women in Georgia and Florida. Telehealth sessions, therapy for life transitions, career clarity, and burnout support.",
+    "Compassionate anxiety therapy and burnout recovery for high-performing professional women in Georgia and Florida. Telehealth sessions, therapy for life transitions, career clarity, and burnout support.",
   keywords: [
     "anxiety therapy for women",
     "burnout recovery for women",
     "Georgia therapist for anxiety",
     "Florida telehealth therapy",
     "career clarity therapy",
-    "therapy for high-performing women",
+    "therapy for high-performing professional women",
     "life transitions therapist",
   ],
   alternates: {
@@ -87,7 +94,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${inter.variable} h-full`}
+      className={`${cormorant.variable} ${inter.variable} ${jost.variable} h-full`}
     >
       <body className="min-h-full flex flex-col antialiased">{children}</body>
     </html>

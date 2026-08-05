@@ -39,10 +39,11 @@ const struggles = [
 const services = [
   {
     icon: Brain,
+    category: "Anxiety & Burnout",
     title: "Burnout Recovery & Anxiety Therapy",
     tagline: "You've been strong for too long. Let's help you feel like yourself again.",
     description:
-      "For high-performing women, burnout rarely looks like collapse. It looks like pushing harder, doing more, and feeling less every month.",
+      "For high-performing professional women, burnout rarely looks like collapse. It looks like pushing harder, doing more, and feeling less every month.",
     bullets: [
       "Break the burnout cycle",
       "Quiet the anxiety spiral",
@@ -52,6 +53,7 @@ const services = [
   },
   {
     icon: RefreshCw,
+    category: "Grief & Identity",
     title: "Life Transitions Therapy",
     tagline: "Change doesn't have to mean crisis.",
     description:
@@ -65,6 +67,7 @@ const services = [
   },
   {
     icon: Briefcase,
+    category: "Career Transitions",
     title: "Career Clarity Therapy",
     tagline: "You've built a successful career. So why does it feel so wrong?",
     description:
@@ -78,7 +81,8 @@ const services = [
   },
   {
     icon: Globe,
-    title: "High-Performing Women Therapy",
+    category: "Burnout & Overwhelm",
+    title: "High-Performing Professional Women Therapy",
     tagline: "You take care of everything. Who is taking care of you?",
     description:
       "You meet every expectation and carry every responsibility. There's a quiet exhaustion underneath that no amount of productivity can fix.",
@@ -229,7 +233,7 @@ export default function TherapyServices({
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 md:[grid-auto-rows:1fr]">
-            {services.map(({ icon: Icon, title, tagline, description, bullets, href }) => (
+            {services.map(({ icon: Icon, category, title, tagline, description, bullets, href }) => (
               <div
                 key={title}
                 className="flex flex-col gap-5 p-4 md:p-6 bg-white border-l-4 border-l-brand border border-cream-dark rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
@@ -238,6 +242,16 @@ export default function TherapyServices({
                   <Icon size={20} className="text-brand" />
                 </div>
                 <div className="flex flex-col flex-1 gap-0">
+                  <span
+                    className="inline-block w-fit text-[11px] font-semibold uppercase tracking-wide rounded-full py-1 px-3 mb-2"
+                    style={{
+                      fontFamily: "var(--font-jost), sans-serif",
+                      color: "#F2F1EB",
+                      backgroundColor: "#57686B",
+                    }}
+                  >
+                    {category}
+                  </span>
                   <h4
                     className="text-2xl font-semibold text-dark mb-1"
                     style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
