@@ -115,10 +115,24 @@ const steps = [
 
 /* ── Component ── */
 
-export default function TherapyServices() {
+export default function TherapyServices({
+  pageHeading,
+}: {
+  pageHeading?: string;
+}) {
   return (
     <section id="services" className="bg-white section-padding">
       <div className="section-container">
+        {/* Page-level H1, only rendered when this component is the top of the page (e.g. /services) */}
+        {pageHeading && (
+          <h1
+            className="text-2xl md:text-3xl font-medium text-dark/80 mb-2"
+            style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+          >
+            {pageHeading}
+          </h1>
+        )}
+
         {/* Section label */}
         <div className="flex items-center gap-3 mb-4">
           <div className="h-px w-12 bg-dusty" />
@@ -147,7 +161,7 @@ export default function TherapyServices() {
             className="text-4xl md:text-5xl font-semibold text-dark mb-4"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
-            Who <span className="italic text-brand">We Help</span>
+            Who <span className="italic text-brand">I Help</span>
           </h3>
           <div className="h-1 w-14 rounded-full mb-12" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
           <p className="text-dark/75 mb-8 max-w-2xl">

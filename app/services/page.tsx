@@ -25,7 +25,7 @@ export default function ServicesPage() {
     <>
       <Header />
       <main id="main">
-        <TherapyServices />
+        <TherapyServices pageHeading="Individual Therapy for Anxiety & Burnout" />
         <Programs />
       </main>
       <Footer />
