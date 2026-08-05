@@ -60,6 +60,7 @@ export default function Blog() {
             Insights &amp; tools for the{" "}
             <span className="italic text-brand">women who lead</span>
           </h2>
+          <div className="h-1 w-12 rounded-full mt-4" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
         </div>
 
         {/* Blog grid */}

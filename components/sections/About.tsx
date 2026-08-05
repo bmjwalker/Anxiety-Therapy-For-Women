@@ -47,6 +47,7 @@ export default function About() {
               Jennifer Walker,{" "}
               <span className="italic text-brand">LCSW</span>
             </h2>
+            <div className="h-1 w-12 rounded-full mb-4" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
 
             {/* My Journey */}
             <h3

@@ -14,12 +14,13 @@ export default function WhoIHelp() {
     <section className="py-16 md:py-24" style={{ backgroundColor: "#2D5F61" }}>
       <div className="max-w-[750px] mx-auto px-4 sm:px-6">
         <h2
-          className="text-4xl md:text-5xl font-normal mb-4 leading-tight"
+          className="text-4xl md:text-5xl font-normal mb-3 leading-tight"
           style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#FFFFFF" }}
         >
           Are You Tired of Being{" "}
           <span className="italic" style={{ color: "#C4897B" }}>the Strong One?</span>
         </h2>
+        <div className="h-1 w-12 rounded-full mb-4" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
 
         <p
           className="text-lg font-light italic mb-6 leading-snug"

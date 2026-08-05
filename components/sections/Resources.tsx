@@ -2,7 +2,7 @@ import { Download, Phone } from "lucide-react";
 
 export default function Resources() {
   return (
-    <section id="resources" className="section-padding" style={{ backgroundColor: "#FAF7F4" }}>
+    <section id="resources" className="section-padding bg-white">
       <div className="section-container">
         {/* Header */}
         <div className="flex items-center gap-3 mb-4">
@@ -13,12 +13,13 @@ export default function Resources() {
         </div>
 
         <h2
-          className="text-4xl md:text-5xl font-normal text-dark mb-4"
+          className="text-4xl md:text-5xl font-normal text-dark mb-3"
           style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
         >
           Free tools &amp; resources to{" "}
           <span className="italic text-brand">support your journey</span>
         </h2>
+        <div className="h-1 w-12 rounded-full mb-4" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
 
         <p className="text-base text-dark/75 mb-10 max-w-xl">
           For a full library of mental health resources, recommended apps, and self-care tools,

@@ -100,12 +100,13 @@ export default function FAQ() {
           {/* Left column */}
           <div className="lg:col-span-1">
             <h2
-              className="text-4xl md:text-5xl font-normal text-dark mb-6"
+              className="text-4xl md:text-5xl font-normal text-dark mb-3"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               Your questions,{" "}
               <span className="italic text-brand">answered</span>
             </h2>
+            <div className="h-1 w-12 rounded-full mb-6" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
             <p className="text-dark/75 text-sm leading-relaxed mb-8">
               Have more questions? Jennifer is happy to answer them during your free
               15-minute consultation.
