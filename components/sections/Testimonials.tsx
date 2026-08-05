@@ -13,6 +13,16 @@ const testimonials = [
     quote: "I learned how to make decisions without anxiety running the show.",
     credit: "Client, Georgia",
   },
+  {
+    quote:
+      "My time working with Jennifer has been powerful to say the least. Since day one, I have always felt that she champions individual empowerment. I see that in my sessions with her as we work through everything and anything — she is always right there not just guiding me but providing me with the tools to face challenges head on and step into every situation feeling powerful. Her skills, patience, and dedication are clear and I cannot recommend working with her enough. I can confidently say that without our time together, I would not be able to step into my most authentic self.",
+    credit: "Ash S.",
+  },
+  {
+    quote:
+      "Jennifer really helped me grow in my personal relationships and career! Thanks for helping me learn how to manage my anxiety...",
+    credit: "Tonya",
+  },
 ];
 
 export default function Testimonials() {
