@@ -93,6 +93,47 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+
+        <section className="section-padding" style={{ backgroundColor: "#F2F1EB" }}>
+          <div className="section-container">
+            <h2
+              className="text-3xl md:text-4xl font-normal mb-10"
+              style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#57686B" }}
+            >
+              Credentials
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+              <div>
+                <h3
+                  className="text-xl md:text-2xl font-semibold mb-4"
+                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#57686B" }}
+                >
+                  Licenses &amp; Certifications
+                </h3>
+                <ul className="list-disc pl-5 flex flex-col gap-2 text-dark/80 text-sm leading-relaxed marker:text-[#57686B]">
+                  <li>Georgia Licensed Clinical Social Worker, #CSW005769</li>
+                  <li>Florida Telehealth Provider, #TPSW3544</li>
+                  <li>School Social Work Educator Certificate, #873798</li>
+                </ul>
+              </div>
+              <div>
+                <h3
+                  className="text-xl md:text-2xl font-semibold mb-4"
+                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#57686B" }}
+                >
+                  Specialized Training
+                </h3>
+                <ul className="list-disc pl-5 flex flex-col gap-2 text-dark/80 text-sm leading-relaxed marker:text-[#57686B]">
+                  <li>Dialectical Behavior Therapy Certification (C-DBT)</li>
+                  <li>Certified Anxiety Treatment Professional (CCATP)</li>
+                  <li>Certified Clinical Trauma Professional (CCTP)</li>
+                  <li>Solution-Focused Brief Therapy (SFBT)</li>
+                  <li>Emotional Freedom Technique Practitioner 1 &amp; 2</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
