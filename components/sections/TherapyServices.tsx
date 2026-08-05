@@ -223,8 +223,9 @@ export default function TherapyServices({
           </h3>
           <div className="h-1 w-14 rounded-full mb-10" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
           <p className="text-dark/75 mb-10 max-w-2xl">
-            Every service is tailored to the unique experience of high-performing women
-            navigating complex lives.
+            Every service is tailored to the unique experience of high-performing professional
+            women — whether you&apos;re building a career, a practice, a business, or a life that
+            doesn&apos;t fit a traditional title.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 md:[grid-auto-rows:1fr]">
