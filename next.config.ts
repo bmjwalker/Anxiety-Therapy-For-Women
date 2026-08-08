@@ -96,7 +96,23 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/executive-functioning-career-coaching-for-professional-women",
-        destination: "/",
+        destination: "/career-clarity-therapy",
+        permanent: true,
+      },
+      // Indexed by Google but 404ing — old direct-slug URLs; content is preserved under /blog/archive
+      {
+        source: "/anxiety-therapy-near-me",
+        destination: "/blog/archive/anxiety-therapy-near-me",
+        permanent: true,
+      },
+      {
+        source: "/the-hidden-cost-of-perfectionism-how-to-recognize-and-reclaim-your-power",
+        destination: "/blog/archive/the-hidden-cost-of-perfectionism-how-to-recognize-and-reclaim-your-power",
+        permanent: true,
+      },
+      {
+        source: "/are-you-using-the-right-criteria-to-measure-your-self-worth",
+        destination: "/blog/archive/are-you-using-the-right-criteria-to-measure-your-self-worth",
         permanent: true,
       },
     ];
