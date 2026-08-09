@@ -107,7 +107,7 @@ export default function Testimonials() {
           role="region"
           aria-roledescription="carousel"
           aria-label="Client testimonials"
-          className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 [&::-webkit-scrollbar]:hidden"
+          className="flex items-start gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 [&::-webkit-scrollbar]:hidden"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {testimonials.map(({ quote, credit }, i) => (
