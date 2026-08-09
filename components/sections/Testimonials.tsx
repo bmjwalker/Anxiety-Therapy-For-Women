@@ -1,4 +1,7 @@
-import { Quote } from "lucide-react";
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 const testimonials = [
   {
@@ -26,6 +29,53 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    let frame: number;
+    const handleScroll = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const containerRect = container.getBoundingClientRect();
+        let closest = 0;
+        let closestDistance = Infinity;
+        cardRefs.current.forEach((card, i) => {
+          if (!card) return;
+          const distance = Math.abs(card.getBoundingClientRect().left - containerRect.left);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closest = i;
+          }
+        });
+        setActiveIndex(closest);
+      });
+    };
+
+    container.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      container.removeEventListener("scroll", handleScroll);
+      cancelAnimationFrame(frame);
+    };
+  }, []);
+
+  const goTo = (index: number) => {
+    const clamped = Math.max(0, Math.min(testimonials.length - 1, index));
+    const container = containerRef.current;
+    const card = cardRefs.current[clamped];
+    if (container && card) {
+      const containerRect = container.getBoundingClientRect();
+      const cardRect = card.getBoundingClientRect();
+      const scrollLeft = container.scrollLeft + (cardRect.left - containerRect.left);
+      container.scrollTo({ left: scrollLeft, behavior: "smooth" });
+    }
+    setActiveIndex(clamped);
+  };
+
   return (
     <section className="relative overflow-hidden py-20 md:py-32 bg-mist">
       <Quote
@@ -52,11 +102,24 @@ export default function Testimonials() {
         </h2>
         <div className="h-1 w-12 rounded-full mb-8" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-          {testimonials.map(({ quote, credit }) => (
+        <div
+          ref={containerRef}
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Client testimonials"
+          className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 [&::-webkit-scrollbar]:hidden"
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        >
+          {testimonials.map(({ quote, credit }, i) => (
             <div
               key={quote}
-              className="relative p-4 md:p-6 rounded-2xl bg-white border-l-4 shadow-sm flex flex-col"
+              ref={(el) => {
+                cardRefs.current[i] = el;
+              }}
+              role="group"
+              aria-roledescription="slide"
+              aria-label={`Testimonial ${i + 1} of ${testimonials.length}`}
+              className="relative p-4 md:p-6 rounded-2xl bg-white border-l-4 shadow-sm flex flex-col shrink-0 snap-start w-full md:w-[calc(50%-0.75rem)]"
               style={{ borderLeftColor: "#B18C72", borderColor: "#D9CFC3" }}
             >
               <span
@@ -75,6 +138,46 @@ export default function Testimonials() {
               <p className="text-xs tracking-wide" style={{ color: "#6B7E80" }}>— {credit}</p>
             </div>
           ))}
+        </div>
+
+        <div className="flex items-center justify-center gap-6 mt-8">
+          <button
+            type="button"
+            onClick={() => goTo(activeIndex - 1)}
+            disabled={activeIndex === 0}
+            aria-label="Previous testimonial"
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-white border shadow-sm transition-opacity disabled:opacity-30 disabled:cursor-not-allowed"
+            style={{ borderColor: "#D9CFC3", color: "#6B7E80" }}
+          >
+            <ChevronLeft size={18} />
+          </button>
+
+          <div className="flex items-center gap-2">
+            {testimonials.map(({ quote }, i) => (
+              <button
+                key={quote}
+                type="button"
+                onClick={() => goTo(i)}
+                aria-label={`Go to testimonial ${i + 1} of ${testimonials.length}`}
+                aria-current={activeIndex === i}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  activeIndex === i ? "w-6" : "w-2"
+                }`}
+                style={{ backgroundColor: activeIndex === i ? "#C4897B" : "#D9CFC3" }}
+              />
+            ))}
+          </div>
+
+          <button
+            type="button"
+            onClick={() => goTo(activeIndex + 1)}
+            disabled={activeIndex === testimonials.length - 1}
+            aria-label="Next testimonial"
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-white border shadow-sm transition-opacity disabled:opacity-30 disabled:cursor-not-allowed"
+            style={{ borderColor: "#D9CFC3", color: "#6B7E80" }}
+          >
+            <ChevronRight size={18} />
+          </button>
         </div>
       </div>
     </section>
