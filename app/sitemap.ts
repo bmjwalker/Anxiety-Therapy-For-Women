@@ -128,6 +128,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Blog posts
     {
+      url: `${baseUrl}/blog/the-benefits-youre-not-using`,
+      lastModified: new Date("2026-08-09"),
+      changeFrequency: "yearly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/the-real-reason-youre-exhausted-its-not-the-chores`,
+      lastModified: new Date("2026-06-19"),
+      changeFrequency: "yearly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/blog/the-science-of-burnout-what-the-research-actually-says-and-why-youre-not-just-tired`,
       lastModified: new Date("2026-05-15"),
       changeFrequency: "yearly",

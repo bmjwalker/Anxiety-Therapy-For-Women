@@ -8,6 +8,15 @@ import { ArrowRight, Calendar } from "lucide-react";
 
 const posts = [
   {
+    slug: "the-benefits-youre-not-using",
+    category: "Anxiety & Burnout",
+    title: "The Benefits You Didn't Know You Were Allowed to Use",
+    date: "August 9, 2026",
+    readTime: "4 min read",
+    excerpt:
+      "You likely have access to FMLA, disability leave, and paid benefits that cover anxiety and burnout, not just physical illness. Here's what most women don't know they can use.",
+  },
+  {
     slug: "the-real-reason-youre-exhausted-its-not-the-chores",
     category: "Anxiety & Burnout",
     title: "The Real Reason You're Exhausted: It's Not the Chores",
