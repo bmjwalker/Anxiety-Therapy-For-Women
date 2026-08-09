@@ -125,14 +125,14 @@ export default function Footer() {
           />
 
           {/* Crisis resources */}
-          <div className="pt-4 border-t border-cream/10 text-center sm:text-left">
+          <div className="py-5 border-t border-cream/10 text-center sm:text-left">
             <h4
               className="text-sm font-medium mb-1"
               style={{ color: "#C4897B", fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               In Crisis?
             </h4>
-            <p className="text-xs text-cream/70 leading-relaxed max-w-2xl mx-auto sm:mx-0">
+            <p className="text-xs text-cream/70 leading-relaxed">
               If you are in immediate danger, call 911 or go to your nearest emergency room. You can also call or text the{" "}
               <a href="tel:988" className="underline hover:text-cream/90 transition-colors">
                 988
