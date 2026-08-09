@@ -155,7 +155,7 @@ export default function Footer() {
               <a href="/good-faith-estimate" className="hover:text-cream/80 transition-colors">
                 Good Faith Estimate
               </a>
-              <a href="https://docs.google.com/document/d/1mgeMWbyORkTue8EirFxavZMbFfQW68gbWOJxBCL60Q0/copy" target="_blank" rel="noopener noreferrer" className="hover:text-cream/80 transition-colors">
+              <a href="/disclaimer" className="hover:text-cream/80 transition-colors">
                 Website Disclaimer
               </a>
               <a href="https://jennifer-walker7285.clientsecure.me/sign-in" target="_blank" rel="noopener noreferrer" className="hover:text-cream/80 transition-colors">

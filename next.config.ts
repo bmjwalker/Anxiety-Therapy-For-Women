@@ -85,11 +85,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/disclaimer",
-        destination: "https://docs.google.com/document/d/1mgeMWbyORkTue8EirFxavZMbFfQW68gbWOJxBCL60Q0/copy",
-        permanent: true,
-      },
-      {
         source: "/executive-functioning-career-coaching-for-professional-women",
         destination: "/career-clarity-therapy",
         permanent: true,
