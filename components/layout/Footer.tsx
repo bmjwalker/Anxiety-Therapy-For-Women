@@ -124,6 +124,27 @@ export default function Footer() {
             strategy="lazyOnload"
           />
 
+          {/* Crisis resources */}
+          <div className="pt-4 border-t border-cream/10 text-center sm:text-left">
+            <h4
+              className="text-sm font-medium mb-1"
+              style={{ color: "#C4897B", fontFamily: "var(--font-cormorant), Georgia, serif" }}
+            >
+              In Crisis?
+            </h4>
+            <p className="text-xs text-cream/70 leading-relaxed max-w-2xl mx-auto sm:mx-0">
+              If you are in immediate danger, call 911 or go to your nearest emergency room. You can also call or text the{" "}
+              <a href="tel:988" className="underline hover:text-cream/90 transition-colors">
+                988
+              </a>{" "}
+              Suicide and Crisis Lifeline, or text HOME to{" "}
+              <a href="sms:741741?body=HOME" className="underline hover:text-cream/90 transition-colors">
+                741741
+              </a>{" "}
+              to reach the Crisis Text Line.
+            </p>
+          </div>
+
           {/* Legal links + copyright */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream/70">
             <div className="flex flex-col gap-0.5 text-center sm:text-left">
@@ -131,7 +152,7 @@ export default function Footer() {
               <p>Practicing as Jennifer Walker, LCSW.</p>
             </div>
             <div className="flex items-center gap-4">
-              <a href="https://docs.google.com/document/d/1AQAlkk_GdG8_KuELe0mYxQ-ZNC6DSLGtw2P6U2dzMc8/copy" target="_blank" rel="noopener noreferrer" className="hover:text-cream/80 transition-colors">
+              <a href="/good-faith-estimate" className="hover:text-cream/80 transition-colors">
                 Good Faith Estimate
               </a>
               <a href="https://docs.google.com/document/d/1mgeMWbyORkTue8EirFxavZMbFfQW68gbWOJxBCL60Q0/copy" target="_blank" rel="noopener noreferrer" className="hover:text-cream/80 transition-colors">

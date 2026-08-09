@@ -85,11 +85,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/good-faith-estimate",
-        destination: "https://docs.google.com/document/d/1AQAlkk_GdG8_KuELe0mYxQ-ZNC6DSLGtw2P6U2dzMc8/copy",
-        permanent: true,
-      },
-      {
         source: "/disclaimer",
         destination: "https://docs.google.com/document/d/1mgeMWbyORkTue8EirFxavZMbFfQW68gbWOJxBCL60Q0/copy",
         permanent: true,
