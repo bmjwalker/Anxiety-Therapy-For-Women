@@ -18,7 +18,7 @@ export default function About() {
             <div className="relative rounded-2xl overflow-hidden aspect-[3/4] max-w-md mx-auto lg:mx-0">
               <Image
                 src="/headshot.jpg"
-                alt="Jennifer Walker, LCSW"
+                alt="Jennifer Walker, LCSW, anxiety therapist for women in Atlanta, Georgia"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 768px) 100vw, 50vw"

@@ -14,6 +14,10 @@ export const metadata: Metadata = {
     description:
       "Website disclaimer for Jennifer Walker, LCSW / J&K Walker, LLC.",
     url: "https://anxietytherapyforwomen.com/disclaimer",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

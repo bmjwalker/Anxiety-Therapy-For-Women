@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     description:
       "Culturally responsive therapy for women navigating identity, cultural expectations, and the pressure of being the first or only — telehealth in Georgia and Florida.",
     url: "https://anxietytherapyforwomen.com/multicultural-identity-therapy",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

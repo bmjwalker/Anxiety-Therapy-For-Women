@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     description:
       "Intensive burnout recovery for professional women who are ready for focused, deep work — telehealth in Georgia and Florida.",
     url: "https://anxietytherapyforwomen.com/burnout-reset-intensive",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

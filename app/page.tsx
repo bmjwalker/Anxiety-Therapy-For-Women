@@ -6,16 +6,25 @@ import Hero from "@/components/sections/Hero";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Jennifer Walker, LCSW | Anxiety & Burnout Therapy, Atlanta",
+      "Jennifer Walker, LCSW | Anxiety & Burnout Therapy for Women in Atlanta, GA",
   },
   description:
-    "Jennifer Walker, LCSW, helps high-achieving women in Georgia and Florida overcome anxiety, burnout, and perfectionism through telehealth therapy.",
+    "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW. Book a free consultation.",
   alternates: { canonical: "https://anxietytherapyforwomen.com" },
   openGraph: {
     title: "Jennifer Walker, LCSW | Anxiety & Burnout Therapy for Women in Atlanta, GA",
     description:
-      "Virtual anxiety and burnout therapy for high-performing professional women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW. Book a free consultation.",
+      "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW. Book a free consultation.",
     url: "https://anxietytherapyforwomen.com",
+    type: "website",
+    images: [
+      {
+        url: "/headshot.jpg",
+        width: 800,
+        height: 1000,
+        alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia",
+      },
+    ],
   },
 };
 import WhoIHelp from "@/components/sections/WhoIHelp";
@@ -37,12 +46,15 @@ const jsonLd = {
       "@type": ["LocalBusiness", "MedicalBusiness"],
       "@id": "https://anxietytherapyforwomen.com/#business",
       "name": "Jennifer Walker, LCSW",
+      "alternateName": "Anxiety Therapy for Women",
       "url": "https://anxietytherapyforwomen.com",
       "email": "jennifer@anxietytherapyforwomen.com",
+      "telephone": "+14703579322",
       "description":
-        "Anxiety therapy and burnout recovery for high-performing professional women in Georgia and Florida via telehealth.",
+        "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida",
       "image": "https://anxietytherapyforwomen.com/headshot.jpg",
       "priceRange": "$$",
+      "serviceType": ["Mental Health Service", "Psychotherapy"],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Atlanta",

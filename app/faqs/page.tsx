@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     description:
       "Common questions about telehealth format, session fees, insurance, and what to expect from therapy with Jennifer Walker, LCSW.",
     url: "https://anxietytherapyforwomen.com/faqs",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

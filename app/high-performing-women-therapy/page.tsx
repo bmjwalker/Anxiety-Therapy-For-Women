@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     description:
       "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout — virtual sessions in Georgia and Florida.",
     url: "https://anxietytherapyforwomen.com/high-performing-women-therapy",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

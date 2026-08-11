@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { archivedPosts } from "@/lib/archived-posts";
 
 const baseUrl = "https://anxietytherapyforwomen.com";
 
@@ -163,5 +164,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.8,
     },
+
+    // Archived blog posts (legacy domain content)
+    ...archivedPosts.map((post) => ({
+      url: `${baseUrl}/blog/archive/${post.slug}`,
+      changeFrequency: "yearly" as const,
+      priority: 0.5,
+    })),
   ];
 }

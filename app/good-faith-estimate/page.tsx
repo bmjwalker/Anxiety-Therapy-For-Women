@@ -14,6 +14,10 @@ export const metadata: Metadata = {
     description:
       "Good Faith Estimate notice for uninsured and self-pay clients under the No Surprises Act.",
     url: "https://anxietytherapyforwomen.com/good-faith-estimate",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

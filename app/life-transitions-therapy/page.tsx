@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     description:
       "Career change, divorce, becoming a parent, a big move — therapy to help you navigate major life transitions without losing yourself in the process.",
     url: "https://anxietytherapyforwomen.com/life-transitions-therapy",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     description:
       "Untangle your self-worth from your job title and find a career path that actually fits — virtual therapy for women in Georgia & Florida.",
     url: "https://anxietytherapyforwomen.com/career-clarity-therapy",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

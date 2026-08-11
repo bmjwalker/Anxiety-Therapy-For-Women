@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     description:
       "For ambitious women at the crossroads of career burnout and identity confusion — clarify your direction and build a path forward.",
     url: "https://anxietytherapyforwomen.com/career-burnout-clarity",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

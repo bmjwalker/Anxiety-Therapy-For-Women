@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     description:
       "Ongoing monthly community for high-performing women maintaining their burnout recovery — connection, accountability, and continued support.",
     url: "https://anxietytherapyforwomen.com/reset-circle",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

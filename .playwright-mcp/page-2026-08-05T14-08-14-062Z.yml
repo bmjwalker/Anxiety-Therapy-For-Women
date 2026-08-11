@@ -1,0 +1,458 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "Jennifer Walker LCSW logo Jennifer Walker, LCSW" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Jennifer Walker LCSW logo" [ref=e7]
+        - generic [ref=e8]: Jennifer Walker, LCSW
+      - navigation [ref=e9]:
+        - link "Services" [ref=e10] [cursor=pointer]:
+          - /url: /#services
+        - link "Programs" [ref=e11] [cursor=pointer]:
+          - /url: /#programs
+        - link "About" [ref=e12] [cursor=pointer]:
+          - /url: /about
+        - link "Rates & Insurance" [ref=e13] [cursor=pointer]:
+          - /url: /rates-insurance
+        - link "Resources" [ref=e14] [cursor=pointer]:
+          - /url: /resources
+        - link "FAQ" [ref=e15] [cursor=pointer]:
+          - /url: /faqs
+        - link "Blog" [ref=e16] [cursor=pointer]:
+          - /url: /blog
+        - link "Book Free Consult" [ref=e17] [cursor=pointer]:
+          - /url: https://jennifer-walker7285.clientsecure.me/sign-in
+  - main [ref=e18]:
+    - generic [ref=e21]:
+      - img "Jennifer Walker, LCSW, smiling" [ref=e25]
+      - generic [ref=e26]:
+        - paragraph [ref=e27]: Anxiety and Burnout Recovery Specialist for High-Performing Professional Women in Atlanta, GA
+        - heading "Helping High-Performing Professional Women Stop Living in Survival Mode" [level=1] [ref=e28]
+        - paragraph [ref=e29]: You deserve to thrive, not just survive.
+        - paragraph [ref=e30]: Helping ambitious women in Georgia and Florida overcome burnout, anxiety, perfectionism, chronic stress, and overthinking so they can reclaim clarity, confidence, and balance.
+        - generic [ref=e31]:
+          - link "Book a Free Consultation" [ref=e32] [cursor=pointer]:
+            - /url: https://jennifer-walker7285.clientsecure.me/sign-in
+          - link "Take the 2-Min Survival Role Quiz" [ref=e35] [cursor=pointer]:
+            - /url: https://w48bpx2y2ic.typeform.com/to/zBGT9y6e
+        - generic [ref=e36]:
+          - generic [ref=e37]: Licensed in Georgia & Florida
+          - generic [ref=e40]: Telehealth Available
+          - generic [ref=e43]: Free 15-Minute Consultation
+    - generic [ref=e50]:
+      - heading "Are You Tired of Being the Strong One?" [level=2] [ref=e51]
+      - paragraph [ref=e53]: You don’t have to keep living in survival mode. There is another way.
+      - paragraph [ref=e54]: As a high-performing woman, you’ve mastered the art of holding everything together. But behind that competence is a level of exhaustion that others rarely see.
+      - generic [ref=e55]:
+        - paragraph [ref=e60]: You look successful on the outside but feel exhausted inside
+        - paragraph [ref=e65]: You struggle to relax without guilt
+        - paragraph [ref=e70]: Your mind never seems to shut off
+        - paragraph [ref=e75]: You overthink every decision
+        - paragraph [ref=e80]: You feel responsible for everyone else's needs
+        - paragraph [ref=e85]: You've lost yourself while taking care of everything else
+      - link "Yes, I’m Ready for Change" [ref=e86] [cursor=pointer]:
+        - /url: https://jennifer-walker7285.clientsecure.me/sign-in
+    - generic [ref=e90]:
+      - generic [ref=e91]: Client Experiences
+      - heading "What Women Often Tell Me" [level=2] [ref=e94]
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - generic [ref=e98]: “
+          - paragraph [ref=e99]: I finally stopped feeling like I was drowning.
+          - paragraph [ref=e100]: — Client, Georgia
+        - generic [ref=e101]:
+          - generic [ref=e102]: “
+          - paragraph [ref=e103]: For the first time, I felt truly understood.
+          - paragraph [ref=e104]: — Client, Florida
+        - generic [ref=e105]:
+          - generic [ref=e106]: “
+          - paragraph [ref=e107]: I learned how to make decisions without anxiety running the show.
+          - paragraph [ref=e108]: — Client, Georgia
+        - generic [ref=e109]:
+          - generic [ref=e110]: “
+          - paragraph [ref=e111]: My time working with Jennifer has been powerful to say the least. Since day one, I have always felt that she champions individual empowerment. I see that in my sessions with her as we work through everything and anything — she is always right there not just guiding me but providing me with the tools to face challenges head on and step into every situation feeling powerful. Her skills, patience, and dedication are clear and I cannot recommend working with her enough. I can confidently say that without our time together, I would not be able to step into my most authentic self.
+          - paragraph [ref=e112]: — Ash S.
+        - generic [ref=e113]:
+          - generic [ref=e114]: “
+          - paragraph [ref=e115]: Jennifer really helped me grow in my personal relationships and career! Thanks for helping me learn how to manage my anxiety...
+          - paragraph [ref=e116]: — Tonya
+    - generic [ref=e119]:
+      - generic [ref=e120]: Free Assessment
+      - heading "Which Survival Role Is Keeping You Stuck?" [level=2] [ref=e125]
+      - paragraph [ref=e127]: Take the 2-minute Survival Role Quiz to find out how you’ve learned to keep functioning — and what your recovery actually needs to look like.
+      - paragraph [ref=e128]: Free • Confidential • Results in under 2 minutes
+      - link "Find My Survival Role" [ref=e129] [cursor=pointer]:
+        - /url: https://w48bpx2y2ic.typeform.com/to/zBGT9y6e
+    - generic [ref=e133]:
+      - generic [ref=e134]: Why Work With Me
+      - generic [ref=e137]:
+        - heading "For more than 20 years, I've helped high-performing women navigate anxiety, burnout, perfectionism, life transitions, and career uncertainty." [level=2] [ref=e138]
+        - paragraph [ref=e140]: Together, we'll create practical, evidence-based strategies that help you move from survival mode into a life that feels more balanced, meaningful, and sustainable.
+        - paragraph [ref=e141]: This work is about more than coping. It's about reclaiming your energy, clarity, and confidence so you can feel grounded inside and show up fully in the life you want.
+    - generic [ref=e142]:
+      - generic [ref=e143]:
+        - generic [ref=e144]: Therapy Services
+        - heading "Therapy designed for women like you" [level=2] [ref=e147]
+        - generic [ref=e149]:
+          - generic [ref=e150]: Common Struggles
+          - heading "Who I Help" [level=3] [ref=e153]
+          - paragraph [ref=e155]: You may look successful on the outside, but inside you're exhausted from carrying responsibilities, expectations, and pressure that never seem to end.
+          - paragraph [ref=e156]: You do not need to be in crisis to deserve support.
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - paragraph [ref=e159]: Lying awake overanalyzing every conversation
+              - paragraph [ref=e160]: Racing thoughts keep you up at night, replaying moments and worrying about what comes next.
+            - generic [ref=e161]:
+              - paragraph [ref=e162]: Feeling like an imposter despite your external success
+              - paragraph [ref=e163]: No matter what you achieve, a quiet voice says it's only a matter of time before people find out.
+            - generic [ref=e164]:
+              - paragraph [ref=e165]: Exhausted from being strong for everyone else
+              - paragraph [ref=e166]: You're the one everyone leans on — and there's no one left to hold you up.
+            - generic [ref=e167]:
+              - paragraph [ref=e168]: Stuck in comparison traps and self-doubt
+              - paragraph [ref=e169]: You measure your worth against everyone around you and always seem to come up short.
+            - generic [ref=e170]:
+              - paragraph [ref=e171]: Difficulty setting healthy boundaries without guilt
+              - paragraph [ref=e172]: Saying no feels selfish. Saying yes leaves you depleted. There doesn't seem to be a third option.
+            - generic [ref=e173]:
+              - paragraph [ref=e174]: Overwhelmed by major life transitions and uncertainty
+              - paragraph [ref=e175]: Change is supposed to be exciting — so why does it feel like the ground is constantly shifting?
+          - link "Book a Free Consultation" [ref=e176] [cursor=pointer]:
+            - /url: https://jennifer-walker7285.clientsecure.me/sign-in
+        - generic [ref=e179]:
+          - generic [ref=e180]: Our Services
+          - heading "Areas We Can Help You Overcome" [level=3] [ref=e183]
+          - paragraph [ref=e185]: Every service is tailored to the unique experience of high-performing professional women — whether you're building a career, a practice, a business, or a life that doesn't fit a traditional title.
+          - generic [ref=e186]:
+            - generic [ref=e197]:
+              - generic [ref=e198]: Anxiety & Burnout
+              - heading "Burnout Recovery & Anxiety Therapy" [level=4] [ref=e199]
+              - paragraph [ref=e200]: You've been strong for too long. Let's help you feel like yourself again.
+              - paragraph [ref=e201]: For high-performing professional women, burnout rarely looks like collapse. It looks like pushing harder, doing more, and feeling less every month.
+              - list [ref=e202]:
+                - listitem [ref=e203]:
+                  - generic [ref=e207]: Break the burnout cycle
+                - listitem [ref=e208]:
+                  - generic [ref=e212]: Quiet the anxiety spiral
+                - listitem [ref=e213]:
+                  - generic [ref=e217]: Create boundaries that actually hold
+              - link "Learn More" [ref=e218] [cursor=pointer]:
+                - /url: /burnout-anxiety-therapy
+            - generic [ref=e228]:
+              - generic [ref=e229]: Grief & Identity
+              - heading "Life Transitions Therapy" [level=4] [ref=e230]
+              - paragraph [ref=e231]: Change doesn't have to mean crisis.
+              - paragraph [ref=e232]: Major life transitions shake the ground beneath us. You'll move through change without losing yourself in the process.
+              - list [ref=e233]:
+                - listitem [ref=e234]:
+                  - generic [ref=e238]: Process grief and identity shifts
+                - listitem [ref=e239]:
+                  - generic [ref=e243]: Find your footing when everything feels unstable
+                - listitem [ref=e244]:
+                  - generic [ref=e248]: Discover who you're becoming
+              - link "Learn More" [ref=e249] [cursor=pointer]:
+                - /url: /life-transitions-therapy
+            - generic [ref=e257]:
+              - generic [ref=e258]: Career Transitions
+              - heading "Career Clarity Therapy" [level=4] [ref=e259]
+              - paragraph [ref=e260]: You've built a successful career. So why does it feel so wrong?
+              - paragraph [ref=e261]: Untangle your identity from your job title and find a path forward that actually fits your values — whether that's inside your current role or somewhere new.
+              - list [ref=e262]:
+                - listitem [ref=e263]:
+                  - generic [ref=e267]: Separate your self-worth from productivity
+                - listitem [ref=e268]:
+                  - generic [ref=e272]: Identify what you truly want
+                - listitem [ref=e273]:
+                  - generic [ref=e277]: Navigate a career transition — a review, a restructuring, returning to work, or stepping away — without losing yourself
+              - link "Learn More" [ref=e278] [cursor=pointer]:
+                - /url: /career-clarity-therapy
+            - generic [ref=e286]:
+              - generic [ref=e287]: Burnout & Overwhelm
+              - heading "High-Performing Professional Women Therapy" [level=4] [ref=e288]
+              - paragraph [ref=e289]: You take care of everything. Who is taking care of you?
+              - paragraph [ref=e290]: You meet every expectation and carry every responsibility. There's a quiet exhaustion underneath that no amount of productivity can fix.
+              - list [ref=e291]:
+                - listitem [ref=e292]:
+                  - generic [ref=e296]: Break free from perfectionism
+                - listitem [ref=e297]:
+                  - generic [ref=e301]: Untangle people-pleasing from your identity
+                - listitem [ref=e302]:
+                  - generic [ref=e306]: Let someone finally take care of you
+              - link "Learn More" [ref=e307] [cursor=pointer]:
+                - /url: /high-performing-women-therapy
+          - link "Schedule a Consultation" [ref=e310] [cursor=pointer]:
+            - /url: https://jennifer-walker7285.clientsecure.me/sign-in
+        - generic [ref=e313]:
+          - heading "How We Work Together" [level=3] [ref=e314]
+          - paragraph [ref=e315]: "Our work draws on approaches like DBT, CBT, trauma-informed care, and solution-focused therapy — grounded in what actually helps: managing the intensity of anxiety, untangling the thought patterns that fuel perfectionism, and building a life that doesn't require running on empty."
+          - link "Book Your Free Consult" [ref=e316] [cursor=pointer]:
+            - /url: https://jennifer-walker7285.clientsecure.me/sign-in
+      - generic [ref=e321]:
+        - heading "How To Get Started" [level=3] [ref=e322]
+        - paragraph [ref=e323]: Taking the first step is the hardest part. Here's how simple it is to begin.
+        - generic [ref=e324]:
+          - generic [ref=e325]:
+            - generic [ref=e326]: "01"
+            - heading "Book a Free Consultation" [level=4] [ref=e327]
+            - paragraph [ref=e328]: Schedule your complimentary 15-minute call to see if we're a good fit. No commitment required.
+          - generic [ref=e329]:
+            - generic [ref=e330]: "02"
+            - heading "Complete Your Intake" [level=4] [ref=e331]
+            - paragraph [ref=e332]: Complete a brief intake form so Jennifer can understand your goals and prepare for your first session.
+          - generic [ref=e333]:
+            - generic [ref=e334]: "03"
+            - heading "Begin Your Transformation" [level=4] [ref=e335]
+            - paragraph [ref=e336]: Start weekly sessions via secure telehealth — actionable insights you can apply between appointments.
+        - link "Book a Free Consultation" [ref=e337] [cursor=pointer]:
+          - /url: https://jennifer-walker7285.clientsecure.me/sign-in
+    - generic [ref=e341]:
+      - generic [ref=e342]: Programs
+      - generic [ref=e345]:
+        - heading "Beyond individual therapy — programs built for you" [level=2] [ref=e347]
+        - paragraph [ref=e349]: Group experiences and self-guided programs designed to complement therapy and accelerate your transformation.
+      - generic [ref=e350]:
+        - generic [ref=e351]: Group
+        - heading "6-Week Burnout Reset Group" [level=3] [ref=e356]
+        - paragraph [ref=e357]: Structured Cohort Program
+        - paragraph [ref=e358]: The 6-Week Burnout Reset Group is a small-cohort telehealth program for high-performing women recovering from burnout, led by Jennifer Walker, LCSW. Over six structured weeks, you'll move from understanding your burnout to actually changing how you live — assessing where you are, getting clear on your values, learning to set real boundaries, and building a version of your life that doesn't require running on empty.
+        - list [ref=e359]:
+          - listitem [ref=e360]: 6 structured weeks
+          - listitem [ref=e362]: Small cohort (6–8 women)
+          - listitem [ref=e364]: Weekly live sessions
+        - link "Join the Next Cohort" [ref=e366] [cursor=pointer]:
+          - /url: /6-week-burnout-group
+        - generic [ref=e369]:
+          - heading "Common Questions" [level=4] [ref=e370]
+          - region [ref=e371]:
+            - heading [level=3] [ref=e373]:
+              - button "Who is this group for?" [ref=e374]
+            - heading [level=3] [ref=e376]:
+              - button "How is this different from individual therapy?" [ref=e377]
+            - heading [level=3] [ref=e379]:
+              - button "What happens in each session?" [ref=e380]
+            - heading [level=3] [ref=e382]:
+              - button "Do you take insurance for this group?" [ref=e383]
+            - heading [level=3] [ref=e385]:
+              - button "When does the next cohort start?" [ref=e386]
+        - generic [ref=e387]:
+          - heading "What Women Are Saying" [level=4] [ref=e388]
+          - paragraph [ref=e389]: From a past group workshop with Jennifer Walker, LCSW
+          - generic [ref=e390]:
+            - generic [ref=e391]:
+              - paragraph [ref=e392]: "Before this group, I was challenged with not having enough time to complete projects. Afterward, I was able to take care of myself by clearing out what wasn't serving me. My biggest improvements: prioritizing my schedule, learning to say no, and staying in my lane."
+              - paragraph [ref=e393]: — Kimberly
+            - generic [ref=e394]:
+              - paragraph [ref=e395]: Before this group, I was challenged with a lack of time and doubt. Afterward, I changed my perspective on a number of issues and found real peace and patience.
+              - paragraph [ref=e396]: — Anonymous
+      - paragraph [ref=e397]:
+        - text: Not sure which program is right for you?
+        - link "Schedule a free consultation" [ref=e398] [cursor=pointer]:
+          - /url: https://jennifer-walker7285.clientsecure.me/sign-in
+        - text: and we'll help you find the right fit.
+    - generic [ref=e400]:
+      - generic [ref=e401]: About
+      - generic [ref=e404]:
+        - generic [ref=e405]:
+          - img "Jennifer Walker, LCSW" [ref=e407]
+          - generic [ref=e409]:
+            - paragraph [ref=e410]: Experience
+            - paragraph [ref=e411]: 20+ years supporting women through burnout, identity shifts, and life transitions with a direct, compassionate approach.
+        - generic [ref=e412]:
+          - heading "Jennifer Walker, LCSW" [level=2] [ref=e413]
+          - heading "My Journey" [level=3] [ref=e415]
+          - generic [ref=e416]:
+            - paragraph [ref=e417]:
+              - text: "Finding the right therapist is important yet can feel intimidating. I remember my first time picking a therapist — I was like:"
+              - emphasis [ref=e418]: "\"Where do I even start? Will they understand me? What if it’s awkward? What if I don’t like them?\""
+              - text: The process can feel overwhelming, especially when you’re already navigating challenges that brought you to therapy in the first place. It’s a vulnerable step, and it takes courage to explore this path.
+            - paragraph [ref=e419]: As a biracial woman, I’ve navigated the intricate paths of personal identity and growth, shaped by experiences of belonging to multiple worlds. This perspective gives me a unique lens to support women in interracial relationships and those who have grown up as the minority in their community. While these experiences inform my work, my focus is on connecting with women of all backgrounds, particularly high-performing professional women navigating the complexities of life transitions, anxiety, identity, and self-worth.
+            - paragraph [ref=e420]: With over 20 years of diverse experience across K–12 and higher education, community mental health, private practice, non-profits, and corporate wellness, I bring a broad understanding of the unique challenges women face in different environments. My approach is tailored to support women grappling with toxic work or relationship dynamics, striving to find balance, and seeking to reclaim their confidence and sense of self.
+            - paragraph [ref=e421]: I’m committed to creating a safe, confidential, non-judgmental space where women can feel seen and heard.
+            - paragraph [ref=e422]: As a successful woman, it’s often hard to be vulnerable, but I am here to support you. I welcome honesty, humor, and direct communication while maintaining a compassionate atmosphere. My goal is to empower women to reach their full potential and navigate life’s transitions with confidence.
+            - paragraph [ref=e423]: Women working with me often appreciate not only the progress made during our sessions but also the practical tools they gain to continue their self-discovery and growth between sessions.
+            - paragraph [ref=e424]: If you’re ready to explore this journey together, I invite you to schedule a free 15-minute consultation to see if we’re a good fit.
+          - blockquote [ref=e425]: “Compassionate curiosity is the path to change.”
+          - link "Schedule a Free Consultation" [ref=e426] [cursor=pointer]:
+            - /url: https://jennifer-walker7285.clientsecure.me/sign-in
+    - generic [ref=e428]:
+      - generic [ref=e429]: Resources
+      - heading "Free tools & resources to support your journey" [level=2] [ref=e432]
+      - paragraph [ref=e434]:
+        - text: For a full library of mental health resources, recommended apps, and self-care tools, visit the
+        - link "Resources page" [ref=e435] [cursor=pointer]:
+          - /url: /resources
+        - text: .
+      - generic [ref=e436]:
+        - generic [ref=e442]:
+          - heading "Free Download" [level=3] [ref=e443]
+          - paragraph [ref=e444]: Burnout Reflection Guide
+          - paragraph [ref=e445]: A guided workbook to help you identify burnout patterns, understand your triggers, and take your first steps toward recovery — at no cost.
+          - link "Get Your Free Guide" [ref=e446] [cursor=pointer]:
+            - /url: https://fabulous-teacher-7023.kit.com/db3a6274d6
+        - generic [ref=e454]:
+          - heading "Need Immediate Support?" [level=3] [ref=e455]
+          - paragraph [ref=e456]: If you or someone you know is in crisis, help is available 24/7.
+          - link "Call or Text 988" [ref=e457] [cursor=pointer]:
+            - /url: tel:988
+          - paragraph [ref=e458]: Suicide & Crisis Lifeline — free, confidential, available 24/7
+    - generic [ref=e460]:
+      - generic [ref=e461]: FAQ
+      - generic [ref=e464]:
+        - generic [ref=e465]:
+          - heading "Your questions, answered" [level=2] [ref=e466]
+          - paragraph [ref=e468]: Have more questions? Jennifer is happy to answer them during your free 15-minute consultation.
+          - link "Schedule a Free Consultation" [ref=e469] [cursor=pointer]:
+            - /url: https://jennifer-walker7285.clientsecure.me/sign-in
+        - region [ref=e473]:
+          - heading [level=3] [ref=e475]:
+            - button "Who do you work with?" [ref=e476]
+          - heading [level=3] [ref=e478]:
+            - button "Do you offer telehealth sessions?" [ref=e479]
+          - heading [level=3] [ref=e481]:
+            - button "How long is each therapy session?" [ref=e482]
+          - heading [level=3] [ref=e484]:
+            - button "Do you accept insurance?" [ref=e485]
+          - heading [level=3] [ref=e487]:
+            - button "What can I expect from our first session?" [ref=e488]
+          - heading [level=3] [ref=e490]:
+            - button "How do I get started?" [ref=e491]
+          - heading [level=3] [ref=e493]:
+            - button "Is everything I share in therapy confidential?" [ref=e494]
+          - heading [level=3] [ref=e496]:
+            - button "How is therapy different from just talking to a friend?" [ref=e497]
+          - heading [level=3] [ref=e499]:
+            - button "How long will I need to be in therapy?" [ref=e500]
+    - generic [ref=e502]:
+      - generic [ref=e503]: Blog
+      - heading "Insights & tools for the women who lead" [level=2] [ref=e507]
+      - generic [ref=e509]:
+        - article [ref=e510]:
+          - generic [ref=e512]:
+            - generic [ref=e513]:
+              - generic [ref=e514]: Anxiety & Burnout
+              - generic [ref=e515]: May 15, 2026
+              - generic [ref=e518]: 7 min read
+            - 'heading "The Science of Burnout: What the Research Actually Says (And Why You''re Not Just ''Tired'')" [level=3] [ref=e519]'
+            - paragraph [ref=e520]: Burnout is a clinical phenomenon affecting over 50% of U.S. workers — yet it's still dismissed as weakness. Here's what the research actually says, and why understanding it changes everything about recovery.
+            - link "Read More" [ref=e521] [cursor=pointer]:
+              - /url: /blog/the-science-of-burnout-what-the-research-actually-says-and-why-youre-not-just-tired
+        - article [ref=e524]:
+          - generic [ref=e526]:
+            - generic [ref=e527]:
+              - generic [ref=e528]: Anxiety & Burnout
+              - generic [ref=e529]: April 25, 2026
+              - generic [ref=e532]: 6 min read
+            - 'heading "High-Functioning Burnout in Women: Why You''re Exhausted Even If You''re Still Showing Up" [level=3] [ref=e533]'
+            - paragraph [ref=e534]: You're meeting deadlines, showing up for everyone, keeping it all together — and you're utterly depleted. High-functioning burnout is real, and it's affecting more women than ever.
+            - link "Read More" [ref=e535] [cursor=pointer]:
+              - /url: /blog/high-functioning-burnout-in-women-why-youre-exhausted-even-if-youre-still-showing-up
+        - article [ref=e538]:
+          - generic [ref=e540]:
+            - generic [ref=e541]:
+              - generic [ref=e542]: Resilience & Mental Health
+              - generic [ref=e543]: November 9, 2025
+              - generic [ref=e546]: 8 min read
+            - heading "ADHD High Performers — Why You're Not Meant to Be 'Disciplined' (And Why That's Your Superpower)" [level=3] [ref=e547]
+            - paragraph [ref=e548]: Traditional productivity advice was not designed for the ADHD brain. Discover why your dopamine-driven motivation is a feature, not a bug — and how to harness it for authentic high performance.
+            - link "Read More" [ref=e549] [cursor=pointer]:
+              - /url: /blog/adhd-high-performers-why-youre-not-meant-to-be-disciplined-and-why-thats-your-superpower
+        - article [ref=e552]:
+          - generic [ref=e554]:
+            - generic [ref=e555]:
+              - generic [ref=e556]: Personal Growth
+              - generic [ref=e557]: August 24, 2025
+              - generic [ref=e560]: 5 min read
+            - heading "Why High-Performing Women Overthink (and How to Break the Cycle)" [level=3] [ref=e561]
+            - paragraph [ref=e562]: Rumination feels productive — like you're solving problems — but it often keeps high achievers stuck in anxiety loops. These evidence-based techniques will help you interrupt the cycle for good.
+            - link "Read More" [ref=e563] [cursor=pointer]:
+              - /url: /blog/why-high-performing-women-overthink
+      - link "View All Posts" [ref=e567] [cursor=pointer]:
+        - /url: /blog
+      - generic [ref=e570]:
+        - heading "Stay in the loop" [level=3] [ref=e571]
+        - paragraph [ref=e572]: Join Jennifer's community for weekly insights on anxiety, burnout recovery, and authentic living — delivered to your inbox.
+        - generic [ref=e573]:
+          - generic [ref=e574]: Email address
+          - textbox "Email address" [ref=e575]:
+            - /placeholder: Your email address
+          - button "Subscribe" [ref=e576]
+    - generic [ref=e584]:
+      - generic [ref=e585]: Begin Your Journey
+      - heading "What Would You Like Your Life to Look Like One Year From Now?" [level=2] [ref=e589]
+      - paragraph [ref=e591]: Imagine making decisions from a place of clarity rather than exhaustion. Imagine feeling calm, confident, and present instead of constantly overwhelmed.
+      - paragraph [ref=e592]: Together, we can help you move from survival mode to a life that feels more balanced, meaningful, and sustainable.
+      - generic [ref=e593]:
+        - link "Book Your Free Consultation" [ref=e594] [cursor=pointer]:
+          - /url: https://jennifer-walker7285.clientsecure.me/sign-in
+        - link "Find Your Survival Role First" [ref=e597] [cursor=pointer]:
+          - /url: https://w48bpx2y2ic.typeform.com/to/zBGT9y6e
+  - contentinfo [ref=e598]:
+    - generic [ref=e599]:
+      - generic [ref=e600]:
+        - generic [ref=e601]:
+          - heading "Jennifer Walker, LCSW" [level=3] [ref=e602]
+          - paragraph [ref=e603]: Anxiety therapy and burnout recovery for high-performing professional women.
+          - generic [ref=e604]:
+            - link "jennifer@anxietytherapyforwomen.com" [ref=e605] [cursor=pointer]:
+              - /url: mailto:jennifer@anxietytherapyforwomen.com
+            - generic [ref=e609]: Monday – Friday by appointment
+            - generic [ref=e613]: Online therapy for Georgia & Florida residents
+        - generic [ref=e617]:
+          - heading "Quick Links" [level=4] [ref=e618]
+          - list [ref=e619]:
+            - listitem [ref=e620]:
+              - link "About Jennifer" [ref=e621] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e622]:
+              - link "Therapy Services" [ref=e623] [cursor=pointer]:
+                - /url: /#services
+            - listitem [ref=e624]:
+              - link "Programs" [ref=e625] [cursor=pointer]:
+                - /url: /#programs
+            - listitem [ref=e626]:
+              - link "Resources" [ref=e627] [cursor=pointer]:
+                - /url: /resources
+            - listitem [ref=e628]:
+              - link "FAQ" [ref=e629] [cursor=pointer]:
+                - /url: /faqs
+            - listitem [ref=e630]:
+              - link "Blog" [ref=e631] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e632]:
+              - link "Client Portal" [ref=e633] [cursor=pointer]:
+                - /url: https://jennifer-walker7285.clientsecure.me/sign-in
+        - generic [ref=e634]:
+          - heading "Specialties" [level=4] [ref=e635]
+          - list [ref=e636]:
+            - listitem [ref=e637]: Anxiety & Burnout Therapy
+            - listitem [ref=e638]: Career Clarity Therapy
+            - listitem [ref=e639]: Life Transitions Therapy
+            - listitem [ref=e640]: High-Performing Professional Women Therapy
+            - listitem [ref=e641]: DBT & CBT Approaches
+            - listitem [ref=e642]: Telehealth (GA & FL)
+      - generic [ref=e643]:
+        - generic [ref=e644]:
+          - link [ref=e645] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=100073222913867
+          - link [ref=e648] [cursor=pointer]:
+            - /url: https://www.instagram.com/clarityforhpwomen/
+          - link [ref=e653] [cursor=pointer]:
+            - /url: https://www.youtube.com/@HighPerformingWomen
+          - link [ref=e657] [cursor=pointer]:
+            - /url: https://www.pinterest.com/jenniferwalkerlcsw/
+          - link:
+            - /url: https://www.psychologytoday.com/profile/289498
+        - generic [ref=e660]:
+          - generic [ref=e661]:
+            - paragraph [ref=e662]: © 2026 JK Walker, LLC. All rights reserved.
+            - paragraph [ref=e663]: Practicing as Jennifer Walker, LCSW.
+          - generic [ref=e664]:
+            - link "Good Faith Estimate" [ref=e665] [cursor=pointer]:
+              - /url: https://docs.google.com/document/d/1AQAlkk_GdG8_KuELe0mYxQ-ZNC6DSLGtw2P6U2dzMc8/copy
+            - link "Website Disclaimer" [ref=e666] [cursor=pointer]:
+              - /url: https://docs.google.com/document/d/1mgeMWbyORkTue8EirFxavZMbFfQW68gbWOJxBCL60Q0/copy
+            - link "Client Portal" [ref=e667] [cursor=pointer]:
+              - /url: https://jennifer-walker7285.clientsecure.me/sign-in
+  - button "Open Next.js Dev Tools" [ref=e673] [cursor=pointer]

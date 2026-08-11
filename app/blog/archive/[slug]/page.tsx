@@ -17,10 +17,23 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = getArchivedPostBySlug(slug);
+  const title = post ? `${post.title} | Jennifer Walker, LCSW` : "Archived Blog Post";
+  const description = post?.summary ?? "Archived article preserved on the new site after the legacy domain retirement.";
+  const url = `https://anxietytherapyforwomen.com/blog/archive/${slug}`;
 
   return {
-    title: post ? `${post.title} | Jennifer Walker, LCSW` : "Archived Blog Post",
-    description: post?.summary ?? "Archived article preserved on the new site after the legacy domain retirement.",
+    title: { absolute: title },
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "article",
+      images: [
+        { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+      ],
+    },
   };
 }
 

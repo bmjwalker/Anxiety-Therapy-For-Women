@@ -5,22 +5,23 @@ import About from "@/components/sections/About";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "About Jennifer Walker, LCSW | Atlanta Anxiety & Burnout Therapist",
+    absolute: "About Jennifer Walker, LCSW | Anxiety & Burnout Therapist for Women",
   },
   description:
-    "Jennifer Walker is a Licensed Clinical Social Worker with 20+ years helping high-performing professional women in Georgia and Florida recover from burnout and anxiety via telehealth.",
+    "Meet Jennifer Walker, LCSW — a licensed therapist specializing in anxiety, burnout, and life transitions for high-performing women in Georgia and Florida.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/about" },
   openGraph: {
-    title: "About Jennifer Walker, LCSW | Atlanta Anxiety & Burnout Therapist",
+    title: "About Jennifer Walker, LCSW | Anxiety & Burnout Therapist for Women",
     description:
-      "Jennifer Walker is a Licensed Clinical Social Worker with 20+ years helping high-performing professional women in Georgia and Florida recover from burnout and anxiety via telehealth.",
+      "Meet Jennifer Walker, LCSW — a licensed therapist specializing in anxiety, burnout, and life transitions for high-performing women in Georgia and Florida.",
     url: "https://anxietytherapyforwomen.com/about",
+    type: "website",
     images: [
       {
         url: "/headshot.jpg",
         width: 800,
         height: 1000,
-        alt: "Jennifer Walker, LCSW — Anxiety Therapist for Women",
+        alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia",
       },
     ],
   },

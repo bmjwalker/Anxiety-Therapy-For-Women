@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description:
       "Clear, upfront therapy pricing for Georgia and Florida clients, plus accepted insurance plans and SuperBill reimbursement info for out-of-network coverage.",
     url: "https://anxietytherapyforwomen.com/rates-insurance",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

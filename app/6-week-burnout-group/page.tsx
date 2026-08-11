@@ -28,6 +28,10 @@ export const metadata: Metadata = {
     description:
       "A structured 6-week small-group program for high-achieving women ready to understand their burnout and build a life that doesn't require running on empty.",
     url: "https://anxietytherapyforwomen.com/6-week-burnout-group",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

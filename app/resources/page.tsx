@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     description:
       "Download the free Burnout Reflection Guide and access crisis support resources for high-performing women navigating anxiety and burnout.",
     url: "https://anxietytherapyforwomen.com/resources",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

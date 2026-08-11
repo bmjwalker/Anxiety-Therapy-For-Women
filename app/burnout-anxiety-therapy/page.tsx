@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     description:
       "Feeling exhausted and stuck in survival mode? Virtual burnout recovery and anxiety therapy for high-performing professional women in Georgia and Florida.",
     url: "https://anxietytherapyforwomen.com/burnout-anxiety-therapy",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 

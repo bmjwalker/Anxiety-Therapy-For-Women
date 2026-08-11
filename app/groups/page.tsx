@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     description:
       "Structured burnout recovery programs for high-performing women — small cohorts, weekly telehealth sessions in Georgia & Florida.",
     url: "https://anxietytherapyforwomen.com/groups",
+    type: "website",
+    images: [
+      { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
+    ],
   },
 };
 
