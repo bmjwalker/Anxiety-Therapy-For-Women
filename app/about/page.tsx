@@ -59,6 +59,17 @@ export default function AboutPage() {
     <>
       <Header />
       <main id="main">
+        <section className="bg-cream pt-28 pb-8">
+          <div className="section-container">
+            <h1
+              className="text-5xl md:text-6xl font-light text-dark leading-tight"
+              style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+            >
+              About{" "}
+              <span className="italic text-brand">Jennifer Walker, LCSW</span>
+            </h1>
+          </div>
+        </section>
         <About />
         <section className="section-padding bg-white">
           <div className="section-container">

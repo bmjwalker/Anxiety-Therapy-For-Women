@@ -89,6 +89,11 @@ const nextConfig: NextConfig = {
         destination: "/career-clarity-therapy",
         permanent: true,
       },
+      {
+        source: "/therapy-intensives",
+        destination: "/burnout-reset-intensive",
+        permanent: true,
+      },
       // Indexed by Google but 404ing — old direct-slug URLs; content is preserved under /blog/archive
       {
         source: "/anxiety-therapy-near-me",

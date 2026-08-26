@@ -28,6 +28,17 @@ export default function FaqsPage() {
     <>
       <Header />
       <main id="main">
+        <section className="bg-cream pt-28 pb-8">
+          <div className="section-container">
+            <h1
+              className="text-5xl md:text-6xl font-light text-dark leading-tight"
+              style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+            >
+              Frequently Asked{" "}
+              <span className="italic text-brand">Questions</span>
+            </h1>
+          </div>
+        </section>
         <FAQ />
       </main>
       <Footer />
