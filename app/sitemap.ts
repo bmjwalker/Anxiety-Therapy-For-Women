@@ -3,6 +3,15 @@ import { archivedPosts } from "@/lib/archived-posts";
 
 const baseUrl = "https://anxietytherapyforwomen.com";
 
+// Archived-post slugs that have a permanent redirect (see next.config.ts) to a
+// current /blog post — these never return 200, so they're excluded from the sitemap.
+const redirectedArchiveSlugs = new Set([
+  "why-high-performing-women-overthink-and-how-to-break-the-cycle",
+  "adhd-high-performers-why-you-re-not-meant-to-be-disciplined-and-why-that-s-your-superpower",
+  "high-functioning-burnout-in-women-why-you-re-exhausted-even-if-you-re-still-showing-up",
+  "the-science-of-burnout-what-the-research-actually-says-and-why-you-re-not-just-tired",
+]);
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     // Core pages
@@ -166,10 +175,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     // Archived blog posts (legacy domain content)
-    ...archivedPosts.map((post) => ({
-      url: `${baseUrl}/blog/archive/${post.slug}`,
-      changeFrequency: "yearly" as const,
-      priority: 0.5,
-    })),
+    ...archivedPosts
+      .filter((post) => !redirectedArchiveSlugs.has(post.slug))
+      .map((post) => ({
+        url: `${baseUrl}/blog/archive/${post.slug}`,
+        changeFrequency: "yearly" as const,
+        priority: 0.5,
+      })),
   ];
 }
