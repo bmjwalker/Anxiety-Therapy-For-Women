@@ -6,13 +6,13 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Career Clarity Therapy for Women in Georgia & Florida | Jennifer Walker, LCSW",
+      "Career Clarity Therapy for Women | Jennifer Walker, LCSW",
   },
   description:
-    "You've built a successful career — so why does it feel wrong? Career Clarity Therapy helps high-achieving women in Georgia and Florida untangle identity from job title and find direction.",
+    "You've built a successful career — so why does it feel wrong? Career Clarity Therapy helps women untangle identity from job title and find direction.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/career-clarity-therapy" },
   openGraph: {
-    title: "Career Clarity Therapy for Women in Georgia & Florida | Jennifer Walker, LCSW",
+    title: "Career Clarity Therapy for Women | Jennifer Walker, LCSW",
     description:
       "Untangle your self-worth from your job title and find a career path that actually fits — virtual therapy for women in Georgia & Florida.",
     url: "https://anxietytherapyforwomen.com/career-clarity-therapy",

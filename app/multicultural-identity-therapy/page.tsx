@@ -6,13 +6,13 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Multicultural Identity Therapy for Women in Georgia | Jennifer Walker, LCSW",
+      "Multicultural Identity Therapy | Jennifer Walker, LCSW",
   },
   description:
-    "Culturally responsive therapy for women navigating identity, cultural expectations, and the pressure of being the first or only. Telehealth in Georgia and Florida with Jennifer Walker, LCSW.",
+    "Culturally responsive therapy for women navigating identity, cultural expectations, and the pressure of being the first or only.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/multicultural-identity-therapy" },
   openGraph: {
-    title: "Multicultural Identity Therapy for Women in Georgia | Jennifer Walker, LCSW",
+    title: "Multicultural Identity Therapy | Jennifer Walker, LCSW",
     description:
       "Culturally responsive therapy for women navigating identity, cultural expectations, and the pressure of being the first or only — telehealth in Georgia and Florida.",
     url: "https://anxietytherapyforwomen.com/multicultural-identity-therapy",

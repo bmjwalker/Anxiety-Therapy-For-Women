@@ -6,15 +6,15 @@ import Hero from "@/components/sections/Hero";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Jennifer Walker, LCSW | Anxiety & Burnout Therapy for Women in Atlanta, GA",
+      "Jennifer Walker, LCSW | Anxiety & Burnout Therapy, Atlanta",
   },
   description:
-    "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW. Book a free consultation.",
+    "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW.",
   alternates: { canonical: "https://anxietytherapyforwomen.com" },
   openGraph: {
-    title: "Jennifer Walker, LCSW | Anxiety & Burnout Therapy for Women in Atlanta, GA",
+    title: "Jennifer Walker, LCSW | Anxiety & Burnout Therapy, Atlanta",
     description:
-      "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW. Book a free consultation.",
+      "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW.",
     url: "https://anxietytherapyforwomen.com",
     type: "website",
     images: [

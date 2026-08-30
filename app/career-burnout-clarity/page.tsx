@@ -6,13 +6,13 @@ import { ArrowRight, CheckCircle2, BookOpen, Clock, Download, RefreshCw } from "
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Career Burnout Clarity Program | Jennifer Walker, LCSW | Atlanta, GA",
+      "Career Burnout Clarity Program | Jennifer Walker, LCSW",
   },
   description:
-    "For ambitious women at the crossroads of career burnout and identity confusion. Clarify your direction, understand your patterns, and build a path forward with Jennifer Walker, LCSW.",
+    "For ambitious women at the crossroads of career burnout and identity confusion. Clarify your direction, understand your patterns, and build a path forward.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/career-burnout-clarity" },
   openGraph: {
-    title: "Career Burnout Clarity Program | Jennifer Walker, LCSW | Atlanta, GA",
+    title: "Career Burnout Clarity Program | Jennifer Walker, LCSW",
     description:
       "For ambitious women at the crossroads of career burnout and identity confusion — clarify your direction and build a path forward.",
     url: "https://anxietytherapyforwomen.com/career-burnout-clarity",

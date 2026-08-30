@@ -6,13 +6,13 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Therapy for High-Performing Professional Women in Atlanta, GA | Jennifer Walker, LCSW",
+      "Therapy for High-Performing Women | Jennifer Walker, LCSW",
   },
   description:
-    "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout. Virtual sessions in Georgia and Florida. Free 15-minute consultation available.",
+    "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout. Virtual sessions in Georgia and Florida.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/high-performing-women-therapy" },
   openGraph: {
-    title: "Therapy for High-Performing Professional Women in Atlanta, GA | Jennifer Walker, LCSW",
+    title: "Therapy for High-Performing Women | Jennifer Walker, LCSW",
     description:
       "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout — virtual sessions in Georgia and Florida.",
     url: "https://anxietytherapyforwomen.com/high-performing-women-therapy",

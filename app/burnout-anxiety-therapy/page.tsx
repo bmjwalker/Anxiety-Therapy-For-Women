@@ -6,13 +6,13 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Burnout & Anxiety Therapy for Women in Atlanta, GA | Jennifer Walker, LCSW",
+      "Burnout & Anxiety Therapy for Women | Jennifer Walker, LCSW",
   },
   description:
-    "Feeling exhausted and stuck in survival mode? Virtual burnout recovery and anxiety therapy for high-performing professional women in Georgia and Florida. Book a free 15-minute consultation.",
+    "Feeling exhausted and stuck in survival mode? Virtual burnout recovery and anxiety therapy for high-performing professional women in Georgia and Florida.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/burnout-anxiety-therapy" },
   openGraph: {
-    title: "Burnout & Anxiety Therapy for Women in Atlanta, GA | Jennifer Walker, LCSW",
+    title: "Burnout & Anxiety Therapy for Women | Jennifer Walker, LCSW",
     description:
       "Feeling exhausted and stuck in survival mode? Virtual burnout recovery and anxiety therapy for high-performing professional women in Georgia and Florida.",
     url: "https://anxietytherapyforwomen.com/burnout-anxiety-therapy",
