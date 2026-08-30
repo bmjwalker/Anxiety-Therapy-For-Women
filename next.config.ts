@@ -61,7 +61,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/beyond-the-strong-one-course",
-        destination: "https://fabulous-teacher-7023.kit.com/a2676e1c5d",
+        destination: "/career-burnout-clarity",
         permanent: true,
       },
       {

@@ -1,10 +1,49 @@
-import { Calendar, ArrowRight } from "lucide-react";
+import { Calendar, ArrowRight, Zap, Users, BookOpen } from "lucide-react";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
+
+const programOfferings = [
+  {
+    icon: Calendar,
+    badge: "Group",
+    title: "6-Week Burnout Reset Group",
+    format: "Structured Group Program",
+    description:
+      "A small-cohort telehealth group with a structured 6-week curriculum and weekly live sessions.",
+    href: "/groups",
+  },
+  {
+    icon: Zap,
+    badge: "Intensive",
+    title: "Burnout Reset Intensive",
+    format: "2-Day Focused Intensive",
+    description:
+      "Two full days of concentrated 1:1 work for women who need a fast, deep reset.",
+    href: "/burnout-reset-intensive",
+  },
+  {
+    icon: Users,
+    badge: "Community",
+    title: "Reset Circle",
+    format: "Ongoing Monthly Community",
+    description:
+      "An ongoing community for continued accountability and support after the initial work is done.",
+    href: "/reset-circle",
+  },
+  {
+    icon: BookOpen,
+    badge: "Self-Paced Course",
+    title: "Beyond the Strong One",
+    format: "Self-Paced Digital Course",
+    description:
+      "A self-paced digital course you can work through privately, on your own schedule.",
+    href: "/career-burnout-clarity",
+  },
+];
 
 const groupFaqs = [
   {
@@ -78,6 +117,43 @@ export default function Programs() {
             Group experiences and self-guided programs designed to complement therapy and
             accelerate your transformation.
           </p>
+        </div>
+
+        {/* Program Ladder: all four offerings at a glance */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {programOfferings.map(({ icon: Icon, badge, title, format, description, href }) => (
+            <div
+              key={title}
+              className="flex flex-col gap-4 p-6 bg-white border-l-4 border-l-brand border border-cream-dark rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
+            >
+              <div className="flex items-center justify-between">
+                <div className="w-12 h-12 rounded-full bg-brand/10 flex items-center justify-center">
+                  <Icon size={22} className="text-brand" />
+                </div>
+                <span className="px-3 py-1 rounded-full text-xs font-medium border bg-moss-light text-brand-dark border-moss-light">
+                  {badge}
+                </span>
+              </div>
+              <div className="flex flex-col flex-1 gap-1">
+                <h3
+                  className="text-xl font-semibold text-dark leading-snug"
+                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                >
+                  {title}
+                </h3>
+                <p className="text-sm italic mb-1" style={{ color: "#C4897B" }}>
+                  {format}
+                </p>
+                <p className="text-sm text-dark/75 leading-relaxed">{description}</p>
+              </div>
+              <a
+                href={href}
+                className="inline-flex items-center gap-1.5 text-sm text-brand font-medium hover:text-brand-dark transition-colors mt-auto"
+              >
+                Learn More <ArrowRight size={14} />
+              </a>
+            </div>
+          ))}
         </div>
 
         {/* Featured: 6-Week Burnout Reset Group */}
