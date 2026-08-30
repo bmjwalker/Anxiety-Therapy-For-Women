@@ -50,23 +50,27 @@ const insuranceQuestions = [
 const selfPayBenefits = [
   {
     name: "Greater Privacy",
-    description: "Keep your mental health records confidential and off insurance files.",
+    description:
+      "Your mental health diagnosis and treatment history stay off insurance claims — no record that could surface during licensure renewals, security clearances, or background checks.",
   },
   {
     name: "More Therapist Options",
-    description: "Select any therapist, including specialists outside your insurance network.",
+    description:
+      "Work with the therapist who's the right fit, not just the one your insurance network allows.",
   },
   {
     name: "Flexible Treatment Plans",
-    description: "Customize the duration and frequency of your sessions without restrictions.",
+    description:
+      "Set the pace and focus of your sessions based on what you need, not what an insurance company will approve.",
   },
   {
     name: "Immediate Access",
-    description: "Start therapy right away without waiting for insurance approvals.",
+    description: "Start this week. No waiting on insurance authorization or referrals.",
   },
   {
     name: "Uninterrupted Care",
-    description: "Maintain consistent therapy even if your insurance changes.",
+    description:
+      "Keep your sessions consistent even if you change jobs, states, or insurance plans.",
   },
 ];
 
@@ -145,6 +149,37 @@ export default function RatesInsurancePage() {
                   <span key={method} className="approach-pill">
                     {method}
                   </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Self-Pay */}
+        <section className="bg-cream section-padding">
+          <div className="section-container">
+            <div className="max-w-4xl mx-auto">
+              <h2
+                className="text-3xl md:text-4xl font-light text-dark mb-10"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                Why Choose{" "}
+                <span className="italic text-brand">Self-Pay</span>
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:[grid-auto-rows:1fr]">
+                {selfPayBenefits.map((benefit) => (
+                  <div
+                    key={benefit.name}
+                    className="flex flex-col gap-2 p-4 md:p-6 bg-white border-l-4 border-l-brand rounded-xl shadow-md"
+                  >
+                    <p
+                      className="text-xl font-semibold text-dark leading-snug"
+                      style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                    >
+                      {benefit.name}
+                    </p>
+                    <p className="text-sm text-dark/75 leading-relaxed">{benefit.description}</p>
+                  </div>
                 ))}
               </div>
             </div>
@@ -230,37 +265,6 @@ export default function RatesInsurancePage() {
                       {i + 1}
                     </span>
                     <p className="text-base text-dark/80 pt-0.5">{question}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose Self-Pay */}
-        <section className="bg-cream section-padding">
-          <div className="section-container">
-            <div className="max-w-4xl mx-auto">
-              <h2
-                className="text-3xl md:text-4xl font-light text-dark mb-10"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-              >
-                Why Choose{" "}
-                <span className="italic text-brand">Self-Pay</span>
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:[grid-auto-rows:1fr]">
-                {selfPayBenefits.map((benefit) => (
-                  <div
-                    key={benefit.name}
-                    className="flex flex-col gap-2 p-4 md:p-6 bg-white border-l-4 border-l-brand rounded-xl shadow-md"
-                  >
-                    <p
-                      className="text-xl font-semibold text-dark leading-snug"
-                      style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-                    >
-                      {benefit.name}
-                    </p>
-                    <p className="text-sm text-dark/75 leading-relaxed">{benefit.description}</p>
                   </div>
                 ))}
               </div>
