@@ -97,7 +97,7 @@ const nextConfig: NextConfig = {
       // Indexed by Google but 404ing — old direct-slug URLs; content is preserved under /blog/archive
       {
         source: "/anxiety-therapy-near-me",
-        destination: "/blog/archive/anxiety-therapy-near-me",
+        destination: "/burnout-anxiety-therapy",
         permanent: true,
       },
       {
