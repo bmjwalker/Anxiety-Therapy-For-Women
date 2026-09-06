@@ -110,6 +110,12 @@ const nextConfig: NextConfig = {
         destination: "/blog/archive/are-you-using-the-right-criteria-to-measure-your-self-worth",
         permanent: true,
       },
+      // Consolidated pages — content fully covered elsewhere, no legacy history
+      {
+        source: "/services",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
 };

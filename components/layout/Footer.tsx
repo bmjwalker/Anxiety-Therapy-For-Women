@@ -47,6 +47,7 @@ export default function Footer() {
                 { label: "About Jennifer", href: "/about" },
                 { label: "Therapy Services", href: "/#services" },
                 { label: "Programs", href: "/#programs" },
+                { label: "Groups", href: "/groups" },
                 { label: "Resources", href: "/resources" },
                 { label: "FAQ", href: "/faqs" },
                 { label: "Blog", href: "/blog" },
