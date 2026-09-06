@@ -35,7 +35,7 @@ export default function Header() {
       }`}
     >
       <div className="section-container">
-        <div className="flex items-center justify-between gap-6 h-16 md:h-20">
+        <div className="flex items-center justify-between gap-5 h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group shrink-0">
             <Image
@@ -59,7 +59,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-dark/85 hover:text-brand transition-colors duration-200 font-medium"
+                className="text-sm text-dark/85 hover:text-brand transition-colors duration-200 font-medium whitespace-nowrap"
               >
                 {link.label}
               </Link>
@@ -69,7 +69,7 @@ export default function Header() {
               href="https://jennifer-walker7285.clientsecure.me/sign-in"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary px-5 py-2 rounded-md text-sm"
+              className="btn-primary px-4 py-2 rounded-md text-sm whitespace-nowrap"
             >
               Book Free Consult
             </a>
