@@ -35,9 +35,9 @@ export default function Header() {
       }`}
     >
       <div className="section-container">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between gap-6 h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group shrink-0">
             <Image
               src="/logo-mark.svg"
               alt="Jennifer Walker LCSW logo"
@@ -54,7 +54,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-5">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -69,7 +69,7 @@ export default function Header() {
               href="https://jennifer-walker7285.clientsecure.me/sign-in"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary ml-2 px-5 py-2 rounded-md text-sm"
+              className="btn-primary px-5 py-2 rounded-md text-sm"
             >
               Book Free Consult
             </a>
