@@ -6,7 +6,7 @@ import Programs from "@/components/sections/Programs";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Group Therapy Programs for Women | Jennifer Walker, LCSW | Atlanta, GA",
+      "Burnout Recovery Group | Psychoeducational Support for Women | Jennifer Walker, LCSW",
   },
   description:
     "Structured burnout recovery group programs for high-performing women. Small cohorts, weekly telehealth sessions, led by Jennifer Walker, LCSW in Georgia & Florida.",
@@ -34,8 +34,8 @@ export default function GroupsPage() {
               className="text-5xl md:text-6xl font-light text-dark leading-tight"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
-              Group Therapy{" "}
-              <span className="italic text-brand">Programs</span>
+              Burnout Recovery Support{" "}
+              <span className="italic text-brand">Group</span>
             </h1>
           </div>
         </section>

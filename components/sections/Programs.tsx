@@ -27,9 +27,9 @@ const groupFaqs = [
   },
   {
     id: "group-faq-4",
-    question: "Do you take insurance for this group?",
+    question: "Is this covered by insurance?",
     answer:
-      "No — group programs are private pay and aren't billed through insurance.",
+      "This is a psychoeducational support group, not group psychotherapy, so it isn't billed to insurance the way individual therapy sessions are. Because it's educational rather than clinical treatment, women can join from any state — you don't need to live in Georgia or Florida to participate.",
   },
   {
     id: "group-faq-5",
@@ -60,7 +60,7 @@ export default function Programs() {
         <div className="flex items-center gap-3 mb-4">
           <div className="h-px w-12 bg-dusty" />
           <span className="text-xs tracking-widest uppercase text-dusty font-medium">
-            Programs
+            Groups
           </span>
         </div>
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
@@ -69,8 +69,8 @@ export default function Programs() {
               className="text-4xl md:text-5xl font-semibold text-dark max-w-xl"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
-              Beyond individual therapy —{" "}
-              <span className="italic text-brand">programs built for you</span>
+              A guided space to recover from burnout —{" "}
+              <span className="italic text-brand">alongside women who get it</span>
             </h2>
             <div className="h-1 w-12 rounded-full mt-4" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
           </div>
@@ -109,12 +109,16 @@ export default function Programs() {
             Structured Cohort Program
           </p>
           <p className="text-sm text-dark/80 leading-relaxed mb-6 max-w-2xl">
-            The 6-Week Burnout Reset Group is a small-cohort telehealth program for
+            The 6-Week Burnout Reset Group is a small-cohort psychoeducational program for
             high-performing women recovering from burnout, led by Jennifer Walker, LCSW. Over six
             structured weeks, you&apos;ll move from understanding your burnout to actually changing
             how you live — assessing where you are, getting clear on your values, learning to set
             real boundaries, and building a version of your life that doesn&apos;t require running
             on empty.
+          </p>
+          <p className="text-sm text-dark/70 leading-relaxed mb-6 max-w-2xl">
+            This is a psychoeducational group, not group therapy — open to participants
+            nationwide.
           </p>
 
           {/* Features */}
