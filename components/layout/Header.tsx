@@ -36,16 +36,16 @@ export default function Header() {
       <div className="section-container">
         <div className="flex items-center justify-between gap-5 h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group shrink-0">
+          <Link href="/" className="flex items-center gap-3 group min-w-0 shrink md:shrink-0">
             <Image
               src="/logo-mark.svg"
               alt="Jennifer Walker LCSW logo"
               width={52}
               height={52}
-              className="object-contain"
+              className="object-contain shrink-0"
             />
             <span
-              className="text-xl md:text-2xl font-medium text-brand whitespace-nowrap"
+              className="text-lg sm:text-xl md:text-2xl font-medium text-brand truncate min-w-0"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               Jennifer Walker, LCSW
@@ -75,7 +75,7 @@ export default function Header() {
           </nav>
 
           {/* Mobile: always-visible Book button + hamburger */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="md:hidden flex items-center gap-2 shrink-0">
             <a
               href="https://jennifer-walker7285.clientsecure.me/sign-in"
               target="_blank"
