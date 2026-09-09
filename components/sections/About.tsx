@@ -106,6 +106,22 @@ export default function About() {
                 If you&rsquo;re ready to explore this journey together, I invite you to schedule a free
                 15-minute consultation to see if we&rsquo;re a good fit.
               </p>
+
+              <p>
+                In addition to my work with clients, I provide clinical supervision for LMSWs and
+                LAPCs working toward LCSW or LPC licensure in Georgia. If you&rsquo;re interested,
+                click{" "}
+                <a
+                  href="https://jennifer-walker7285.clientsecure.me/sign-in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand underline underline-offset-2 hover:text-brand-dark transition-colors"
+                >
+                  Book a Free Consultation
+                </a>{" "}
+                and select the 30-Minute Phone Consultation — Clinical Position at Anxiety
+                Therapy for Women option.
+              </p>
             </div>
 
             {/* Pull quote */}
