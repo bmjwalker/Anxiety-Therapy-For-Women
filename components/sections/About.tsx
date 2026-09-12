@@ -108,19 +108,15 @@ export default function About() {
               </p>
 
               <p>
-                In addition to my work with clients, I provide clinical supervision for LMSWs and
-                LAPCs working toward LCSW or LPC licensure in Georgia. If you&rsquo;re interested,
-                click{" "}
+                In addition to my work with clients, I provide clinical supervision for LMSWs
+                working toward LCSW licensure in Georgia.{" "}
                 <a
-                  href="https://jennifer-walker7285.clientsecure.me/sign-in"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/supervision"
                   className="text-brand underline underline-offset-2 hover:text-brand-dark transition-colors"
                 >
-                  Book a Free Consultation
-                </a>{" "}
-                and select the 30-Minute Phone Consultation — Clinical Position at Anxiety
-                Therapy for Women option.
+                  Learn more about clinical supervision
+                </a>
+                .
               </p>
             </div>
 
