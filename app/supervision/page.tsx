@@ -25,16 +25,24 @@ export const metadata: Metadata = {
 const isThisYou = [
   "Active LMSW license in Georgia",
   "Comfortable working in a fully telehealth practice",
-  "Interested in building your own caseload in your own specialty, not taking overflow clients",
-  "Open to eventually creating and facilitating your own therapy group",
-  "Ready to invest in the business side of practice, not just the clinical side",
+  "Wants real feedback on case conceptualization, not just a signature on a form",
+  "Preparing for (or thinking ahead to) the LCSW exam",
+  "Curious about private practice, even if you're not sure yet what that looks like for you",
 ];
 
 const whatsIncluded = [
   "Individual supervision, biweekly, and group supervision, weekly, with a small cohort of your peers",
+  "Case conceptualization skill-building, worked through with real cases from your own work",
+  "LCSW exam prep support as you get closer to sitting for licensure",
   "A structured competency framework so you always know where you stand, not just informal feedback",
-  "Business coaching — marketing yourself, filling your caseload, setting up your own website and professional presence",
+  "For those interested in private practice: business mentorship covering marketing, filling a caseload, and setting up your own professional presence",
   "Support building and running your own therapy group as part of the role",
+];
+
+const eligibility = [
+  "Active LMSW license in Georgia, in good standing",
+  "Completed MSW from an accredited program",
+  "Comfortable working in a fully telehealth setting",
 ];
 
 export default function SupervisionPage() {
@@ -57,14 +65,19 @@ export default function SupervisionPage() {
                 <span className="italic text-brand">for LMSWs</span>
               </h1>
               <p className="text-lg md:text-xl text-dusty font-medium mb-6 tracking-wide">
-                Building your caseload while you build your license.
+                Building your clinical foundation as you work toward licensure.
+              </p>
+              <p className="text-base md:text-lg text-dark/70 mb-6 max-w-2xl leading-relaxed">
+                I remember what it felt like to be newly licensed and unsure how any of this
+                actually worked — how to trust my case conceptualization, how to prepare for an
+                exam that felt impossibly broad, how to eventually think about building
+                something of my own. Supervision, for me, isn&rsquo;t just signing off on hours.
+                It&rsquo;s helping you build real clinical skill and confidence, at whatever
+                pace gets you there.
               </p>
               <p className="text-base md:text-lg text-dark/70 mb-10 max-w-2xl leading-relaxed">
-                I remember what it felt like to be newly licensed and unsure how any of this
-                actually worked — how to find clients, how to price myself, how to trust that I
-                was ready. Supervision, for me, isn&rsquo;t just signing off on hours.
-                It&rsquo;s helping you build the skills and the practice you actually want,
-                before you&rsquo;re doing it alone.
+                If you&rsquo;re an LMSW in Georgia working toward LCSW licensure, this is a
+                space to grow real clinical skill — not just clock hours.
               </p>
               <a
                 href="https://jennifer-walker7285.clientsecure.me/sign-in"
@@ -79,55 +92,30 @@ export default function SupervisionPage() {
           </div>
         </section>
 
-        {/* Is This You / What's Included */}
+        {/* Is This You */}
         <section className="bg-white section-padding">
           <div className="section-container">
-            <p className="text-base text-dark/70 mb-10 max-w-3xl leading-relaxed">
-              If you&rsquo;re an LMSW in Georgia working toward LCSW licensure, and
-              you&rsquo;re ready to build a real caseload — not just clock hours — this might be
-              a fit.
-            </p>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
-              <div>
-                <h2
-                  className="text-3xl md:text-4xl font-light text-dark mb-8"
-                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-                >
-                  Is this{" "}
-                  <span className="italic text-brand">you?</span>
-                </h2>
-                <div className="flex flex-col gap-4">
-                  {isThisYou.map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <CheckCircle2 size={20} className="text-dusty shrink-0 mt-0.5" />
-                      <p className="text-base text-dark/80">{item}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <h2
-                  className="text-3xl md:text-4xl font-light text-dark mb-8"
-                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-                >
-                  What&rsquo;s{" "}
-                  <span className="italic text-brand">included</span>
-                </h2>
-                <div className="flex flex-col gap-4">
-                  {whatsIncluded.map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <CheckCircle2 size={20} className="text-brand shrink-0 mt-0.5" />
-                      <p className="text-base text-dark/80">{item}</p>
-                    </div>
-                  ))}
-                </div>
+            <div className="max-w-3xl mx-auto">
+              <h2
+                className="text-3xl md:text-4xl font-light text-dark mb-8"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                Is this{" "}
+                <span className="italic text-brand">you?</span>
+              </h2>
+              <div className="flex flex-col gap-4">
+                {isThisYou.map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <CheckCircle2 size={20} className="text-dusty shrink-0 mt-0.5" />
+                    <p className="text-base text-dark/80">{item}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* How It Works */}
+        {/* What Is Clinical Supervision */}
         <section className="bg-cream section-padding">
           <div className="section-container">
             <div className="max-w-3xl mx-auto">
@@ -135,18 +123,151 @@ export default function SupervisionPage() {
                 className="text-3xl md:text-4xl font-light text-dark mb-6"
                 style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
-                How it{" "}
-                <span className="italic text-brand">works</span>
+                What Is{" "}
+                <span className="italic text-brand">Clinical Supervision?</span>
               </h2>
-              <p className="text-base text-dark/70 leading-relaxed mb-4">
-                You&rsquo;ll start with paid supervision, which counts toward the hours you need
-                regardless of where you get them. Once you&rsquo;re ready, you move into
-                building your own caseload. From there, you keep 70% of your session fees, with
-                supervision billed separately and ongoing at $100/hour. Supervision is a
-                relationship, not a transaction — if it&rsquo;s not the right fit for either of
-                us, we can part ways; there&rsquo;s no long-term obligation on either side.
+              <p className="text-base text-dark/70 leading-relaxed">
+                Clinical supervision is the guided relationship that gets you from an LMSW to a
+                fully licensed LCSW — working alongside an experienced clinician to build the
+                clinical skill, ethical grounding, and confidence that licensure requires.
+                It&rsquo;s where the theory you learned in school meets the reality of sitting
+                across from an actual client.
               </p>
-              <p className="text-sm text-dark/60 italic">
+            </div>
+          </div>
+        </section>
+
+        {/* Our Approach — How Supervision Works */}
+        <section className="bg-white section-padding">
+          <div className="section-container">
+            <div className="max-w-3xl mx-auto">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-px w-12 bg-dusty" />
+                <span className="text-xs tracking-widest uppercase text-dusty font-medium">
+                  Our Approach
+                </span>
+              </div>
+              <h2
+                className="text-3xl md:text-4xl font-normal text-dark mb-3"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                How Supervision{" "}
+                <span className="italic text-brand">Works</span>
+              </h2>
+              <div className="h-1 w-12 rounded-full mb-6" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
+              <p className="text-dark/75 mb-8 italic">
+                A developmental approach to how you grow as a clinician.
+              </p>
+              <div className="max-w-md pl-5 border-l-2 border-l-brand">
+                <p
+                  className="text-lg font-semibold text-dark mb-1"
+                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                >
+                  Integrative Developmental Model (IDM)
+                </p>
+                <p className="text-sm text-dark/75 leading-relaxed">
+                  Supervision grows with you — from building foundational skills with more
+                  structure and direct feedback, to full clinical autonomy and confidence,
+                  tracked across the specific competencies that matter for your license.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Grounded in Social Work Values & Ethics */}
+        <section className="bg-cream section-padding">
+          <div className="section-container">
+            <div className="max-w-3xl mx-auto">
+              <h2
+                className="text-3xl md:text-4xl font-light text-dark mb-6"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                Grounded in Social Work{" "}
+                <span className="italic text-brand">Values &amp; Ethics</span>
+              </h2>
+              <p className="text-base text-dark/70 leading-relaxed">
+                Everything in our work together is anchored in the NASW Code of Ethics —
+                informed consent, confidentiality and boundaries, cultural responsiveness, scope
+                of practice, and professional conduct aren&rsquo;t a separate unit we cover
+                once. They&rsquo;re the lens we use to work through every real case you bring.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Self-Care Is Part of the Work */}
+        <section className="bg-white section-padding">
+          <div className="section-container">
+            <div className="max-w-3xl mx-auto">
+              <h2
+                className="text-3xl md:text-4xl font-light text-dark mb-6"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                Self-Care Is{" "}
+                <span className="italic text-brand">Part of the Work</span>
+              </h2>
+              <p className="text-base text-dark/70 leading-relaxed">
+                I won&rsquo;t just supervise your clinical skills — sustainability is part of
+                how I train you to practice. Burnt-out clinicians don&rsquo;t serve clients
+                well, and building good self-regulation habits now is part of building a career
+                that lasts.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* What's Included */}
+        <section className="bg-cream section-padding">
+          <div className="section-container">
+            <div className="max-w-3xl mx-auto">
+              <h2
+                className="text-3xl md:text-4xl font-light text-dark mb-8"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                What&rsquo;s{" "}
+                <span className="italic text-brand">Included</span>
+              </h2>
+              <div className="flex flex-col gap-4">
+                {whatsIncluded.map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <CheckCircle2 size={20} className="text-brand shrink-0 mt-0.5" />
+                    <p className="text-base text-dark/80">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Eligibility & Requirements */}
+        <section className="bg-white section-padding">
+          <div className="section-container">
+            <div className="max-w-3xl mx-auto">
+              <h2
+                className="text-3xl md:text-4xl font-light text-dark mb-8"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                Eligibility &amp;{" "}
+                <span className="italic text-brand">Requirements</span>
+              </h2>
+              <div className="flex flex-col gap-4">
+                {eligibility.map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <CheckCircle2 size={20} className="text-dusty shrink-0 mt-0.5" />
+                    <p className="text-base text-dark/80">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Spots limited callout */}
+        <section className="bg-cream pt-10 pb-2">
+          <div className="section-container">
+            <div className="max-w-xl mx-auto border border-dusty/40 rounded-xl px-6 py-4 text-center">
+              <p className="text-sm text-dark/70">
                 Spots are limited. Each cohort is capped to keep group supervision genuinely
                 useful, not crowded.
               </p>
@@ -165,8 +286,8 @@ export default function SupervisionPage() {
               <span className="italic" style={{ color: "#CAAF99" }}>what&rsquo;s next.</span>
             </h2>
             <p className="text-base mb-10 leading-relaxed" style={{ color: "rgba(242,241,235,0.75)" }}>
-              If this sounds like the kind of supervision you&rsquo;ve been looking for,
-              let&rsquo;s talk.
+              If this sounds like the direction you want to grow in, book a free consultation
+              and we&rsquo;ll talk through the details.
             </p>
             <a
               href="https://jennifer-walker7285.clientsecure.me/sign-in"
