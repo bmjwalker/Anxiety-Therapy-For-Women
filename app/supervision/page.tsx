@@ -5,15 +5,15 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Clinical Supervision for LMSWs & LACs in Georgia | Jennifer Walker, LCSW",
+    absolute: "Georgia LMSW Clinical Supervision | Jennifer Walker, LCSW",
   },
   description:
-    "LCSW clinical supervision for Georgia LMSWs and LACs pursuing licensure. Case conceptualization, exam prep, ethics, and self-care in a values-driven practice.",
+    "Clinical supervision for Georgia LMSWs working toward LCSW licensure. Case conceptualization, ethics, exam prep, and self-care.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/supervision" },
   openGraph: {
-    title: "Clinical Supervision for LMSWs | Jennifer Walker, LCSW",
+    title: "Georgia LMSW Clinical Supervision | Jennifer Walker, LCSW",
     description:
-      "Supervision for LMSWs in Georgia working toward LCSW licensure — build a real caseload, not just clock hours.",
+      "Clinical supervision for Georgia LMSWs working toward LCSW licensure. Case conceptualization, ethics, exam prep, and self-care.",
     url: "https://anxietytherapyforwomen.com/supervision",
     type: "website",
     images: [
