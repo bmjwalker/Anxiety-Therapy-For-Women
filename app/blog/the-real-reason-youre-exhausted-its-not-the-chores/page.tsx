@@ -194,6 +194,16 @@ export default function BlogPost5() {
                 That internal shift — your nervous system standing down — is what makes everything else
                 possible. It&rsquo;s not about the chores.
               </p>
+              <p>
+                This kind of chronic overfunctioning is exactly what I work through with clients in{" "}
+                <a
+                  href="/high-performing-women-therapy"
+                  className="text-brand underline underline-offset-2 hover:text-brand-dark transition-colors"
+                >
+                  high-performing women therapy
+                </a>{" "}
+                — learning to let the vigilance down without everything actually falling apart.
+              </p>
 
               <p className="mt-2 text-dark/60 italic">
                 If you recognize this pattern in your own life, I&rsquo;d be glad to talk. You can{" "}

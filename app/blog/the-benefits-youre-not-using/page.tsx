@@ -247,6 +247,14 @@ export default function BlogPost6() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-6">
+                If the exhaustion driving you to look into any of this goes deeper than
+                paperwork can fix, <a
+                  href="/burnout-anxiety-therapy"
+                  className="text-brand underline underline-offset-2 hover:text-brand-dark transition-colors"
+                >burnout and anxiety therapy</a> can help you get at the root of it, not just
+                the accommodations around it.
+              </p>
             </div>
 
             {/* Author bio */}

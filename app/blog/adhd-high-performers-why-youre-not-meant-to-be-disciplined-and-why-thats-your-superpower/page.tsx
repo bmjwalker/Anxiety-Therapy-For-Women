@@ -132,6 +132,16 @@ export default function BlogPost3() {
                   You are not broken. You are wired for impact. Once you stop chasing balance and start embracing your brilliance, you become unstoppable.
                 </p>
               </div>
+              <p className="mt-4">
+                This kind of self-understanding is at the heart of the work I do in{" "}
+                <a
+                  href="/high-performing-women-therapy"
+                  className="text-brand underline underline-offset-2 hover:text-brand-dark transition-colors"
+                >
+                  high-performing women therapy
+                </a>{" "}
+                — helping driven women stop fighting their own wiring and start using it.
+              </p>
             </div>
 
             {/* Author bio */}

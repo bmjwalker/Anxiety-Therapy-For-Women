@@ -180,6 +180,13 @@ export default function BlogPost1() {
                 Start by finding out where you actually are. The free 2-minute burnout quiz is designed to help you assess your current burnout level across the key dimensions. It&rsquo;s not a diagnosis — it&rsquo;s a starting point for clarity.
               </p>
               <p>You are not just tired. What you&rsquo;re experiencing is real, it&rsquo;s recognized, and there&rsquo;s a way through it.</p>
+              <p>
+                If you&rsquo;re ready for that path, <a
+                  href="/burnout-anxiety-therapy"
+                  className="text-brand underline underline-offset-2 hover:text-brand-dark transition-colors"
+                >burnout and anxiety therapy</a> is designed to meet you exactly where you are
+                and help you build something more sustainable than pushing through.
+              </p>
             </div>
 
             {/* Author bio */}

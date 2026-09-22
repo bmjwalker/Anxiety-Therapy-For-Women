@@ -186,6 +186,35 @@ export default function CareerClarityTherapyPage() {
             </a>
           </div>
         </section>
+
+        {/* Related Services */}
+        <section className="bg-cream section-padding">
+          <div className="section-container">
+            <div className="max-w-3xl mx-auto">
+              <h2
+                className="text-2xl md:text-3xl font-light text-dark mb-3"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                Related <span className="italic text-brand">Services</span>
+              </h2>
+              <div className="h-1 w-12 rounded-full mb-6" style={{ backgroundColor: "#CAAF99" }} aria-hidden="true" />
+              <div className="flex flex-wrap gap-x-8 gap-y-3">
+                <a href="/burnout-anxiety-therapy" className="text-sm font-medium text-brand underline underline-offset-2 hover:text-brand-dark transition-colors">
+                  Burnout Recovery &amp; Anxiety Therapy
+                </a>
+                <a href="/life-transitions-therapy" className="text-sm font-medium text-brand underline underline-offset-2 hover:text-brand-dark transition-colors">
+                  Life Transitions Therapy
+                </a>
+                <a href="/high-performing-women-therapy" className="text-sm font-medium text-brand underline underline-offset-2 hover:text-brand-dark transition-colors">
+                  High-Performing Women Therapy
+                </a>
+                <a href="/multicultural-identity-therapy" className="text-sm font-medium text-brand underline underline-offset-2 hover:text-brand-dark transition-colors">
+                  Multicultural &amp; Identity Therapy
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

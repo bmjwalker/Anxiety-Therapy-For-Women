@@ -5,10 +5,10 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Clinical Supervision for LMSWs | Jennifer Walker, LCSW",
+    absolute: "Clinical Supervision for LMSWs & LACs in Georgia | Jennifer Walker, LCSW",
   },
   description:
-    "Clinical supervision for LMSWs in Georgia working toward LCSW licensure. Build a real caseload, get business coaching, and grow into independent practice.",
+    "LCSW clinical supervision for Georgia LMSWs and LACs pursuing licensure. Case conceptualization, exam prep, ethics, and self-care in a values-driven practice.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/supervision" },
   openGraph: {
     title: "Clinical Supervision for LMSWs | Jennifer Walker, LCSW",
@@ -289,16 +289,28 @@ export default function SupervisionPage() {
               If this sounds like the direction you want to grow in, book a free consultation
               and we&rsquo;ll talk through the details.
             </p>
-            <a
-              href="https://jennifer-walker7285.clientsecure.me/sign-in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-base font-medium transition-colors duration-200"
-              style={{ backgroundColor: "#CAAF99", color: "#57686B" }}
-            >
-              Book a Free Consultation
-              <ArrowRight size={16} />
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="https://jennifer-walker7285.clientsecure.me/sign-in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-base font-medium transition-colors duration-200"
+                style={{ backgroundColor: "#CAAF99", color: "#57686B" }}
+              >
+                Book a Free Consultation
+                <ArrowRight size={16} />
+              </a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc_TAYWjQpaCibfq8L63aWIcSIdjcU4LwounXWrqADu02b_pg/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-base font-medium border-2 transition-colors duration-200 hover:bg-cream/10"
+                style={{ borderColor: "#CAAF99", color: "#F2F1EB" }}
+              >
+                Start Your Interest Form
+                <ArrowRight size={16} />
+              </a>
+            </div>
             <p className="text-sm mt-3" style={{ color: "rgba(242,241,235,0.75)" }}>
               Select the 30-Minute Phone Consultation — Clinical Position at Anxiety Therapy for
               Women option.

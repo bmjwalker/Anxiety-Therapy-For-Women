@@ -141,6 +141,13 @@ export default function BlogPost4() {
                   When does overthinking show up most often in your life, and what might it be trying to protect you from?
                 </p>
               </div>
+              <p className="mt-4">
+                If overthinking has become a near-constant companion, <a
+                  href="/burnout-anxiety-therapy"
+                  className="text-brand underline underline-offset-2 hover:text-brand-dark transition-colors"
+                >burnout and anxiety therapy</a> can help you quiet the spiral for good, not
+                just manage it in the moment.
+              </p>
             </div>
 
             {/* Author bio */}

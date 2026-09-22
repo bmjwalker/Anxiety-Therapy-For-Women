@@ -7,12 +7,12 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Services", href: "/#services" },
-  { label: "Groups", href: "/groups" },
   { label: "About", href: "/about" },
+  { label: "Groups", href: "/groups" },
   { label: "Rates & Insurance", href: "/rates-insurance" },
   { label: "Resources", href: "/resources" },
-  { label: "FAQ", href: "/faqs" },
   { label: "Blog", href: "/blog" },
+  { label: "FAQ", href: "/faqs" },
 ];
 
 export default function Header() {

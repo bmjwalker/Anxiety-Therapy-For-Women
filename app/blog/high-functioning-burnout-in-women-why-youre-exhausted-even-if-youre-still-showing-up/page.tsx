@@ -187,6 +187,13 @@ export default function BlogPost2() {
               <p className="italic text-dark/75 border-l-2 border-brand/30 pl-4">
                 Burnout doesn&rsquo;t always look like everything falling apart. Sometimes it looks like continuing — while feeling increasingly depleted. If something in this resonated, it may be worth paying attention to.
               </p>
+              <p className="mt-4">
+                When you&rsquo;re ready to pay attention to it, <a
+                  href="/burnout-anxiety-therapy"
+                  className="text-brand underline underline-offset-2 hover:text-brand-dark transition-colors"
+                >burnout and anxiety therapy</a> offers a structured way to actually recover,
+                not just keep showing up.
+              </p>
             </div>
 
             {/* Author bio */}
