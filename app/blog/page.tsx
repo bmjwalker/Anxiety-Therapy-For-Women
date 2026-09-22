@@ -8,6 +8,15 @@ import { ArrowRight, Calendar } from "lucide-react";
 
 const posts = [
   {
+    slug: "seasonal-depression-isnt-a-character-flaw-its-a-pattern-you-can-prepare-for",
+    category: "Anxiety & Burnout",
+    title: "Seasonal Depression Isn't a Character Flaw. It's a Pattern You Can Prepare For.",
+    date: "October 5, 2026",
+    readTime: "5 min read",
+    excerpt:
+      "Seasonal depression follows a predictable pattern. Learn why starting therapy before the fall time change beats waiting until the holidays hit.",
+  },
+  {
     slug: "the-benefits-youre-not-using",
     category: "Anxiety & Burnout",
     title: "The Benefits You Didn't Know You Were Allowed to Use",

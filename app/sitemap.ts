@@ -138,6 +138,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Blog posts
     {
+      url: `${baseUrl}/blog/seasonal-depression-isnt-a-character-flaw-its-a-pattern-you-can-prepare-for`,
+      lastModified: new Date("2026-10-05"),
+      changeFrequency: "yearly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/blog/the-benefits-youre-not-using`,
       lastModified: new Date("2026-08-09"),
       changeFrequency: "yearly",
