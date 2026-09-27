@@ -236,6 +236,8 @@ export default function BlogPost7() {
               </p>
               <a
                 href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors"
               >
                 Schedule a Free Consultation

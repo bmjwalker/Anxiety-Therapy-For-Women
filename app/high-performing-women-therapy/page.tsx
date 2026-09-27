@@ -94,6 +94,8 @@ export default function HighPerformingWomenTherapyPage() {
               </p>
               <a
                 href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-brand text-cream text-base font-medium hover:bg-brand-dark transition-colors duration-200 shadow-md"
               >
                 Book a Free Consultation
@@ -205,6 +207,8 @@ export default function HighPerformingWomenTherapyPage() {
             </p>
             <a
               href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-base font-medium transition-colors duration-200"
               style={{ backgroundColor: "#CAAF99", color: "#57686B" }}
             >

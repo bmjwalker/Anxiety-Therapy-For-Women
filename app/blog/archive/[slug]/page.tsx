@@ -181,6 +181,8 @@ export default async function ArchivedBlogPage({
               </p>
               <a
                 href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary px-8 py-3.5 text-sm"
               >
                 Book a Free Consultation
