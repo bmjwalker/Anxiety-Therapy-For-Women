@@ -1,4 +1,5 @@
-import { Download, ExternalLink, Phone } from "lucide-react";
+import { ExternalLink, Phone } from "lucide-react";
+import BurnoutGuideContent from "@/components/sections/BurnoutGuide";
 
 export default function Resources({ onResourcesPage = false }: { onResourcesPage?: boolean }) {
   return (
@@ -39,40 +40,15 @@ export default function Resources({ onResourcesPage = false }: { onResourcesPage
         {/* Two-card grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
 
-          {/* Card 1 — Free Download */}
+          {/* Card 1 — Free Download (on /resources it moves to the bottom of the page instead) */}
+          {!onResourcesPage && (
           <div
             className="p-8 rounded-2xl flex flex-col gap-4"
             style={{ backgroundColor: "#4A7C7E" }}
           >
-            <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: "rgba(255,255,255,0.15)" }}>
-              <Download size={22} className="text-white" />
-            </div>
-            <div>
-              <h3
-                className="text-2xl font-medium text-white mb-1"
-                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-              >
-                Free Download
-              </h3>
-              <p className="text-base font-medium mb-3" style={{ color: "#C4897B" }}>
-                Burnout Reflection Guide
-              </p>
-              <p className="text-sm text-white/85 mb-6 leading-relaxed">
-                A guided workbook to help you identify burnout patterns, understand your triggers,
-                and take your first steps toward recovery — at no cost.
-              </p>
-              <a
-                href="https://fabulous-teacher-7023.kit.com/db3a6274d6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-colors hover:bg-white/90"
-                style={{ backgroundColor: "#FFFFFF", color: "#2D5F61" }}
-              >
-                <Download size={14} />
-                Get Your Free Guide
-              </a>
-            </div>
+            <BurnoutGuideContent />
           </div>
+          )}
 
           {/* Card 2 — Crisis Support */}
           <div
@@ -108,7 +84,7 @@ export default function Resources({ onResourcesPage = false }: { onResourcesPage
           {/* Card 3 — Georgia Crisis & Access Line (resources page only) */}
           {onResourcesPage && (
             <div
-              className="p-8 rounded-2xl flex flex-col gap-4 md:col-start-2"
+              className="p-8 rounded-2xl flex flex-col gap-4"
               style={{ backgroundColor: "#FAF7F4", border: "1px solid #E8E2DB" }}
             >
               <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: "rgba(74,124,126,0.10)" }}>
