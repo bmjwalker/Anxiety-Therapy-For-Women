@@ -11,7 +11,7 @@ const posts = [
     slug: "seasonal-depression-isnt-a-character-flaw-its-a-pattern-you-can-prepare-for",
     category: "Anxiety & Burnout",
     title: "Seasonal Depression Isn't a Character Flaw. It's a Pattern You Can Prepare For.",
-    date: "October 5, 2026",
+    date: "September 22, 2026",
     readTime: "5 min read",
     excerpt:
       "Seasonal depression follows a predictable pattern. Learn why starting therapy before the fall time change beats waiting until the holidays hit.",

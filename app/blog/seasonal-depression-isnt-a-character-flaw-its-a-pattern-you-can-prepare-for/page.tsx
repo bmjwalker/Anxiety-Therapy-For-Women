@@ -54,7 +54,7 @@ export default function BlogPost7() {
             <div className="flex items-center gap-4 text-sm text-dark/65">
               <div className="flex items-center gap-1.5">
                 <Calendar size={14} />
-                October 5, 2026
+                September 22, 2026
               </div>
               <div className="flex items-center gap-1.5">
                 <Clock size={14} />

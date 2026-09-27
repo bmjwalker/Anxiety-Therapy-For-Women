@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { BookOpen, Briefcase, CalendarDays, ExternalLink, Heart, Scale, ShieldCheck } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -10,17 +11,24 @@ export const metadata: Metadata = {
     absolute: "Free Mental Health Resources for Women | Jennifer Walker, LCSW",
   },
   description:
-    "Download the free Burnout Reflection Guide and access crisis support resources. Free tools for high-performing women navigating anxiety and burnout — from Jennifer Walker, LCSW.",
+    "Free, trusted resources for women in Atlanta, GA: 24/7 crisis support, your mental health rights at work, and clear, research-based information on anxiety.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/resources" },
   openGraph: {
     title: "Free Mental Health Resources for Women | Jennifer Walker, LCSW",
     description:
-      "Download the free Burnout Reflection Guide and access crisis support resources for high-performing women navigating anxiety and burnout.",
+      "Free, trusted resources for women in Atlanta, GA: 24/7 crisis support, your mental health rights at work, and clear, research-based information on anxiety.",
     url: "https://anxietytherapyforwomen.com/resources",
     type: "website",
     images: [
       { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free Mental Health Resources for Women | Jennifer Walker, LCSW",
+    description:
+      "Free, trusted resources for women in Atlanta, GA: 24/7 crisis support, your mental health rights at work, and clear, research-based information on anxiety.",
+    images: ["/headshot.jpg"],
   },
 };
 
@@ -35,8 +43,8 @@ export default function ResourcesPage() {
               className="text-5xl md:text-6xl font-light text-dark leading-tight"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
-              Free Resources{" "}
-              <span className="italic text-brand">&amp; Tools</span>
+              Free Mental Health Resources{" "}
+              <span className="italic text-brand">for Women</span>
             </h1>
           </div>
         </section>
@@ -193,6 +201,17 @@ export default function ResourcesPage() {
               </div>
 
             </div>
+
+            <p className="text-sm text-dark/75 mt-8">
+              Related reading:{" "}
+              <Link
+                href="/blog/the-benefits-youre-not-using"
+                className="font-medium underline underline-offset-2 transition-colors hover:text-brand-dark"
+                style={{ color: "#4A7C7E" }}
+              >
+                The Benefits You&apos;re Not Using
+              </Link>
+            </p>
           </div>
         </section>
 
@@ -243,7 +262,7 @@ export default function ResourcesPage() {
                     className="inline-flex items-center gap-2 text-sm font-medium underline underline-offset-2 transition-colors hover:text-brand-dark"
                     style={{ color: "#4A7C7E" }}
                   >
-                    Visit NIMH
+                    Read about anxiety disorders
                     <ExternalLink size={14} />
                   </a>
                 </div>
@@ -275,12 +294,73 @@ export default function ResourcesPage() {
                     className="inline-flex items-center gap-2 text-sm font-medium underline underline-offset-2 transition-colors hover:text-brand-dark"
                     style={{ color: "#4A7C7E" }}
                   >
-                    Visit NIMH
+                    Read NIMH&apos;s self-care guide
                     <ExternalLink size={14} />
                   </a>
                 </div>
               </div>
 
+            </div>
+
+            <p className="text-sm text-dark/75 mt-8">
+              Related reading:{" "}
+              <Link
+                href="/blog/why-high-performing-women-overthink"
+                className="font-medium underline underline-offset-2 transition-colors hover:text-brand-dark"
+                style={{ color: "#4A7C7E" }}
+              >
+                Why High-Performing Women Overthink
+              </Link>
+            </p>
+          </div>
+        </section>
+
+        {/* Next Steps */}
+        <section className="section-padding bg-cream">
+          <div className="section-container">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="h-px w-12 bg-dusty" />
+              <span className="text-xs tracking-widest uppercase font-medium" style={{ color: "#C4897B" }}>
+                Next Steps
+              </span>
+            </div>
+
+            <h2
+              className="text-4xl md:text-5xl font-normal text-dark mb-3"
+              style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+            >
+              When It&apos;s Time for{" "}
+              <span className="italic text-brand">More Support</span>
+            </h2>
+            <div className="h-1 w-12 rounded-full mb-6" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
+
+            <p className="text-base text-dark/75 mb-8 max-w-xl leading-relaxed">
+              Anxiety and burnout rarely announce themselves. For many high-performing women, they show
+              up as trouble sleeping, a shorter fuse, or the feeling that you&apos;re running on empty even
+              after time off. The resources above can help you understand what&apos;s happening and know
+              your rights at work. If these patterns have lasted more than a few weeks, or they&apos;re
+              starting to affect your work, health, or relationships, it may be time to talk with a
+              therapist. I offer online therapy from Atlanta, GA for women across Georgia and Florida.
+            </p>
+
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
+              <Link href="/#contact" className="btn-primary px-6 py-3 rounded-md text-sm">
+                Book a Free Consultation
+              </Link>
+              <Link
+                href="/burnout-anxiety-therapy"
+                className="text-sm font-medium underline underline-offset-2 transition-colors hover:text-brand-dark"
+                style={{ color: "#4A7C7E" }}
+              >
+                Burnout &amp; Anxiety Therapy
+              </Link>
+              <Link
+                href="/high-performing-women-therapy"
+                className="text-sm font-medium underline underline-offset-2 transition-colors hover:text-brand-dark"
+                style={{ color: "#4A7C7E" }}
+              >
+                Therapy for High-Performing Women
+              </Link>
             </div>
           </div>
         </section>
@@ -289,7 +369,7 @@ export default function ResourcesPage() {
         <section className="section-padding" style={{ backgroundColor: "#4A7C7E" }}>
           <div className="section-container">
             <div className="max-w-xl mx-auto flex flex-col items-center gap-4 text-center">
-              <BurnoutGuideContent headingLevel="h2" />
+              <BurnoutGuideContent headingLevel="h2" heading="Free Burnout Reflection Guide" showSubtitle={false} />
             </div>
           </div>
         </section>

@@ -139,7 +139,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Blog posts
     {
       url: `${baseUrl}/blog/seasonal-depression-isnt-a-character-flaw-its-a-pattern-you-can-prepare-for`,
-      lastModified: new Date("2026-10-05"),
+      lastModified: new Date("2026-09-22"),
       changeFrequency: "yearly",
       priority: 0.8,
     },

@@ -17,8 +17,17 @@ export default function Resources({ onResourcesPage = false }: { onResourcesPage
           className="text-4xl md:text-5xl font-normal text-dark mb-3"
           style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
         >
-          Free tools &amp; resources to{" "}
-          <span className="italic text-brand">support your journey</span>
+          {onResourcesPage ? (
+            <>
+              Crisis Support,{" "}
+              <span className="italic text-brand">Available 24/7</span>
+            </>
+          ) : (
+            <>
+              Free tools &amp; resources to{" "}
+              <span className="italic text-brand">support your journey</span>
+            </>
+          )}
         </h2>
         <div className="h-1 w-12 rounded-full mb-4" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
 
