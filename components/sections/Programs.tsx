@@ -1,4 +1,5 @@
 import { Calendar, ArrowRight, Zap, BookOpen } from "lucide-react";
+import { BOOKING_URL } from "@/lib/booking";
 import {
   Accordion,
   AccordionItem,
@@ -250,7 +251,7 @@ export default function Programs() {
         <p className="mt-12 text-center text-sm text-dark/70">
           Not sure which program is right for you?{" "}
           <a
-            href="https://jennifer-walker7285.clientsecure.me/sign-in"
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-brand underline underline-offset-2 hover:text-brand-dark"

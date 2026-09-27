@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BOOKING_URL } from "@/lib/booking";
 
 export default function About() {
   return (
@@ -127,7 +128,7 @@ export default function About() {
 
             {/* CTA */}
             <a
-              href="https://jennifer-walker7285.clientsecure.me/sign-in"
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary px-7 py-3.5 text-sm"

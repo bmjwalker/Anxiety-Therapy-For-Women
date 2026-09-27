@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { BOOKING_URL } from "@/lib/booking";
 
 export default function ClosingCTA() {
   return (
@@ -49,7 +50,7 @@ export default function ClosingCTA() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://jennifer-walker7285.clientsecure.me/sign-in"
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-brand text-base font-medium shadow-md hover:bg-white/90 transition-colors duration-200 whitespace-nowrap"

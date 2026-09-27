@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
@@ -211,7 +212,7 @@ export default function BlogPost1() {
                 Book a free 15-minute consultation and let&rsquo;s talk about what recovery actually looks like for you.
               </p>
               <a
-                href="https://jennifer-walker7285.clientsecure.me/sign-in"
+                href={BOOKING_URL}
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors"
               >
                 Book a Free Consultation

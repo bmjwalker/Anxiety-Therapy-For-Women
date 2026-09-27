@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BOOKING_URL } from "@/lib/booking";
 import { ArrowRight, Check } from "lucide-react";
 
 export default function Hero() {
@@ -78,7 +79,7 @@ export default function Hero() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://jennifer-walker7285.clientsecure.me/sign-in"
+                href={BOOKING_URL}
                 className="btn-primary px-8 py-4 text-base shadow-md"
               >
                 Book a Free Consultation

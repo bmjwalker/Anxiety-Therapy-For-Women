@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
@@ -208,7 +209,7 @@ export default function BlogPost5() {
               <p className="mt-2 text-dark/60 italic">
                 If you recognize this pattern in your own life, I&rsquo;d be glad to talk. You can{" "}
                 <a
-                  href="https://jennifer-walker7285.clientsecure.me/sign-in"
+                  href={BOOKING_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-brand underline underline-offset-2 hover:text-brand-dark transition-colors not-italic"
@@ -243,7 +244,7 @@ export default function BlogPost5() {
                 carry less.
               </p>
               <a
-                href="https://jennifer-walker7285.clientsecure.me/sign-in"
+                href={BOOKING_URL}
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors"
               >
                 Book a Free Consultation

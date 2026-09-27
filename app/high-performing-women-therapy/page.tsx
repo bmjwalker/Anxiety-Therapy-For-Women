@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
@@ -92,7 +93,7 @@ export default function HighPerformingWomenTherapyPage() {
                 ready to put some of it down.
               </p>
               <a
-                href="https://jennifer-walker7285.clientsecure.me/sign-in"
+                href={BOOKING_URL}
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-brand text-cream text-base font-medium hover:bg-brand-dark transition-colors duration-200 shadow-md"
               >
                 Book a Free Consultation
@@ -203,7 +204,7 @@ export default function HighPerformingWomenTherapyPage() {
               could look like for you — no commitment, no pressure.
             </p>
             <a
-              href="https://jennifer-walker7285.clientsecure.me/sign-in"
+              href={BOOKING_URL}
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-base font-medium transition-colors duration-200"
               style={{ backgroundColor: "#CAAF99", color: "#57686B" }}
             >

@@ -4,6 +4,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
+import { BOOKING_URL } from "@/lib/booking";
 import { ArrowRight } from "lucide-react";
 import type { ReactNode } from "react";
 
@@ -112,7 +113,7 @@ export default function FAQ() {
               15-minute consultation.
             </p>
             <a
-              href="https://jennifer-walker7285.clientsecure.me/sign-in"
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-brand text-cream text-sm font-medium hover:bg-brand-dark transition-colors"

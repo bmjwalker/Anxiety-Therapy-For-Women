@@ -7,6 +7,7 @@ import {
   CheckCircle2,
   ArrowRight,
 } from "lucide-react";
+import { BOOKING_URL } from "@/lib/booking";
 
 /* ── Data ── */
 
@@ -215,7 +216,7 @@ export default function TherapyServices({
           </div>
 
           <a
-            href="https://jennifer-walker7285.clientsecure.me/sign-in"
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary px-7 py-3.5 text-sm"
@@ -300,7 +301,9 @@ export default function TherapyServices({
           </div>
 
           <a
-            href="https://jennifer-walker7285.clientsecure.me/sign-in"
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary px-7 py-3.5 text-sm"
           >
             Schedule a Consultation
@@ -324,7 +327,9 @@ export default function TherapyServices({
           </p>
 
           <a
-            href="https://jennifer-walker7285.clientsecure.me/sign-in"
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary px-7 py-3.5 text-sm"
           >
             Book Your Free Consult
@@ -373,7 +378,7 @@ export default function TherapyServices({
           </div>
 
           <a
-            href="https://jennifer-walker7285.clientsecure.me/sign-in"
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary px-7 py-3.5 text-sm"

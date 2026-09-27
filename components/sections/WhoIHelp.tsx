@@ -1,4 +1,5 @@
 import { CheckCircle2, ArrowRight } from "lucide-react";
+import { BOOKING_URL } from "@/lib/booking";
 
 const signs = [
   "You look successful on the outside but feel exhausted inside",
@@ -44,7 +45,7 @@ export default function WhoIHelp() {
         </div>
 
         <a
-          href="https://jennifer-walker7285.clientsecure.me/sign-in"
+          href={BOOKING_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-sm font-medium transition-colors duration-200 hover:bg-white/90"

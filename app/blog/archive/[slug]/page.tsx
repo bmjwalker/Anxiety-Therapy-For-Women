@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BOOKING_URL } from "@/lib/booking";
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import Header from "@/components/layout/Header";
@@ -179,7 +180,7 @@ export default async function ArchivedBlogPage({
                 If you&rsquo;re a high-achieving woman navigating anxiety, burnout, or a difficult life transition, therapy can help. I work with professional women in Georgia and Florida who are ready to move from survival mode into something that actually feels like living.
               </p>
               <a
-                href="https://jennifer-walker7285.clientsecure.me/sign-in"
+                href={BOOKING_URL}
                 className="btn-primary px-8 py-3.5 text-sm"
               >
                 Book a Free Consultation

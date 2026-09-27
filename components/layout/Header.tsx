@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { BOOKING_URL } from "@/lib/booking";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
@@ -65,7 +66,7 @@ export default function Header() {
             ))}
 
             <a
-              href="https://jennifer-walker7285.clientsecure.me/sign-in"
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary px-4 py-2 rounded-md text-sm whitespace-nowrap"
@@ -77,7 +78,7 @@ export default function Header() {
           {/* Mobile: always-visible Book button + hamburger */}
           <div className="md:hidden flex items-center gap-2 shrink-0">
             <a
-              href="https://jennifer-walker7285.clientsecure.me/sign-in"
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary px-4 py-1.5 rounded-md text-xs"
@@ -110,7 +111,7 @@ export default function Header() {
               </Link>
             ))}
             <a
-              href="https://jennifer-walker7285.clientsecure.me/sign-in"
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
