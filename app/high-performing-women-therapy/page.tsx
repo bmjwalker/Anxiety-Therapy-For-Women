@@ -241,9 +241,6 @@ export default function HighPerformingWomenTherapyPage() {
                 <a href="/career-clarity-therapy" className="text-sm font-medium text-brand underline underline-offset-2 hover:text-brand-dark transition-colors">
                   Career Clarity Therapy
                 </a>
-                <a href="/multicultural-identity-therapy" className="text-sm font-medium text-brand underline underline-offset-2 hover:text-brand-dark transition-colors">
-                  Multicultural &amp; Identity Therapy
-                </a>
               </div>
             </div>
           </div>

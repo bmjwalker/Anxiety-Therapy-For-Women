@@ -3,7 +3,6 @@ import {
   Briefcase,
   RefreshCw,
   Globe,
-  Users,
   CheckCircle2,
   ArrowRight,
 } from "lucide-react";
@@ -94,20 +93,6 @@ const services = [
       "Let someone finally take care of you",
     ],
     href: "/high-performing-women-therapy",
-  },
-  {
-    icon: Users,
-    category: "Identity & Culture",
-    title: "Multicultural & Identity Therapy",
-    tagline: "You contain multitudes. This is a space to explore all of them.",
-    description:
-      "Culturally responsive therapy for women navigating identity, cultural expectations, and the pressure of being the first or only.",
-    bullets: [
-      "Explore how race, culture, and identity shape your experience of stress and burnout",
-      "Process the weight of being 'the first,' 'the only,' or 'the strong one'",
-      "Build an authentic sense of self that honors your full story",
-    ],
-    href: "/multicultural-identity-therapy",
   },
 ];
 

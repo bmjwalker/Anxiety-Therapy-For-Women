@@ -60,6 +60,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/multicultural-identity-therapy",
+        destination: "/high-performing-women-therapy",
+        permanent: true,
+      },
+      {
         source: "/beyond-the-strong-one-course",
         destination: "/career-burnout-clarity",
         permanent: true,
