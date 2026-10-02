@@ -7,14 +7,14 @@ import { SITE_NAME, SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Anxiety Therapy for Women | Burnout Therapist in Atlanta, GA",
+      "Anxiety Therapy for Women | Jennifer Walker, LCSW | Atlanta, GA",
   },
   description:
     "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW.",
   alternates: { canonical: "https://anxietytherapyforwomen.com" },
   openGraph: {
     siteName: SITE_NAME,
-    title: "Anxiety Therapy for Women | Burnout Therapist in Atlanta, GA",
+    title: "Anxiety Therapy for Women | Jennifer Walker, LCSW | Atlanta, GA",
     description:
       "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW.",
     url: "https://anxietytherapyforwomen.com",
