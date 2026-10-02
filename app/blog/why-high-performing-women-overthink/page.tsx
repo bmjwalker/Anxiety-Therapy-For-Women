@@ -3,6 +3,7 @@ import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
     "Your brain won't turn off at night — you're not broken, you're stuck in a high-achiever thought pattern. Learn why, and 3 ways to quiet the spiral.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/blog/why-high-performing-women-overthink" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Why High-Performing Women Overthink (And How to Stop)",
     description:
       "Your brain won't turn off at night — you're not broken, you're stuck in a high-achiever thought pattern. Learn why, and 3 ways to quiet the spiral.",

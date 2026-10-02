@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, Zap, Target, Map, Star } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     "An intensive burnout recovery program for professional women who need focused, deep work. Reset your nervous system and reclaim your life — telehealth in Georgia & Florida.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/burnout-reset-intensive" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Burnout Reset Intensive for Women | Jennifer Walker, LCSW | Atlanta, GA",
     description:
       "Intensive burnout recovery for professional women who are ready for focused, deep work — telehealth in Georgia and Florida.",

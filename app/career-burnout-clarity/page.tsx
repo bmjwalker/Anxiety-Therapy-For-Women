@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, BookOpen, Clock, Download, RefreshCw } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     "For ambitious women at the crossroads of career burnout and identity confusion. Clarify your direction, understand your patterns, and build a path forward.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/career-burnout-clarity" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Career Burnout Clarity Program | Jennifer Walker, LCSW",
     description:
       "For ambitious women at the crossroads of career burnout and identity confusion — clarify your direction and build a path forward.",

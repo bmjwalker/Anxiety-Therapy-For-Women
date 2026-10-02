@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "Website disclaimer for Jennifer Walker, LCSW / J&K Walker, LLC, covering the educational nature of this site's content and the limits of liability for its use.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/disclaimer" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Disclaimer | Jennifer Walker, LCSW",
     description:
       "Website disclaimer for Jennifer Walker, LCSW / J&K Walker, LLC.",

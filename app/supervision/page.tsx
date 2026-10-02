@@ -3,6 +3,7 @@ import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     "Clinical supervision for Georgia LMSWs working toward LCSW licensure. Case conceptualization, ethics, exam prep, and self-care.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/supervision" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Georgia LMSW Clinical Supervision | Jennifer Walker, LCSW",
     description:
       "Clinical supervision for Georgia LMSWs working toward LCSW licensure. Case conceptualization, ethics, exam prep, and self-care.",

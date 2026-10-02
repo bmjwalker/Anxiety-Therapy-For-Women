@@ -15,6 +15,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     "A structured 6-week small-group program for high-achieving women ready to understand their burnout and build a life that doesn't require running on empty.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/6-week-burnout-group" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "6-Week Burnout Reset Group | Anxiety Therapy for Women",
     description:
       "A structured 6-week small-group program for high-achieving women ready to understand their burnout and build a life that doesn't require running on empty.",

@@ -3,6 +3,7 @@ import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
     "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout. Virtual sessions in Georgia and Florida.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/high-performing-women-therapy" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Therapy for High-Performing Women | Jennifer Walker, LCSW",
     description:
       "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout — virtual sessions in Georgia and Florida.",

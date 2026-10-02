@@ -3,6 +3,7 @@ import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
       "https://anxietytherapyforwomen.com/blog/seasonal-depression-isnt-a-character-flaw-its-a-pattern-you-can-prepare-for",
   },
   openGraph: {
+    siteName: SITE_NAME,
     title:
       "Seasonal Depression Isn't a Character Flaw. It's a Pattern You Can Prepare For. | Jennifer Walker, LCSW",
     description:

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "Good Faith Estimate notice for uninsured and self-pay clients under the No Surprises Act, including your right to dispute a bill through the federal Patient-Provider Dispute Resolution Process.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/good-faith-estimate" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Good Faith Estimate Notice | Jennifer Walker, LCSW",
     description:
       "Good Faith Estimate notice for uninsured and self-pay clients under the No Surprises Act.",

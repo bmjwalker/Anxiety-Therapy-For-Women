@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { archivedPosts, getArchivedPostBySlug } from "@/lib/archived-posts";
 import { Calendar } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export function generateStaticParams() {
   return archivedPosts.map((post) => ({ slug: post.slug }));
@@ -27,6 +28,7 @@ export async function generateMetadata({
     description,
     alternates: { canonical: url },
     openGraph: {
+      siteName: SITE_NAME,
       title,
       description,
       url,

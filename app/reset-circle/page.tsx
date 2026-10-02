@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, Users, Heart, Shield, Zap } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     "Ongoing monthly community for high-performing women maintaining their recovery from burnout. Connection, accountability, and continued support with Jennifer Walker, LCSW.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/reset-circle" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Reset Circle | Monthly Burnout Support for Women | Jennifer Walker, LCSW",
     description:
       "Ongoing monthly community for high-performing women maintaining their burnout recovery — connection, accountability, and continued support.",

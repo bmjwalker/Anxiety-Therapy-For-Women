@@ -3,6 +3,7 @@ import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     "Clear, upfront therapy pricing for Georgia and Florida clients, plus accepted insurance plans and SuperBill reimbursement info for out-of-network coverage.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/rates-insurance" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Rates & Insurance | Anxiety Therapy for Women",
     description:
       "Clear, upfront therapy pricing for Georgia and Florida clients, plus accepted insurance plans and SuperBill reimbursement info for out-of-network coverage.",

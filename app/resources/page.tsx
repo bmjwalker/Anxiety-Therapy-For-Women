@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Resources from "@/components/sections/Resources";
 import BurnoutGuideContent from "@/components/sections/BurnoutGuide";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
     "Free, trusted resources for women in Atlanta, GA: 24/7 crisis support, your mental health rights at work, and clear, research-based information on anxiety.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/resources" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Free Mental Health Resources for Women | Jennifer Walker, LCSW",
     description:
       "Free, trusted resources for women in Atlanta, GA: 24/7 crisis support, your mental health rights at work, and clear, research-based information on anxiety.",

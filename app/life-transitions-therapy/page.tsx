@@ -3,6 +3,7 @@ import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
     "Career change, divorce, becoming a parent, a big move — therapy to help you navigate major life transitions without losing yourself in the process.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/life-transitions-therapy" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Life Transitions Therapy | Anxiety Therapy for Women",
     description:
       "Career change, divorce, becoming a parent, a big move — therapy to help you navigate major life transitions without losing yourself in the process.",

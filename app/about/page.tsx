@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import About from "@/components/sections/About";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     "Meet Jennifer Walker, LCSW — a licensed therapist specializing in anxiety, burnout, and life transitions for high-performing women in Georgia and Florida.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/about" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "About Jennifer Walker, LCSW | Anxiety & Burnout Therapist for Women",
     description:
       "Meet Jennifer Walker, LCSW — a licensed therapist specializing in anxiety, burnout, and life transitions for high-performing women in Georgia and Florida.",

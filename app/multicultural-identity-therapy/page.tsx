@@ -3,6 +3,7 @@ import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
     "Culturally responsive therapy for women navigating identity, cultural expectations, and the pressure of being the first or only.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/multicultural-identity-therapy" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Multicultural Identity Therapy | Jennifer Walker, LCSW",
     description:
       "Culturally responsive therapy for women navigating identity, cultural expectations, and the pressure of being the first or only — telehealth in Georgia and Florida.",

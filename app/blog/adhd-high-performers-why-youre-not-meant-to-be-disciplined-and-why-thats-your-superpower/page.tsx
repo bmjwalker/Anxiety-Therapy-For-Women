@@ -3,6 +3,7 @@ import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
     "Traditional productivity systems weren't built for the ADHD brain. Learn how to work with your dopamine-driven motivation instead of against it.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/blog/adhd-high-performers-why-youre-not-meant-to-be-disciplined-and-why-thats-your-superpower" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "ADHD High Performers: Why 'Discipline' Isn't the Answer | Jennifer Walker, LCSW",
     description:
       "Traditional productivity systems weren't built for the ADHD brain. Learn how to work with your dopamine-driven motivation instead of against it.",

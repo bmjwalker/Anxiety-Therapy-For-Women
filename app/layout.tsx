@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter, Jost } from "next/font/google";
 import "./globals.css";
+import { SITE_NAME } from "@/lib/site";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -27,7 +28,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://anxietytherapyforwomen.com"),
   title: {
     default: "Jennifer Walker, LCSW | Anxiety Therapy for Women",
-    template: "%s | Jennifer Walker, LCSW",
+    template: "%s | Anxiety Therapy for Women",
+  },
+  applicationName: SITE_NAME,
+  appleWebApp: {
+    title: SITE_NAME,
   },
   description:
     "Compassionate anxiety therapy and burnout recovery for high-performing professional women in Georgia and Florida. Telehealth sessions, therapy for life transitions, career clarity, and burnout support.",
@@ -54,7 +59,7 @@ export const metadata: Metadata = {
     description:
       "Helping high-performing professional women reclaim calm, clarity, and confidence through anxiety therapy, burnout recovery, and life transition support.",
     url: "https://anxietytherapyforwomen.com",
-    siteName: "Jennifer Walker, LCSW",
+    siteName: SITE_NAME,
     type: "website",
     locale: "en_US",
     images: [

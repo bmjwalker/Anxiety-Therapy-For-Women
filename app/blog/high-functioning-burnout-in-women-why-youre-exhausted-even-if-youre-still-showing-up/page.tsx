@@ -3,6 +3,7 @@ import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
     "You're meeting every deadline and holding it together — and completely depleted inside. Learn the signs of high-functioning burnout and what to do about it.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/blog/high-functioning-burnout-in-women-why-youre-exhausted-even-if-youre-still-showing-up" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "High-Functioning Burnout: Exhausted Even While Showing Up | Jennifer Walker, LCSW",
     description:
       "You're meeting every deadline and holding it together — and completely depleted inside. Learn the signs of high-functioning burnout and what to do about it.",

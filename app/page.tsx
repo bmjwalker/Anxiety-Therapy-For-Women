@@ -2,17 +2,19 @@ import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Jennifer Walker, LCSW | Anxiety & Burnout Therapy, Atlanta",
+      "Anxiety Therapy for Women | Burnout Therapist in Atlanta, GA",
   },
   description:
     "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW.",
   alternates: { canonical: "https://anxietytherapyforwomen.com" },
   openGraph: {
-    title: "Jennifer Walker, LCSW | Anxiety & Burnout Therapy, Atlanta",
+    siteName: SITE_NAME,
+    title: "Anxiety Therapy for Women | Burnout Therapist in Atlanta, GA",
     description:
       "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW.",
     url: "https://anxietytherapyforwomen.com",
@@ -43,10 +45,16 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://anxietytherapyforwomen.com/#website",
+      "name": SITE_NAME,
+      "url": SITE_URL,
+    },
+    {
       "@type": ["LocalBusiness", "MedicalBusiness"],
       "@id": "https://anxietytherapyforwomen.com/#business",
-      "name": "Jennifer Walker, LCSW",
-      "alternateName": "Anxiety Therapy for Women",
+      "name": SITE_NAME,
+      "alternateName": "Jennifer Walker, LCSW",
       "url": "https://anxietytherapyforwomen.com",
       "email": "jennifer@anxietytherapyforwomen.com",
       "telephone": "+14703579322",

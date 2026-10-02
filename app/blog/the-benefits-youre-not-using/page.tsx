@@ -3,6 +3,7 @@ import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
       "https://anxietytherapyforwomen.com/blog/the-benefits-youre-not-using",
   },
   openGraph: {
+    siteName: SITE_NAME,
     title:
       "The Benefits You Didn't Know You Were Allowed to Use | Jennifer Walker, LCSW",
     description:

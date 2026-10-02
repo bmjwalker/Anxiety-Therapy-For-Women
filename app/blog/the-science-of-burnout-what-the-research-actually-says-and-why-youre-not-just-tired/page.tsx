@@ -3,6 +3,7 @@ import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
     "Burnout is a clinical condition affecting over 50% of U.S. workers — not a personal failure. Learn what the research actually says and how it changes everything about recovery.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/blog/the-science-of-burnout-what-the-research-actually-says-and-why-youre-not-just-tired" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "The Science of Burnout: Why You're Not Just Tired | Jennifer Walker, LCSW",
     description:
       "Burnout is a clinical condition affecting over 50% of U.S. workers — not a personal failure. Learn what the research says about recovery.",

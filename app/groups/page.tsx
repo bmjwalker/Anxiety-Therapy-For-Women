@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Programs from "@/components/sections/Programs";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     "Structured burnout recovery group programs for high-performing women. Small cohorts, weekly telehealth sessions, led by Jennifer Walker, LCSW in Georgia & Florida.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/groups" },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Group Therapy Programs for Women | Jennifer Walker, LCSW | Atlanta, GA",
     description:
       "Structured burnout recovery programs for high-performing women — small cohorts, weekly telehealth sessions in Georgia & Florida.",
