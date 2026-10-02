@@ -6,16 +6,16 @@ import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "About Jennifer Walker, LCSW | Anxiety & Burnout Therapist for Women",
+    absolute: "About Jennifer Walker, LCSW | Atlanta Anxiety Therapist",
   },
   description:
-    "Meet Jennifer Walker, LCSW — a licensed therapist specializing in anxiety, burnout, and life transitions for high-performing women in Georgia and Florida.",
+    "Meet Jennifer Walker, LCSW, an Atlanta, GA therapist with 20+ years helping high-performing women in Georgia recover from anxiety and burnout.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/about" },
   openGraph: {
     siteName: SITE_NAME,
-    title: "About Jennifer Walker, LCSW | Anxiety & Burnout Therapist for Women",
+    title: "About Jennifer Walker, LCSW | Atlanta Anxiety Therapist",
     description:
-      "Meet Jennifer Walker, LCSW — a licensed therapist specializing in anxiety, burnout, and life transitions for high-performing women in Georgia and Florida.",
+      "Meet Jennifer Walker, LCSW, an Atlanta, GA therapist with 20+ years helping high-performing women in Georgia recover from anxiety and burnout.",
     url: "https://anxietytherapyforwomen.com/about",
     type: "website",
     images: [
