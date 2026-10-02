@@ -74,14 +74,22 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-2.5 text-sm text-cream/85">
               {[
-                "Anxiety & Burnout Therapy",
-                "Career Clarity Therapy",
-                "Life Transitions Therapy",
-                "High-Performing Professional Women Therapy",
-                "DBT & CBT Approaches",
-                "Telehealth (GA & FL)",
-              ].map((item) => (
-                <li key={item}>{item}</li>
+                { label: "Anxiety & Burnout Therapy", href: "/burnout-anxiety-therapy" },
+                { label: "Career Clarity Therapy", href: "/career-clarity-therapy" },
+                { label: "Life Transitions Therapy", href: "/life-transitions-therapy" },
+                { label: "High-Performing Professional Women Therapy", href: "/high-performing-women-therapy" },
+                { label: "DBT & CBT Approaches" },
+                { label: "Telehealth (GA & FL)" },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  {href ? (
+                    <Link href={href} className="hover:underline underline-offset-2">
+                      {label}
+                    </Link>
+                  ) : (
+                    label
+                  )}
+                </li>
               ))}
             </ul>
           </div>

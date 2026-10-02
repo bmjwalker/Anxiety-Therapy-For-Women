@@ -2,22 +2,22 @@ import type { Metadata } from "next";
 import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, BadgeCheck, CalendarCheck, CheckCircle2, Video } from "lucide-react";
 import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Life Transitions Therapy | Anxiety Therapy for Women",
+      "Life Transitions Therapy for Women in Atlanta, GA",
   },
   description:
-    "Career change, divorce, becoming a parent, a big move — therapy to help you navigate major life transitions without losing yourself in the process.",
+    "Online therapy for women in Atlanta and across Georgia navigating career change, divorce, new parenthood, or a big move. Free 15-minute consultation.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/life-transitions-therapy" },
   openGraph: {
     siteName: SITE_NAME,
-    title: "Life Transitions Therapy | Anxiety Therapy for Women",
+    title: "Life Transitions Therapy for Women in Atlanta, GA",
     description:
-      "Career change, divorce, becoming a parent, a big move — therapy to help you navigate major life transitions without losing yourself in the process.",
+      "Online therapy for women in Atlanta and across Georgia navigating career change, divorce, new parenthood, or a big move. Free 15-minute consultation.",
     url: "https://anxietytherapyforwomen.com/life-transitions-therapy",
     type: "website",
     images: [
@@ -45,6 +45,40 @@ const workOnTogether = [
   "Reconnect with yourself — your values, your needs, your direction",
 ];
 
+const onlineHighlights = [
+  { icon: Video, label: "Secure video sessions" },
+  { icon: BadgeCheck, label: "Licensed in Georgia & Florida" },
+  { icon: CalendarCheck, label: "Free 15-minute consultation" },
+];
+
+const faqs = [
+  {
+    question: "What counts as a life transition?",
+    answer:
+      "Any change that reshapes your daily life or your sense of who you are. Career change, divorce, becoming a parent, a big move, a loss, an empty nest, retirement. Some transitions are chosen and some arrive without asking. Both can leave you feeling unsteady.",
+  },
+  {
+    question: "Why does a change I wanted still feel this hard?",
+    answer:
+      "Your nervous system responds to uncertainty, whether or not the change was your idea. A new role or a new chapter also means letting go of an old identity, and that is a form of grief. Feeling anxious or flat after a change you chose does not mean you chose wrong.",
+  },
+  {
+    question: "Do I need to be in crisis to start?",
+    answer:
+      "No. Many women reach out because they are functioning well on the outside and feel unsettled underneath. Therapy during a transition gives you room to think clearly before the pressure builds.",
+  },
+  {
+    question: "Do you offer in-person sessions in Atlanta?",
+    answer:
+      "All sessions are online by secure video. I work with women throughout metro Atlanta and across Georgia, so you can meet from wherever you have privacy.",
+  },
+  {
+    question: "How do I get started?",
+    answer:
+      "Book a free 15-minute consultation. We will talk about what is changing in your life and whether working together is a good fit. There is no commitment.",
+  },
+];
+
 export default function LifeTransitionsTherapyPage() {
   return (
     <>
@@ -62,7 +96,7 @@ export default function LifeTransitionsTherapyPage() {
                 style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
                 Life Transitions{" "}
-                <span className="italic text-brand">Therapy</span>
+                <span className="italic text-brand">Therapy for Women</span>
               </h1>
               <p className="text-lg md:text-xl text-dusty font-medium mb-6 tracking-wide">
                 For High-Performing Professional Women in Georgia &amp; Florida
@@ -161,6 +195,75 @@ export default function LifeTransitionsTherapyPage() {
                   <div key={item} className="flex items-start gap-3">
                     <CheckCircle2 size={20} className="text-brand shrink-0 mt-0.5" />
                     <p className="text-base text-dark/80">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Online in Atlanta & Georgia */}
+        <section className="bg-sage-muted section-padding">
+          <div className="section-container">
+            <div className="max-w-3xl mx-auto">
+              <span className="block text-xs tracking-widest uppercase font-medium text-dusty mb-4">
+                Online by secure video
+              </span>
+              <h2
+                className="text-3xl md:text-4xl font-light text-dark mb-6 text-balance"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                Life transitions therapy for women{" "}
+                <span className="italic text-brand">in Atlanta and across Georgia</span>
+              </h2>
+              <p className="text-base text-dark/70 mb-6 leading-relaxed">
+                Sessions are held by secure video, so you can meet from home, your office, or
+                anywhere private. If you live in Georgia or Florida, we can work together.
+              </p>
+              <p className="text-base text-dark/70 mb-8 leading-relaxed">
+                That includes Atlanta and the communities around it, such as Alpharetta, Roswell,
+                Sandy Springs, Decatur, Marietta, and Peachtree City. There is no commute and no
+                waiting room. For a woman whose calendar is already full, that often decides
+                whether therapy happens at all.
+              </p>
+              <div className="h-px w-full mb-8" style={{ backgroundColor: "#CAAF99" }} aria-hidden="true" />
+              <ul className="flex flex-wrap gap-x-8 gap-y-3">
+                {onlineHighlights.map(({ icon: Icon, label }) => (
+                  <li key={label} className="flex items-center gap-2 text-sm font-medium text-dark/80">
+                    <Icon size={18} className="text-brand shrink-0" />
+                    {label}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-white section-padding">
+          <div className="section-container">
+            <div className="max-w-3xl mx-auto">
+              <h2
+                className="text-3xl md:text-4xl font-light text-dark mb-10"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                Questions women ask about{" "}
+                <span className="italic text-brand">life transitions therapy</span>
+              </h2>
+              <div>
+                {faqs.map(({ question, answer }, i) => (
+                  <div
+                    key={question}
+                    className="py-6"
+                    style={i > 0 ? { borderTop: "1px solid #CAAF99" } : undefined}
+                  >
+                    <h3
+                      className="text-xl md:text-2xl font-medium text-dark mb-3"
+                      style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                    >
+                      {question}
+                    </h3>
+                    <p className="text-base text-dark/70 leading-relaxed">{answer}</p>
                   </div>
                 ))}
               </div>

@@ -272,7 +272,9 @@ export default function TherapyServices({
                     className="text-2xl font-semibold text-dark mb-1"
                     style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                   >
-                    {title}
+                    <a href={href} className="hover:underline underline-offset-4">
+                      {title}
+                    </a>
                   </h4>
                   <p
                     className="text-base italic mb-3 leading-snug"
