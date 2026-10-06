@@ -204,7 +204,7 @@ export default function RatesInsurancePage() {
               </h2>
               <p className="text-sm text-dark/70 mb-8">Georgia residents only.</p>
 
-              <div className="flex flex-col gap-3 mb-8">
+              <div className="flex flex-col gap-3">
                 {insuranceAccepted.map((insurer) => (
                   <div key={insurer} className="flex items-start gap-3">
                     <CheckCircle2 size={20} className="shrink-0 mt-0.5" style={{ color: "#57686B" }} />
@@ -212,22 +212,6 @@ export default function RatesInsurancePage() {
                   </div>
                 ))}
               </div>
-
-              <a
-                href="https://care.headway.co/providers/jennifer-walker-6#cost"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white text-sm font-medium hover:bg-cream transition-colors duration-200 shadow-md"
-                style={{ color: "#57686B" }}
-              >
-                Get an instant price estimate
-                <ArrowRight size={15} />
-              </a>
-              <p className="text-sm text-dark/70 mt-3 max-w-md">
-                Once you&rsquo;re on Headway&rsquo;s page, look for the green box in the bottom
-                right corner — that&rsquo;s where you&rsquo;ll enter your insurance to see your
-                estimated cost.
-              </p>
             </div>
           </div>
         </section>
