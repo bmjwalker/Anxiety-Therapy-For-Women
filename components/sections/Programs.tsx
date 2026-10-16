@@ -61,19 +61,6 @@ const groupFaqs = [
   },
 ];
 
-const groupTestimonials = [
-  {
-    quote:
-      "Before this group, I was challenged with not having enough time to complete projects. Afterward, I was able to take care of myself by clearing out what wasn't serving me. My biggest improvements: prioritizing my schedule, learning to say no, and staying in my lane.",
-    credit: "Kimberly",
-  },
-  {
-    quote:
-      "Before this group, I was challenged with a lack of time and doubt. Afterward, I changed my perspective on a number of issues and found real peace and patience.",
-    credit: "Anonymous",
-  },
-];
-
 export default function Programs() {
   return (
     <section id="programs" className="section-padding bg-white">
@@ -221,29 +208,6 @@ export default function Programs() {
                 </AccordionItem>
               ))}
             </Accordion>
-          </div>
-
-          {/* Testimonials */}
-          <div className="mt-10 pt-8 border-t border-cream-dark">
-            <h4
-              className="text-lg md:text-xl font-semibold text-dark mb-4"
-              style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-            >
-              What Women Are Saying
-            </h4>
-            <p className="text-xs text-dark/60 mb-4">
-              From a past group workshop with Jennifer Walker, LCSW
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              {groupTestimonials.map(({ quote, credit }) => (
-                <div key={credit}>
-                  <p className="pull-quote text-lg md:text-xl my-0">{quote}</p>
-                  <p className="text-xs tracking-wide mt-3" style={{ color: "#6B7E80" }}>
-                    — {credit}
-                  </p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
 

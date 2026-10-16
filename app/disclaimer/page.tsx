@@ -72,12 +72,6 @@ const sections: Section[] = [
     ],
   },
   {
-    heading: "Testimonials",
-    paragraphs: [
-      "I present real world experiences, testimonials, and insights about other people's experiences with my Website for purposes of illustration only. The testimonials, examples, and photos used are of actual clients and results they personally achieved, or they are comments from individuals who can speak to my character and/or the quality of my work. All testimonials, examples, or photos supplied by actual clients and colleagues were unsolicited and given with their complete explicit permission. They are not intended to represent or guarantee that current or future clients will achieve the same or similar results; rather, these testimonials represent what is possible for illustrative purposes only.",
-    ],
-  },
-  {
     heading: "Assumption of Risk",
     paragraphs: [
       "As with all situations, there are sometimes unknown individual risks and circumstances that can arise during use of my Website that cannot be foreseen that can influence or reduce results. You understand that any mention of any suggestion or recommendation on or through my Website is to be taken at your own risk, with no liability on my part, recognizing that there is a rare chance that illness, injury or even death could result, and you agree to assume all risks.",

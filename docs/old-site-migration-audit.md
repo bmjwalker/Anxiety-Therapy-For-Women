@@ -16,7 +16,8 @@ This checklist maps the legacy site to the current brand site before the old dom
 1. Verify the old contact/consult booking links still point to the live intake flow.
 2. Confirm the old Good Faith Estimate and Disclaimer links remain current and publicly accessible.
 3. Re-check the old blog archive and program pricing language against the live intake page before launch.
-4. Add any last missing testimonials, credentials, or resource links if the old site has additional content not yet surfaced in the new brand site.
+4. Decision (Oct 2026): no client testimonials on the site.
+5. Add any missing credentials and resource links from the old site that aren't on the new site yet.
 
 ## Recommendation
 

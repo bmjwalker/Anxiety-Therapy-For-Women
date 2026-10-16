@@ -30,7 +30,6 @@ export const metadata: Metadata = {
   },
 };
 import WhoIHelp from "@/components/sections/WhoIHelp";
-import Testimonials from "@/components/sections/Testimonials";
 import BurnoutQuizSection from "@/components/sections/BurnoutQuizSection";
 import Credibility from "@/components/sections/Credibility";
 import TherapyServices from "@/components/sections/TherapyServices";
@@ -138,7 +137,6 @@ export default function Home() {
       <main id="main">
         <Hero />
         <WhoIHelp />
-        <Testimonials />
         <BurnoutQuizSection />
         <Credibility />
         <TherapyServices />
