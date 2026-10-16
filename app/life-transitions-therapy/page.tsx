@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { BOOKING_URL } from "@/lib/booking";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -11,13 +12,13 @@ export const metadata: Metadata = {
       "Life Transitions Therapy for Women in Atlanta, GA",
   },
   description:
-    "Online therapy for women in Atlanta and across Georgia navigating career change, divorce, new parenthood, or a big move. Free 15-minute consultation.",
+    "Online therapy for women in Atlanta and across Georgia at a crossroads in work, a relationship, or their sense of self. Free 15-minute consultation.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/life-transitions-therapy" },
   openGraph: {
     siteName: SITE_NAME,
     title: "Life Transitions Therapy for Women in Atlanta, GA",
     description:
-      "Online therapy for women in Atlanta and across Georgia navigating career change, divorce, new parenthood, or a big move. Free 15-minute consultation.",
+      "Online therapy for women in Atlanta and across Georgia at a crossroads in work, a relationship, or their sense of self. Free 15-minute consultation.",
     url: "https://anxietytherapyforwomen.com/life-transitions-therapy",
     type: "website",
     images: [
@@ -26,23 +27,41 @@ export const metadata: Metadata = {
   },
 };
 
-const transitions = [
-  "Divorce or the end of a long-term relationship",
-  "Becoming a mother — or navigating an empty nest",
-  "A career pivot, layoff, or unexpected job change",
-  "Moving to a new city or leaving a life you built",
-  "Loss of a parent, partner, or close friend",
-  "A health diagnosis that changes everything",
-  "A shift in identity — who you are after achieving everything you set out to do",
+const crossroads: { title: string; body: ReactNode }[] = [
+  {
+    title: "At work",
+    body: (
+      <>
+        You&rsquo;re exhausted in a way sleep doesn&rsquo;t fix. You keep asking yourself whether
+        to push through, step back, or walk away from a job that&rsquo;s wearing you down. If this
+        is where you are, my{" "}
+        <a
+          href="/career-clarity-therapy"
+          className="font-medium text-brand underline underline-offset-2 hover:text-brand-dark transition-colors"
+        >
+          Career Clarity Therapy
+        </a>{" "}
+        page goes deeper.
+      </>
+    ),
+  },
+  {
+    title: "In a relationship",
+    body: "You keep wondering if it’s really that bad, or if you’re overreacting. Some days you’re sure you should stay, and some days you’re sure you should go. The second-guessing itself has become exhausting.",
+  },
+  {
+    title: "Within yourself",
+    body: "You’ve become who everyone needed you to be. Somewhere along the way, you lost track of who you actually are, and who you want to be in this season of your life.",
+  },
 ];
 
 const workOnTogether = [
-  "Process grief, fear, and the emotions that come with major change",
-  "Rebuild your sense of identity when life looks nothing like it did before",
-  "Find your footing without forcing yourself to \"be okay\" too soon",
-  "Move from surviving the transition to actively shaping what comes next",
-  "Build confidence and clarity about who you are on the other side",
-  "Reconnect with yourself — your values, your needs, your direction",
+  "Untangle the fear, guilt, and pressure that keep you stuck going back and forth",
+  "Separate what you want from what others expect of you",
+  "Calm the anxiety that comes with not knowing yet",
+  "Make a decision you can trust, at a pace that feels right",
+  "Find your footing after the change, without forcing yourself to be okay too soon",
+  "Reconnect with your values, your needs, and your direction",
 ];
 
 const onlineHighlights = [
@@ -55,7 +74,12 @@ const faqs = [
   {
     question: "What counts as a life transition?",
     answer:
-      "Any change that reshapes your daily life or your sense of who you are. Career change, divorce, becoming a parent, a big move, a loss, an empty nest, retirement. Some transitions are chosen and some arrive without asking. Both can leave you feeling unsteady.",
+      "Any change that reshapes your daily life or your sense of who you are. For the women I work with, that’s often a crossroads at work, in a relationship, or in their own identity. Some transitions are chosen and some arrive without asking. Both can leave you feeling unsteady.",
+  },
+  {
+    question: "Do I need to have already made a decision?",
+    answer:
+      "No. Many women come to me while they’re still going back and forth. Therapy can help you think clearly before you decide, not only after.",
   },
   {
     question: "Why does a change I wanted still feel this hard?",
@@ -99,12 +123,12 @@ export default function LifeTransitionsTherapyPage() {
                 <span className="italic text-brand">Therapy for Women</span>
               </h1>
               <p className="text-lg md:text-xl text-dusty font-medium mb-6 tracking-wide">
-                For High-Performing Professional Women in Georgia &amp; Florida
+                For high-performing women in Georgia &amp; Florida who are standing at a crossroads
               </p>
               <p className="text-base md:text-lg text-dark/70 mb-10 max-w-2xl leading-relaxed">
-                Change doesn&rsquo;t have to mean crisis. Life Transitions Therapy helps you
-                move through the hardest chapters of your life without losing yourself in the
-                process — and emerge stronger on the other side.
+                You can feel that something has to change. You just don&rsquo;t know yet what, or
+                how, or whether you&rsquo;re ready. That in-between place is hard, and it&rsquo;s
+                where I do some of my most meaningful work.
               </p>
               <a
                 href={BOOKING_URL}
@@ -119,30 +143,27 @@ export default function LifeTransitionsTherapyPage() {
           </div>
         </section>
 
-        {/* Transitions Section */}
+        {/* Crossroads Section */}
         <section className="bg-white section-padding">
           <div className="section-container">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <h2
-                className="text-3xl md:text-4xl font-light text-dark mb-4"
+                className="text-3xl md:text-4xl font-light text-dark mb-10 text-center"
                 style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
-                Are you navigating{" "}
-                <span className="italic text-brand">a major life change?</span>
+                The crossroads{" "}
+                <span className="italic text-brand">I see most often</span>
               </h2>
-              <p className="text-base text-dark/70 mb-10 leading-relaxed">
-                Some transitions we choose. Some are thrust upon us. Either way, they shake
-                the ground beneath us — and for high-performing women who are used to having
-                everything under control, that instability can feel overwhelming.
-              </p>
-              <p className="text-base text-dark/70 mb-8 leading-relaxed">
-                Life Transitions Therapy is for women moving through:
-              </p>
-              <div className="flex flex-col gap-4">
-                {transitions.map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <CheckCircle2 size={20} className="text-dusty shrink-0 mt-0.5" />
-                    <p className="text-base text-dark/80">{item}</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {crossroads.map(({ title, body }) => (
+                  <div key={title} className="p-6 rounded-2xl bg-cream border border-cream-dark">
+                    <h3
+                      className="text-xl font-medium text-dark mb-3"
+                      style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                    >
+                      {title}
+                    </h3>
+                    <p className="text-sm text-dark/70 leading-relaxed">{body}</p>
                   </div>
                 ))}
               </div>
@@ -150,7 +171,7 @@ export default function LifeTransitionsTherapyPage() {
           </div>
         </section>
 
-        {/* Why Therapy */}
+        {/* Why the In-Between Is Hard */}
         <section className="bg-cream section-padding">
           <div className="section-container">
             <div className="max-w-3xl mx-auto">
@@ -158,29 +179,61 @@ export default function LifeTransitionsTherapyPage() {
                 className="text-3xl md:text-4xl font-light text-dark mb-6"
                 style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
-                You don&rsquo;t have to white-knuckle{" "}
-                <span className="italic text-brand">through this alone</span>
+                Why the in-between{" "}
+                <span className="italic text-brand">feels so hard</span>
               </h2>
               <p className="text-base text-dark/70 mb-6 leading-relaxed">
-                High-achieving women are often the ones everyone else leans on during hard times
-                — which means there&rsquo;s rarely space for them to fall apart, be uncertain, or
-                grieve. You may have mastered the art of holding it together on the outside.
+                Transitions tend to move in three phases: the stretch where something stops
+                feeling right, the change itself, and the time after, when you&rsquo;re figuring
+                out who you are on the other side. Many women I work with are stuck in that first
+                phase, and it&rsquo;s often the most anxious one. Your mind keeps weighing options,
+                and your body stays on alert, because uncertainty registers as a threat.
               </p>
+              <p className="text-base text-dark/70 mb-8 leading-relaxed">
+                Some crossroads are external, like a job or a relationship. Others are internal, a
+                quiet sense that you&rsquo;ve drifted from yourself. Both are real, and both
+                deserve attention.
+              </p>
+              <div className="p-6 rounded-2xl bg-white border border-cream-dark">
+                <p
+                  className="text-xl md:text-2xl italic text-dark/80 leading-relaxed"
+                  style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+                >
+                  If you&rsquo;re in that place right now, it may help to ask yourself: What am I
+                  afraid will happen if I decide? What am I afraid will happen if I don&rsquo;t?
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Therapy */}
+        <section className="bg-white section-padding">
+          <div className="section-container">
+            <div className="max-w-3xl mx-auto">
+              <h2
+                className="text-3xl md:text-4xl font-light text-dark mb-6"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                You don&rsquo;t have to figure this out{" "}
+                <span className="italic text-brand">alone</span>
+              </h2>
               <p className="text-base text-dark/70 mb-6 leading-relaxed">
-                Therapy gives you a place to stop holding it together for a little while. A
-                confidential, judgment-free space where you can be honest about how hard this
-                actually is — and get real support for moving through it.
+                High-achieving women are often the ones everyone else leans on, which leaves
+                little room to be uncertain yourself. You may be very good at looking like you
+                have it handled.
               </p>
               <p className="text-base text-dark/70 leading-relaxed">
-                Transitions are also growth. Jennifer helps you not just survive the change,
-                but discover who you&rsquo;re becoming in the process.
+                Therapy gives you a place to set that down for a while. A confidential space where
+                you can be honest about how hard this is, think out loud without judgment, and make
+                a decision that&rsquo;s actually yours.
               </p>
             </div>
           </div>
         </section>
 
         {/* What We Work On */}
-        <section className="bg-white section-padding">
+        <section className="bg-cream section-padding">
           <div className="section-container">
             <div className="max-w-3xl mx-auto">
               <h2
@@ -282,8 +335,8 @@ export default function LifeTransitionsTherapyPage() {
               <span className="italic" style={{ color: "#CAAF99" }}>exists.</span>
             </h2>
             <p className="text-base mb-10 leading-relaxed" style={{ color: "rgba(242,241,235,0.75)" }}>
-              You don&rsquo;t have to know exactly where you&rsquo;re going. You just have to
-              be willing to take the first step. Let&rsquo;s navigate this together.
+              You don&rsquo;t need to have it all figured out to begin. Let&rsquo;s start with
+              where you are.
             </p>
             <a
               href={BOOKING_URL}
