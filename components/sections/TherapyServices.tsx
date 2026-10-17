@@ -32,8 +32,8 @@ const struggles = [
     description: "Saying no feels selfish. Saying yes leaves you depleted. There doesn't seem to be a third option.",
   },
   {
-    name: "Overwhelmed by major life transitions and uncertainty",
-    description: "Change is supposed to be exciting — so why does it feel like the ground is constantly shifting?",
+    name: "Stuck at a crossroads and can’t think your way out",
+    description: "You keep going back and forth about work, a relationship, or who you are now. The not-knowing has become its own kind of exhausting.",
   },
 ];
 
@@ -54,15 +54,15 @@ const services = [
   },
   {
     icon: RefreshCw,
-    category: "Grief & Identity",
+    category: "Crossroads & Identity",
     title: "Life Transitions Therapy",
-    tagline: "Change doesn't have to mean crisis.",
+    tagline: "For the in-between, when you know something has to change.",
     description:
-      "Major life transitions shake the ground beneath us. You'll move through change without losing yourself in the process.",
+      "A job that’s wearing you down, a relationship you keep second-guessing, or a quiet sense that you’ve drifted from yourself. You don’t have to know the answer yet to start.",
     bullets: [
-      "Process grief and identity shifts",
-      "Find your footing when everything feels unstable",
-      "Discover who you're becoming",
+      "Get clear when you keep going back and forth",
+      "Make a decision that’s actually yours",
+      "Reconnect with who you want to be now",
     ],
     href: "/life-transitions-therapy",
   },
@@ -90,7 +90,8 @@ const services = [
     bullets: [
       "Break free from perfectionism",
       "Untangle people-pleasing from your identity",
-      "Let someone finally take care of you",
+      "Stop the procrastination that hides behind high standards",
+      "Give yourself the grace you give everyone else, and enjoy the journey",
     ],
     href: "/high-performing-women-therapy",
   },

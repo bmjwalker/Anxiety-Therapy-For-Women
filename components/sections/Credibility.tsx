@@ -16,7 +16,8 @@ export default function Credibility() {
           >
             For more than 20 years, I&apos;ve helped{" "}
             <span className="italic text-brand">high-performing women</span> navigate anxiety,
-            burnout, perfectionism, life transitions, and career uncertainty.
+            burnout, perfectionism, and the hard in-between moments at work, in relationships,
+            and within themselves.
           </h2>
           <div className="h-1 w-12 rounded-full mb-6" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
           <p className="text-base md:text-lg text-dark/85 leading-relaxed mb-4">
