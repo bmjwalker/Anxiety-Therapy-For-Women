@@ -3,7 +3,6 @@ import {
   Briefcase,
   RefreshCw,
   Globe,
-  CheckCircle2,
   ArrowRight,
 } from "lucide-react";
 import { BOOKING_URL } from "@/lib/booking";
@@ -183,20 +182,20 @@ export default function TherapyServices({
             You do not need to be in crisis to deserve support.
           </p>
 
-          {/* Symptom card grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 md:[grid-auto-rows:1fr]">
+          {/* Symptom list */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-0 mb-10">
             {struggles.map((struggle) => (
               <div
                 key={struggle.name}
-                className="flex flex-col gap-2 p-4 md:p-6 bg-white border-l-4 border-l-brand rounded-xl shadow-md"
+                className="flex flex-col gap-2 py-5 border-t border-[#CAAF99]"
               >
                 <p
-                  className="text-xl font-semibold text-dark leading-snug"
+                  className="text-2xl font-semibold text-dark leading-snug"
                   style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                 >
                   {struggle.name}
                 </p>
-                <p className="text-sm text-dark/75 leading-relaxed">{struggle.description}</p>
+                <p className="text-sm text-dark/75 leading-[1.7]">{struggle.description}</p>
               </div>
             ))}
           </div>
@@ -213,7 +212,8 @@ export default function TherapyServices({
         </div>
 
         {/* ── Sub-section 2: Areas We Can Help ── */}
-        <div className="mb-20 py-16 px-6 md:px-10 bg-[#F7F3EE]">
+        {/* Full-width cream band: the shadow paints the color edge to edge, the clip keeps it to this block's height */}
+        <div className="mb-20 py-16 bg-[#F7F3EE] shadow-[0_0_0_100vmax_#F7F3EE] [clip-path:inset(0_-100vmax)]">
           <div className="flex items-center gap-3 mb-4">
             <div className="h-px w-12 bg-dusty" />
             <span className="text-xs tracking-widest uppercase text-dusty font-medium">
@@ -224,7 +224,7 @@ export default function TherapyServices({
             className="text-5xl md:text-6xl font-semibold text-dark mb-3"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
-            Areas We Can{" "}
+            Areas I Can{" "}
             <span className="italic text-brand">Help You Overcome</span>
           </h3>
           <div className="h-1 w-14 rounded-full mb-10" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
@@ -234,26 +234,13 @@ export default function TherapyServices({
             doesn&apos;t fit a traditional title.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 md:[grid-auto-rows:1fr]">
-            {services.map(({ icon: Icon, category, title, tagline, description, bullets, href }) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-0 mb-10">
+            {services.map(({ title, tagline, description, bullets, href }) => (
               <div
                 key={title}
-                className="flex flex-col gap-5 p-4 md:p-6 bg-white border-l-4 border-l-brand border border-cream-dark rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
+                className="flex flex-col py-6 border-t border-[#CAAF99]"
               >
-                <div className="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center shrink-0">
-                  <Icon size={20} className="text-brand" />
-                </div>
                 <div className="flex flex-col flex-1 gap-0">
-                  <span
-                    className="inline-block w-fit text-[11px] font-semibold uppercase tracking-wide rounded-full py-1 px-3 mb-2"
-                    style={{
-                      fontFamily: "var(--font-jost), sans-serif",
-                      color: "#F2F1EB",
-                      backgroundColor: "#57686B",
-                    }}
-                  >
-                    {category}
-                  </span>
                   <h4
                     className="text-2xl font-semibold text-dark mb-1"
                     style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
@@ -271,8 +258,8 @@ export default function TherapyServices({
                   <p className="text-sm text-dark/80 leading-relaxed mb-4">{description}</p>
                   <ul className="flex flex-col gap-2 mb-5">
                     {bullets.map((b) => (
-                      <li key={b} className="flex items-start gap-2">
-                        <CheckCircle2 size={15} className="text-brand shrink-0 mt-0.5" />
+                      <li key={b} className="flex items-start gap-3">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#CAAF99] shrink-0 mt-[7px]" aria-hidden="true" />
                         <span className="text-sm text-dark/80">{b}</span>
                       </li>
                     ))}
