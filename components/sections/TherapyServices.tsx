@@ -156,19 +156,6 @@ export default function TherapyServices({
 
         {/* ── Sub-section 1: Who We Help ── */}
         <div className="mb-20">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="h-px w-12 bg-dusty" />
-            <span className="text-xs tracking-widest uppercase text-dusty font-medium">
-              Common Struggles
-            </span>
-          </div>
-          <h3
-            className="text-4xl md:text-5xl font-semibold text-dark mb-4"
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-          >
-            Who <span className="italic text-brand">I Help</span>
-          </h3>
-          <div className="h-1 w-14 rounded-full mb-12" style={{ backgroundColor: "#C4897B" }} aria-hidden="true" />
           <p className="text-dark/75 mb-8 max-w-2xl">
             You may look successful on the outside, but inside you&apos;re exhausted from carrying
             responsibilities, expectations, and pressure that never seem to end.
