@@ -38,7 +38,7 @@ const survivalSigns = [
 
 const workOnTogether = [
   "Understand the root causes of your burnout — not just the symptoms",
-  "Break the anxiety spiral and learn to quiet your nervous system",
+  "Break the cycle of rumination and learn to quiet your nervous system",
   "Reconnect with what actually matters to you",
   "Set boundaries that hold — without guilt, shame, or overexplaining",
   "Rebuild sustainable energy and reclaim your sense of self",

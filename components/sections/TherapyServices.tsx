@@ -11,7 +11,7 @@ import { BOOKING_URL } from "@/lib/booking";
 
 const struggles = [
   {
-    name: "Lying awake overanalyzing every conversation",
+    name: "Lying awake ruminating over every conversation",
     description: "Racing thoughts keep you up at night, replaying moments and worrying about what comes next.",
   },
   {
@@ -46,7 +46,7 @@ const services = [
       "For high-performing professional women, burnout rarely looks like collapse. It looks like pushing harder, doing more, and feeling less every month.",
     bullets: [
       "Break the burnout cycle",
-      "Quiet the anxiety spiral",
+      "Quiet the rumination and anxiety spiral",
       "Create boundaries that actually hold",
     ],
     href: "/burnout-anxiety-therapy",

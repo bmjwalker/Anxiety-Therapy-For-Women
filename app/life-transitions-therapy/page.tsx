@@ -186,8 +186,8 @@ export default function LifeTransitionsTherapyPage() {
                 Transitions tend to move in three phases: the stretch where something stops
                 feeling right, the change itself, and the time after, when you&rsquo;re figuring
                 out who you are on the other side. Many women I work with are stuck in that first
-                phase, and it&rsquo;s often the most anxious one. Your mind keeps weighing options,
-                and your body stays on alert, because uncertainty registers as a threat.
+                phase, and it&rsquo;s often the most anxious one. Your mind keeps ruminating over
+                the options, and your body stays on alert, because uncertainty registers as a threat.
               </p>
               <p className="text-base text-dark/70 mb-8 leading-relaxed">
                 Some crossroads are external, like a job or a relationship. Others are internal, a
