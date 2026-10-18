@@ -71,7 +71,7 @@ export default function Hero() {
 
             {/* Subheadline */}
             <p className="text-base md:text-lg text-dark/85 mb-10 leading-relaxed">
-              Helping ambitious women in Georgia and Florida overcome burnout, anxiety,
+              Helping ambitious women in Atlanta and across Georgia overcome burnout, anxiety,
               perfectionism, chronic stress, and rumination so they can reclaim clarity,
               confidence, and balance.
             </p>
