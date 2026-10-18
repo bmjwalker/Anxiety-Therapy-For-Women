@@ -10,13 +10,13 @@ export const metadata: Metadata = {
       "Anxiety Therapy for Women | Jennifer Walker, LCSW | Atlanta, GA",
   },
   description:
-    "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW.",
+    "Anxiety and burnout therapy for high-performing women in Atlanta, GA. Virtual sessions across Georgia with Jennifer Walker, LCSW.",
   alternates: { canonical: "https://anxietytherapyforwomen.com" },
   openGraph: {
     siteName: SITE_NAME,
     title: "Anxiety Therapy for Women | Jennifer Walker, LCSW | Atlanta, GA",
     description:
-      "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida. Individual telehealth sessions with Jennifer Walker, LCSW.",
+      "Anxiety and burnout therapy for high-performing women in Atlanta, GA. Virtual sessions across Georgia with Jennifer Walker, LCSW.",
     url: "https://anxietytherapyforwomen.com",
     type: "website",
     images: [

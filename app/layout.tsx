@@ -27,7 +27,7 @@ const jost = Jost({
 export const metadata: Metadata = {
   metadataBase: new URL("https://anxietytherapyforwomen.com"),
   title: {
-    default: "Jennifer Walker, LCSW | Anxiety Therapy for Women",
+    default: "Anxiety Therapy for Women | Atlanta, GA",
     template: "%s | Anxiety Therapy for Women",
   },
   applicationName: SITE_NAME,
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Jennifer Walker, LCSW | Anxiety Therapy for Women",
+    title: "Anxiety Therapy for Women | Atlanta, GA",
     description:
       "Helping high-performing professional women reclaim calm, clarity, and confidence through anxiety therapy, burnout recovery, and life transition support.",
     url: "https://anxietytherapyforwomen.com",
@@ -73,9 +73,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jennifer Walker, LCSW | Anxiety Therapy for Women",
-    description:
-      "Online anxiety therapy and burnout recovery for high-performing professional women in Georgia and Florida.",
     images: ["/headshot.jpg"],
   },
   robots: {
