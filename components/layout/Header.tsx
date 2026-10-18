@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { BOOKING_URL } from "@/lib/booking";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -38,9 +37,10 @@ export default function Header() {
         <div className="flex items-center justify-between gap-5 h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group min-w-0 shrink md:shrink-0">
-            <Image
-              src="/logo-mark.svg"
-              alt="Jennifer Walker LCSW logo"
+            {/* eslint-disable-next-line @next/next/no-img-element -- small static SVG; next/image doesn't optimize SVGs */}
+            <img
+              src="/logo-mark-jw.svg"
+              alt=""
               width={52}
               height={52}
               className="object-contain shrink-0"
