@@ -11,13 +11,13 @@ export const metadata: Metadata = {
       "Career Clarity Therapy for Women | Jennifer Walker, LCSW",
   },
   description:
-    "You've built a successful career — so why does it feel wrong? Career Clarity Therapy helps women untangle identity from job title and find direction.",
+    "You've built a successful career, so why does it feel wrong? Therapy for women in Atlanta, GA to untangle identity from job title and find direction.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/career-clarity-therapy" },
   openGraph: {
     siteName: SITE_NAME,
     title: "Career Clarity Therapy for Women | Jennifer Walker, LCSW",
     description:
-      "Untangle your self-worth from your job title and find a career path that actually fits — virtual therapy for women in Georgia & Florida.",
+      "You've built a successful career, so why does it feel wrong? Therapy for women in Atlanta, GA to untangle identity from job title and find direction.",
     url: "https://anxietytherapyforwomen.com/career-clarity-therapy",
     type: "website",
     images: [

@@ -11,13 +11,13 @@ export const metadata: Metadata = {
       "Therapy for High-Performing Women | Jennifer Walker, LCSW",
   },
   description:
-    "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout. Virtual sessions in Georgia and Florida.",
+    "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout. Virtual sessions in Atlanta and across Georgia.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/high-performing-women-therapy" },
   openGraph: {
     siteName: SITE_NAME,
     title: "Therapy for High-Performing Women | Jennifer Walker, LCSW",
     description:
-      "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout — virtual sessions in Georgia and Florida.",
+      "Therapy for driven professional women navigating perfectionism, people-pleasing, and burnout. Virtual sessions in Atlanta and across Georgia.",
     url: "https://anxietytherapyforwomen.com/high-performing-women-therapy",
     type: "website",
     images: [

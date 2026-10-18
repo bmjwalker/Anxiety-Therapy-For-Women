@@ -10,13 +10,13 @@ export const metadata: Metadata = {
       "Burnout Recovery Group | Psychoeducational Support for Women | Jennifer Walker, LCSW",
   },
   description:
-    "Structured burnout recovery group programs for high-performing women. Small cohorts, weekly telehealth sessions, led by Jennifer Walker, LCSW in Georgia & Florida.",
+    "Structured burnout recovery groups for high-performing women. Small cohorts and weekly virtual sessions, led from Atlanta, GA. Open to women in any state.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/groups" },
   openGraph: {
     siteName: SITE_NAME,
-    title: "Group Therapy Programs for Women | Jennifer Walker, LCSW | Atlanta, GA",
+    title: "Burnout Recovery Group for Women | Jennifer Walker, LCSW | Atlanta, GA",
     description:
-      "Structured burnout recovery programs for high-performing women — small cohorts, weekly telehealth sessions in Georgia & Florida.",
+      "Structured burnout recovery groups for high-performing women. Small cohorts and weekly virtual sessions, led from Atlanta, GA. Open to women in any state.",
     url: "https://anxietytherapyforwomen.com/groups",
     type: "website",
     images: [

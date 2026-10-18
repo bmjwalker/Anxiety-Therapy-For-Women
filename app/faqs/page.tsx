@@ -7,16 +7,16 @@ import { SITE_NAME } from "@/lib/site";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Therapy FAQs | Jennifer Walker, LCSW | Telehealth in Georgia & Florida",
+      "Therapy FAQs | Jennifer Walker, LCSW | Atlanta, GA",
   },
   description:
-    "Common questions about working with Jennifer Walker, LCSW — telehealth format, session fees, insurance, and what to expect from anxiety and burnout therapy in Georgia and Florida.",
+    "Common questions about therapy with Jennifer Walker, LCSW in Atlanta, GA: telehealth, fees, insurance, and what to expect.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/faqs" },
   openGraph: {
     siteName: SITE_NAME,
-    title: "Therapy FAQs | Jennifer Walker, LCSW | Telehealth in Georgia & Florida",
+    title: "Therapy FAQs | Jennifer Walker, LCSW | Atlanta, GA",
     description:
-      "Common questions about telehealth format, session fees, insurance, and what to expect from therapy with Jennifer Walker, LCSW.",
+      "Common questions about therapy with Jennifer Walker, LCSW in Atlanta, GA: telehealth, fees, insurance, and what to expect.",
     url: "https://anxietytherapyforwomen.com/faqs",
     type: "website",
     images: [

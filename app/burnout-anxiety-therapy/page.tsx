@@ -11,13 +11,13 @@ export const metadata: Metadata = {
       "Burnout & Anxiety Therapy for Women | Jennifer Walker, LCSW",
   },
   description:
-    "Feeling exhausted and stuck in survival mode? Virtual burnout recovery and anxiety therapy for high-performing professional women in Georgia and Florida.",
+    "Exhausted and stuck in survival mode? Virtual burnout and anxiety therapy for high-performing professional women in Atlanta and across Georgia.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/burnout-anxiety-therapy" },
   openGraph: {
     siteName: SITE_NAME,
     title: "Burnout & Anxiety Therapy for Women | Jennifer Walker, LCSW",
     description:
-      "Feeling exhausted and stuck in survival mode? Virtual burnout recovery and anxiety therapy for high-performing professional women in Georgia and Florida.",
+      "Exhausted and stuck in survival mode? Virtual burnout and anxiety therapy for high-performing professional women in Atlanta and across Georgia.",
     url: "https://anxietytherapyforwomen.com/burnout-anxiety-therapy",
     type: "website",
     images: [

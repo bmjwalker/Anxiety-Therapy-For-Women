@@ -10,13 +10,13 @@ export const metadata: Metadata = {
       "Burnout Reset Intensive for Women | Jennifer Walker, LCSW | Atlanta, GA",
   },
   description:
-    "An intensive burnout recovery program for professional women who need focused, deep work. Reset your nervous system and reclaim your life — telehealth in Georgia & Florida.",
+    "Focused, intensive burnout recovery for professional women ready for deep work. Reset your nervous system with telehealth sessions from Atlanta, GA.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/burnout-reset-intensive" },
   openGraph: {
     siteName: SITE_NAME,
     title: "Burnout Reset Intensive for Women | Jennifer Walker, LCSW | Atlanta, GA",
     description:
-      "Intensive burnout recovery for professional women who are ready for focused, deep work — telehealth in Georgia and Florida.",
+      "Focused, intensive burnout recovery for professional women ready for deep work. Reset your nervous system with telehealth sessions from Atlanta, GA.",
     url: "https://anxietytherapyforwomen.com/burnout-reset-intensive",
     type: "website",
     images: [

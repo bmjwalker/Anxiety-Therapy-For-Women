@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: SITE_NAME,
   },
   description:
-    "Compassionate anxiety therapy and burnout recovery for high-performing professional women in Georgia and Florida. Telehealth sessions, therapy for life transitions, career clarity, and burnout support.",
+    "Anxiety and burnout therapy for high-performing professional women in Atlanta, GA. Virtual sessions across Georgia with Jennifer Walker, LCSW.",
   keywords: [
     "anxiety therapy for women",
     "burnout recovery for women",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Anxiety Therapy for Women | Atlanta, GA",
     description:
-      "Helping high-performing professional women reclaim calm, clarity, and confidence through anxiety therapy, burnout recovery, and life transition support.",
+      "Anxiety and burnout therapy for high-performing professional women in Atlanta, GA. Virtual sessions across Georgia with Jennifer Walker, LCSW.",
     url: "https://anxietytherapyforwomen.com",
     siteName: SITE_NAME,
     type: "website",
