@@ -58,7 +58,7 @@ const jsonLd = {
       "email": "jennifer@anxietytherapyforwomen.com",
       "telephone": "+14703579322",
       "description":
-        "Virtual anxiety and burnout therapy for high-performing women in Georgia and Florida",
+        "Anxiety and burnout therapy for high-performing women in Atlanta, GA. Virtual sessions across Georgia with Jennifer Walker, LCSW.",
       "image": "https://anxietytherapyforwomen.com/headshot.jpg",
       "priceRange": "$$",
       "serviceType": ["Mental Health Service", "Psychotherapy"],
