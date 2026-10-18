@@ -122,7 +122,7 @@ export default function LifeTransitionsTherapyPage() {
                 Life Transitions{" "}
                 <span className="italic text-brand">Therapy for Women</span>
               </h1>
-              <p className="text-lg md:text-xl text-dusty font-medium mb-6 tracking-wide">
+              <p className="text-lg md:text-xl text-dusty font-medium mb-6 tracking-wide text-balance">
                 For high-performing women in Atlanta and across Georgia who are standing at a crossroads
               </p>
               <p className="text-base md:text-lg text-dark/70 mb-10 max-w-2xl leading-relaxed">

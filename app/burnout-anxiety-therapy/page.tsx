@@ -64,7 +64,7 @@ export default function BurnoutAnxietyTherapyPage() {
                 Burnout Recovery &amp;{" "}
                 <span className="italic text-brand">Anxiety Therapy</span>
               </h1>
-              <p className="text-lg md:text-xl text-dusty font-medium mb-6 tracking-wide">
+              <p className="text-lg md:text-xl text-dusty font-medium mb-6 tracking-wide text-balance">
                 For High-Performing Professional Women in Atlanta and Across Georgia
               </p>
               <p className="text-base md:text-lg text-dark/70 mb-10 max-w-2xl leading-relaxed">
