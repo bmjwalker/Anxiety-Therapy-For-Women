@@ -87,7 +87,7 @@ export default function HighPerformingWomenTherapyPage() {
                 <span className="italic text-brand">Women Therapy</span>
               </h1>
               <p className="text-lg md:text-xl text-dusty font-medium mb-6 tracking-wide">
-                For Women in Georgia &amp; Florida Who Give Everything to Everyone
+                For Women in Atlanta and Across Georgia Who Give Everything to Everyone
               </p>
               <p className="text-base md:text-lg text-dark/70 mb-10 max-w-2xl leading-relaxed">
                 You take care of everything. Who is taking care of you? This is a space

@@ -123,7 +123,7 @@ export default function LifeTransitionsTherapyPage() {
                 <span className="italic text-brand">Therapy for Women</span>
               </h1>
               <p className="text-lg md:text-xl text-dusty font-medium mb-6 tracking-wide">
-                For high-performing women in Georgia &amp; Florida who are standing at a crossroads
+                For high-performing women in Atlanta and across Georgia who are standing at a crossroads
               </p>
               <p className="text-base md:text-lg text-dark/70 mb-10 max-w-2xl leading-relaxed">
                 You can feel that something has to change. You just don&rsquo;t know yet what, or
@@ -271,7 +271,7 @@ export default function LifeTransitionsTherapyPage() {
               </h2>
               <p className="text-base text-dark/70 mb-6 leading-relaxed">
                 Sessions are held by secure video, so you can meet from home, your office, or
-                anywhere private. If you live in Georgia or Florida, we can work together.
+                anywhere private. If you live in Georgia or Florida, I can work with you.
               </p>
               <p className="text-base text-dark/70 mb-8 leading-relaxed">
                 That includes Atlanta and the communities around it, such as Alpharetta, Roswell,

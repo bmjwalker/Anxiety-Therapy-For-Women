@@ -342,7 +342,7 @@ export default function ResourcesPage() {
               after time off. The resources above can help you understand what&apos;s happening and know
               your rights at work. If these patterns have lasted more than a few weeks, or they&apos;re
               starting to affect your work, health, or relationships, it may be time to talk with a
-              therapist. I offer online therapy from Atlanta, GA for women across Georgia and Florida.
+              therapist. I offer online therapy from Atlanta, GA for women across Georgia.
             </p>
 
             <div className="flex flex-wrap items-center gap-x-6 gap-y-4">

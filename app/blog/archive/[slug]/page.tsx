@@ -179,7 +179,7 @@ export default async function ArchivedBlogPage({
                 Ready to take the next step?
               </h2>
               <p className="text-sm text-dark/75 leading-relaxed mb-8 max-w-lg mx-auto">
-                If you&rsquo;re a high-achieving woman navigating anxiety, burnout, or a difficult life transition, therapy can help. I work with professional women in Georgia and Florida who are ready to move from survival mode into something that actually feels like living.
+                If you&rsquo;re a high-achieving woman navigating anxiety, burnout, or a difficult life transition, therapy can help. I work with professional women in Atlanta and across Georgia who are ready to move from survival mode into something that actually feels like living.
               </p>
               <a
                 href={BOOKING_URL}
