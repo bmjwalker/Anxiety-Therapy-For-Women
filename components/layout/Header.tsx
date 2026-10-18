@@ -45,16 +45,24 @@ export default function Header() {
               height={52}
               className="object-contain shrink-0"
             />
-            <span
-              className="text-lg sm:text-xl md:text-2xl font-medium text-brand truncate min-w-0"
-              style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-            >
-              Jennifer Walker, LCSW
+            <span className="flex flex-col min-w-0">
+              <span
+                className="text-base min-[380px]:text-lg sm:text-xl md:text-2xl font-medium text-brand truncate leading-none"
+                style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+              >
+                Anxiety Therapy for Women
+              </span>
+              <span
+                className="font-sans text-[11px] md:text-xs tracking-[0.04em] whitespace-nowrap leading-none mt-[2px]"
+                style={{ color: "#57686B" }}
+              >
+                Jennifer Walker, LCSW
+              </span>
             </span>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-5">
+          <nav className="hidden min-[1180px]:flex items-center gap-5">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -75,13 +83,13 @@ export default function Header() {
             </a>
           </nav>
 
-          {/* Mobile: always-visible Book button + hamburger */}
-          <div className="md:hidden flex items-center gap-2 shrink-0">
+          {/* Below 1180px: hamburger, plus the Book button from 520px up */}
+          <div className="min-[1180px]:hidden flex items-center gap-2 shrink-0">
             <a
               href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary px-4 py-1.5 rounded-md text-xs"
+              className="hidden min-[520px]:inline-flex btn-primary px-4 py-1.5 rounded-md text-xs"
             >
               Book Free Consult
             </a>
@@ -98,7 +106,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-cream border-t border-cream-dark">
+        <div className="min-[1180px]:hidden bg-cream border-t border-cream-dark">
           <div className="section-container py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link
