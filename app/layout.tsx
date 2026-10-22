@@ -40,7 +40,6 @@ export const metadata: Metadata = {
     "anxiety therapy for women",
     "burnout recovery for women",
     "Georgia therapist for anxiety",
-    "Florida telehealth therapy",
     "career clarity therapy",
     "therapy for high-performing professional women",
     "life transitions therapist",

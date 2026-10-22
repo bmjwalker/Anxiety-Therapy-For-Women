@@ -10,13 +10,13 @@ export const metadata: Metadata = {
       "Anxiety Therapy for Women | Jennifer Walker, LCSW | Atlanta, GA",
   },
   description:
-    "Anxiety and burnout therapy for high-performing women in Atlanta, GA. Virtual sessions across Georgia with Jennifer Walker, LCSW.",
+    "Anxiety and burnout therapy for high-performing women in Atlanta, GA. Telehealth sessions across Georgia with Jennifer Walker, LCSW.",
   alternates: { canonical: "https://anxietytherapyforwomen.com" },
   openGraph: {
     siteName: SITE_NAME,
     title: "Anxiety Therapy for Women | Jennifer Walker, LCSW | Atlanta, GA",
     description:
-      "Anxiety and burnout therapy for high-performing women in Atlanta, GA. Virtual sessions across Georgia with Jennifer Walker, LCSW.",
+      "Anxiety and burnout therapy for high-performing women in Atlanta, GA. Telehealth sessions across Georgia with Jennifer Walker, LCSW.",
     url: "https://anxietytherapyforwomen.com",
     type: "website",
     images: [
@@ -27,6 +27,13 @@ export const metadata: Metadata = {
         alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia",
       },
     ],
+  },
+  // Replaces the root layout's twitter block entirely, so card and images are repeated here.
+  twitter: {
+    card: "summary_large_image",
+    description:
+      "Anxiety and burnout therapy for high-performing women in Atlanta, GA. Telehealth sessions across Georgia with Jennifer Walker, LCSW.",
+    images: ["/headshot.jpg"],
   },
 };
 import WhoIHelp from "@/components/sections/WhoIHelp";
