@@ -9,21 +9,29 @@ import { SITE_NAME } from "@/lib/site";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Life Transitions Therapy for Women in Atlanta, GA",
+      "Life Transitions Therapy for Women | Atlanta, GA",
   },
   description:
-    "Online therapy for women in Atlanta and across Georgia at a crossroads in work, a relationship, or their sense of self. Free 15-minute consultation.",
+    "Stuck at a crossroads with work, a relationship, or who you are now? Telehealth life transitions therapy for women in Atlanta and across Georgia.",
   alternates: { canonical: "https://anxietytherapyforwomen.com/life-transitions-therapy" },
   openGraph: {
     siteName: SITE_NAME,
-    title: "Life Transitions Therapy for Women in Atlanta, GA",
+    title: "Life Transitions Therapy for Women | Atlanta, GA",
     description:
-      "Online therapy for women in Atlanta and across Georgia at a crossroads in work, a relationship, or their sense of self. Free 15-minute consultation.",
+      "Stuck at a crossroads with work, a relationship, or who you are now? Telehealth life transitions therapy for women in Atlanta and across Georgia.",
     url: "https://anxietytherapyforwomen.com/life-transitions-therapy",
     type: "website",
     images: [
       { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
     ],
+  },
+  // Replaces the root layout's twitter block entirely, so card and images are repeated here.
+  twitter: {
+    card: "summary_large_image",
+    title: "Life Transitions Therapy for Women | Atlanta, GA",
+    description:
+      "Stuck at a crossroads with work, a relationship, or who you are now? Telehealth life transitions therapy for women in Atlanta and across Georgia.",
+    images: ["/headshot.jpg"],
   },
 };
 
@@ -125,10 +133,14 @@ export default function LifeTransitionsTherapyPage() {
               <p className="text-lg md:text-xl text-dusty font-medium mb-6 tracking-wide text-balance">
                 For high-performing women in Atlanta and across Georgia who are standing at a crossroads
               </p>
-              <p className="text-base md:text-lg text-dark/70 mb-10 max-w-2xl leading-relaxed">
+              <p className="text-base md:text-lg text-dark/70 mb-5 max-w-2xl leading-relaxed">
                 You can feel that something has to change. You just don&rsquo;t know yet what, or
                 how, or whether you&rsquo;re ready. That in-between place is hard, and it&rsquo;s
                 where I do some of my most meaningful work.
+              </p>
+              <p className="text-base md:text-lg text-dark/70 mb-10 max-w-2xl leading-relaxed">
+                I work with women across metro Atlanta, including Alpharetta, Roswell, Marietta, and
+                Peachtree City, and throughout Georgia by secure telehealth.
               </p>
               <a
                 href={BOOKING_URL}
