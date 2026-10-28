@@ -39,21 +39,81 @@ export default function ResourcesPage() {
     <>
       <Header />
       <main id="main">
-        <section className="bg-cream pt-28 pb-8">
+        <section className="bg-cream pt-28 pb-12">
           <div className="section-container">
-            <h1
-              className="text-5xl md:text-6xl font-light text-dark leading-tight"
-              style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
+            <span
+              className="block text-xs font-semibold uppercase tracking-widest mb-4"
+              style={{ color: "#57686B" }}
             >
-              Free Mental Health Resources{" "}
-              <span className="italic text-brand">for Women</span>
+              Resources
+            </span>
+            <h1
+              className="text-5xl md:text-7xl leading-tight"
+              style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 500, color: "#3E4C4F" }}
+            >
+              Resources for the Strong One
             </h1>
+            <div
+              className="my-6"
+              style={{ width: "96px", height: "2px", backgroundColor: "#CAAF99" }}
+              aria-hidden="true"
+            />
+            <p className="text-lg max-w-[640px]" style={{ color: "#4A5557" }}>
+              Tools you can use between sessions or on your own. Start with something free, go deeper
+              when you&apos;re ready, and take only what helps.
+            </p>
+            <div className="flex flex-wrap gap-3 mt-8">
+              <a
+                href="#free"
+                className="rounded-full px-5 py-2.5 text-sm"
+                style={{ border: "1px solid #9FA9A1", color: "#3E4C4F" }}
+              >
+                Free Downloads
+              </a>
+              <a
+                href="#books"
+                className="rounded-full px-5 py-2.5 text-sm"
+                style={{ border: "1px solid #9FA9A1", color: "#3E4C4F" }}
+              >
+                Books
+              </a>
+              <a
+                href="#workbooks"
+                className="rounded-full px-5 py-2.5 text-sm"
+                style={{ border: "1px solid #9FA9A1", color: "#3E4C4F" }}
+              >
+                Workbooks
+              </a>
+              <a
+                href="#courses"
+                className="rounded-full px-5 py-2.5 text-sm"
+                style={{ border: "1px solid #9FA9A1", color: "#3E4C4F" }}
+              >
+                Courses
+              </a>
+              <a
+                href="#outside"
+                className="rounded-full px-5 py-2.5 text-sm"
+                style={{ border: "1px solid #9FA9A1", color: "#3E4C4F" }}
+              >
+                Trusted Outside Resources
+              </a>
+              <a
+                href="#crisis"
+                className="rounded-full px-5 py-2.5 text-sm"
+                style={{ border: "1px solid #9FA9A1", color: "#3E4C4F" }}
+              >
+                Crisis Resources
+              </a>
+            </div>
           </div>
         </section>
-        <Resources onResourcesPage />
+        <div id="crisis" className="scroll-mt-24">
+          <Resources onResourcesPage />
+        </div>
 
         {/* Workplace Rights & Accommodations */}
-        <section className="section-padding bg-cream">
+        <section id="workplace" className="section-padding bg-cream scroll-mt-24">
           <div className="section-container">
             <div className="flex items-center gap-3 mb-4">
               <div className="h-px w-12 bg-dusty" />
