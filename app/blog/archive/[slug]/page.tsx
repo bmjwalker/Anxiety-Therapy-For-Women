@@ -4,8 +4,7 @@ import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { archivedPosts, getArchivedPostBySlug } from "@/lib/archived-posts";
-import { Calendar } from "lucide-react";
+import { archivedPosts, formatIsoDate, getArchivedPostBySlug } from "@/lib/archived-posts";
 import { SITE_NAME } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -33,6 +32,7 @@ export async function generateMetadata({
       description,
       url,
       type: "article",
+      ...(post?.date ? { publishedTime: post.date } : {}),
       images: [
         { url: "/headshot.jpg", width: 800, height: 1000, alt: "Jennifer Walker, LCSW — anxiety and burnout therapist for women in Atlanta, Georgia" },
       ],
@@ -148,13 +148,17 @@ export default async function ArchivedBlogPage({
             >
               {post.title}
             </h1>
+            {post.date && (
+              <p
+                className="text-sm mb-4"
+                style={{ fontFamily: "var(--font-inter), sans-serif", color: "#8D9778" }}
+              >
+                {formatIsoDate(post.date)}
+              </p>
+            )}
             <div className="flex flex-wrap items-center gap-3 text-sm text-dark/75 mb-10">
               <span className="rounded-full border border-mist bg-white px-3 py-1 text-brand font-medium">
                 {post.category}
-              </span>
-              <span className="inline-flex items-center gap-1">
-                <Calendar size={13} />
-                {post.date}
               </span>
             </div>
 

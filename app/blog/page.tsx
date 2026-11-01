@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { archivedPosts } from "@/lib/archived-posts";
+import { archivedPosts, formatIsoDate } from "@/lib/archived-posts";
 import { ArrowRight, Calendar } from "lucide-react";
 
 const posts = [
@@ -78,9 +78,12 @@ const legacyPosts = archivedPosts.map((post) => ({
   category: "Legacy Archive",
 }));
 
-const sortedLegacyPosts = [...legacyPosts].sort((a, b) =>
-  a.title.localeCompare(b.title, undefined, { sensitivity: "base" })
-);
+const sortedLegacyPosts = [...legacyPosts].sort((a, b) => {
+  if (a.date && b.date) return b.date.localeCompare(a.date);
+  if (a.date) return -1;
+  if (b.date) return 1;
+  return 0;
+});
 
 function getLegacyCategory(title: string) {
   if (/burnout|stress|recovery/i.test(title)) return "Burnout & Recovery";
@@ -195,10 +198,12 @@ export default function BlogPage() {
                         <span className="inline-flex items-center rounded-full border border-mist bg-mist-light px-3 py-1 font-medium text-brand whitespace-nowrap">
                           {articleCategory}
                         </span>
-                        <span className="inline-flex items-center gap-1 whitespace-nowrap">
-                          <Calendar size={11} />
-                          {post.date}
-                        </span>
+                        {post.date && (
+                          <span className="inline-flex items-center gap-1 whitespace-nowrap">
+                            <Calendar size={11} />
+                            {formatIsoDate(post.date)}
+                          </span>
+                        )}
                         <span className="inline-flex items-center whitespace-nowrap text-dark/65 ml-auto sm:ml-0">
                           {post.readTime}
                         </span>
