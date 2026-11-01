@@ -350,7 +350,9 @@ something about this isn’t sustainable.`,
   {
     title: "What Teachers Really Need This Year: Support, Stability, and Space to Breathe",
     slug: slugify("What Teachers Really Need This Year: Support, Stability, and Space to Breathe"),
-    category: "Archived Insights",    readTime: "Article",
+    category: "Archived Insights",
+    date: "2025-07-20",
+    readTime: "Article",
     excerpt: "A previous-site archive post preserved here for easy access.",
     summary: "A legacy article exploring teacher burnout, sustainability, and the need for support in demanding work environments.",
     content: [
@@ -432,7 +434,9 @@ If you're ready to show up with more clarity, more boundaries, and more compassi
   {
     title: "Burnout Is Costing You More Than You Think: How to Protect Your Team and Your Bottom Line",
     slug: slugify("Burnout Is Costing You More Than You Think: How to Protect Your Team and Your Bottom Line"),
-    category: "Archived Insights",    readTime: "Article",
+    category: "Archived Insights",
+    date: "2025-06-29",
+    readTime: "Article",
     excerpt: "A previous-site archive post preserved here for easy access.",
     summary: "A legacy article on burnout’s organizational impact and why protecting energy matters for performance and wellbeing.",
     content: [
@@ -485,7 +489,9 @@ If you're ready to show up with more clarity, more boundaries, and more compassi
   {
     title: "Finding Safety Within: Navigating Anxiety and Burnout in the Digital Self-Help Age",
     slug: slugify("Finding Safety Within: Navigating Anxiety and Burnout in the Digital Self-Help Age"),
-    category: "Archived Insights",    readTime: "Article",
+    category: "Archived Insights",
+    date: "2025-06-12",
+    readTime: "Article",
     excerpt: "A previous-site archive post preserved here for easy access.",
     summary: "A legacy article on finding calm and grounding in a digital world filled with constant input and comparison.",
     content: [
@@ -526,7 +532,9 @@ If you're ready to show up with more clarity, more boundaries, and more compassi
   {
     title: "The Hidden Cost of Perfectionism: How to Recognize and Reclaim Your Power",
     slug: slugify("The Hidden Cost of Perfectionism: How to Recognize and Reclaim Your Power"),
-    category: "Archived Insights",    readTime: "Article",
+    category: "Archived Insights",
+    date: "2025-05-24",
+    readTime: "Article",
     excerpt: "A previous-site archive post preserved here for easy access.",
     summary: "A legacy article on perfectionism, self-worth, and how to reclaim your energy from impossible standards.",
     content: [
@@ -573,7 +581,9 @@ If you're ready to show up with more clarity, more boundaries, and more compassi
   {
     title: "Codependence in Disguise: How High-Performing Women Lose Themselves in Success, Service, and Survival",
     slug: slugify("Codependence in Disguise: How High-Performing Women Lose Themselves in Success, Service, and Survival"),
-    category: "Archived Insights",    readTime: "Article",
+    category: "Archived Insights",
+    date: "2025-05-23",
+    readTime: "Article",
     excerpt: "A previous-site archive post preserved here for easy access.",
     summary: "A legacy article on the subtle patterns that keep high-achieving women over-giving, over-functioning, and disconnected from their own needs.",
     content: [
@@ -631,7 +641,9 @@ If you're ready to show up with more clarity, more boundaries, and more compassi
   {
     title: "How to Escape Career Stagnation and Toxic Workplaces This Summer",
     slug: slugify("How to Escape Career Stagnation and Toxic Workplaces This Summer"),
-    category: "Archived Insights",    readTime: "Article",
+    category: "Archived Insights",
+    date: "2025-05-04",
+    readTime: "Article",
     excerpt: "A previous-site archive post preserved here for easy access.",
     summary: "A legacy article on burnout, career stagnation, and choosing better boundaries in work and leadership environments.",
     content: [
@@ -659,7 +671,9 @@ Trade burnout for boldness. Trade survival mode for self-respect.`,
   {
     title: "Perfectionism & Anxiety in High-Performing Women: Signs, Solutions & Self-Compassion Strategies",
     slug: slugify("Perfectionism & Anxiety in High-Performing Women: Signs, Solutions & Self-Compassion Strategies"),
-    category: "Archived Insights",    readTime: "Article",
+    category: "Archived Insights",
+    date: "2025-05-04",
+    readTime: "Article",
     excerpt: "A previous-site archive post preserved here for easy access.",
     summary: "A legacy article on how perfectionism and anxiety show up in high-achieving women and how compassion changes the pattern.",
     content: [
@@ -712,7 +726,9 @@ Let go—even a little. And notice what opens up.`,
   {
     title: "Thriving Through Uncertainty: How High-Performing Women Can Build Resilience in Chaotic Times",
     slug: slugify("Thriving Through Uncertainty: How High-Performing Women Can Build Resilience in Chaotic Times"),
-    category: "Archived Insights",    readTime: "Article",
+    category: "Archived Insights",
+    date: "2025-02-06",
+    readTime: "Article",
     excerpt: "A previous-site archive post preserved here for easy access.",
     summary: "A legacy article on resilience, adaptability, and building steadiness while life feels unpredictable.",
     content: [
@@ -779,7 +795,9 @@ Let go—even a little. And notice what opens up.`,
   {
     title: "Welcome to 2025: A New Year for Growth, Balance, and Mental Well-Being",
     slug: slugify("Welcome to 2025: A New Year for Growth, Balance, and Mental Well-Being"),
-    category: "Archived Insights",    readTime: "Article",
+    category: "Archived Insights",
+    date: "2025-01-02",
+    readTime: "Article",
     excerpt: "A previous-site archive post preserved here for easy access.",
     summary: "A legacy article on renewal, habits, and setting an intentional foundation for the year ahead.",
     content: [
@@ -834,7 +852,9 @@ Let go—even a little. And notice what opens up.`,
   {
     title: "Create The Life You Deserve",
     slug: slugify("Create The Life You Deserve"),
-    category: "Archived Insights",    readTime: "Article",
+    category: "Archived Insights",
+    date: "2024-07-13",
+    readTime: "Article",
     excerpt: "A previous-site archive post preserved here for easy access.",
     summary: "A legacy article on reclaiming direction, self-trust, and the courage to design a more aligned life.",
     content: [
