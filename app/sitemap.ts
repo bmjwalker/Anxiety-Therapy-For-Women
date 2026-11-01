@@ -141,6 +141,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/blog/why-high-performing-women-people-please`,
+      lastModified: new Date("2026-06-03"),
+      changeFrequency: "yearly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/blog/the-science-of-burnout-what-the-research-actually-says-and-why-youre-not-just-tired`,
       lastModified: new Date("2026-05-15"),
       changeFrequency: "yearly",

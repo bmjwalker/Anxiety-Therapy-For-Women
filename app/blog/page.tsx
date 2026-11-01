@@ -35,6 +35,15 @@ const posts = [
       "You can split the chores evenly and still be bone-tired. The real culprit is the mental load — the invisible labor of noticing, tracking, and anticipating that never turns off.",
   },
   {
+    slug: "why-high-performing-women-people-please",
+    category: "Anxiety & Burnout",
+    title: "Why High-Performing Women Say What Others Want to Hear (And What's Really Happening Beneath the Surface)",
+    date: "June 3, 2026",
+    readTime: "7 min read",
+    excerpt:
+      "You know how to read a room and keep everyone around you comfortable — even when it costs you something real. Here's what that pattern actually is, and why it isn't a character flaw.",
+  },
+  {
     slug: "the-science-of-burnout-what-the-research-actually-says-and-why-youre-not-just-tired",
     category: "Anxiety & Burnout",
     title: "The Science of Burnout: What the Research Actually Says (And Why You're Not Just 'Tired')",

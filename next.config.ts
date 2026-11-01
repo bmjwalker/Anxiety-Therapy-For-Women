@@ -33,6 +33,11 @@ const nextConfig: NextConfig = {
         destination: "/burnout-anxiety-therapy",
         permanent: true,
       },
+      {
+        source: "/blog/archive/why-high-performing-women-say-what-others-want-to-hear-and-what-s-really-happening-beneath-the-surface",
+        destination: "/blog/why-high-performing-women-people-please",
+        permanent: true,
+      },
       // Legacy Brighter Vision pages
       {
         source: "/contact",
