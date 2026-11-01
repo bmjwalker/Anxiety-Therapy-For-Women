@@ -28,6 +28,11 @@ const nextConfig: NextConfig = {
         destination: "/blog/the-science-of-burnout-what-the-research-actually-says-and-why-youre-not-just-tired",
         permanent: true,
       },
+      {
+        source: "/blog/archive/anxiety-therapy-near-me",
+        destination: "/burnout-anxiety-therapy",
+        permanent: true,
+      },
       // Legacy Brighter Vision pages
       {
         source: "/contact",
