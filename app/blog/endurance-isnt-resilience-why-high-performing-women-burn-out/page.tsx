@@ -50,14 +50,16 @@ const headingFont = { fontFamily: "var(--font-cormorant), Georgia, serif" };
 
 function PostImage({ src, alt }: { src: string; alt: string }) {
   return (
-    <figure className="my-4">
+    <figure className="my-4 w-full shrink-0">
       <Image
         src={src}
         alt={alt}
         width={1800}
         height={1125}
+        loading="lazy"
         sizes="(min-width: 768px) 720px, 100vw"
-        className="w-full h-auto rounded-2xl border border-cream-dark"
+        className="block w-full max-w-full h-auto rounded-2xl border border-cream-dark"
+        style={{ width: "100%", height: "auto" }}
       />
     </figure>
   );
