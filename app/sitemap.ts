@@ -123,6 +123,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Blog posts
     {
+      url: `${baseUrl}/blog/endurance-isnt-resilience-why-high-performing-women-burn-out`,
+      lastModified: new Date("2026-11-09"),
+      changeFrequency: "yearly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/blog/seasonal-depression-isnt-a-character-flaw-its-a-pattern-you-can-prepare-for`,
       lastModified: new Date("2026-09-22"),
       changeFrequency: "yearly",

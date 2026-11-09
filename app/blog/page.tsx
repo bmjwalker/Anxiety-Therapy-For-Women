@@ -8,6 +8,15 @@ import { ArrowRight, Calendar } from "lucide-react";
 
 const posts = [
   {
+    slug: "endurance-isnt-resilience-why-high-performing-women-burn-out",
+    category: "Anxiety & Burnout",
+    title: "Endurance Isn’t Resilience: Why High-Performing Women Burn Out Even When Support Exists",
+    date: "November 9, 2026",
+    readTime: "7 min read",
+    excerpt:
+      "Having support isn’t the same as feeling allowed to use it. Here’s what new research says about engaged, capable women who are quietly running on empty.",
+  },
+  {
     slug: "seasonal-depression-isnt-a-character-flaw-its-a-pattern-you-can-prepare-for",
     category: "Anxiety & Burnout",
     title: "Seasonal Depression Isn't a Character Flaw. It's a Pattern You Can Prepare For.",
