@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Which Survival Role Is Keeping You Stuck?</title>
+<meta name="description" content="Take the 2-minute Survival Role quiz to find out which pattern is keeping you stuck: Performer, Pleaser, Perfecter, Prover, or Preventer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Jost:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow handout-style column. Full-bleed teal bands open and close each major screen, like the practice's printed handouts. */
+:root {
+  --bg: #F2EDE6;
+  --surface: #FBF8F3;
+  --tint: #E9E2D6;
+  --ink: #2A3433;
+  --muted: #5B6967;
+  --line: #D9D0C3;
+  --band: #3F7274;
+  --band-ink: #F2EDE6;
+  --band-sub: #F2EDE6;
+  --teal: #2F5D5F;
+  --rose: #94564A;
+  --rose-soft: #C4897B;
+  --rose-tint: #F2C4B8;
+  --btn: #3F7274;
+  --btn-ink: #FFFFFF;
+  --btn-hover: #2F5D5F;
+  --sel: #E1ECEB;
+  --focus: #94564A;
+  --role-performer: #4A7C7E;
+  --role-pleaser: #C4897B;
+  --role-perfecter: #7E9A84;
+  --role-prover: #7C95AB;
+  --role-preventer: #B8955A;
+  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111A1A;
+    --surface: #182322;
+    --tint: #1B2928;
+    --ink: #E8E3DA;
+    --muted: #A2B2B0;
+    --line: #2C3B3A;
+    --band: #1F3E40;
+    --teal: #8FC0C2;
+    --rose: #E3AA9C;
+    --btn: #8FC0C2;
+    --btn-ink: #10201F;
+    --btn-hover: #A8D2D4;
+    --sel: #223837;
+    --focus: #E3AA9C;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111A1A;
+  --surface: #182322;
+  --tint: #1B2928;
+  --ink: #E8E3DA;
+  --muted: #A2B2B0;
+  --line: #2C3B3A;
+  --band: #1F3E40;
+  --teal: #8FC0C2;
+  --rose: #E3AA9C;
+  --btn: #8FC0C2;
+  --btn-ink: #10201F;
+  --btn-hover: #A8D2D4;
+  --sel: #223837;
+  --focus: #E3AA9C;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { background: var(--bg); color: var(--ink); font: 400 16px/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, p, ul { margin: 0; padding: 0; }
+ul { list-style: none; }
+button { font: inherit; color: inherit; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+main:focus { outline: none; }
+
+.wrap {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.screen.enter { animation: rise .22s ease-out both; }
+@keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* Bands */
+.eyebrow { font: 600 12px/1.3 var(--sans); letter-spacing: .16em; text-transform: uppercase; }
+.hero { background: var(--band); color: var(--band-ink); }
+.hero .wrap { padding-block: 48px 44px; }
+h1 { font: 700 clamp(36px, 8vw, 56px)/1.04 var(--serif); margin: 14px 0; text-wrap: balance; }
+.sub { font: italic 500 clamp(20px, 4vw, 26px)/1.35 var(--serif); color: var(--band-sub); max-width: 36ch; }
+.tint { background: var(--tint); }
+.tint .wrap { padding-block: 26px; }
+.frame { font: italic 500 clamp(20px, 3.6vw, 24px)/1.5 var(--serif); max-width: 38em; }
+.also { margin-top: 14px; font-size: 15px; color: var(--muted); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 52px; padding: 0 30px; border: 0; border-radius: 4px;
+  background: var(--btn); color: var(--btn-ink);
+  font: 600 16px/1 var(--sans); letter-spacing: .04em; text-decoration: none; cursor: pointer;
+  transition: background-color .15s, transform .15s;
+}
+.btn:hover { background: var(--btn-hover); }
+.btn:active { transform: translateY(1px); }
+.btn.ghost { background: transparent; color: var(--teal); box-shadow: inset 0 0 0 1.5px var(--teal); }
+.btn.ghost:hover { background: var(--sel); }
+.btn.on-band { background: var(--band-ink); color: #2B5456; }
+.btn.on-band:hover { background: #FFFFFF; }
+
+/* Intro */
+.intro-body { padding-block: 34px 64px; }
+.label { font: 600 12px/1.3 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--rose); }
+.roles { display: grid; gap: 10px; margin-top: 14px; }
+.role {
+  display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: 2px 16px; align-items: baseline;
+  padding: 14px 16px; background: var(--surface); border-left: 4px solid var(--c); border-radius: 2px;
+}
+.role strong { font: 700 22px/1.2 var(--serif); }
+.role span { font-size: 15.5px; color: var(--muted); }
+@media (max-width: 520px) { .role { grid-template-columns: 1fr; } }
+.how { margin: 26px 0 22px; color: var(--muted); max-width: 52ch; }
+
+/* Quiz */
+.strip { background: var(--band); color: var(--band-ink); }
+.strip-in { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 14px; }
+.count { font: 500 13px/1 var(--sans); font-variant-numeric: tabular-nums; }
+.progress { height: 4px; background: rgba(255, 255, 255, .2); }
+.progress span { display: block; height: 100%; background: var(--rose-soft); transition: width .3s ease; }
+.q { padding-block: 26px 64px; }
+.backbtn {
+  display: inline-flex; align-items: center; gap: 6px; background: none; border: 0;
+  padding: 8px 0; margin: 0 0 16px; color: var(--teal); font: 500 15px/1 var(--sans); cursor: pointer;
+}
+.backbtn:hover { text-decoration: underline; }
+.stmt { font: 600 clamp(26px, 5.6vw, 36px)/1.22 var(--serif); margin: 10px 0 28px; text-wrap: balance; }
+.opts { display: grid; gap: 10px; }
+.opt {
+  display: flex; align-items: center; gap: 14px; width: 100%; min-height: 56px; padding: 12px 16px;
+  background: var(--surface); border: 1.5px solid var(--line); border-radius: 6px;
+  font: 500 17px/1.4 var(--sans); text-align: left; cursor: pointer;
+  transition: border-color .12s, background-color .12s;
+}
+.opt > span:last-child { min-width: 0; }
+.opt:hover { border-color: var(--teal); }
+.opt[aria-pressed="true"] { border-color: var(--btn); background: var(--sel); }
+.key {
+  flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%;
+  border: 1.5px solid var(--line); font: 600 14px/1 var(--sans); color: var(--muted);
+}
+.opt[aria-pressed="true"] .key { background: var(--btn); border-color: var(--btn); color: var(--btn-ink); }
+
+/* Email */
+.lead { font-size: 17px; color: var(--muted); margin: -8px 0 22px; max-width: 46ch; }
+#email {
+  width: 100%; padding: 15px 16px; background: var(--surface); color: var(--ink);
+  border: 1.5px solid var(--line); border-radius: 6px; font: 400 17px/1.3 var(--sans);
+}
+#email:focus { border-color: var(--btn); }
+#email.bad { border-color: var(--rose); }
+.err { min-height: 1.6em; margin: 8px 0 14px; font-size: 14.5px; color: var(--rose); }
+
+/* Result */
+.result-body { padding-block: 36px 8px; }
+.traits { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 10px; margin-top: 14px; }
+.trait { padding: 14px 16px; background: var(--surface); border-left: 4px solid var(--c); border-radius: 2px; font-size: 15.5px; }
+.notes { display: grid; gap: 12px; margin-top: 28px; }
+.note { padding: 20px 22px; background: var(--tint); border-radius: 2px; }
+.note .label { display: block; margin-bottom: 8px; }
+.note .qtext { font: italic 500 clamp(21px, 4vw, 24px)/1.4 var(--serif); }
+.note .exp { font-size: 17px; }
+.accs { display: grid; gap: 8px; margin-top: 14px; }
+.acc { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; }
+.acc summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 16px 18px; cursor: pointer; list-style: none; color: var(--teal);
+  font: 700 21px/1.25 var(--serif);
+}
+.acc summary::-webkit-details-marker { display: none; }
+.acc summary::after {
+  content: ""; flex: none; width: 8px; height: 8px; margin-right: 4px;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+  transform: rotate(45deg); transition: transform .2s;
+}
+.acc[open] summary::after { transform: rotate(225deg); }
+.acc-body { display: grid; gap: 12px; padding: 2px 18px 18px; }
+.acc-body p { font-size: 16.5px; line-height: 1.75; max-width: 62ch; }
+.sect { margin-top: 32px; }
+
+.close { margin-top: 40px; background: var(--band); color: var(--band-ink); }
+.close .wrap { display: grid; justify-items: start; gap: 14px; padding-block: 40px 44px; }
+.clabel { font: 700 12px/1.3 var(--sans); letter-spacing: .16em; text-transform: uppercase; }
+.ctext { color: #FFFFFF; font-size: 17.5px; max-width: 52ch; }
+.cq { font: italic 700 clamp(22px, 4.4vw, 28px)/1.3 var(--serif); color: var(--rose-tint); max-width: 28ch; }
+.foot { display: grid; justify-items: start; gap: 22px; padding-block: 34px 56px; }
+.disc { font-size: 13.5px; color: var(--muted); max-width: 60ch; }
+.sig { justify-self: stretch; text-align: center; font: 500 12px/1.7 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--rose); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+body{margin:0;background:var(--bg)}
+</style>
+</head>
+<body>
+
+<div id="app"></div>
+<noscript><p style="padding:24px;font-family:sans-serif">This quiz needs JavaScript turned on to run.</p></noscript>
+
+<script>
+(function () {
+  'use strict';
+
+  var KIT_ACTION = 'https://app.kit.com/forms/10183355/subscriptions';
+  var CONSULT_URL = 'https://jennifer-walker7285.clientsecure.me/sign-in';
+
+  var ARROW = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  var BACK = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>';
+
+  var ROLES = ['performer', 'pleaser', 'perfecter', 'prover', 'preventer'];
+
+  var ROLE = {
+    performer: {
+      name: 'The Performer',
+      color: 'var(--role-performer)',
+      blurb: 'Keeps going when the body asks to slow down.',
+      tagline: 'You keep moving, even when your body is asking you to stop.',
+      summary: 'You have learned to keep moving even when your body and emotions are asking you to slow down, using accomplishment for a sense of control. Over time, constant performance can disconnect you from your body, emotions, relationships, and actual capacity.',
+      question: 'What might you notice if you stopped measuring your well-being by how much you can complete?',
+      experiment: 'Complete one task this week at a sustainable level rather than your maximum, and notice what arises.',
+      traits: ['Keeps going through exhaustion', 'Rest can feel like falling behind', 'Relies on productivity for a sense of control', 'Capable, dependable, and depleted'],
+      deep: {
+        meaning: 'The Performer role often develops where being productive kept things steady, earned approval, or kept everything from falling apart. Over time your nervous system learned that doing is safer than resting. That was a reasonable adaptation, and it probably helped you succeed.\n\nThe cost is that your body rarely gets the signal that it is safe to stand down. Rest starts to feel like a risk instead of a basic need.',
+        shows: 'You may carry a long list and feel uneasy when it is not moving. Rest gets postponed until everything is finished, and nothing is ever finished. Slowing down can bring guilt, restlessness, or a sense of being irresponsible.\n\nFrom the outside you look reliable and capable. On the inside, fatigue may be building, and your body may be sending signals you have learned to override.',
+        watch: 'Watch for the plan to rest once things calm down. Calm rarely arrives on its own, so recovery usually has to be scheduled and protected.\n\nNotice early signs of burnout too, such as exhaustion that sleep does not fix, irritability, or feeling flat. These are information, and they do not mean you need to try harder. What is your body asking for that you keep postponing?',
+        path: 'Recovery starts small. Practice stopping at good enough on one low-stakes task, and notice what happens in your body when you do. The aim is to build a relationship with your capacity that includes rest.\n\nTherapy can help you explore what productivity has been protecting you from, and how to feel steady without constant motion.'
+      }
+    },
+    pleaser: {
+      name: 'The Pleaser',
+      color: 'var(--role-pleaser)',
+      blurb: 'Protects connection by being easy to rely on.',
+      tagline: 'You protect connection by being the one everyone can count on.',
+      summary: 'You have learned to protect relationships by being helpful, accommodating, and easy to depend on, often at the expense of listening to yourself. When connection depends on self-abandonment, relationships can become draining rather than restorative.',
+      question: 'Where have you been preserving connection with someone else by disconnecting from yourself?',
+      experiment: 'Before answering one request this week, say “Let me check what I have capacity for and get back to you.”',
+      traits: ['Says yes to avoid disappointing others', 'The dependable listener and helper', 'Keeps personal needs private', 'Gives energy even when the body needs rest'],
+      deep: {
+        meaning: 'The Pleaser role often forms when being helpful, easy, or low-maintenance kept relationships safe. You learned to read what others needed and meet it quickly, sometimes before they asked. That sensitivity is a real strength.\n\nThe difficulty is that your own needs slowly became the thing you handled last, or kept hidden.',
+        shows: 'You may agree before you have checked in with yourself. People may come to you for support while very few know what you are carrying. Saying no can feel like putting the relationship at risk.\n\nOver time this can leave you tired, quietly resentful, and unsure what you want.',
+        watch: 'Watch for commitments you keep after they stop feeling healthy because changing course might upset someone. Notice also when your sense of value depends on being useful or needed.\n\nResentment is often useful information. It usually points to a limit you have not yet named. Where in your life is that happening right now?',
+        path: 'Start by creating a pause between the request and your answer. A line such as “Let me check what I have capacity for and get back to you” gives you room to hear yourself first.\n\nTherapy can help you practice tolerating other people’s disappointment, and build relationships where your needs are allowed to take up space.'
+      }
+    },
+    perfecter: {
+      name: 'The Perfecter',
+      color: 'var(--role-perfecter)',
+      blurb: 'Stays safe by getting everything right.',
+      tagline: 'You try to stay safe by getting everything exactly right.',
+      summary: 'You have learned to reduce risk by getting things right, staying prepared, and limiting visible mistakes. Perfectionism can consume the time and energy that recovery requires.',
+      question: 'What does getting it exactly right seem to protect you from — and what is that protection costing you?',
+      experiment: 'Identify one low-risk task and decide what “complete and responsible” looks like before you begin; stop when you reach that standard.',
+      traits: ['High standards and careful follow-through', 'Holds back work that is not polished', 'Checks and revises repeatedly', 'Can lose sight of what is meaningful'],
+      deep: {
+        meaning: 'The Perfecter role tends to develop when mistakes felt costly, whether through criticism, high expectations, or a sense that approval depended on performance. Getting things right became a way to stay safe.\n\nYour attention to detail is a real skill. It becomes a problem when the standard keeps moving and there is never a point where you are allowed to be finished.',
+        shows: 'You may rewrite, recheck, or mentally review work long after it is done. You might hold back a concern or an unfinished idea because it is not ready to be seen. Doing things the right way can quietly take priority over whether they still matter to you.\n\nRest gets postponed because there is always something that could be improved.',
+        watch: 'Watch for the difference between high standards and fear-driven standards. High standards help you do good work. Fear-driven standards keep you from finishing, sharing, or resting.\n\nNotice how much time goes into low-stakes tasks, since that is often where the cost is hiding. What would good enough look like today?',
+        path: 'Practice defining “complete and responsible” before you begin, then stop when you get there. This teaches your nervous system that good enough is survivable.\n\nTherapy can help you explore what mistakes have meant to you, and loosen the link between getting it right and being safe.'
+      }
+    },
+    prover: {
+      name: 'The Prover',
+      color: 'var(--role-prover)',
+      blurb: 'Keeps earning a place that is already theirs.',
+      tagline: 'You keep earning a place you may already have.',
+      summary: 'You have learned to establish your worth through achievement, competence, and visible effort. When your worth must be repeatedly proven, no accomplishment can provide lasting rest.',
+      question: 'If your worth were not being evaluated, which goals would you still choose — and which would you release?',
+      experiment: 'Write down one quality you value in yourself that isn’t based on productivity, credentials, usefulness, or recognition.',
+      traits: ['Uses achievement to feel capable', 'Self-worth rises and falls with performance', 'Works harder when feeling insecure', 'Accomplishes a lot without feeling settled'],
+      deep: {
+        meaning: 'The Prover role often grows from experiences where acceptance felt conditional, or where you were one of the few who had to show you belonged. Achievement became evidence that you were enough.\n\nThe trouble is that evidence wears off quickly. Each accomplishment buys a little relief, and then the question comes back.',
+        shows: 'A mistake may shake your sense of self far more than the situation warrants. When you feel insecure, your instinct is to work harder, take on more, or compare your progress with other people’s.\n\nYou may keep chasing the next goal without being sure it reflects what you want.',
+        watch: 'Watch for goals that come from needing to prove something more than from wanting something. Notice how quickly you move on after a win, since that can be a sign the achievement was never really about the goal.\n\nComparison tends to intensify this pattern, especially in high-achieving settings. Whose standard are you measuring yourself against?',
+        path: 'Begin separating who you are from what you produce. Naming one quality you value that has nothing to do with output is a small and meaningful start.\n\nTherapy can help you work with the beliefs underneath the pressure to prove yourself, and build a sense of worth that does not need to be re-earned.'
+      }
+    },
+    preventer: {
+      name: 'The Preventer',
+      color: 'var(--role-preventer)',
+      blurb: 'Stays ahead of every problem and rarely feels at ease.',
+      tagline: 'You stay ahead of every problem, and rarely feel at ease.',
+      summary: 'You have learned to stay ahead of uncertainty by anticipating problems and preparing for what might happen. Continuous anticipation keeps your nervous system working overtime.',
+      question: 'What uncertainty are you trying to eliminate that may need to be tolerated rather than solved?',
+      experiment: 'Choose one current concern, separate what requires action today from what is only a possibility, then practice leaving the rest unresolved for now.',
+      traits: ['Anticipates what could go wrong', 'Researches, rehearses, and double-checks', 'Mind stays alert during rest', 'Prepared, but rarely at ease'],
+      deep: {
+        meaning: 'The Preventer role usually develops when life felt unpredictable and being prepared was the best protection available. You learned to scan ahead, plan for the worst, and stay one step in front of problems.\n\nThat skill makes you thoughtful and dependable. It also means your nervous system treats uncertainty as a threat that has to be solved.',
+        shows: 'You may research, rehearse, or build backup plans well past the point of usefulness. Even when you try to rest, your mind may stay on alert, as though the next problem is already on its way.\n\nYou may question your judgment and imagine negative outcomes after making a reasonable decision.',
+        watch: 'Watch for time spent preparing for things that have not happened and may never happen. Notice how much of your attention is in the future and how little is left for the present.\n\nReassurance and extra planning tend to bring brief relief, and then the worry returns. What would it be like to leave one question open for a day?',
+        path: 'Practice sorting concerns into what needs action today and what is only a possibility. Then leave the possibilities unresolved for a short time and notice that you can tolerate it.\n\nTherapy can help your nervous system learn that it does not have to stay on guard all the time.'
+      }
+    }
+  };
+
+  /* Three statements per role, interleaved so no role repeats back to back. */
+  var STATEMENTS = [
+    { role: 'performer', text: 'Even when I am exhausted, I keep going because slowing down feels uncomfortable or irresponsible.' },
+    { role: 'pleaser',   text: 'I agree to requests because disappointing someone feels harder than overextending myself.' },
+    { role: 'perfecter', text: 'I hold back concerns or unfinished work because I do not want others to see something that is not fully polished.' },
+    { role: 'prover',    text: 'I use achievement to reassure myself that I am capable, valuable, or doing enough.' },
+    { role: 'preventer', text: 'I spend so much energy anticipating what could go wrong that I lose touch with what matters to me now.' },
+    { role: 'performer', text: 'I push through physical or emotional fatigue because resting can feel like falling behind.' },
+    { role: 'pleaser',   text: 'I often become the listener, helper, or dependable one while keeping my own needs private.' },
+    { role: 'perfecter', text: 'I can become so focused on doing things the right way that I lose sight of whether they are still meaningful.' },
+    { role: 'prover',    text: 'My self-worth drops when I make a mistake or cannot meet my own expectations.' },
+    { role: 'preventer', text: 'Uncertainty makes me feel unsafe, so I research, rehearse, double-check, or create backup plans.' },
+    { role: 'performer', text: 'I delay rest until everything is finished, even though there is always something else that could be improved.' },
+    { role: 'pleaser',   text: 'I give others my time and energy even when my body is telling me that I need rest.' },
+    { role: 'perfecter', text: 'I repeatedly check, revise, or mentally review things because mistakes feel especially threatening.' },
+    { role: 'prover',    text: 'When I feel insecure, I work harder to prove that I belong, deserve the opportunity, or can handle the pressure.' },
+    { role: 'preventer', text: 'My mind stays alert when I try to rest, as though I should be preparing for the next problem.' }
+  ];
+
+  var PRESSURE = [
+    { role: 'performer', text: 'I push myself to keep producing.' },
+    { role: 'pleaser',   text: 'I take care of other people and avoid disappointing them.' },
+    { role: 'perfecter', text: 'I try to make everything correct or complete.' },
+    { role: 'prover',    text: 'I work harder to prove that I am capable or worthy.' },
+    { role: 'preventer', text: 'I anticipate problems and try to prevent them.' }
+  ];
+
+  var SCALE = ['Never', 'Rarely', 'Sometimes', 'Often', 'Almost always'];
+  var TOTAL = STATEMENTS.length + 2;
+
+  /*SCORING_START*/
+  function computeRoles(answers, pressure) {
+    var totals = {};
+    ROLES.forEach(function (r) { totals[r] = 0; });
+    STATEMENTS.forEach(function (s, i) {
+      var v = Number(answers[i]);
+      totals[s.role] += (v >= 1 && v <= 5) ? v - 1 : 0;
+    });
+    var max = Math.max.apply(null, ROLES.map(function (r) { return totals[r]; }));
+    var tied = ROLES.filter(function (r) { return totals[r] === max; });
+    var winner = tied.length === 1 ? tied[0] : (tied.indexOf(pressure) > -1 ? pressure : tied[0]);
+    var rest = ROLES.filter(function (r) { return r !== winner; }).sort(function (a, b) {
+      return (totals[b] - totals[a]) ||
+             ((b === pressure ? 1 : 0) - (a === pressure ? 1 : 0)) ||
+             (ROLES.indexOf(a) - ROLES.indexOf(b));
+    });
+    var second = rest[0];
+    var also = (totals[second] > 0 && totals[second] >= max - 1) ? second : null;
+    return { winner: winner, second: also, totals: totals };
+  }
+  /*SCORING_END*/
+
+  var app = document.getElementById('app');
+  var state = { screen: 'intro', i: 0, answers: [], pressure: null, email: '', result: null, locked: false };
+
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function paras(text) {
+    return text.split('\n\n').map(function (p) { return '<p>' + p + '</p>'; }).join('');
+  }
+
+  /* Send the address to the Kit form with a hidden form post. This needs no
+     script from Kit and no cross-site permission, and a failure never blocks results. */
+  function sendToKit(email) {
+    try {
+      var name = 'kit-target';
+      var frame = document.getElementById(name);
+      if (!frame) {
+        frame = document.createElement('iframe');
+        frame.id = name;
+        frame.name = name;
+        frame.hidden = true;
+        document.body.appendChild(frame);
+      }
+      var form = document.createElement('form');
+      form.method = 'POST';
+      form.action = KIT_ACTION;
+      form.target = name;
+      form.hidden = true;
+      var input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = 'email_address';
+      input.value = email;
+      form.appendChild(input);
+      document.body.appendChild(form);
+      form.submit();
+      setTimeout(function () { if (form.parentNode) form.parentNode.removeChild(form); }, 3000);
+    } catch (err) { /* results still show */ }
+  }
+
+  function strip(step) {
+    var pct = Math.round(step / TOTAL * 100);
+    return '<div class="strip"><div class="wrap strip-in"><span class="eyebrow">Anxiety Therapy for Women</span>' +
+      '<span class="count">' + step + ' of ' + TOTAL + '</span></div>' +
+      '<div class="progress" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="' + TOTAL + '" aria-valuenow="' + step + '"><span style="width:' + pct + '%"></span></div></div>';
+  }
+
+  function introScreen() {
+    var rows = ROLES.map(function (k) {
+      var r = ROLE[k];
+      return '<li class="role" style="--c:' + r.color + '"><strong>' + r.name + '</strong><span>' + r.blurb + '</span></li>';
+    }).join('');
+    return '<div class="screen enter">' +
+      '<header class="band hero"><div class="wrap">' +
+        '<p class="eyebrow">Anxiety Therapy for Women</p>' +
+        '<h1>Which Survival Role Is Keeping You Stuck?</h1>' +
+        '<p class="sub">You may be capable, dependable, and successful, and still feel exhausted.</p>' +
+      '</div></header>' +
+      '<section class="band tint"><div class="wrap"><p class="frame">This quiz helps you identify the pattern you use to keep functioning, and where recovery may need to begin.</p></div></section>' +
+      '<main class="wrap intro-body" id="main" tabindex="-1">' +
+        '<p class="label">The five roles</p>' +
+        '<ul class="roles">' + rows + '</ul>' +
+        '<p class="how">Rate each statement from 1 (Never) to 5 (Almost always). There are 15 statements and one last question. It takes about 3 minutes.</p>' +
+        '<button type="button" class="btn" data-act="start">Begin ' + ARROW + '</button>' +
+      '</main></div>';
+  }
+
+  function quizScreen() {
+    var i = state.i;
+    var cur = state.answers[i];
+    var opts = SCALE.map(function (label, k) {
+      var v = k + 1;
+      return '<button type="button" class="opt" data-act="rate" data-v="' + v + '" aria-pressed="' + (cur === v) + '">' +
+        '<span class="key">' + v + '</span><span>' + label + '</span></button>';
+    }).join('');
+    return '<div class="screen enter">' + strip(i + 1) +
+      '<main class="wrap q" id="main" tabindex="-1">' +
+        '<button type="button" class="backbtn" data-act="back">' + BACK + ' Back</button>' +
+        '<p class="label">How often is this true for you?</p>' +
+        '<h2 class="stmt">' + STATEMENTS[i].text + '</h2>' +
+        '<div class="opts">' + opts + '</div>' +
+      '</main></div>';
+  }
+
+  function pressureScreen() {
+    var opts = PRESSURE.map(function (o, k) {
+      return '<button type="button" class="opt" data-act="pick" data-role="' + o.role + '" aria-pressed="' + (state.pressure === o.role) + '">' +
+        '<span class="key">' + (k + 1) + '</span><span>' + o.text + '</span></button>';
+    }).join('');
+    return '<div class="screen enter">' + strip(STATEMENTS.length + 1) +
+      '<main class="wrap q" id="main" tabindex="-1">' +
+        '<button type="button" class="backbtn" data-act="back">' + BACK + ' Back</button>' +
+        '<p class="label">One more question</p>' +
+        '<h2 class="stmt">When I am under pressure, the pattern I notice first is:</h2>' +
+        '<div class="opts">' + opts + '</div>' +
+      '</main></div>';
+  }
+
+  function emailScreen() {
+    return '<div class="screen enter">' + strip(TOTAL) +
+      '<main class="wrap q" id="main" tabindex="-1">' +
+        '<button type="button" class="backbtn" data-act="back">' + BACK + ' Back</button>' +
+        '<p class="label">Last step</p>' +
+        '<h2 class="stmt">Enter your email to see your results</h2>' +
+        '<p class="lead">We will also send a few resources that might help, nothing more. You can unsubscribe at any time.</p>' +
+        '<form id="email-form" novalidate>' +
+          '<label class="sr" for="email">Email address</label>' +
+          '<input id="email" name="email_address" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" value="' + esc(state.email) + '" required>' +
+          '<p class="err" id="email-err" role="alert"></p>' +
+          '<button type="submit" class="btn">See my results ' + ARROW + '</button>' +
+        '</form>' +
+      '</main></div>';
+  }
+
+  function resultScreen() {
+    var r = ROLE[state.result.winner];
+    var sec = state.result.second ? ROLE[state.result.second] : null;
+    var traits = r.traits.map(function (t) {
+      return '<li class="trait" style="--c:' + r.color + '">' + t + '</li>';
+    }).join('');
+    var sections = [
+      ['What this role really means', r.deep.meaning, true],
+      ['How it shows up in your life', r.deep.shows, false],
+      ['What to watch for', r.deep.watch, false],
+      ['Your path forward', r.deep.path, false]
+    ].map(function (s) {
+      return '<details class="acc"' + (s[2] ? ' open' : '') + '><summary>' + s[0] + '</summary><div class="acc-body">' + paras(s[1]) + '</div></details>';
+    }).join('');
+    return '<div class="screen enter">' +
+      '<header class="band hero"><div class="wrap">' +
+        '<p class="eyebrow">Your survival role</p>' +
+        '<h1>' + r.name + '</h1>' +
+        '<p class="sub">' + r.tagline + '</p>' +
+      '</div></header>' +
+      '<section class="band tint"><div class="wrap">' +
+        '<p class="frame">' + r.summary + '</p>' +
+        (sec ? '<p class="also">Your next strongest pattern is ' + sec.name + '. Most people recognize more than one role.</p>' : '') +
+      '</div></section>' +
+      '<main class="wrap result-body" id="main" tabindex="-1">' +
+        '<p class="label">Key characteristics</p>' +
+        '<ul class="traits">' + traits + '</ul>' +
+        '<div class="notes">' +
+          '<div class="note"><span class="label">A question to sit with</span><p class="qtext">' + r.question + '</p></div>' +
+          '<div class="note"><span class="label">Your first experiment</span><p class="exp">' + r.experiment + '</p></div>' +
+        '</div>' +
+        '<p class="label sect">Learn more about your role</p>' +
+        '<div class="accs">' + sections + '</div>' +
+      '</main>' +
+      '<section class="band close"><div class="wrap">' +
+        '<p class="clabel">A next step</p>' +
+        '<p class="ctext">If this pattern feels familiar, you do not have to sort it out alone. A free consultation is a low-pressure way to talk through what you are noticing and what kind of support might fit.</p>' +
+        '<p class="cq">What might change if rest did not have to be earned?</p>' +
+        '<a class="btn on-band" href="' + CONSULT_URL + '" target="_blank" rel="noopener noreferrer">Book your free consultation ' + ARROW + '</a>' +
+      '</div></section>' +
+      '<footer class="wrap foot">' +
+        '<button type="button" class="btn ghost" data-act="restart">Take the quiz again</button>' +
+        '<p class="disc">Survival roles describe patterns, not permanent labels, and many people recognize more than one. This quiz is for self-reflection and education. It is not a diagnosis.</p>' +
+        '<p class="sig">Anxiety Therapy for Women · Atlanta, GA · anxietytherapyforwomen.com</p>' +
+      '</footer></div>';
+  }
+
+  function render(moveFocus) {
+    var html;
+    if (state.screen === 'intro') html = introScreen();
+    else if (state.screen === 'quiz') html = quizScreen();
+    else if (state.screen === 'pressure') html = pressureScreen();
+    else if (state.screen === 'email') html = emailScreen();
+    else html = resultScreen();
+    app.innerHTML = html;
+    if (moveFocus) {
+      window.scrollTo(0, 0);
+      var m = document.getElementById('main');
+      if (m) m.focus({ preventScroll: true });
+    }
+  }
+
+  function mark(button) {
+    app.querySelectorAll('.opt').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b === button));
+    });
+  }
+
+  function onRate(v) {
+    if (state.locked || state.screen !== 'quiz') return;
+    state.locked = true;
+    state.answers[state.i] = v;
+    mark(app.querySelector('.opt[data-v="' + v + '"]'));
+    setTimeout(function () {
+      state.locked = false;
+      if (state.i < STATEMENTS.length - 1) { state.i += 1; }
+      else { state.screen = 'pressure'; }
+      render(true);
+    }, 150);
+  }
+
+  function onPressure(role) {
+    if (state.locked || state.screen !== 'pressure') return;
+    state.locked = true;
+    state.pressure = role;
+    mark(app.querySelector('.opt[data-role="' + role + '"]'));
+    setTimeout(function () {
+      state.locked = false;
+      state.screen = 'email';
+      render(true);
+    }, 150);
+  }
+
+  function onBack() {
+    if (state.locked) return;
+    if (state.screen === 'quiz') {
+      if (state.i > 0) state.i -= 1; else state.screen = 'intro';
+    } else if (state.screen === 'pressure') {
+      state.screen = 'quiz';
+      state.i = STATEMENTS.length - 1;
+    } else if (state.screen === 'email') {
+      state.screen = 'pressure';
+    }
+    render(true);
+  }
+
+  function restart() {
+    state = { screen: 'intro', i: 0, answers: [], pressure: null, email: '', result: null, locked: false };
+    render(true);
+  }
+
+  app.addEventListener('click', function (e) {
+    var t = e.target.closest('[data-act]');
+    if (!t || !app.contains(t)) return;
+    var act = t.getAttribute('data-act');
+    if (act === 'start') { state.screen = 'quiz'; state.i = 0; render(true); }
+    else if (act === 'rate') { onRate(parseInt(t.getAttribute('data-v'), 10)); }
+    else if (act === 'pick') { onPressure(t.getAttribute('data-role')); }
+    else if (act === 'back') { onBack(); }
+    else if (act === 'restart') { restart(); }
+  });
+
+  app.addEventListener('input', function (e) {
+    if (e.target && e.target.id === 'email') {
+      state.email = e.target.value;
+      e.target.classList.remove('bad');
+      var err = document.getElementById('email-err');
+      if (err) err.textContent = '';
+    }
+  });
+
+  app.addEventListener('submit', function (e) {
+    if (!e.target || e.target.id !== 'email-form') return;
+    e.preventDefault();
+    var input = document.getElementById('email');
+    var value = (input.value || '').trim();
+    var ok = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value);
+    if (!ok) {
+      input.classList.add('bad');
+      document.getElementById('email-err').textContent = 'Enter a valid email address, like name@example.com.';
+      input.focus();
+      return;
+    }
+    state.email = value;
+    sendToKit(value);
+    state.result = computeRoles(state.answers, state.pressure);
+    state.screen = 'result';
+    render(true);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+    var n = parseInt(e.key, 10);
+    if (!(n >= 1 && n <= 5)) return;
+    if (state.screen === 'quiz') onRate(n);
+    else if (state.screen === 'pressure') onPressure(PRESSURE[n - 1].role);
+  });
+
+  render(false);
+})();
+</script>
+</body>
+</html>

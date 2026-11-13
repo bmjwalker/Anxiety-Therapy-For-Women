@@ -88,7 +88,7 @@ export default function Hero() {
                 <ArrowRight size={16} />
               </a>
               <a
-                href="https://w48bpx2y2ic.typeform.com/to/zBGT9y6e"
+                href="/survival-role-quiz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-[#C4897B] text-base font-medium transition-colors duration-200"

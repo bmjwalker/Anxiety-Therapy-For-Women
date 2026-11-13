@@ -194,6 +194,14 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: "/survival-role-quiz",
+        destination: "/survival-role-quiz.html",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
