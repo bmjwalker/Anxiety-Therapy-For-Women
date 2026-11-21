@@ -180,7 +180,10 @@ export default function BlogPost1() {
               </h2>
               <p>If you&rsquo;ve read this far, something in this resonated. Here are your next steps:</p>
               <p>
-                Start by finding out where you actually are. The free 2-minute burnout quiz is designed to help you assess your current burnout level across the key dimensions. It&rsquo;s not a diagnosis — it&rsquo;s a starting point for clarity.
+                Start by finding out where you actually are. The free 2-minute <a
+                  href="/#survival-role-quiz"
+                  className="text-brand underline underline-offset-2 hover:text-brand-dark transition-colors"
+                >Survival Role Quiz</a> shows how you&rsquo;ve learned to keep functioning under pressure, and what your recovery needs to look like. It&rsquo;s not a diagnosis — it&rsquo;s a starting point for clarity.
               </p>
               <p>You are not just tired. What you&rsquo;re experiencing is real, it&rsquo;s recognized, and there&rsquo;s a way through it.</p>
               <p>
