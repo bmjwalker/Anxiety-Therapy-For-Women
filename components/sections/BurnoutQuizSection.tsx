@@ -2,7 +2,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function BurnoutQuizSection() {
   return (
-    <section className="pt-16 pb-14 md:pb-20" style={{ backgroundColor: "#F2F1EB" }}>
+    <section id="survival-role-quiz" className="pt-16 pb-14 md:pb-20 scroll-mt-24" style={{ backgroundColor: "#F2F1EB" }}>
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-5">
